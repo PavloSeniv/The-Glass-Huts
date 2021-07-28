@@ -5,22 +5,38 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gulp</title>
+    <title>The Glass Huts</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+<div class="_container">
 
-@@include('html/_header.html')
+    @@include('html/_header.html')
 
-<main class="main">
-    <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, tenetur.</p>
-    <p class="p2">Lorem ipsum dolor sit amet.</p>
-    <p class="p3">Lorem ipsum dolor.</p>
-    <p class="p4">Lorem ipsum dolor sit.</p>
-    <p class="p5">Lorem ipsum dolor sit amet.</p>
-</main>
+    <div class="about">
+        <div class="about__text">
+            <h2 class="text__main">The Cabins</h2>
+            <p class="text__lorem">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda beatae consequuntur culpa
+                delectus deserunt distinctio ea eos esse excepturi hic ipsum iusto laboriosam magnam maiores minus
+                molestias nesciunt omnis optio, quasi qui quod sed soluta, veritatis vitae? Consectetur esse eveniet,
+                incidunt minus nam officiis quod saepe tempora ullam velit.
+            </p>
+            <a class="text__link" href="">Read More</a>
+        </div>
+        <div class="about__photo">
+            <img class="photo__about" src="img/page1-background.png" alt="">
+        </div>
+    </div>
 
-@@include('html/_footer.html')
+
+    <main class="main">
+
+    </main>
+
+    @@include('html/_footer.html')
+
+</div>
 
 <script src="js/script.min.js"></script>
 
