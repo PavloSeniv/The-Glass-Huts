@@ -10,30 +10,19 @@
 </head>
 <body>
 
-@@include('_header.html')
+@@include('html/_header.html')
 
 <main class="main">
-
-    <!--Оптимізація сайту де можна використати формат webp-->
-    <!--    <picture>
-            <source srcset="img/IMG_3467.webp" type="image/webp">
-            <img src="img/IMG_3467.JPG" alt="PhotoMe">
-        </picture>-->
-
-    <!-- З плагіном gulp-webp-html розмітка вище створюється автоматично-->
-
-    <img src="img/IMG_3467.JPG" alt="PhotoMe">
-
+    <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, tenetur.</p>
+    <p class="p2">Lorem ipsum dolor sit amet.</p>
+    <p class="p3">Lorem ipsum dolor.</p>
+    <p class="p4">Lorem ipsum dolor sit.</p>
+    <p class="p5">Lorem ipsum dolor sit amet.</p>
 </main>
 
-<section>
-
-</section>
+@@include('html/_footer.html')
 
 <script src="js/script.min.js"></script>
-<!--
-// Непотрібно якщо ми збираємо всі файли js в єдиний
-<script src="js/WebpAddClassToHtml.js"></script>
--->
+
 </body>
 </html>
