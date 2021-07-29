@@ -1,0 +1,417 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "CrimsonPro-Regular";
+  font-display: swap;
+  src: url("../fonts/CrimsonPro-Regular.woff") format("woff"), url("../fonts/CrimsonPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DINPro-Light";
+  font-display: swap;
+  src: url("../fonts/DINPro-Light.woff") format("woff"), url("../fonts/DINPro-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DINPro-Medium";
+  font-display: swap;
+  src: url("../fonts/DINPro-Medium.woff") format("woff"), url("../fonts/DINPro-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Handlee-Regular";
+  font-display: swap;
+  src: url("../fonts/Handlee-Regular.woff") format("woff"), url("../fonts/Handlee-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaBold";
+  font-display: swap;
+  src: url("../fonts/HelveticaBold.woff") format("woff"), url("../fonts/HelveticaBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  font-display: swap;
+  src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mulish-Regular";
+  font-display: swap;
+  src: url("../fonts/Mulish-Regular.woff") format("woff"), url("../fonts/Mulish-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  font-display: swap;
+  src: url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Italic";
+  font-display: swap;
+  src: url("../fonts/OpenSans-Italic.woff") format("woff"), url("../fonts/OpenSans-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  font-display: swap;
+  src: url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  font-display: swap;
+  src: url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-LightItalic";
+  font-display: swap;
+  src: url("../fonts/OpenSans-LightItalic.woff") format("woff"), url("../fonts/OpenSans-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  font-display: swap;
+  src: url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Стилі для обнулення*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*Кінець  обнулення*/
+
+/*Стилі шапки*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 34px;
+}
+
+.navbar__logo {
+  padding-left: 146px;
+}
+
+.navbar__menu {
+  width: 458px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu__item {
+  font-family: DINPro-Light;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.item__link {
+  color: #000000;
+}
+
+.item__link:hover {
+  color: #151414;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+.lang__item {
+  color: #000000;
+}
+
+.navbar__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: DINPro-Light;
+  font-size: 14px;
+  width: 200px;
+  height: 60px;
+  text-transform: uppercase;
+  background-color: #5b6460;
+  color: #ffffff;
+}
+
+.navbar__button:hover {
+  background-color: #808e88;
+}
+
+.navbar__button:active {
+  background-color: #79857f;
+}
+
+.navbar__background {
+  width: 100%;
+}
+
+.background__photo {
+  width: 100%;
+}
+
+/*End Header*/
+
+/*Start block About*/
+
+.about {
+  display: flex;
+  margin: 150px 0 0 0;
+}
+
+.about__text {
+  width: 50%;
+  padding: 89px 105px 0 147px;
+}
+
+.text__title {
+  font-family: OpenSans-Regular;
+  font-size: 40px;
+  color: #5b6460;
+  margin-bottom: 45px;
+}
+
+.text__subtitle {
+  font-family: OpenSans-Light;
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.about__link {
+  font-family: "Open Sans Semibold";
+  font-size: 16px;
+  color: #5b6460;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+.about__link:hover {
+  color: #000000;
+}
+
+.about__photo {
+  width: 50%;
+}
+
+.photo__bad {
+  width: 100%;
+}
+
+.about__photo-gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 150px 0;
+}
+
+.about__item {
+  width: 100%;
+}
+
+/*End block About*/
+
+._container {
+  width: 1408px;
+  margin: 0 auto;
+}
+
+@media (max-width: 360px) {
+  ._container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1408px) {
+  ._container {
+    width: 1201px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  ._container {
+    width: 993px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  ._container {
+    width: 769px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  ._container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 575px) {
+  ._container {
+    width: 100%;
+  }
+}
+@supports (-webkit-appearance:none){
+
+}
+
+ @media (max-width: 360px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (min-width: 1201px) and (max-width: 1408px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (min-width: 993px) and (max-width: 1200px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (min-width: 769px) and (max-width: 992px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (min-width: 576px) and (max-width: 768px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (min-width: 361px) and (max-width: 575px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}

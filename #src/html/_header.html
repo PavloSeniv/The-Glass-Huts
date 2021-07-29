@@ -1,13 +1,15 @@
 <header>
 
     <nav class="navbar">
-        <a class="navbar__logo" href="#"><img src="../img/index/navbar/navbar-logo.svg" alt="navbar-logo"></a>
+        <a class="navbar__logo" href="index.html">
+            <img src="../img/index/navbar/navbar__logo.svg" alt="navbar__logo">
+        </a>
         <ul class="navbar__menu">
             <li class="menu__item">
-                <a class="item__link" href="#">Home</a>
+                <a class="item__link" href="index.html">Home</a>
             </li>
             <li class="menu__item">
-                <a class="item__link" href="#">The Hut</a>
+                <a class="item__link" href="page__2">The Hut</a>
             </li>
             <li class="menu__item">
                 <a class="item__link" href="#">The Area</a>
@@ -21,15 +23,21 @@
             <li class="menu__item">
                 <a class="item__link" href="#">Faq</a>
             </li>
-            <li class="menu__item">
-                <a class="item__link" href="#">Lang</a>
-            </li>
+            <select name="about__lang" id="about__lang">
+                <option value="1" class="lang__item" selected>UA</option>
+                <option value="2" class="lang__item">ENG</option>
+                <option value="3" class="lang__item">GER</option>
+                <option value="4" class="lang__item">SHW</option>
+            </select>
         </ul>
         <a class="navbar__button" href="#">Book now</a>
     </nav>
 
     <div class="navbar__background">
-        <img class="background__photo" src="../img/index/page1-background.png" alt="BackHotel1">
+        <div>
+            <img class="background__photo" src="../img/index/navbar/navbar__home-background.png" alt="navbar__home-background">
+        </div>
+
     </div>
 
 </header>

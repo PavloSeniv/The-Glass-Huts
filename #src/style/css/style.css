@@ -1,7 +1,7 @@
 /*Start block About*/
 .about {
     display: flex;
-    margin: 150px 0;
+    margin: 150px 0 0 0;
 }
 
 .about__text {
@@ -10,26 +10,28 @@
 }
 
 .text__title {
-    display: block;
     font-family: OpenSans-Regular;
     font-size: 40px;
     color: #5b6460;
+    margin-bottom: 45px;
 }
 
 .text__subtitle {
     font-family: OpenSans-Light;
     font-size: 16px;
+    line-height: 25px;
     color: #000000;
+    margin-bottom: 30px;
 }
 
-.text__link {
+.about__link {
     font-family: "Open Sans Semibold";
     font-size: 16px;
     color: #5b6460;
     text-decoration-line: underline;
 }
 
-.text__link:hover {
+.about__link:hover {
     color: #000000;
 }
 
@@ -37,9 +39,19 @@
     width: 50%;
 }
 
-.photo__about {
+.photo__bad {
     width: 100%;
-    height: auto;
+}
+
+.about__photo-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 150px 0;
+}
+
+.about__item {
+    width: 100%;
 }
 
 /*End block About*/
