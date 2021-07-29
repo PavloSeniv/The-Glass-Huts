@@ -16,7 +16,7 @@ let path = {
     src: {
         // Виключення всіх файлів html які починаються з _ із папки dist
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
-        css: source_folder + "/scss/style.scss",
+        css: source_folder + "/style/scss/style.scss",
         js: source_folder + "/js/script.js",
         //Якщо не  вказати розширення також іх верхнього регістру то можливий варіант не копіювання зображення
         img: source_folder + "/img/**/*.+(png|PNG|jpg|JPG|gif|ico|svg|webp)",
@@ -25,12 +25,14 @@ let path = {
     //Об'єкт  для слідкування за файлами в реальному часі(browserSync)
     watch: {
         html: source_folder + "/**/*.html",
-        css: source_folder + "/scss/**/*.{css,scss}",
+        html__page: source_folder + "html/**/*.html",
+        css: source_folder + "/style/**/*.{css,scss,less,sass}",
         js: source_folder + "/js/**/*.js",
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
     },
     clean: "./" + project_folder + "/"
 }
+
 //Оголошуємо всі плагіни
 let {src, dest} = require('gulp'),
     gulp = require('gulp'), //Ініціалізація gulp
@@ -180,9 +182,9 @@ gulp.task("svgSprite", function () {
 
 // Для автоматичного запису шрифтів в css
 function fontsStyle(params) {
-    let file_content = fs.readFileSync(source_folder + '/scss/fonts.scss');
+    let file_content = fs.readFileSync(source_folder + '/style/scss/fonts.scss');
     if (file_content == '') {
-        fs.writeFile(source_folder + '/scss/fonts.scss', '', callBack);
+        fs.writeFile(source_folder + '/style/scss/fonts.scss', '', callBack);
         return fs.readdir(path.build.fonts, function (err, items) {
             if (items) {
                 let c_fontname;
@@ -190,7 +192,7 @@ function fontsStyle(params) {
                     let fontname = items[i].split('.');
                     fontname = fontname[0];
                     if (c_fontname != fontname) {
-                        fs.appendFile(source_folder + '/scss/fonts.scss', '@include font("' + fontname + '", "' + fontname + '", "400", "normal");\r\n', callBack);
+                        fs.appendFile(source_folder + '/style/scss/fonts.scss', '@include font("' + fontname + '", "' + fontname + '", "400", "normal");\r\n', callBack);
                     }
                     c_fontname = fontname;
                 }
@@ -208,7 +210,6 @@ function watchFiles(params) {
     gulp.watch([path.watch.css], css); // Для css
     gulp.watch([path.watch.js], js); // Для js
     gulp.watch([path.watch.img], images); // Для img
-
 }
 
 function clean(params) {
@@ -218,7 +219,6 @@ function clean(params) {
 //Процес виконання
 let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts), fontsStyle); //тут присутній варіант запису шрифтів
 let watch = gulp.parallel(build, watchFiles, browserSync);
-
 
 exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;

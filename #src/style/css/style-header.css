@@ -1,0 +1,62 @@
+/*Стилі шапки*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 34px;
+}
+
+.navbar__logo {
+    padding-left: 146px;
+}
+
+.navbar__menu {
+    width: 458px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu__item {
+    font-family: DINPro-Light;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.item__link {
+    text-decoration-line: none;
+    color: #000000;
+}
+
+.item__link:hover {
+    color: #000000;
+    text-decoration-line: underline;
+}
+
+.navbar__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: DINPro-Light;
+    font-size: 14px;
+    width: 200px;
+    height: 60px;
+    text-transform: uppercase;
+    background-color: #5b6460;
+    text-decoration-line: none;
+    color: #ffffff;
+}
+
+.navbar__button:hover {
+    background-color: #808e88;
+}
+
+.navbar__background {
+    width: 100%;
+}
+
+.background__photo {
+    width: 100%;
+}
+
+/*End Header*/
