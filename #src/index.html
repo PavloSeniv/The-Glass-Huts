@@ -6,44 +6,48 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Glass Huts</title>
+    <link rel="icon" type="text/css" href="img/index/logo__icon.svg">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+
+@@include('html/_header.html')
+
 <div class="_container">
-
-    @@include('html/_header.html')
-
-    <div class="about">
-        <div class="about__text">
-            <h2 class="text__title">The Cabins</h2>
-            <p class="text__subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda beatae consequuntur culpa
-                delectus deserunt distinctio ea eos esse excepturi hic ipsum iusto laboriosam magnam maiores minus
-                molestias nesciunt omnis optio, quasi qui quod sed soluta, veritatis vitae? Consectetur esse eveniet,
-                incidunt minus nam officiis quod saepe tempora ullam velit.
-            </p>
-            <a class="about__link" href="">Read More</a>
-        </div>
-        <div class="about__photo">
-            <img class="photo__bad" src="img/index/about/photo__bad.png" alt="photo__bad">
-        </div>
-    </div>
-
-    <div class="about__photo-gallery">
-
-        <div>
-            <img class="about__item" src="img/index/about/about__item-1.png" alt="about__item-1">
+    <main>
+        <div class="about page__section-1">
+            <div class="about__text">
+                <h2 class="text__title">The Cabins</h2>
+                <p class="text__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda beatae consequuntur culpa
+                    delectus deserunt distinctio ea eos esse excepturi hic ipsum iusto laboriosam magnam maiores minus
+                    molestias nesciunt omnis optio, quasi qui quod sed soluta, veritatis vitae? Consectetur esse
+                    eveniet,
+                    incidunt minus nam officiis quod saepe tempora ullam velit.
+                </p>
+                <a class="about__link" href="">Read More</a>
+            </div>
+            <div class="about__photo">
+                <img class="photo__bad" src="img/index/about/photo__bad.png" alt="photo__bad">
+            </div>
         </div>
 
-        <div>
-            <img class="about__item" src="img/index/about/about__item-2.png" alt="about__item-2">
-        </div>
+        <div class="about__photo-gallery page__section-2">
 
-        <div>
-            <img class="about__item" src="img/index/about/about__item-3.png" alt="about__item-3">
-        </div>
+            <div>
+                <img class="about__item" src="img/index/about/about__item-1.png" alt="about__item-1">
+            </div>
 
-    </div>
+            <div>
+                <img class="about__item" src="img/index/about/about__item-2.png" alt="about__item-2">
+            </div>
+
+            <div>
+                <img class="about__item" src="img/index/about/about__item-3.png" alt="about__item-3">
+            </div>
+
+        </div>
+    </main>
 
     @@include('html/_footer.html')
 

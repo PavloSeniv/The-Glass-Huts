@@ -1,43 +1,40 @@
-<header>
-
-    <nav class="navbar">
-        <a class="navbar__logo" href="index.html">
-            <img src="../img/index/navbar/navbar__logo.svg" alt="navbar__logo">
+<header class="header">
+    <div class="header__container">
+        <a class="header__logo" href="index.html">
+            <img src="img/index/header/header__logo.svg" alt="header__logo">
         </a>
-        <ul class="navbar__menu">
-            <li class="menu__item">
-                <a class="item__link" href="index.html">Home</a>
-            </li>
-            <li class="menu__item">
-                <a class="item__link" href="page__2">The Hut</a>
-            </li>
-            <li class="menu__item">
-                <a class="item__link" href="#">The Area</a>
-            </li>
-            <li class="menu__item">
-                <a class="item__link" href="#">Booking</a>
-            </li>
-            <li class="menu__item">
-                <a class="item__link" href="#">About Us</a>
-            </li>
-            <li class="menu__item">
-                <a class="item__link" href="#">Faq</a>
-            </li>
-            <select name="about__lang" id="about__lang">
-                <option value="1" class="lang__item" selected>UA</option>
-                <option value="2" class="lang__item">ENG</option>
-                <option value="3" class="lang__item">GER</option>
-                <option value="4" class="lang__item">SHW</option>
-            </select>
-        </ul>
-        <a class="navbar__button" href="#">Book now</a>
-    </nav>
-
-    <div class="navbar__background">
-        <div>
-            <img class="background__photo" src="../img/index/navbar/navbar__home-background.png" alt="navbar__home-background">
+        <div class="header__menu menu">
+            <div class="menu__icon">
+                <span></span>
+            </div>
         </div>
-
+        <nav class="menu__body">
+            <ul class="menu__list">
+                <li><a class="menu__link" href="index.html">Home</a></li>
+                <li><a class="menu__link" href="#">The Hut</a></li>
+                <li><a class="menu__link" href="#.html">The Area</a></li>
+                <li><a class="menu__link" href="#.html">Booking</a></li>
+                <li><a class="menu__link" href="#.html">About Us</a></li>
+                <li><a class="menu__link" href="#.html">Faq</a></li>
+                <li>
+                    <a class="menu__link" href="#.html">Lng</a>
+                    <span class="menu__arrow"></span>
+                    <ul class="menu__sub-list">
+                        <li>
+                            <a data-goto=".page__section-1" class="menu__sub-link" href="#">
+                                <img src="../img/index/header/germany.svg" alt="germany">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-goto=".page__section-2" class="menu__sub-link" href="">Eng</a>
+                        </li>
+                        <li>
+                            <a data-goto=".page__section-3" class="menu__sub-link" href="">Eng</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="menu__button" href="#">Book now</a>
+        </nav>
     </div>
-
-</header>
+</header>x
