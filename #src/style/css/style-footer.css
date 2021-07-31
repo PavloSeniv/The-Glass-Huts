@@ -59,6 +59,14 @@
     background-color: var(--footer-bg-color);
     border-bottom: 2px solid var(--footer-bg-newsletter-color);
     padding: 3px;
+    color: var(--footer-bg-newsletter-color);
+    font-family: OpenSans-LightItalic;
+    font-size: 16px;
+}
+
+.newsletter__input:focus,
+.newsletter__input:hover {
+    background-color: #808e88;
 }
 
 .newsletter__input::placeholder {
@@ -94,6 +102,10 @@
     font-family: DINPro-Light;
     font-size: 14px;
     text-transform: uppercase;
+}
+
+.license__item > a:hover {
+    text-decoration-line: underline;
 }
 
 .license__list__icon {

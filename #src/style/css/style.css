@@ -133,13 +133,15 @@
 /*--------------------------------- ContactUsStay Start----------------------------------*/
 :root {
     --about-us-stay-color: #5b6460;
+    --about-us-stay-color-hover: #808e88;
+    --button-us-stay-price-info-bg-color: #e9ece0;
 }
 
 .about-us-stay {
     display: grid;
     grid-gap: 100px;
     padding: 8em 10em;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .contact__title {
@@ -148,6 +150,7 @@
     font-size: 40px;
     color: var(--about-us-stay-color);
     margin-bottom: 50px;
+    line-height: 55px;
 }
 
 .contact__sub-title {
@@ -165,6 +168,10 @@
     margin-bottom: 10px;
 }
 
+.contact__phone:hover {
+    text-decoration-line: underline;
+}
+
 .contact__mail {
     display: block;
     font-family: OpenSans-Light;
@@ -173,12 +180,22 @@
     margin-bottom: 50px;
 }
 
+.contact__mail:hover {
+    text-decoration-line: underline;
+}
+
 .link-social__item {
     display: inline-block;
     padding: 10px;
     background-color: var(--about-us-stay-color);
     border-radius: 50%;
     margin: 0 40px;
+}
+
+.link-social__item:hover {
+    background-color: var(--about-us-stay-color-hover);
+    color: #000000;
+
 }
 
 .link-social__item:nth-last-child(-n+1) {
@@ -194,15 +211,19 @@
 }
 
 .little-book__button {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.button__block {
     background-color: var(--about-us-stay-color);
     padding: 20px;
 }
 
-.button__block {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+.button__block:hover{
+    background-color: var(--about-us-stay-color-hover);
 }
-
 .block__book {
     display: flex;
     justify-content: center;
@@ -214,6 +235,32 @@
     font-size: 18px;
     text-transform: uppercase;
     color: #ffffff;
+}
+
+.button__info-price {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--button-us-stay-price-info-bg-color);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.info-price__text {
+    font-family: DINPro-Light;
+    font-size: 12px;
+    color: #000000;
+}
+
+.text__price-book_2 {
+    font-family: DINPro-Medium;
+    font-size: 20px;
+}
+
+.text__price-book_3 {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /*--------------------------------- ContactUsStay End----------------------------------*/
@@ -250,6 +297,10 @@ Small devices (landscape phones, 576px and down)
     .about__item {
         margin-bottom: 30px;
     }
+
+    .about-us-stay {
+        padding: 3em 3em;
+    }
 }
 
 /*
@@ -268,6 +319,11 @@ Medium devices (tablets, 768px and down)
     .text__subtitle {
         text-align: justify;
     }
+
+    .about-us-stay {
+        padding: 2em 2em;
+    }
+
 }
 
 /*
@@ -277,6 +333,10 @@ Large devices (desktops, 992px and down)
     .facilities {
         padding: 5em 5em;
     }
+
+    .about-us-stay {
+        padding: 4em 5em;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -284,6 +344,7 @@ Large devices (desktops, 992px and down)
     .about__text {
         padding: 20px 0;
     }
+
 }
 
 /*
