@@ -2,6 +2,8 @@
 :root {
     --footer-bg-color: #5b6460;
     --footer-bg-newsletter-color: #fff;
+    --footer-newsletter-sub-text-color: #fff;
+
 }
 
 /*------------------------- End footer -------------------*/
@@ -40,6 +42,10 @@
             "my-security-police my-security-police";
 }
 
+.newsletter__form {
+    position: relative;
+}
+
 .newsletter__title {
     font-family: "Open Sans Semibold";
     color: var(--footer-bg-newsletter-color);
@@ -49,7 +55,6 @@
 }
 
 .newsletter__input {
-    position: relative;
     width: 100%;
     background-color: var(--footer-bg-color);
     border-bottom: 2px solid var(--footer-bg-newsletter-color);
@@ -64,10 +69,102 @@
 
 .newsletter__button {
     position: absolute;
+    background-color: unset;
 }
 
-.newsletter__button:before,
-.newsletter__button:after,
-.newsletter__button span {
+.newsletter-sub-text {
+    font-family: OpenSans-Light;
+    font-size: 16px;
+    margin-top: 10px;
+    color: var(--footer-newsletter-sub-text-color);
+    line-height: 20px;
+}
 
+.license__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+
+.license__item > a {
+    color: var(--footer-bg-newsletter-color);
+    font-family: DINPro-Light;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.license__list__icon {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.list__icon__item {
+    margin: 0 50px;
+}
+
+.license__list__icon li:nth-last-child(-n+1) {
+    margin: 0;
+}
+
+.footer__security-police {
+    font-family: OpenSans-Light;
+    font-size: 14px;
+    color: var(--footer-bg-newsletter-color);
+}
+
+/*
+No media query for `xs` since this is the default in Bootstrap
+*/
+
+/*
+Small devices (landscape phones, 576px and down)
+*/
+@media (max-width: 576px) {
+    .footer {
+        padding: 2em 2em;
+    }
+}
+
+/*
+Medium devices (tablets, 768px and down)
+*/
+@media (max-width: 768px) {
+    .footer {
+        padding: 2em 2em;
+    }
+}
+
+/*
+Large devices (desktops, 992px and down)
+*/
+@media (max-width: 992px) {
+    /*Шаблон вигляду футера*/
+    .footer__container {
+        grid-template-areas:
+            "my-newsletter my-newsletter"
+            "my-license my-license"
+            "my-security-police my-security-police";
+    }
+
+    .footer {
+        padding: 4em 5em;
+    }
+}
+
+/*
+X-Large devices (large desktops, 1200px and down)
+*/
+@media (max-width: 1200px) {
+}
+
+/*
+XX-Large devices (larger desktops, 1400px and down)
+*/
+@media (max-width: 1400px) {
 }

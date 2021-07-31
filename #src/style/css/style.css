@@ -1,3 +1,11 @@
+/*-------------------- All --------------------*/
+::selection {
+    background-color: #41906d;
+    color: #fff;
+}
+
+/*-------------------- All --------------------*/
+
 /*Start block About*/
 :root {
     --about-text-title-color: #5b6460;

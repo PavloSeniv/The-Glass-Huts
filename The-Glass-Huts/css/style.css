@@ -364,6 +364,20 @@ body._touch .menu__list > li._active .menu__arrow {
 
 /*--------------------End Header---------*/
 
+/*-------------------- All --------------------*/
+
+::-moz-selection {
+  background-color: #41906d;
+  color: #fff;
+}
+
+::selection {
+  background-color: #41906d;
+  color: #fff;
+}
+
+/*-------------------- All --------------------*/
+
 /*Start block About*/
 
 :root {
@@ -510,6 +524,7 @@ XX-Large devices (larger desktops, 1400px and down)
 :root {
   --footer-bg-color: #5b6460;
   --footer-bg-newsletter-color: #fff;
+  --footer-newsletter-sub-text-color: #fff;
 }
 
 /*------------------------- End footer -------------------*/
@@ -546,6 +561,10 @@ XX-Large devices (larger desktops, 1400px and down)
   grid-template-areas: "my-newsletter my-license" "my-security-police my-security-police";
 }
 
+.newsletter__form {
+  position: relative;
+}
+
 .newsletter__title {
   font-family: "Open Sans Semibold";
   color: var(--footer-bg-newsletter-color);
@@ -555,7 +574,6 @@ XX-Large devices (larger desktops, 1400px and down)
 }
 
 .newsletter__input {
-  position: relative;
   width: 100%;
   background-color: var(--footer-bg-color);
   border-bottom: 2px solid var(--footer-bg-newsletter-color);
@@ -582,7 +600,77 @@ XX-Large devices (larger desktops, 1400px and down)
 
 .newsletter__button {
   position: absolute;
+  background-color: unset;
 }
+
+.newsletter-sub-text {
+  font-family: OpenSans-Light;
+  font-size: 16px;
+  margin-top: 10px;
+  color: var(--footer-newsletter-sub-text-color);
+  line-height: 20px;
+}
+
+.license__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.license__item > a {
+  color: var(--footer-bg-newsletter-color);
+  font-family: DINPro-Light;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.license__list__icon {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.list__icon__item {
+  margin: 0 50px;
+}
+
+.license__list__icon li:nth-last-child(-n+1) {
+  margin: 0;
+}
+
+.footer__security-police {
+  font-family: OpenSans-Light;
+  font-size: 14px;
+  color: var(--footer-bg-newsletter-color);
+}
+
+/*
+No media query for `xs` since this is the default in Bootstrap
+*/
+
+/*
+Small devices (landscape phones, 576px and down)
+*/
+
+/*
+Medium devices (tablets, 768px and down)
+*/
+
+/*
+Large devices (desktops, 992px and down)
+*/
+
+/*
+X-Large devices (large desktops, 1200px and down)
+*/
+
+/*
+XX-Large devices (larger desktops, 1400px and down)
+*/
 
 ._container {
   max-width: 1408px;
@@ -661,6 +749,16 @@ XX-Large devices (larger desktops, 1400px and down)
   .facilities {
     padding: 5em 5em;
   }
+
+  /*Шаблон вигляду футера*/
+
+  .footer__container {
+    grid-template-areas: "my-newsletter my-newsletter" "my-license my-license" "my-security-police my-security-police";
+  }
+
+  .footer {
+    padding: 4em 5em;
+  }
 }
 
 @media (max-width: 768px) {
@@ -674,6 +772,10 @@ XX-Large devices (larger desktops, 1400px and down)
 
   .text__subtitle {
     text-align: justify;
+  }
+
+  .footer {
+    padding: 2em 2em;
   }
 }
 
@@ -823,6 +925,10 @@ XX-Large devices (larger desktops, 1400px and down)
 
   .about__item {
     margin-bottom: 30px;
+  }
+
+  .footer {
+    padding: 2em 2em;
   }
 }
 @supports (-webkit-appearance:none){
