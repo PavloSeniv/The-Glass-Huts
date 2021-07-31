@@ -505,6 +505,85 @@ XX-Large devices (larger desktops, 1400px and down)
 
 /*----------------------------Facilities block END-------------------*/
 
+/*------------------------- Start footer -------------------*/
+
+:root {
+  --footer-bg-color: #5b6460;
+  --footer-bg-newsletter-color: #fff;
+}
+
+/*------------------------- End footer -------------------*/
+
+.footer {
+  margin-top: 50px;
+  background-color: var(--footer-bg-color);
+  padding: 8em 10em;
+}
+
+.footer__container {
+  max-width: 1408px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.footer__newsletter {
+  grid-area: my-newsletter;
+}
+
+.footer__license {
+  grid-area: my-license;
+}
+
+.footer__security-police {
+  grid-area: my-security-police;
+}
+
+/*Шаблон вигляду футера*/
+
+.footer__container {
+  grid-template-areas: "my-newsletter my-license" "my-security-police my-security-police";
+}
+
+.newsletter__title {
+  font-family: "Open Sans Semibold";
+  color: var(--footer-bg-newsletter-color);
+  font-size: 16px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.newsletter__input {
+  position: relative;
+  width: 100%;
+  background-color: var(--footer-bg-color);
+  border-bottom: 2px solid var(--footer-bg-newsletter-color);
+  padding: 3px;
+}
+
+.newsletter__input::-moz-placeholder {
+  color: var(--footer-bg-newsletter-color);
+  font-family: OpenSans-LightItalic;
+  font-size: 16px;
+}
+
+.newsletter__input:-ms-input-placeholder {
+  color: var(--footer-bg-newsletter-color);
+  font-family: OpenSans-LightItalic;
+  font-size: 16px;
+}
+
+.newsletter__input::placeholder {
+  color: var(--footer-bg-newsletter-color);
+  font-family: OpenSans-LightItalic;
+  font-size: 16px;
+}
+
+.newsletter__button {
+  position: absolute;
+}
+
 ._container {
   max-width: 1408px;
   margin: 0 auto;
