@@ -128,6 +128,98 @@
     text-align: center;
 }
 
+/*----------------------------Facilities block END-------------------*/
+
+/*--------------------------------- ContactUsStay Start----------------------------------*/
+:root {
+    --about-us-stay-color: #5b6460;
+}
+
+.about-us-stay {
+    display: grid;
+    grid-gap: 100px;
+    padding: 8em 10em;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact__title {
+    display: block;
+    font-family: OpenSans-Regular;
+    font-size: 40px;
+    color: var(--about-us-stay-color);
+    margin-bottom: 50px;
+}
+
+.contact__sub-title {
+    font-family: OpenSans-Light;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.contact__phone {
+    display: block;
+    font-family: OpenSans-Light;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.contact__mail {
+    display: block;
+    font-family: OpenSans-Light;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.link-social__item {
+    display: inline-block;
+    padding: 10px;
+    background-color: var(--about-us-stay-color);
+    border-radius: 50%;
+    margin: 0 40px;
+}
+
+.link-social__item:nth-last-child(-n+1) {
+    margin-right: 0;
+}
+
+.link-social__item:nth-child(n+1) {
+    margin-left: 0;
+}
+
+.little-book-photo {
+    width: 100%;
+}
+
+.little-book__button {
+    background-color: var(--about-us-stay-color);
+    padding: 20px;
+}
+
+.button__block {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.block__book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book__title {
+    font-family: DINPro-Light;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/*--------------------------------- ContactUsStay End----------------------------------*/
+
+
+/*--------------------------------- Media Start----------------------------------*/
 @media (min-width: 1399px) {
     .about {
         display: flex;
@@ -204,4 +296,4 @@ XX-Large devices (larger desktops, 1400px and down)
     }
 }
 
-/*----------------------------Facilities block END-------------------*/
+/*--------------------------------- Media End  ----------------------------------*/
