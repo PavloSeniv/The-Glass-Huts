@@ -10,6 +10,7 @@ let path = {
         css: project_folder + "/css/",
         js: project_folder + "/js/",
         img: project_folder + "/img/",
+        video: project_folder + "/video/",
         fonts: project_folder + "/fonts/"
     },
     //Папка із початковими файлами
@@ -20,6 +21,7 @@ let path = {
         js: source_folder + "/js/script.js",
         //Якщо не  вказати розширення також іх верхнього регістру то можливий варіант не копіювання зображення
         img: source_folder + "/img/**/*.+(png|PNG|jpg|JPG|gif|ico|svg|webp)",
+        video: source_folder + "/video/**/*.+(mp4|mp3)",
         fonts: source_folder + "/fonts/*.ttf"
     },
     //Об'єкт  для слідкування за файлами в реальному часі(browserSync)
@@ -29,6 +31,7 @@ let path = {
         css: source_folder + "/style/**/*.{css,scss,less,sass}",
         js: source_folder + "/js/**/*.js",
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+        video: source_folder + "/video/**/*.+(mp4|mp3)"
     },
     clean: "./" + project_folder + "/"
 }
@@ -204,12 +207,19 @@ function fontsStyle(params) {
 function callBack() {
 }
 
+function video(params) {
+    return src(path.src.video)
+        .pipe(dest(path.build.video))
+        .pipe(browsersync.stream())
+}
+
 //Слідкування за файлами в реальному часі
 function watchFiles(params) {
     gulp.watch([path.watch.html], html); //Для html
     gulp.watch([path.watch.css], css); // Для css
     gulp.watch([path.watch.js], js); // Для js
     gulp.watch([path.watch.img], images); // Для img
+    gulp.watch([path.watch.video], video); // Для video
 }
 
 function clean(params) {
@@ -217,9 +227,10 @@ function clean(params) {
 }
 
 //Процес виконання
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts), fontsStyle); //тут присутній варіант запису шрифтів
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, video, fonts), fontsStyle); //тут присутній варіант паралельного запису шрифтів та відео
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
+exports.video = video;
 exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;
 exports.images = images;

@@ -428,7 +428,7 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .about__photo-gallery {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin: 150px 0;
 }
@@ -543,11 +543,7 @@ XX-Large devices (larger desktops, 1400px and down)
     display: flex;
     margin: 150px 0 0 0;
     flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .about__photo-gallery {
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 
