@@ -9,7 +9,6 @@
 /*------------------------- End footer -------------------*/
 
 .footer {
-    margin-top: 50px;
     background-color: var(--footer-bg-color);
     padding: 8em 10em;
 
@@ -77,6 +76,7 @@
 
 .newsletter__button {
     position: absolute;
+    left: 90%;
     background-color: unset;
 }
 
@@ -89,12 +89,13 @@
 }
 
 .license__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+}
 
+.license__item {
+    text-align: center;
 }
 
 .license__item > a {
@@ -102,6 +103,7 @@
     font-family: DINPro-Light;
     font-size: 14px;
     text-transform: uppercase;
+    line-height: 24px;
 }
 
 .license__item > a:hover {
@@ -109,19 +111,12 @@
 }
 
 .license__list__icon {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     margin-top: 30px;
-}
-
-.list__icon__item {
-    margin: 0 50px;
-}
-
-.license__list__icon li:nth-last-child(-n+1) {
-    margin: 0;
+    align-items: center;
+    justify-items: center;
 }
 
 .footer__security-police {

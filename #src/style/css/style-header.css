@@ -6,7 +6,7 @@
     --header-font-family: DINPro-Light;
     --header-bg-color-mobile: #5B6460;
     --header-bg-menu-body-mobile: #ffffff;
-    --header-bg-menu-icon-mobile: #000000;
+    --header-bg-menu-icon-mobile: #ffffff;
     --header-menu-link-color: #000000;
     --header-menu-sub-link-color: #000000;
     --header-menu-button-bg-color: #5b6460;
@@ -37,7 +37,7 @@ body._lock {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;
+    padding: 17px 20px;
     min-height: 100px;
 }
 

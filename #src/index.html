@@ -6,7 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Glass Huts</title>
-    <link rel="icon" type="text/css" href="img/index/logo__icon.svg">
+    <!--Іконка-->
+    <link rel="shortcut icon" href="img/index/favicon.ico">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -15,7 +16,29 @@
 
 <div class="_container">
     <main>
-        <div class="about page__section-1">
+        <section class="slider-home">
+            <div class="slider-home__img">
+                <img class="slider-home__photo" src="img/index/main-slider/main__home.png" alt="main__home">
+            </div>
+            <div class="slider-home__button">
+                <div class="little-book__button">
+                    <a class="button__block" href="#">
+                        <div class="block__book">
+                            <h5 class="book__title">Book A Hut</h5>
+                        </div>
+                    </a>
+                    <div class="button__info-price">
+                        <div class="info-price__text">
+                            <p class="text__price-book_1">from</p>
+                            <p class="text__price-book_2">&euro;3.200</p>
+                            <p class="text__price-book_3">per night</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about page__section-1">
             <div class="about__text">
                 <h2 class="text__title">The Cabins</h2>
                 <p class="text__subtitle">
@@ -30,9 +53,9 @@
             <div class="">
                 <img class="photo__bad" src="img/index/about/photo__bad.png" alt="photo__bad">
             </div>
-        </div>
+        </section>
 
-        <div class="about__photo-gallery page__section-2">
+        <section class="about__photo-gallery page__section-2">
             <div class="about__photo-item">
                 <img class="about__item" src="img/index/about/about__item-1.png" alt="about__item-1">
             </div>
@@ -45,9 +68,26 @@
                     <source src="video/about__video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                 </video>
             </div>
-        </div>
+        </section>
 
-        <div class="facilities page__section-3">
+        <section class="forest">
+            <div class="forest__map">
+                <img class="map__google" src="img/index/about/about__item-1.png" alt="">
+            </div>
+            <div class="forest__info">
+                <h2 class="forest__title">The Cabins</h2>
+                <p class="forest__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda beatae consequuntur culpa
+                    delectus deserunt distinctio ea eos esse excepturi hic ipsum iusto laboriosam magnam maiores minus
+                    molestias nesciunt omnis optio, quasi qui quod sed soluta, veritatis vitae? Consectetur esse
+                    eveniet,
+                    incidunt minus nam officiis quod saepe tempora ullam velit.
+                </p>
+                <a class="forest__link" href="#">Read More</a>
+            </div>
+        </section>
+
+        <section class="facilities page__section-3">
             <div class="facilities__text">
                 <h2 class="facilities__title">Facilities</h2>
             </div>
@@ -103,9 +143,25 @@
                     <h3 class="icons__sub-title">Bedding & towels</h3>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="about-us-stay">
+        <section class="more-about-us">
+            <div class="more-about-us__photo-gallery">
+                <div class="photo-gallery__item">
+                    <img class="item__photo-gallery" src="img/index/more-about-us/more-about-us__item_1.png" alt="more-about-us__item_1">
+                </div>
+                <div class="photo-gallery__item">
+                    <img class="item__photo-gallery" src="img/index/more-about-us/more-about-us__item_2.png" alt="more-about-us__item_2">
+                </div>
+            </div>
+            <div class="more-about-us__button">
+                <a class="more-about-us__link" href="#">
+                    <h2 class="button__title-m-a-us">More about us</h2>
+                </a>
+            </div>
+        </section>
+
+        <section class="about-us-stay">
 
             <div class="about-us-stay__contact">
                 <h2 class="contact__title">Stay in touch with us</h2>
@@ -132,8 +188,8 @@
             </div>
 
             <div class="about-us-stay__little-book">
-                <div>
-                    <img class="little-book-photo" src="img/index/about-us-stay/about-as-stay__home.png" alt="stay__home">
+                <div class="little-book__img">
+                    <img class="little-book-photo" src="img/index/about-us-stay/about-as-stay__home.png" alt="stayHome">
                 </div>
                 <div class="little-book__button">
                     <a class="button__block" href="#">
@@ -151,7 +207,7 @@
                 </div>
             </div>
 
-        </div>
+        </section>
 
     </main>
 
