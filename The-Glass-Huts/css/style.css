@@ -496,12 +496,13 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .forest__map {
   grid-area: my-map;
+  width: 100%;
 }
 
 .forest__info {
   grid-area: my-forest-info;
   display: flex;
-  padding: 1em 4em;
+  padding: 10em 6em;
   background-color: #e9ece0;
   justify-content: center;
   flex-direction: column;
@@ -868,7 +869,7 @@ XX-Large devices (larger desktops, 1400px and down)
 }
 
 .newsletter__form {
-  position: relative;
+  display: grid;
 }
 
 .newsletter__title {
@@ -913,8 +914,7 @@ XX-Large devices (larger desktops, 1400px and down)
 }
 
 .newsletter__button {
-  position: absolute;
-  left: 90%;
+  display: inline-block;
   background-color: unset;
 }
 
@@ -1071,6 +1071,16 @@ XX-Large devices (larger desktops, 1400px and down)
 
   .forest {
     grid-template-areas: "my-forest-info my-forest-info" "my-map my-map";
+  }
+
+  .forest__info {
+    padding: 5em 3em;
+    text-align: justify;
+  }
+
+  .map__google {
+    width: 100%;
+    height: 600px;
   }
 
   /*Шаблон вигляду футера*/

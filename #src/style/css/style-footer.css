@@ -42,7 +42,7 @@
 }
 
 .newsletter__form {
-    position: relative;
+    display: grid;
 }
 
 .newsletter__title {
@@ -75,8 +75,7 @@
 }
 
 .newsletter__button {
-    position: absolute;
-    left: 90%;
+    display: inline-block;
     background-color: unset;
 }
 
