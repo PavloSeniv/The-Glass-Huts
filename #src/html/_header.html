@@ -1,7 +1,11 @@
 <header class="header">
     <div class="header__container">
         <a class="header__logo" href="index.html">
-            <img src="img/index/header/header__logo.svg" alt="header__logo">
+            <!--Адаптивні картинки та заміна зображення відповідно медіа запиту(також можлива заміна відносно моделі телефону(Android - header__logo 1x, iPhone - header__logo 2x - залежність від дисплею))-->
+            <picture>
+                <source srcset="img/index/header/header__logo-mobile.png, img/index/header/header__logo-mobile.webp, img/index/header/header__logo-mobile.svg" media="(max-width:767px)">
+                <img src="img/index/header/header__logo.png" srcset="img/index/header/header__logo.webp, img/index/header/header__logo.svg" alt="header__logo">
+            </picture>
         </a>
         <div class="header__menu menu">
             <div class="menu__icon">

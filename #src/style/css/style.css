@@ -128,9 +128,12 @@
 
 .forest__info {
     grid-area: my-forest-info;
-    padding: 150px 110px;
+    display: flex;
+    padding: 1em 4em;
     background-color: #e9ece0;
-
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .forest__title {
@@ -154,6 +157,10 @@
     font-family: OpenSans-Italic;
     font-size: 16px;
     color: #5B6460;
+}
+
+.forest__link:hover {
+    color: #000;
 }
 
 .forest__link::after {
@@ -224,39 +231,52 @@
 
 /*----------------------------More about us block Start-------------------*/
 
+.more-about-us {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    align-items: center;
+    justify-items: center;
+}
+
 .more-about-us__photo-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-area: 1 / 1 / 5 / 7;
+}
+
+.item__photo-gallery {
+    width: 100%;
 }
 
 .more-about-us__button {
-    display: flex;
-    width: 157px;
-    height: 157px;
-    border-radius: 50%;
-    background-color: #e9ece0;
-    justify-content: center;
-    align-items: center;
-}
-
-.more-about-us__button:hover{
-    background-color: #5B6460;
-    text-decoration-line: underline;
-    color: #ffffff;
+    grid-area: 2 / 3 / 4 / 5;
 
 }
 
-.button__title-m-a-us{
+.more-about-us__link {
     font-family: DINPro-Medium;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-    color: #000000;
+    color: #000;
+    width: 153px;
+    height: 153px;
+    border-radius: 50%;
+    background-color: #e9ece0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.button__title-m-a-us:hover{
-    color: #ffffff;
+.more-about-us__link:hover {
+    background-color: #5B6460;
+    color: #fff;
+    text-decoration-line: underline;
 }
+
 /*----------------------------More about us block End-------------------*/
 
 /*--------------------------------- ContactUsStay Start----------------------------------*/
@@ -435,7 +455,6 @@ Small devices (landscape phones, 576px and down)
 */
 @media (max-width: 576px) {
     .forest {
-        display: grid;
         grid-template-areas:
             "my-forest-info my-forest-info"
             "my-map my-map";
@@ -456,13 +475,33 @@ Small devices (landscape phones, 576px and down)
     .about-us-stay {
         padding: 3em 3em;
     }
-
 }
 
 /*
 Medium devices (tablets, 768px and down)
 */
 @media (max-width: 768px) {
+
+    .about__photo-gallery {
+        display: grid;
+        grid-template-areas:
+                "my-about-photo-item-1 my-about-photo-item-1 my-about-photo-item-1"
+                "my-about-photo-item-3 my-about-photo-item-3 my-about-photo-item-3"
+                "my-about-photo-item-2 my-about-photo-item-2 my-about-photo-item-2";
+    }
+
+    .about__photo-item_1 {
+        grid-area: my-about-photo-item-1;
+    }
+
+    .about__photo-item_2 {
+        grid-area: my-about-photo-item-2;
+    }
+
+    .about__photo-item_3 {
+        grid-area: my-about-photo-item-3;
+    }
+
     .forest {
         display: grid;
         grid-template-areas:
@@ -486,6 +525,9 @@ Medium devices (tablets, 768px and down)
         padding: 2em 2em;
     }
 
+    .more-about-us {
+        display: none;
+    }
 }
 
 /*
@@ -498,6 +540,12 @@ Large devices (desktops, 992px and down)
 
     .about-us-stay {
         padding: 4em 5em;
+    }
+
+    .forest {
+        grid-template-areas:
+            "my-forest-info my-forest-info"
+            "my-map my-map";
     }
 }
 
@@ -517,6 +565,7 @@ XX-Large devices (larger desktops, 1400px and down)
     .about__text {
         padding: 0 50px 50px 50px;
     }
+
 }
 
 /*--------------------------------- Media End  ----------------------------------*/
