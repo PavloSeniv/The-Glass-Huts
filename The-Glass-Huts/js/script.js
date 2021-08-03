@@ -104,3 +104,49 @@ if (menuLinks.length > 0) {
     }
 }
 /*End True-False*/
+
+const swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // Включення / виключення
+    // перетягування на пк
+    simulateTouch: true,
+    // Чутливість свайпу
+    touchRatio: 1,
+    // Кут роботи свайпу/перетягування
+    touchAngle: 45,
+    /*
+    // Курсор перетягування
+      grabCursor: true,
+     */
+
+    // Переключення при кліку на слайд
+    slideToClickedSlide: true,
+
+    // Навігація по хешу
+    hashNavigation: {
+        // Відстужувати стан
+        watchState: true,
+    },
+
+    // Управління клавіатурою
+    keyboard: {
+        // Включити / виключити
+        enabled: true,
+        // Включити / виключити
+        // коли слайдер в межах вьюпорта
+        onlyInViewport: true,
+        // Включити / виключити
+        // управління клавішами pageUp, pageDown
+        pageUpDown: true,
+    },
+});
+

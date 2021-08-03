@@ -1,0 +1,130 @@
+/*-------- Slider-Home Start -------*/
+
+.swiper-container {
+    margin-top: 100px;
+    max-width: 1408px;
+    max-height: 100%;
+}
+
+.slider-home {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    align-items: center;
+    justify-items: center;
+}
+
+.slider-home__img {
+    grid-area: 1/1/12/13;
+}
+
+.slider-home__photo {
+    width: 100%;
+}
+
+.slider-home__button {
+    grid-area: 11/2/13/6;
+}
+
+.slider-home__text {
+    grid-area: 2 / 5 / 5 / 12;
+}
+
+.slider-home__title {
+    font-family: OpenSans-Light;
+    font-size: 70px;
+    line-height: 72px;
+    text-align: right;
+    color: #ffffff;
+    margin-bottom: 34px;
+}
+
+.slider-home__subtitle {
+    font-family: Mulish-Regular;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: right;
+    color: #ffffff;
+}
+
+/*-------- Slider-Home End -------*/
+
+
+:root {
+    --swiper-navigation-size: 20px;
+    --swiper-theme-color: #fff;
+    --swiper-navigation-color: var(--swiper-theme-color);
+
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 80%;
+    width: calc(var(--swiper-navigation-size) / 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none !important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: initial;
+    line-height: 1;
+
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    left: 49%;
+    right: 10px;
+}
+
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+    content: 'prev';
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+    right: 10px;
+    left: 51%;
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+    content: 'next';
+}
+
+.swiper-button-prev.swiper-button-white,
+.swiper-button-next.swiper-button-white {
+    --swiper-navigation-color: #ffffff;
+}
+
+.swiper-button-prev.swiper-button-black,
+.swiper-button-next.swiper-button-black {
+    --swiper-navigation-color: #000000;
+}
+
+.swiper-button-lock {
+    display: none;
+}

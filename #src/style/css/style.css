@@ -6,38 +6,6 @@
 
 /*-------------------- All --------------------*/
 
-/*-------------------- Slider-Home Start --------------------*/
-.slider-home {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.slider-home__img {
-    margin: 100px 0 0 0;
-    grid-area: 1/1/12/13;
-    display: flex;
-    align-content: stretch;
-    align-items: flex-end;
-}
-
-.slider-home__photo {
-    width: 100%;
-}
-
-.slider-home__button {
-    display: flex;
-    grid-area: 11/3/13/6;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
-
-/*-------------------- Slider-Home End --------------------*/
-
-
 /*Start block About*/
 :root {
     --about-text-title-color: #5b6460;
@@ -387,7 +355,7 @@
 
 .button__block {
     background-color: var(--about-us-stay-color);
-    padding: 20px;
+    padding: 30px 65px;
 }
 
 .button__block:hover {

@@ -8,6 +8,8 @@
     <title>The Glass Huts</title>
     <!--Іконка-->
     <link rel="shortcut icon" href="img/index/favicon.ico">
+    <!--Для слайдера-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -16,27 +18,8 @@
 
 <div class="_container">
     <main>
-        <section class="slider-home">
-            <div class="slider-home__img">
-                <img class="slider-home__photo" src="img/index/main-slider/main__home.png" alt="main__home">
-            </div>
-            <div class="slider-home__button">
-                <div class="little-book__button">
-                    <a class="button__block" href="#">
-                        <div class="block__book">
-                            <h5 class="book__title">Book A Hut</h5>
-                        </div>
-                    </a>
-                    <div class="button__info-price">
-                        <div class="info-price__text">
-                            <p class="text__price-book_1">from</p>
-                            <p class="text__price-book_2">&euro;3.200</p>
-                            <p class="text__price-book_3">per night</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+    @@include('html/_slider-home.html')
 
         <section class="about page__section-1">
             <div class="about__text">
@@ -228,6 +211,9 @@
     @@include('html/_footer.html')
 
 </div>
+
+<!--Для слайдера-->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <script src="js/script.min.js"></script>
 
