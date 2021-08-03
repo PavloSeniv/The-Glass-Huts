@@ -16,3 +16,4 @@ Task Runner:
 3) Slider
 4) Spoiler
 5) Footer
+6) Video
