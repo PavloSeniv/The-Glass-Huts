@@ -1,5 +1,5 @@
-//Початок коду для додавання webp формату у css
 // JS-функція визначення підтримки WebP
+// Додавання webp формату у css
 function testWebP(callback) {
 
     var webP = new Image();
@@ -17,9 +17,8 @@ testWebP(function (support) {
         document.querySelector('body').classList.add('no-webp');
     }
 });
-//Кінець
 
-/*Перевірка на тип пристрою*/
+// Перевірка на тип пристрою
 "use strict"
 const isMobile = {
     Android: function () {
@@ -64,7 +63,6 @@ if (isMobile.any()) {
 }
 
 //Меню бургер
-
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
 if (iconMenu) {
@@ -74,8 +72,8 @@ if (iconMenu) {
         menuBody.classList.toggle('_active');
     });
 }
-// Прокрутка при кліку
 
+// Прокрутка при кліку
 const menuLinks = document.querySelectorAll('.menu__sub-link[data-goto]');
 if (menuLinks.length > 0) {
     menuLinks.forEach(menuLink => {
@@ -103,7 +101,6 @@ if (menuLinks.length > 0) {
         }
     }
 }
-/*End True-False*/
 
 const swiper = new Swiper('.swiper-container', {
 //  Стрілки навігації
@@ -185,13 +182,15 @@ const swiper = new Swiper('.swiper-container', {
         pageUpDown: true,
     },
 
-// Управління колесом миші
-    mousewheel: {
-// Чутливість колеса миші
-        sensitivity: 1,
-// Клас об'єкту на якому буде працювати прокрутка
-// eventsTarget: ".image-slider"
-    },
+    /*
+    // Управління колесом миші
+        mousewheel: {
+    // Чутливість колеса миші
+            sensitivity: 1,
+    // Клас об'єкту на якому буде працювати прокрутка
+    // eventsTarget: ".image-slider"
+        },
+    */
 
     /*
     // Автовисота
@@ -256,7 +255,7 @@ const swiper = new Swiper('.swiper-container', {
     speed: 2000,
 
 // Вертикальний слайдер
-    direction: 'vertical',
+    direction: 'horizontal',
 
     /*
         // Ефекти перемикання слайдів
@@ -407,4 +406,3 @@ dynamicBullets: true,
 nested: true,
 });
 */
-

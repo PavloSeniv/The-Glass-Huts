@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/*-------- Fonts -------*/
+
 @font-face {
   font-family: "CrimsonPro-Regular";
   font-display: swap;
@@ -104,7 +106,9 @@
   font-style: normal;
 }
 
-/*Стилі для обнулення*/
+/*-------- Fonts -------*/
+
+/*-------- Обнулення -------*/
 
 * {
   padding: 0;
@@ -138,6 +142,7 @@ aside {
 html,
 body {
   width: 100%;
+  height: 100%;
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
@@ -192,9 +197,9 @@ h6 {
   font-weight: 400;
 }
 
-/*Кінець  обнулення*/
+/*-------- Обнулення -------*/
 
-/*----------------Стилі шапки----------------*/
+/*-------- Header Start -------*/
 
 :root {
   --header-bg-color: #ffffff;
@@ -363,14 +368,13 @@ body._touch .menu__list > li._active .menu__arrow {
 
 /*----------------------------------*/
 
-/*--------------------End Header---------*/
+/*-------- Header End -------*/
 
 /*-------- Slider-Home Start -------*/
 
 .swiper-container {
   margin-top: 100px;
   max-width: 1408px;
-  max-height: 750px;
 }
 
 .slider-home {
@@ -416,7 +420,7 @@ body._touch .menu__list > li._active .menu__arrow {
   color: #ffffff;
 }
 
-/*-------- Slider-Home End -------*/
+/*-------- Swiper -------*/
 
 :root {
   --swiper-navigation-size: 20px;
@@ -500,7 +504,9 @@ body._touch .menu__list > li._active .menu__arrow {
   top: 25%;
 }
 
-/*-------------------- All --------------------*/
+/*-------- Slider-Home End -------*/
+
+/*-------- All -------*/
 
 ::-moz-selection {
   background-color: #41906d;
@@ -512,15 +518,26 @@ body._touch .menu__list > li._active .menu__arrow {
   color: #fff;
 }
 
-/*-------------------- All --------------------*/
-
-/*Start block About*/
-
 :root {
   --about-text-title-color: #5b6460;
   --about-link-text-color: #5b6460;
   --about-link-line-color: #5b6460;
+  --facilities-bg-color: #5b6460;
+  --facilities-color-text: #fff;
+  --facilities-sub-title-color: #fff;
+  --about-us-stay-color: #5b6460;
+  --about-us-stay-color-hover: #808e88;
+  --button-us-stay-price-info-bg-color: #e9ece0;
 }
+
+._container {
+  max-width: 1408px;
+  margin: 0 auto;
+}
+
+/*-------- All -------*/
+
+/*-------- About Start -------*/
 
 .about {
   display: flex;
@@ -587,9 +604,9 @@ body._touch .menu__list > li._active .menu__arrow {
   width: 100%;
 }
 
-/*End block About*/
+/*-------- About End -------*/
 
-/*----------------------------Forest block start-------------------*/
+/*-------- Forest Start -------*/
 
 .forest {
   display: grid;
@@ -652,15 +669,9 @@ body._touch .menu__list > li._active .menu__arrow {
   width: 100%;
 }
 
-/*----------------------------Forest block end-------------------*/
+/*-------- Forest End -------*/
 
-/*----------------------------Facilities block-------------------*/
-
-:root {
-  --facilities-bg-color: #5b6460;
-  --facilities-color-text: #fff;
-  --facilities-sub-title-color: #fff;
-}
+/*-------- Facilities Start -------*/
 
 .facilities {
   background-color: var(--facilities-bg-color);
@@ -702,9 +713,9 @@ body._touch .menu__list > li._active .menu__arrow {
   text-align: center;
 }
 
-/*----------------------------Facilities block END-------------------*/
+/*-------- Facilities End -------*/
 
-/*----------------------------More about us block Start-------------------*/
+/*-------- More-About-Us Start -------*/
 
 .more-about-us {
   display: grid;
@@ -752,15 +763,9 @@ body._touch .menu__list > li._active .menu__arrow {
   text-decoration-line: underline;
 }
 
-/*----------------------------More about us block End-------------------*/
+/*-------- More-About-Us End -------*/
 
-/*--------------------------------- ContactUsStay Start----------------------------------*/
-
-:root {
-  --about-us-stay-color: #5b6460;
-  --about-us-stay-color-hover: #808e88;
-  --button-us-stay-price-info-bg-color: #e9ece0;
-}
+/*-------- Contact-Us-Stay Start -------*/
 
 .about-us-stay {
   display: grid;
@@ -908,37 +913,15 @@ body._touch .menu__list > li._active .menu__arrow {
   justify-content: flex-end;
 }
 
-/*--------------------------------- ContactUsStay End----------------------------------*/
+/*-------- Contact-Us-Stay End -------*/
 
-/*--------------------------------- Media Start----------------------------------*/
-
-/*
-Small devices (landscape phones, 576px and down)
-*/
-
-/*
-Medium devices (tablets, 768px and down)
-*/
-
-/*
-Large devices (desktops, 992px and down)
-*/
-
-/*
-XX-Large devices (larger desktops, 1400px and down)
-*/
-
-/*--------------------------------- Media End  ----------------------------------*/
-
-/*------------------------- Start footer -------------------*/
+/*-------- Footer Start -------*/
 
 :root {
   --footer-bg-color: #5b6460;
   --footer-bg-newsletter-color: #fff;
   --footer-newsletter-sub-text-color: #fff;
 }
-
-/*------------------------- End footer -------------------*/
 
 .footer {
   background-color: var(--footer-bg-color);
@@ -1067,34 +1050,7 @@ XX-Large devices (larger desktops, 1400px and down)
   color: var(--footer-bg-newsletter-color);
 }
 
-/*
-No media query for `xs` since this is the default in Bootstrap
-*/
-
-/*
-Small devices (landscape phones, 576px and down)
-*/
-
-/*
-Medium devices (tablets, 768px and down)
-*/
-
-/*
-Large devices (desktops, 992px and down)
-*/
-
-/*
-X-Large devices (large desktops, 1200px and down)
-*/
-
-/*
-XX-Large devices (larger desktops, 1400px and down)
-*/
-
-._container {
-  max-width: 1408px;
-  margin: 0 auto;
-}
+/*-------- Footer End -------*/
 
 @media (min-width: 575px) {
   .about__item {
@@ -1185,8 +1141,6 @@ XX-Large devices (larger desktops, 1400px and down)
     width: 100%;
     height: 600px;
   }
-
-  /*Шаблон вигляду футера*/
 
   .footer__container {
     grid-template-areas: "my-newsletter my-newsletter" "my-license my-license" "my-security-police my-security-police";

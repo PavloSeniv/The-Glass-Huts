@@ -1,5 +1,4 @@
-/*----------------Стилі шапки----------------*/
-
+/*-------- Header Start -------*/
 :root {
     --header-bg-color: #ffffff;
     --header-width-container: 1408px;
@@ -14,7 +13,6 @@
     --header-menu-button-color-hover: #808e88;
     --header-menu-button-color-act-foc: #79857f;
     --header-menu-arrow-color: #000000;
-
 }
 
 body._lock {
@@ -343,4 +341,4 @@ body._touch .menu__list > li._active .menu__arrow {
     }
 }
 
-/*--------------------End Header---------*/
+/*-------- Header End -------*/

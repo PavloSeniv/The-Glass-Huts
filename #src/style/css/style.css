@@ -1,18 +1,32 @@
-/*-------------------- All --------------------*/
+/*-------- All -------*/
 ::selection {
     background-color: #41906d;
     color: #fff;
 }
 
-/*-------------------- All --------------------*/
-
-/*Start block About*/
 :root {
     --about-text-title-color: #5b6460;
     --about-link-text-color: #5b6460;
     --about-link-line-color: #5b6460;
+
+    --facilities-bg-color: #5b6460;
+    --facilities-color-text: #fff;
+    --facilities-sub-title-color: #fff;
+
+    --about-us-stay-color: #5b6460;
+    --about-us-stay-color-hover: #808e88;
+    --button-us-stay-price-info-bg-color: #e9ece0;
+
 }
 
+._container {
+    max-width: 1408px;
+    margin: 0 auto;
+}
+
+/*-------- All -------*/
+
+/*-------- About Start -------*/
 .about {
     display: flex;
     margin: 50px 0 0 0;
@@ -78,10 +92,9 @@
     width: 100%;
 }
 
-/*End block About*/
+/*-------- About End -------*/
 
-/*----------------------------Forest block start-------------------*/
-
+/*-------- Forest Start -------*/
 .forest {
     display: grid;
     grid-template-areas:
@@ -145,17 +158,9 @@
     width: 100%;
 }
 
+/*-------- Forest End -------*/
 
-/*----------------------------Forest block end-------------------*/
-
-/*----------------------------Facilities block-------------------*/
-
-:root {
-    --facilities-bg-color: #5b6460;
-    --facilities-color-text: #fff;
-    --facilities-sub-title-color: #fff;
-}
-
+/*-------- Facilities Start -------*/
 .facilities {
     background-color: var(--facilities-bg-color);
     padding: 10em 20em;
@@ -196,10 +201,9 @@
     text-align: center;
 }
 
-/*----------------------------Facilities block END-------------------*/
+/*-------- Facilities End -------*/
 
-/*----------------------------More about us block Start-------------------*/
-
+/*-------- More-About-Us Start -------*/
 .more-about-us {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -246,15 +250,9 @@
     text-decoration-line: underline;
 }
 
-/*----------------------------More about us block End-------------------*/
+/*-------- More-About-Us End -------*/
 
-/*--------------------------------- ContactUsStay Start----------------------------------*/
-:root {
-    --about-us-stay-color: #5b6460;
-    --about-us-stay-color-hover: #808e88;
-    --button-us-stay-price-info-bg-color: #e9ece0;
-}
-
+/*-------- Contact-Us-Stay Start -------*/
 .about-us-stay {
     display: grid;
     grid-gap: 100px;
@@ -401,10 +399,8 @@
     justify-content: flex-end;
 }
 
-/*--------------------------------- ContactUsStay End----------------------------------*/
+/*-------- Contact-Us-Stay End -------*/
 
-
-/*--------------------------------- Media Start----------------------------------*/
 @media (min-width: 1399px) {
     .about {
         display: flex;
@@ -419,9 +415,6 @@
     }
 }
 
-/*
-Small devices (landscape phones, 576px and down)
-*/
 @media (max-width: 576px) {
     .forest {
         grid-template-areas:
@@ -446,9 +439,6 @@ Small devices (landscape phones, 576px and down)
     }
 }
 
-/*
-Medium devices (tablets, 768px and down)
-*/
 @media (max-width: 768px) {
 
     .about__photo-gallery {
@@ -499,9 +489,6 @@ Medium devices (tablets, 768px and down)
     }
 }
 
-/*
-Large devices (desktops, 992px and down)
-*/
 @media (max-width: 992px) {
     .facilities {
         padding: 5em 5em;
@@ -536,9 +523,6 @@ Large devices (desktops, 992px and down)
 
 }
 
-/*
-XX-Large devices (larger desktops, 1400px and down)
-*/
 @media (max-width: 1400px) {
 
     .about__text {
@@ -546,5 +530,3 @@ XX-Large devices (larger desktops, 1400px and down)
     }
 
 }
-
-/*--------------------------------- Media End  ----------------------------------*/

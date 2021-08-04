@@ -1,4 +1,5 @@
 // JS-функція визначення підтримки WebP
+// Додавання webp формату у css
 function testWebP(callback) {
 
     var webP = new Image();

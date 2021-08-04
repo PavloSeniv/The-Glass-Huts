@@ -78,13 +78,15 @@ const swiper = new Swiper('.swiper-container', {
         pageUpDown: true,
     },
 
-// Управління колесом миші
-    mousewheel: {
-// Чутливість колеса миші
-        sensitivity: 1,
-// Клас об'єкту на якому буде працювати прокрутка
-// eventsTarget: ".image-slider"
-    },
+    /*
+    // Управління колесом миші
+        mousewheel: {
+    // Чутливість колеса миші
+            sensitivity: 1,
+    // Клас об'єкту на якому буде працювати прокрутка
+    // eventsTarget: ".image-slider"
+        },
+    */
 
     /*
     // Автовисота
@@ -149,7 +151,7 @@ const swiper = new Swiper('.swiper-container', {
     speed: 2000,
 
 // Вертикальний слайдер
-    direction: 'vertical',
+    direction: 'horizontal',
 
     /*
         // Ефекти перемикання слайдів

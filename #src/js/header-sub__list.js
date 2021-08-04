@@ -1,4 +1,4 @@
-/*Перевірка на тип пристрою*/
+// Перевірка на тип пристрою
 "use strict"
 const isMobile = {
     Android: function () {
@@ -43,7 +43,6 @@ if (isMobile.any()) {
 }
 
 //Меню бургер
-
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
 if (iconMenu) {
@@ -53,8 +52,8 @@ if (iconMenu) {
         menuBody.classList.toggle('_active');
     });
 }
-// Прокрутка при кліку
 
+// Прокрутка при кліку
 const menuLinks = document.querySelectorAll('.menu__sub-link[data-goto]');
 if (menuLinks.length > 0) {
     menuLinks.forEach(menuLink => {
@@ -82,4 +81,3 @@ if (menuLinks.length > 0) {
         }
     }
 }
-/*End True-False*/
