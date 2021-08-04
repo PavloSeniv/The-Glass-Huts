@@ -33,7 +33,7 @@ let SliderHome = new Swiper('.swiper-container', {
         */
 
 
-        // Прогрессбар
+// Прогрессбар
         type: 'progressbar'
 
     },
@@ -55,8 +55,8 @@ let SliderHome = new Swiper('.swiper-container', {
 
     /*
     // Курсор перетягування
-       grabCursor: true,
-       */
+    grabCursor: true,
+    */
 
 
 // Переключення при кліку на слайд
@@ -82,12 +82,12 @@ let SliderHome = new Swiper('.swiper-container', {
 
     /*
     // Управління колесом миші
-        mousewheel: {
+    mousewheel: {
     // Чутливість колеса миші
-            sensitivity: 1,
+    sensitivity: 1,
     // Клас об'єкту на якому буде працювати прокрутка
     // eventsTarget: ".image-slider"
-        },
+    },
     */
 
     /*
@@ -132,8 +132,10 @@ let SliderHome = new Swiper('.swiper-container', {
 // Бескінечність
     loop: true,
 
+
 // К-сть дубльованих слайдів
     loopedSlides: 3,
+
 
     /*
     freeMode: true,
@@ -158,17 +160,17 @@ let SliderHome = new Swiper('.swiper-container', {
     direction: 'horizontal',
 
     /*
-        // Ефекти перемикання слайдів
-        // Перегортування
-        effect: 'slide', // Ефект по дефолту
+    // Ефекти перемикання слайдів
+    // Перегортування
+    effect: 'slide', // Ефект по дефолту
     */
 
 
-    // Заміна прозорості
+// Заміна прозорості
     effect: 'fade',
-    // Доповнення до fade
+// Доповнення до fade
     fadeEffect: {
-        // Паралельна зміна прозорості
+// Паралельна зміна прозорості
         crossFade: true
     },
 
@@ -312,11 +314,11 @@ nested: true,
 let sliderPhoto = document.querySelector('.swiper-wrapper');
 
 sliderPhoto.addEventListener("mouseenter", function (e) {
-    SliderHome.params.autoplay.disableOnInteraction = false;
-    SliderHome.params.autoplay.delay = 500;
-    SliderHome.autoplay.start();
+SliderHome.params.autoplay.disableOnInteraction = false;
+SliderHome.params.autoplay.delay = 500;
+SliderHome.autoplay.start();
 });
 
 sliderPhoto.addEventListener("mouseleave", function (e) {
-    sliderPhoto.autoplay.stop();
+sliderPhoto.autoplay.stop();
 });*/

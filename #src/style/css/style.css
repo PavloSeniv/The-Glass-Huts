@@ -29,13 +29,13 @@
 /*-------- About Start -------*/
 .about {
     display: flex;
-    margin: 50px 0 0 0;
+    margin: 100px 0 0 0;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .about__text {
-    width: 50%;
+    flex: 0 0 50%;
     padding: 89px 105px 0 147px;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .about__photo {
-    width: 50%;
+    flex: 0 0 50%
 }
 
 .photo__bad {
@@ -254,10 +254,13 @@
 
 /*-------- Contact-Us-Stay Start -------*/
 .about-us-stay {
-    display: grid;
-    grid-gap: 100px;
+    display: flex;
+    flex-wrap: wrap;
     padding: 8em 10em;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.about-us-stay__contact {
+    flex: 0 0 50%;
 }
 
 .contact__title {
@@ -336,9 +339,7 @@
 
 .about-us-stay__little-book {
     padding: 45px 0;
-    display: grid;
-    justify-content: center;
-    align-content: center;
+    flex: 0 0 50%;
 }
 
 .little-book-photo {
@@ -401,7 +402,7 @@
 
 /*-------- Contact-Us-Stay End -------*/
 
-@media (min-width: 1399px) {
+@media (min-width: 1400px) {
     .about {
         display: flex;
         flex-wrap: wrap;
@@ -409,13 +410,13 @@
     }
 }
 
-@media (min-width: 575px) {
+@media (min-width: 576px) {
     .about__item {
         margin-bottom: 30px;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .forest {
         grid-template-areas:
             "my-forest-info my-forest-info"
@@ -437,9 +438,13 @@
     .about-us-stay {
         padding: 3em 3em;
     }
+
+    .contact__title {
+        font-size: 27px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .about__photo-gallery {
         display: grid;
@@ -487,9 +492,10 @@
     .more-about-us {
         display: none;
     }
+
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .facilities {
         padding: 5em 5em;
     }
@@ -513,17 +519,44 @@
         width: 100%;
         height: 600px;
     }
-}
-
-@media (max-width: 1200px) {
 
     .about__text {
-        padding: 20px 0;
+        flex: 0 0 100%;
+        padding: 20px 20px;
+    }
+
+    .about__photo {
+        flex: 0 0 100%
+    }
+
+    .about-us-stay__contact {
+        display: flex;
+        flex: 0 0 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .about-us-stay__little-book {
+        padding: 0;
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .about__text {
+        padding: 20px 20px;
+    }
+
+    .contact__title {
+        font-size: 35px;
     }
 
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1399px) {
 
     .about__text {
         padding: 0 50px 50px 50px;

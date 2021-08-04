@@ -65,11 +65,13 @@ if (isMobile.any()) {
 //Меню бургер
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
+const menuButton = document.querySelector('.menu__button');
 if (iconMenu) {
     iconMenu.addEventListener('click', function (e) {
         document.body.classList.toggle('_lock')
         iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
+        menuButton.classList.toggle('_active');
     });
 }
 
@@ -91,6 +93,8 @@ if (menuLinks.length > 0) {
                 document.body.classList.remove('_lock')
                 iconMenu.classList.remove('_active');
                 menuBody.classList.remove('_active');
+                menuButton.classList.remove('_active');
+
             }
             //Для плавної прокрутки
             window.scrollTo({
@@ -137,7 +141,7 @@ let SliderHome = new Swiper('.swiper-container', {
         */
 
 
-        // Прогрессбар
+// Прогрессбар
         type: 'progressbar'
 
     },
@@ -159,8 +163,8 @@ let SliderHome = new Swiper('.swiper-container', {
 
     /*
     // Курсор перетягування
-       grabCursor: true,
-       */
+    grabCursor: true,
+    */
 
 
 // Переключення при кліку на слайд
@@ -186,12 +190,12 @@ let SliderHome = new Swiper('.swiper-container', {
 
     /*
     // Управління колесом миші
-        mousewheel: {
+    mousewheel: {
     // Чутливість колеса миші
-            sensitivity: 1,
+    sensitivity: 1,
     // Клас об'єкту на якому буде працювати прокрутка
     // eventsTarget: ".image-slider"
-        },
+    },
     */
 
     /*
@@ -236,8 +240,10 @@ let SliderHome = new Swiper('.swiper-container', {
 // Бескінечність
     loop: true,
 
+
 // К-сть дубльованих слайдів
     loopedSlides: 3,
+
 
     /*
     freeMode: true,
@@ -262,17 +268,17 @@ let SliderHome = new Swiper('.swiper-container', {
     direction: 'horizontal',
 
     /*
-        // Ефекти перемикання слайдів
-        // Перегортування
-        effect: 'slide', // Ефект по дефолту
+    // Ефекти перемикання слайдів
+    // Перегортування
+    effect: 'slide', // Ефект по дефолту
     */
 
 
-    // Заміна прозорості
+// Заміна прозорості
     effect: 'fade',
-    // Доповнення до fade
+// Доповнення до fade
     fadeEffect: {
-        // Паралельна зміна прозорості
+// Паралельна зміна прозорості
         crossFade: true
     },
 
@@ -416,11 +422,11 @@ nested: true,
 let sliderPhoto = document.querySelector('.swiper-wrapper');
 
 sliderPhoto.addEventListener("mouseenter", function (e) {
-    SliderHome.params.autoplay.disableOnInteraction = false;
-    SliderHome.params.autoplay.delay = 500;
-    SliderHome.autoplay.start();
+SliderHome.params.autoplay.disableOnInteraction = false;
+SliderHome.params.autoplay.delay = 500;
+SliderHome.autoplay.start();
 });
 
 sliderPhoto.addEventListener("mouseleave", function (e) {
-    sliderPhoto.autoplay.stop();
+sliderPhoto.autoplay.stop();
 });*/

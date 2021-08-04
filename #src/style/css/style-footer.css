@@ -37,10 +37,6 @@
             "my-security-police my-security-police";
 }
 
-.newsletter__form {
-    display: grid;
-}
-
 .newsletter__title {
     font-family: "Open Sans Semibold";
     color: var(--footer-bg-newsletter-color);
@@ -50,7 +46,7 @@
 }
 
 .newsletter__input {
-    width: 100%;
+    width: 90%;
     background-color: var(--footer-bg-color);
     border-bottom: 2px solid var(--footer-bg-newsletter-color);
     padding: 3px;
@@ -71,6 +67,7 @@
 }
 
 .newsletter__button {
+    position: absolute;
     display: inline-block;
     background-color: unset;
 }
@@ -83,17 +80,17 @@
     line-height: 20px;
 }
 
-.license__list {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+.footer__license-text {
+    display: flex;
+    margin-bottom: 30px;
 }
 
-.license__item {
+.footer__license-item-text {
     text-align: center;
+    flex: 0 0 33.333%;
 }
 
-.license__item > a {
+.footer__license-item-text > a {
     color: var(--footer-bg-newsletter-color);
     font-family: DINPro-Light;
     font-size: 14px;
@@ -101,17 +98,18 @@
     line-height: 24px;
 }
 
-.license__item > a:hover {
+.footer__license-item-text > a:hover {
     text-decoration-line: underline;
 }
 
-.license__list__icon {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    margin-top: 30px;
+.footer__license-icon {
+    display: flex;
     align-items: center;
-    justify-items: center;
+}
+
+.footer__license-item {
+    flex: 0 0 25%;
+    text-align: center;
 }
 
 .footer__security-police {
@@ -120,19 +118,19 @@
     color: var(--footer-bg-newsletter-color);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .footer {
         padding: 2em 2em;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .footer {
         padding: 2em 2em;
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .footer__container {
         grid-template-areas:
             "my-newsletter my-newsletter"
@@ -143,12 +141,6 @@
     .footer {
         padding: 4em 5em;
     }
-}
-
-@media (max-width: 1200px) {
-}
-
-@media (max-width: 1400px) {
 }
 
 /*-------- Footer End -------*/

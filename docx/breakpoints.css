@@ -1,66 +1,57 @@
-/*
-No media query for `xs` since this is the default in Bootstrap
-*/
-
-/*
-Small devices (landscape phones, 576px and down)
-*/
-@media (max-width: 576px) {
-}
-
-/*
-Medium devices (tablets, 768px and down)
-*/
-@media (max-width: 768px) {
-}
-
-/*
-Large devices (desktops, 992px and down)
-*/
-@media (max-width: 992px) {
-}
-
-/*
-X-Large devices (large desktops, 1200px and down)
-*/
-@media (max-width: 1200px) {
-}
-
-
-@media (min-width: 1201px) and (max-width: 1408px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
 
 }
 
-@media (min-width: 993px) and (max-width: 1200px) {
-
-
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
 
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
 
 }
 
-@media (min-width: 361px) and (max-width: 575px) {
+@media (min-width: 576px) and (max-width: 767px) {
 
 }
 
-@media (max-width: 576px) {
+/* PC first*/
+@media (max-width: 575px) {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
+
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1399px) {
+
 }
 
+/* Mobile First*/
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
