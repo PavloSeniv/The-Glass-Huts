@@ -47,3 +47,20 @@ X-Large devices (large desktops, 1200px and down)
 @media (min-width: 361px) and (max-width: 575px) {
 
 }
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1400px) {
+}
+

@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+let SliderHome = new Swiper('.swiper-container', {
 //  Стрілки навігації
     navigation: {
         nextEl: '.swiper-button-next',
@@ -42,23 +42,25 @@ const swiper = new Swiper('.swiper-container', {
     scrollbar: {
         el: '.swiper-scrollbar',
 // Можливість перетягування скролу
-        draggable: true,
+        draggable: false,
     },
 
 // Включення / виключення
 // перетягування на пк
     simulateTouch: true,
 // Чутливість свайпу
-    touchRatio: 1,
+    touchRatio: 5,
 // Кут роботи свайпу/перетягування
     touchAngle: 45,
+
     /*
     // Курсор перетягування
-    grabCursor: true,
-    */
+       grabCursor: true,
+       */
+
 
 // Переключення при кліку на слайд
-    slideToClickedSlide: true,
+    slideToClickedSlide: false,
 
 // Навігація по хешу
     hashNavigation: {
@@ -137,6 +139,7 @@ const swiper = new Swiper('.swiper-container', {
     freeMode: true,
     */
 
+
 // Атопрокрутка
     autoplay: {
 // Пауза між прокртукою
@@ -146,6 +149,7 @@ const swiper = new Swiper('.swiper-container', {
 // Відключити після ручного управління
         disableOnInteraction: false
     },
+
 
 // Скорость
     speed: 2000,
@@ -302,3 +306,17 @@ dynamicBullets: true,
 nested: true,
 });
 */
+
+
+/*
+let sliderPhoto = document.querySelector('.swiper-wrapper');
+
+sliderPhoto.addEventListener("mouseenter", function (e) {
+    SliderHome.params.autoplay.disableOnInteraction = false;
+    SliderHome.params.autoplay.delay = 500;
+    SliderHome.autoplay.start();
+});
+
+sliderPhoto.addEventListener("mouseleave", function (e) {
+    sliderPhoto.autoplay.stop();
+});*/
