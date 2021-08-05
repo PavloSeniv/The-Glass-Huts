@@ -385,6 +385,8 @@ body._touch .menu__list > li._active .menu__arrow {
 
 /*-------- Header End -------*/
 
+/*-------- index Start -------*/
+
 /*-------- Slider-Home Start -------*/
 
 .swiper-container {
@@ -895,6 +897,8 @@ body._touch .menu__list > li._active .menu__arrow {
 
 /*-------- Contact-Us-Stay End -------*/
 
+/*-------- index End -------*/
+
 /*-------- Footer Start -------*/
 
 :root {
@@ -1029,6 +1033,125 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 /*-------- Footer End -------*/
+
+/*-------- Page The Area Start -------*/
+
+/*-------- Background Photo Start -------*/
+
+.photo-background {
+  margin: 100px 0;
+  position: relative;
+}
+
+.photo-img__back {
+  width: 100%;
+}
+
+.photo-background__info {
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 40%;
+  padding: 0 20px;
+  -moz-text-align-last: center;
+  text-align-last: center;
+}
+
+.photo-background__title {
+  font-family: OpenSans-Light;
+  font-size: 70px;
+  line-height: 72px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.photo-background__subtitle-location {
+  font-family: OpenSans-Light;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.photo-background__button {
+  font-family: DINPro-Light;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  width: 180px;
+  margin: 0 auto;
+  padding: 15px 30px;
+  border: 1px solid #fff;
+}
+
+.photo-background__button:hover {
+  background-color: #5b6460;
+}
+
+.photo-background__button:active,
+.photo-background__button :focus {
+  background-color: #79857f;
+}
+
+/*-------- Background Photo End -------*/
+
+/*-------- Slider Info Start -------*/
+
+.slider-info {
+  display: flex;
+  margin-bottom: 100px;
+  padding: 0 100px;
+}
+
+.slider-info__swiper {
+  flex: 0 0 50%;
+  display: flex;
+}
+
+.swiper-slide__photo {
+  width: 100%;
+}
+
+.slider-info__text {
+  display: flex;
+  flex: 0 0 50%;
+  padding-left: 100px;
+  flex-direction: column;
+}
+
+.text__title-slider {
+  font-family: OpenSans-Regular;
+  font-size: 40px;
+  line-height: 40px;
+  color: #5b6460;
+  margin-bottom: 50px;
+}
+
+.text__subtitle-slider {
+  font-family: OpenSans-Regular;
+  font-size: 24px;
+  line-height: 36px;
+  color: #5b6460;
+  margin-bottom: 30px;
+}
+
+.text__info-slider {
+  font-family: OpenSans-Light;
+  font-size: 16px;
+  line-height: 30px;
+  color: #333333;
+}
+
+/*-------- Slider Info End -------*/
+
+/*-------- Page The Area End -------*/
 
 @media (min-width: 576px) {
   .about__item {

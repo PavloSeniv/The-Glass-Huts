@@ -11,7 +11,16 @@
 
 @import "fonts";
 @import "../css/nullstyle";
+
 @import "../css/style-header";
+
+/*-------- index Start -------*/
 @import "../css/slider-home";
 @import "../css/style";
+/*-------- index End -------*/
+
 @import "../css/style-footer";
+
+/*-------- Page The Area Start -------*/
+@import "The-Area";
+/*-------- Page The Area End -------*/

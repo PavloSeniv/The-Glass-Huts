@@ -1,0 +1,120 @@
+/*-------- Background Photo Start -------*/
+// Variable
+$color-font-white: #fff;
+$color-bg: #5b6460;
+$color-bg-active: #79857f;
+$color-font-gray-1: #333333;
+
+.photo-background {
+  margin: 100px 0;
+  position: relative;
+
+}
+
+.photo-img__back {
+  width: 100%;
+}
+
+.photo-background__info {
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 40%;
+  padding: 0 20px;
+  text-align-last: center;
+}
+
+.photo-background__title {
+  font-family: OpenSans-Light;
+  font-size: 70px;
+  line-height: 72px;
+  text-align: center;
+  color: $color-font-white;
+  margin-bottom: 15px;
+}
+
+.photo-background__subtitle-location {
+  font-family: OpenSans-Light;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: $color-font-white;
+  margin-bottom: 50px;
+}
+
+.photo-background__subtitle-location::marker {
+
+}
+
+.photo-background__button {
+  font-family: DINPro-Light;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-font-white;
+  letter-spacing: 1px;
+  width: 180px;
+  margin: 0 auto;
+  padding: 15px 30px;
+  border: 1px solid $color-font-white;
+
+  &:hover {
+    background-color: $color-bg;
+  }
+
+  &:active, :focus {
+    background-color: $color-bg-active;
+  }
+}
+
+/*-------- Background Photo End -------*/
+/*-------- Slider Info Start -------*/
+.slider-info {
+  display: flex;
+  margin-bottom: 100px;
+  padding: 0 100px;
+}
+
+.slider-info__swiper {
+  flex: 0 0 50%;
+  display: flex;
+}
+
+.swiper-slide__photo {
+  width: 100%;
+}
+
+.slider-info__text {
+  display: flex;
+  flex: 0 0 50%;
+  padding-left: 100px;
+  flex-direction: column;
+}
+
+.text__title-slider {
+  font-family: OpenSans-Regular;
+  font-size: 40px;
+  line-height: 40px;
+  color: $color-bg;
+  margin-bottom: 50px;
+}
+
+.text__subtitle-slider {
+  font-family: OpenSans-Regular;
+  font-size: 24px;
+  line-height: 36px;
+  color: $color-bg;
+  margin-bottom: 30px;
+}
+
+.text__info-slider {
+  font-family: OpenSans-Light;
+  font-size: 16px;
+  line-height: 30px;
+  color: $color-font-gray-1;
+}
+
+/*-------- Slider Info End -------*/
+
