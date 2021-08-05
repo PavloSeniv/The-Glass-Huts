@@ -11,7 +11,7 @@
     --header-menu-button-bg-color: #5b6460;
     --header-menu-button-color: #ffffff;
     --header-menu-button-color-hover: #808e88;
-    --header-menu-button-color-act-foc: #79857f;
+    --header-menu-button-color-active: #79857f;
     --header-menu-arrow-color: #000000;
 }
 
@@ -36,13 +36,15 @@ body._lock {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 17px 20px;
+    padding: 0 20px;
     min-height: 100px;
 }
 
 .header__logo {
     position: relative;
     z-index: 5;
+    display: flex;
+    flex: 0 0 auto;
 }
 
 .menu__icon {
@@ -51,15 +53,18 @@ body._lock {
 
 .menu__body {
     display: flex;
+    flex: 0 0 60%;
 }
 
 .menu__list > li {
     position: relative;
-    margin: 0 0 0 10px;
+    margin: 0 10px;
 }
 
 .menu__link {
     font-size: 14px;
+    text-align: center;
+    line-height: 17px;
     text-transform: uppercase;
     color: var(--header-menu-link-color);
 }
@@ -72,22 +77,23 @@ body._lock {
     position: absolute;
     top: 100%;
     right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
     padding: 3px 0;
 }
 
-.menu__sub-list li {
-    margin: 0 0 10px 0;
+.menu__sub-list img {
+    display: block;
+    margin: 0 auto 5px auto;
 }
 
-.menu__sub-list li:last-child {
-    margin: 0;
+.menu__sub-list li {
+    margin: 10px 0;
 }
 
 .menu__sub-link {
-    color: var(--header-menu-sub-link-color);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    -webkit-text-stroke: thin #000000;
 }
 
 .menu__sub-link:hover {
@@ -98,10 +104,19 @@ body._lock {
     display: none;
 }
 
-.menu__button {
+.menu__button-mobile {
+    display: none;
+}
+
+.menu__button-mobile._active {
+    display: none;
+}
+
+.menu__button-desktop {
     position: relative;
     z-index: 5;
     display: flex;
+    flex: 0 0 auto;
     align-items: center;
     justify-content: center;
     font-size: 14px;
@@ -112,12 +127,12 @@ body._lock {
     color: var(--header-menu-button-color);
 }
 
-.menu__button:hover {
+.menu__button-desktop:hover {
     background-color: var(--header-menu-button-color-hover);
 }
 
-.menu__button:active, :focus {
-    background-color: var(--header-menu-button-color-act-foc);
+.menu__button-desktop:active, :focus {
+    background-color: var(--header-menu-button-color-active);
 }
 
 /*----------------------------------*/
@@ -162,29 +177,11 @@ body._touch .menu__list > li._active .menu__arrow {
 
 /*----------------------------------*/
 
-@media (max-width: 1199px) {
-    .menu__list {
-        margin: 0 75px 0 0;
-    }
-}
-
-@media (max-width: 991px) {
-    .header__logo {
-        padding-left: 20px;
-    }
-
-    .menu__list {
-        margin: 0 35px 0 0;
-    }
-}
-
 @media (min-width: 768px) {
     .menu__list {
         display: flex;
-    }
-
-    .menu__list > li {
-        padding: 10px 0;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     .menu__sub-list {
@@ -284,7 +281,6 @@ body._touch .menu__list > li._active .menu__arrow {
         z-index: 2;
     }
 
-
     .menu__list {
         margin: 0;
     }
@@ -303,10 +299,7 @@ body._touch .menu__list > li._active .menu__arrow {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-    }
-
-    .menu__sub-list li:last-child {
-        margin: 0 0 10px 0;
+        flex-wrap: wrap;
     }
 
     .menu__link {
@@ -319,7 +312,6 @@ body._touch .menu__list > li._active .menu__arrow {
         margin: 20px 0 0 0;
         display: none;
         padding: 0;
-
     }
 
     .menu__sub-link {
@@ -327,8 +319,36 @@ body._touch .menu__list > li._active .menu__arrow {
         color: var(--header-menu-sub-link-color);
     }
 
-    .menu__button {
+    .menu__button-desktop {
         display: none;
+    }
+
+    .menu__button-mobile._active {
+        position: relative;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        width: 100%;
+        height: 60px;
+        text-transform: uppercase;
+        background-color: var(--header-menu-button-bg-color);
+        color: var(--header-menu-button-color);
+    }
+
+    .menu__button-mobile._active:hover {
+        background-color: var(--header-menu-button-color-hover);
+    }
+
+    .menu__button-mobile._active:active, :focus {
+        background-color: var(--header-menu-button-color-active);
+    }
+}
+
+@media (max-width: 991px) {
+    .menu__button-desktop {
+        width: 150px;
     }
 }
 

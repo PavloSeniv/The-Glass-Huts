@@ -65,7 +65,7 @@ if (isMobile.any()) {
 //Меню бургер
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
-const menuButton = document.querySelector('.menu__button');
+const menuButton = document.querySelector('.menu__button-mobile');
 if (iconMenu) {
     iconMenu.addEventListener('click', function (e) {
         document.body.classList.toggle('_lock')
