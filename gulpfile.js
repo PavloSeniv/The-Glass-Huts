@@ -12,7 +12,7 @@ let path = {
         img: project_folder + "/img/",
         video: project_folder + "/video/",
         fonts: project_folder + "/fonts/",
-        plugins: project_folder + "/plugins/"
+        plugins: project_folder + "/plugins/",
     },
     //Папка із початковими файлами
     src: {
@@ -24,7 +24,7 @@ let path = {
         img: source_folder + "/img/**/*.+(png|PNG|jpg|JPG|gif|ico|svg|webp)",
         video: source_folder + "/video/**/*.+(mp4|mp3)",
         fonts: source_folder + "/fonts/*.ttf",
-        plugins: source_folder + "/plugins/**/*.+(js|css)"
+        plugins: source_folder + "/plugins/**/*.{js,css}",
     },
     //Об'єкт  для слідкування за файлами в реальному часі(browserSync)
     watch: {
@@ -34,7 +34,7 @@ let path = {
         js: source_folder + "/js/**/*.js",
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
         video: source_folder + "/video/**/*.+(mp4|mp3)",
-        plugins: source_folder + "/plugins/**/*.+(js|css)"
+        plugins: source_folder + "/plugins/**/*.{js,css}"
     },
     clean: "./" + project_folder + "/"
 }
