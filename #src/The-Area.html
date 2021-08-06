@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="img/index/favicon.ico">
     <!------- Swiper ------->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!------- Style for swiper in page ------->
+    <link rel="stylesheet" href="plugins/style/slider-other-page.css">
     <!------- Style ------->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -17,59 +19,67 @@
 
 @@include('html/_header.html')
 
-<div class="_container">
-    <main>
-        <section class="photo-background">
-            <div class="photo-img">
-                <!--Атрибут alt виходить за лінію-->
-                <img class="photo-img__back" src="img/The-Area/photo-background/photo-background.png" alt="photo-background">
-            </div>
+<main class="_container">
+    <section class="photo-background">
+        <div class="photo-img">
+            <!--Атрибут alt виходить за лінію-->
+            <img class="photo-img__back" src="img/The-Area/photo-background/photo-background.png" alt="photo-background">
+        </div>
 
-            <div class="photo-background__info">
-                <h1 class="photo-background__title">The Area</h1>
-                <h2 class="photo-background__subtitle-location">Vesterbord, Denmark</h2>
-                <a class="photo-background__button" href="#">Get Directions</a>
-            </div>
-        </section>
+        <div class="photo-background__info">
+            <h1 class="photo-background__title">The Area</h1>
+            <h2 class="photo-background__subtitle-location">Vesterbord, Denmark</h2>
+            <a class="photo-background__button" href="#">Get Directions</a>
+        </div>
+    </section>
 
-        <section class="slider-info">
-            <div class="slider-info__swiper">
-                <!-- Slider main container -->
-                <div class="">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-
-                        <div data-hash="slide-1" class="swiper-slide">
-                            <img class="swiper-slide__photo" src="img/The-Area/slider1.png" alt="slider1">
-                        </div>
-
+    <section class="slider-info">
+        <div class="slider-info__swiper">
+            <!-- Slider main container -->
+            <div class="swiper-container __container-swiper-other-page">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img width="100%" height="auto" src="img/The-Area/slider1.png" alt="slider1">
                     </div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                    <div class="swiper-pagination"></div>
-
+                    <div class="swiper-slide">
+                        <img width="100%" height="auto" src="img/The-Area/slider2.png" alt="slider1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="100%" height="auto" src="img/The-Area/slider3.png" alt="slider1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="100%" height="auto" src="img/The-Area/slider4.png" alt="slider1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="100%" height="auto" src="img/The-Area/slider5.png" alt="slider1">
+                    </div>
                 </div>
-            </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-            <div class="slider-info__text">
-                <h2 class="text__title-slider">Vesterbord</h2>
-                <p class="text__subtitle-slider">
-                    Lorem ipsum dolor sit amet, consectetur.
-                </p>
-                <p class="text__info-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid
-                    corporis dolor enim eos explicabo harum iusto magni maxime nam natus, pariatur repellendus
-                    reprehenderit sed temporibus ullam veritatis? Aliquid, dignissimos dolores esse facilis harum id
-                    incidunt laborum libero minus nobis quasi quidem, quo quod rem tempora temporibus voluptatum.
-                    Possimus, voluptatem?</p>
-            </div>
-        </section>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
 
-    </main>
-</div>
+            </div>
+        </div>
+
+        <div class="slider-info__text">
+            <h2 class="text__title-slider">Vesterbord</h2>
+            <p class="text__subtitle-slider">
+                Lorem ipsum dolor sit amet, consectetur.
+            </p>
+            <p class="text__info-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid
+                corporis dolor enim eos explicabo harum iusto magni maxime nam natus, pariatur repellendus
+                reprehenderit sed temporibus ullam veritatis? Aliquid, dignissimos dolores esse facilis harum id
+                incidunt laborum libero minus nobis quasi quidem, quo quod rem tempora temporibus voluptatum.
+                Possimus, voluptatem?</p>
+        </div>
+    </section>
+
+</main>
 
 @@include('html/_footer.html')
 

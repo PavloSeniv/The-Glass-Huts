@@ -71,6 +71,12 @@ $color-font-gray-1: #333333;
 
 /*-------- Background Photo End -------*/
 /*-------- Slider Info Start -------*/
+
+.__container-swiper-other-page {
+  max-width: 546px;
+  overflow: visible;
+}
+
 .slider-info {
   display: flex;
   margin-bottom: 100px;

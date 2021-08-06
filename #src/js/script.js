@@ -1,5 +1,5 @@
-@@include('WebpAddClassToHtml.js')
+@@include('_WebpAddClassToHtml.js')
 
-@@include('header-sub__list.js')
+@@include('_header-sub__list.js')
 
-@@include('slider-home.js')
+@@include('_slider-home.js')
