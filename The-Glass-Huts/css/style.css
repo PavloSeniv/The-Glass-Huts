@@ -1016,7 +1016,7 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .subtitle-location__link {
   display: list-item;
-  list-style-image: url("../../img/The-Area/photo_background/marker-geo.svg");
+  list-style-image: url("../../img/the_area/photo_background/marker_geo.svg");
   font-family: OpenSans-Light;
   font-size: 18px;
   line-height: 24px;
