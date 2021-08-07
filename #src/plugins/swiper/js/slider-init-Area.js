@@ -30,15 +30,12 @@ let SliderOtherPage = new Swiper('.swiper-container', {
 // Бескінечність
     loop: true,
 
-
 // К-сть дубльованих слайдів
-    loopedSlides: 3,
-
-
+    loopedSlides: 4,
 
     freeMode: true,
 
-
+    grabCursor: true,
 
 // Атопрокрутка
     autoplay: {

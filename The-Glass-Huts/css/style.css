@@ -1010,9 +1010,13 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .photo-background__subtitle-location {
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .subtitle-location__link {
+  display: list-item;
+  list-style-image: url("../../img/The-Area/photo_background/marker-geo.svg");
   font-family: OpenSans-Light;
   font-size: 18px;
   line-height: 24px;
@@ -1106,6 +1110,76 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 /*-------- Slider Info End -------*/
+
+/*-------- Map Info Start -------*/
+
+.map-info {
+  margin: 200px 0 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.map-info__text {
+  flex: 0 0 50%;
+}
+
+.map-info__title {
+  font-family: OpenSans-Regular;
+  font-size: 40px;
+  line-height: 56px;
+  color: #5b6460;
+  padding-left: 100px;
+}
+
+.map-info__photo {
+  flex: 0 0 50%;
+}
+
+.map-info__img {
+  width: 100%;
+  padding: 100px;
+}
+
+/*-------- Map Info End -------*/
+
+/*-------- Activities Start -------*/
+
+.activities {
+  margin-bottom: 100px;
+}
+
+.activities__title {
+  font-family: OpenSans-Regular;
+  font-size: 40px;
+  line-height: 56px;
+  color: #5b6460;
+  margin-bottom: 50px;
+}
+
+.activities__slider_1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 100px;
+}
+
+.text__subtitle-slider_menu {
+  margin-bottom: 30px;
+}
+
+.text__subtitle-slider_menu a {
+  font-family: OpenSans-Italic;
+  font-size: 18px;
+  line-height: 30px;
+  color: #5b6460;
+}
+
+.text__subtitle-slider_menu a:hover {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+/*-------- Activities End -------*/
 
 /* PC first*/
 
@@ -1273,6 +1347,14 @@ body._touch .menu__list > li._active .menu__arrow {
     margin-top: 100px;
     align-items: center;
     text-align: justify;
+  }
+
+  .map-info__text {
+    flex: 0 0 100%;
+  }
+
+  .map-info__photo {
+    flex: 0 0 100%;
   }
 }
 
