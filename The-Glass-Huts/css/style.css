@@ -1084,6 +1084,7 @@ body._touch .menu__list > li._active .menu__arrow {
   flex: 0 0 50%;
   padding-left: 100px;
   flex-direction: column;
+  justify-content: center;
 }
 
 .text__title-slider {
@@ -1161,6 +1162,7 @@ body._touch .menu__list > li._active .menu__arrow {
   display: flex;
   flex-wrap: wrap;
   padding: 0 100px;
+  margin-bottom: 200px;
 }
 
 .text__subtitle-slider_menu {
@@ -1179,7 +1181,36 @@ body._touch .menu__list > li._active .menu__arrow {
   text-decoration-line: underline;
 }
 
+.activities__slider_2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 100px;
+  margin-bottom: 200px;
+}
+
+.slider-info__order_2 {
+  order: -1;
+}
+
+.activities__slider_3 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 100px;
+  margin-bottom: 200px;
+}
+
+.activities__slider_4 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 100px;
+  margin-bottom: 200px;
+}
+
 /*-------- Activities End -------*/
+
+/*-------- Map The Area Start -------*/
+
+/*-------- Map The Area End -------*/
 
 /* PC first*/
 
@@ -1355,6 +1386,10 @@ body._touch .menu__list > li._active .menu__arrow {
 
   .map-info__photo {
     flex: 0 0 100%;
+  }
+
+  .slider-info__order_2 {
+    order: 1;
   }
 }
 
