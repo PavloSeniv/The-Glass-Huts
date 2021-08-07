@@ -1258,6 +1258,67 @@ body._touch .menu__list > li._active .menu__arrow {
 
 /*-------- About Us Content End -------*/
 
+/*-------- About Us Gallery Start -------*/
+
+.about-us-gallery {
+  margin-bottom: 100px;
+}
+
+.about-us-gallery__title {
+  font-family: OpenSans-Regular;
+  font-size: 40px;
+  line-height: 56px;
+  color: #5b6460;
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 0 20px;
+}
+
+.about-us-gallery__photo {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-areas: "my-about-us-gallery__photo_1 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2" "my-about-us-gallery__photo_3 my-about-us-gallery__photo-text my-about-us-gallery__photo_4";
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.about-us-gallery__img {
+  width: 100%;
+}
+
+.about-us-gallery__photo_1 {
+  grid-area: my-about-us-gallery__photo_1;
+}
+
+.about-us-gallery__photo_2 {
+  grid-area: my-about-us-gallery__photo_2;
+}
+
+.about-us-gallery__photo_3 {
+  grid-area: my-about-us-gallery__photo_3;
+}
+
+.about-us-gallery__photo-text {
+  grid-area: my-about-us-gallery__photo-text;
+  padding: 0 40px;
+  background-color: #e9ece0;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.photo-text__about-us {
+  font-family: OpenSans-Italic;
+  font-size: 20px;
+  line-height: 36px;
+  color: #333333;
+}
+
+.about-us-gallery__photo_4 {
+  grid-area: my-about-us-gallery__photo_4;
+}
+
+/*-------- About Us Gallery End -------*/
+
 /*-------- Page About Us End -------*/
 
 @media (min-width: 576px) {
@@ -1325,6 +1386,10 @@ body._touch .menu__list > li._active .menu__arrow {
 
   .contact__title {
     font-size: 35px;
+  }
+
+  .about-us-gallery__photo {
+    grid-template-areas: "my-about-us-gallery__photo_2 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2" "my-about-us-gallery__photo-text my-about-us-gallery__photo-text my-about-us-gallery__photo-text" "my-about-us-gallery__photo_4 my-about-us-gallery__photo_1 my-about-us-gallery__photo_3";
   }
 }
 
@@ -1666,6 +1731,15 @@ body._touch .menu__list > li._active .menu__arrow {
   .footer {
     padding: 2em 2em;
   }
+
+  .about-us-gallery__title {
+    font-size: 35px;
+    line-height: 46px;
+  }
+
+  .about-us-gallery__photo {
+    grid-template-areas: "my-about-us-gallery__photo_2 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2" "my-about-us-gallery__photo-text my-about-us-gallery__photo-text my-about-us-gallery__photo-text" "my-about-us-gallery__photo_1 my-about-us-gallery__photo_1 my-about-us-gallery__photo_1" "my-about-us-gallery__photo_3 my-about-us-gallery__photo_3 my-about-us-gallery__photo_3" "my-about-us-gallery__photo_4 my-about-us-gallery__photo_4 my-about-us-gallery__photo_4";
+  }
 }
 
 @media (max-width: 575px) {
@@ -1718,6 +1792,11 @@ body._touch .menu__list > li._active .menu__arrow {
 
   .slider-home__button {
     position: unset;
+  }
+
+  .about-us-gallery__title {
+    font-size: 25px;
+    line-height: 36px;
   }
 }
 @supports (-webkit-appearance:none){

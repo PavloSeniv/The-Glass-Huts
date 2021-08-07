@@ -3,16 +3,17 @@ $color-font-white: #fff;
 $color-bg: #5b6460;
 $color-bg-active: #79857f;
 $color-font-gray-1: #333333;
+$color-bg-light-green: #e9ece0;
 
 /*-------- About Us Content Start -------*/
-.about-us-content-1{
+.about-us-content-1 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin: 200px 0 100px 0;
 }
 
-.about-us-content-content-1__photo{
+.about-us-content-content-1__photo {
   flex: 0 0 50%;
   padding-left: 100px;
   @media (max-width: 991px) {
@@ -21,11 +22,11 @@ $color-font-gray-1: #333333;
   }
 }
 
-.about-us-content-1__img{
+.about-us-content-1__img {
   width: 100%;
 }
 
-.about-us-content-1__info{
+.about-us-content-1__info {
   flex: 0 0 50%;
   padding: 0 100px;
   @media (max-width: 991px) {
@@ -34,7 +35,7 @@ $color-font-gray-1: #333333;
   }
 }
 
-.about-us-content-1__title{
+.about-us-content-1__title {
   font-family: OpenSans-Italic;
   font-size: 24px;
   line-height: 36px;
@@ -42,7 +43,7 @@ $color-font-gray-1: #333333;
   margin-bottom: 32px;
 }
 
-.about-us-content-1__subtitle{
+.about-us-content-1__subtitle {
   font-family: OpenSans-Light;
   font-size: 16px;
   line-height: 30px;
@@ -50,3 +51,103 @@ $color-font-gray-1: #333333;
 }
 
 /*-------- About Us Content End -------*/
+/*-------- About Us Gallery Start -------*/
+.about-us-gallery {
+  margin-bottom: 100px;
+}
+
+.about-us-gallery__title {
+  font-family: OpenSans-Regular;
+  font-size: 40px;
+  line-height: 56px;
+  color: $color-bg;
+  text-align: center;
+  margin-bottom: 100px;
+padding: 0 20px;
+  @media (min-width: 0) and (max-width: 575px) {
+    font-size: 25px;
+    line-height: 36px;
+
+  }
+
+  @media (max-width: 767px) {
+    font-size: 35px;
+    line-height: 46px;
+  }
+}
+.about-us-gallery__photo {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-areas:
+          "my-about-us-gallery__photo_1 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2"
+          "my-about-us-gallery__photo_3 my-about-us-gallery__photo-text my-about-us-gallery__photo_4";
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+  @media (min-width: 0) and (max-width: 575px) {
+
+  }
+
+  @media (max-width: 767px) {
+    grid-template-areas:
+          "my-about-us-gallery__photo_2 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2"
+          "my-about-us-gallery__photo-text my-about-us-gallery__photo-text my-about-us-gallery__photo-text"
+          "my-about-us-gallery__photo_1 my-about-us-gallery__photo_1 my-about-us-gallery__photo_1"
+          "my-about-us-gallery__photo_3 my-about-us-gallery__photo_3 my-about-us-gallery__photo_3"
+          "my-about-us-gallery__photo_4 my-about-us-gallery__photo_4 my-about-us-gallery__photo_4";
+  }
+
+  @media (max-width: 991px) {
+
+  }
+
+  @media (max-width: 1199px) {
+    grid-template-areas:
+          "my-about-us-gallery__photo_2 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2"
+          "my-about-us-gallery__photo-text my-about-us-gallery__photo-text my-about-us-gallery__photo-text"
+          "my-about-us-gallery__photo_4 my-about-us-gallery__photo_1 my-about-us-gallery__photo_3";
+
+  }
+
+  @media (max-width: 1399px) {
+
+  }
+}
+
+.about-us-gallery__img {
+  width: 100%;
+}
+
+.about-us-gallery__photo_1 {
+  grid-area: my-about-us-gallery__photo_1;
+}
+
+.about-us-gallery__photo_2 {
+  grid-area: my-about-us-gallery__photo_2;
+}
+
+.about-us-gallery__photo_3 {
+  grid-area: my-about-us-gallery__photo_3;
+}
+
+.about-us-gallery__photo-text {
+  grid-area: my-about-us-gallery__photo-text;
+  padding: 0 40px;
+  background-color: $color-bg-light-green;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.photo-text__about-us {
+  font-family: OpenSans-Italic;
+  font-size: 20px;
+  line-height: 36px;
+  color: $color-font-gray-1;
+}
+
+.about-us-gallery__photo_4 {
+  grid-area: my-about-us-gallery__photo_4;
+}
+
+/*-------- About Us Gallery End -------*/
+
