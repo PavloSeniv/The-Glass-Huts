@@ -31,20 +31,38 @@ $color-font-gray-1: #333333;
   text-align: center;
   color: $color-font-white;
   margin-bottom: 15px;
+
+  @media (max-width: 991px) {
+    font-size: 35px;
+    line-height: 37px;
+    margin-bottom: 8px;
+  }
 }
 
-.photo-background__subtitle-location {
+.photo-background__subtitle-location  {
+  margin-bottom: 50px;
+  @media (max-width: 991px) {
+    margin-bottom: 25px;
+  }
+  &::marker{
+
+  }
+}
+
+.subtitle-location__link  {
   font-family: OpenSans-Light;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  text-decoration-line: underline;
+  text-decoration-line: none;
   color: $color-font-white;
-  margin-bottom: 50px;
-}
-
-.photo-background__subtitle-location::marker {
-
+  @media (max-width: 991px) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &:hover{
+    text-decoration-line: underline;
+  }
 }
 
 .photo-background__button {
@@ -81,11 +99,15 @@ $color-font-gray-1: #333333;
   display: flex;
   margin-bottom: 100px;
   padding: 0 100px;
+  flex-wrap: wrap;
 }
 
 .slider-info__swiper {
   flex: 0 0 50%;
   display: flex;
+  @media (max-width: 991px) {
+    flex: 0 0 100%;
+  }
 }
 
 .swiper-slide__photo {
@@ -97,6 +119,13 @@ $color-font-gray-1: #333333;
   flex: 0 0 50%;
   padding-left: 100px;
   flex-direction: column;
+  @media (max-width: 991px) {
+    flex: 0 0 100%;
+    padding: 5px;
+    margin-top: 100px;
+    align-items: center;
+    text-align: justify;
+  }
 }
 
 .text__title-slider {
@@ -105,6 +134,7 @@ $color-font-gray-1: #333333;
   line-height: 40px;
   color: $color-bg;
   margin-bottom: 50px;
+
 }
 
 .text__subtitle-slider {
@@ -124,3 +154,24 @@ $color-font-gray-1: #333333;
 
 /*-------- Slider Info End -------*/
 
+
+/* PC first*/
+@media (max-width: 575px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 1399px) {
+
+}

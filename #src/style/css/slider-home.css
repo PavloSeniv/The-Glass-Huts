@@ -62,29 +62,6 @@
         position: unset;
     }
 
-    .swiper-button-prev,
-    .swiper-button-next {
-        top: 45%;
-    }
-
-    .swiper-container-horizontal > .swiper-pagination-progressbar,
-    .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
-        left: 85%;
-        top: 55%;
-    }
-
-    .swiper-button-prev,
-    .swiper-container-rtl .swiper-button-next {
-        left: 4%;
-        right: 10px;
-    }
-
-    .swiper-button-next,
-    .swiper-container-rtl .swiper-button-prev {
-        right: 10px;
-        left: 95%;
-    }
-
 }
 
 @media (max-width: 767px) {
@@ -109,29 +86,6 @@
         position: unset;
     }
 
-    .swiper-button-prev,
-    .swiper-button-next {
-        top: 45%;
-    }
-
-    .swiper-container-horizontal > .swiper-pagination-progressbar,
-    .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
-        left: 85%;
-        top: 75%;
-    }
-
-    .swiper-button-prev,
-    .swiper-container-rtl .swiper-button-next {
-        left: 4%;
-        right: 10px;
-    }
-
-    .swiper-button-next,
-    .swiper-container-rtl .swiper-button-prev {
-        right: 10px;
-        left: 95%;
-    }
-
 }
 
 @media (max-width: 991px) {
@@ -146,28 +100,6 @@
         line-height: 23px;
     }
 
-    .swiper-button-prev,
-    .swiper-button-next {
-        top: 85%;
-    }
-
-    .swiper-container-horizontal > .swiper-pagination-progressbar,
-    .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
-        left: 85%;
-        top: 70%;
-    }
-
-    .swiper-button-prev,
-    .swiper-container-rtl .swiper-button-next {
-        left: 45%;
-        right: 10px;
-    }
-
-    .swiper-button-next,
-    .swiper-container-rtl .swiper-button-prev {
-        right: 10px;
-        left: 55%;
-    }
 }
 
 @media (max-width: 1199px) {
