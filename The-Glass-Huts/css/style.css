@@ -1216,6 +1216,50 @@ body._touch .menu__list > li._active .menu__arrow {
 
 /*-------- Page The Area End -------*/
 
+/*-------- Page About Us Start -------*/
+
+/*-------- About Us Content Start -------*/
+
+.about-us-content-1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 200px 0 100px 0;
+}
+
+.about-us-content-content-1__photo {
+  flex: 0 0 50%;
+  padding-left: 100px;
+}
+
+.about-us-content-1__img {
+  width: 100%;
+}
+
+.about-us-content-1__info {
+  flex: 0 0 50%;
+  padding: 0 100px;
+}
+
+.about-us-content-1__title {
+  font-family: OpenSans-Italic;
+  font-size: 24px;
+  line-height: 36px;
+  color: #5b6460;
+  margin-bottom: 32px;
+}
+
+.about-us-content-1__subtitle {
+  font-family: OpenSans-Light;
+  font-size: 16px;
+  line-height: 30px;
+  color: #333333;
+}
+
+/*-------- About Us Content End -------*/
+
+/*-------- Page About Us End -------*/
+
 @media (min-width: 576px) {
   .about__item {
     margin-bottom: 30px;
@@ -1390,6 +1434,16 @@ body._touch .menu__list > li._active .menu__arrow {
 
   .slider-info__order_2 {
     order: 1;
+  }
+
+  .about-us-content-content-1__photo {
+    flex: 0 0 100%;
+    padding-left: 0;
+  }
+
+  .about-us-content-1__info {
+    flex: 0 0 100%;
+    padding: 10px;
   }
 }
 
