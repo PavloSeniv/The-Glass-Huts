@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="img/index/favicon.ico">
     <!------- Swiper ------->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!------- Style for swiper in page ------->
+    <link rel="stylesheet" href="plugins/swiper/style/slider_version_2.css">
     <!------- Style ------->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -17,14 +19,208 @@
 
 @@include('html/_header.html')
 
-<main>
-    <section></section>
+<main class="_container">
+    <!-- The Area BEM-->
+    <section class="photo-background">
+        <div class="photo-img">
+            <!--Атрибут alt виходить за лінію-->
+            <picture>
+                <source srcset="img/the_hut/the_hut_background/the_hut_background_mobile.png, img/the_hut/the_hut_background/the_hut_background_mobile.webp"
+                        media="(max-width:767px)">
+                <img class="photo-img__back" src="img/the_hut/the_hut_background/the_hut_background_desktop.png"
+                     srcset="img/the_hut/the_hut_background/the_hut_background_desktop.webp" alt="the_hut_background_desktop">
+            </picture>
+        </div>
+        <div class="photo-background__info">
+            <h1 class="photo-background__title">The Hut</h1>
+        </div>
+    </section>
+
+    <!-- The Area BEM-->
+    <section class="activities">
+
+        <div class="activities__slider_1">
+            <div class="slider-info__swiper">
+                <!-- Slider main container -->
+                <div class="swiper-container __container-swiper-other-page">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img width="100%" height="auto" src="img/the_hut/the_hut_slider_1/the_hut_slider_1.png" alt="the_hut_slider_1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img width="100%" height="auto" src="img/the_hut/the_hut_slider_1/the_hut_slider_1.png" alt="the_hut_slider_1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img width="100%" height="auto" src="img/the_hut/the_hut_slider_1/the_hut_slider_1.png" alt="the_hut_slider_1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img width="100%" height="auto" src="img/the_hut/the_hut_slider_1/the_hut_slider_1.png" alt="the_hut_slider_1">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+
+            <div class="slider-info__text">
+                <h2 class="text__title-slider">The Outside </h2>
+                <div class="text__subtitle-slider_menu">
+                    <a class="subtitle-slider_menu__button_1-1" href="#">Hot tube</a>
+                    <a class="subtitle-slider_menu__button_1-2" href="#">Electric car change</a>
+                </div>
+                <div class="text__info_1-1" style="display: block;">
+                    <p class="text__info-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                        aliquid
+                        corporis dolor enim eos explicabo harum iusto magni maxime nam natus, pariatur repellendus
+                        reprehenderit sed temporibus ullam veritatis? Aliquid, dignissimos dolores esse facilis harum id
+                        incidunt laborum libero minus nobis quasi quidem, quo quod rem tempora temporibus voluptatum.
+                        Possimus, voluptatem?
+                    </p>
+                </div>
+                <div class="text__info_1-2" style="display: none;">
+                    <p class="text__info-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                        aliquid
+                        corporis dolor enim eos explicabo harum iusto magni maxime nam natus, pariatur repellendus
+                        reprehenderit sed temporibus ullam veritatis? Aliquid, dignissimos dolores esse facilis harum id
+                        incidunt laborum libero minus nobis quasi quidem, quo quod rem tempora temporibus voluptatum.
+                        Possimus, voluptatem!!!!!?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="activities__slider_2">
+            <div class="slider-info__swiper slider-info__order_1">
+                <!-- Slider main container -->
+                <div class="swiper-container __container-swiper-other-page">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img width="100%" height="auto" src="img/the_hut/the_hut_slider_2/the_hut_slider_2.png" alt="the_hut_slider_2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img width="100%" height="auto" src="img/the_hut/the_hut_slider_2/the_hut_slider_2.png" alt="the_hut_slider_2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img width="100%" height="auto" src="img/the_hut/the_hut_slider_2/the_hut_slider_2.png" alt="the_hut_slider_2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img width="100%" height="auto" src="img/the_hut/the_hut_slider_2/the_hut_slider_2.png" alt="the_hut_slider_2">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+
+            <div class="slider-info__text slider-info__order_2">
+                <h2 class="text__title-slider">The inside</h2>
+                <div class="text__subtitle-slider_menu">
+                    <a class="subtitle-slider_menu__button_2-1" href="#">The Inside</a>
+                    <a class="subtitle-slider_menu__button_2-2" href="#">Kitchen</a>
+                    <a class="subtitle-slider_menu__button_2-3" href="#">Bathroom</a>
+                </div>
+                <div class="text__info_2-1" style="display: block;">
+                    <p class="text__info-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                        aliquid
+                        corporis dolor enim eos explicabo harum iusto magni maxime nam natus, pariatur repellendus
+                        reprehenderit sed temporibus ullam veritatis? Aliquid, dignissimos dolores esse facilis harum id
+                        incidunt laborum libero minus nobis quasi quidem, quo quod rem tempora temporibus voluptatum.
+                        Possimus, voluptatem?
+                    </p>
+                </div>
+                <div class="text__info_2-2" style="display: none;">
+                    <p class="text__info-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                        aliquid
+                        corporis dolor enim eos explicabo harum iusto magni maxime nam natus, pariatur repellendus
+                        reprehenderit sed temporibus ullam veritatis? Aliquid, dignissimos dolores esse facilis harum id
+                        incidunt laborum libero minus nobis quasi quidem, quo quod rem tempora temporibus voluptatum.
+                        Possimus, voluptatem!!!!!?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="activities__slider_3">
+            <div class="slider-info__swiper">
+                <!-- Slider main container -->
+                <div class="swiper-container __container-swiper-other-page">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img width="100%" height="auto" src="img/the_hut/the_hut_slider_3/the_hut_slider_3.png" alt="the_hut_slider_3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img width="100%" height="auto" src="img/the_hut/the_hut_slider_3/the_hut_slider_3.png" alt="the_hut_slider_3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img width="100%" height="auto" src="img/the_hut/the_hut_slider_3/the_hut_slider_3.png" alt="the_hut_slider_3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img width="100%" height="auto" src="img/the_hut/the_hut_slider_3/the_hut_slider_3.png" alt="the_hut_slider_3">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+
+            <div class="slider-info__text">
+                <h2 class="text__title-slider">Practicalities</h2>
+                <div class="text__subtitle-slider_menu">
+                    <a class="subtitle-slider_menu__button_3-1" href="#">Breakfast</a>
+                    <a class="subtitle-slider_menu__button_3-2" href="#">Classic Dinner</a>
+                </div>
+                <div class="text__info_3-1" style="display: block;">
+                    <p class="text__info-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                        aliquid
+                        corporis dolor enim eos explicabo harum iusto magni maxime nam natus, pariatur repellendus
+                        reprehenderit sed temporibus ullam veritatis? Aliquid, dignissimos dolores esse facilis harum id
+                        incidunt laborum libero minus nobis quasi quidem, quo quod rem tempora temporibus voluptatum.
+                        Possimus, voluptatem?
+                    </p>
+                </div>
+                <div class="text__info_3-2" style="display: none;">
+                    <p class="text__info-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                        aliquid
+                        corporis dolor enim eos explicabo harum iusto magni maxime nam natus, pariatur repellendus
+                        reprehenderit sed temporibus ullam veritatis? Aliquid, dignissimos dolores esse facilis harum id
+                        incidunt laborum libero minus nobis quasi quidem, quo quod rem tempora temporibus voluptatum.
+                        Possimus, voluptatem!!!!!?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 </main>
 
 @@include('html/_footer.html')
 
 <!------- Swiper ------->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!------- Init slider ------->
+<script src="plugins/swiper/js/slider_init_version_2.js"></script>
 <!------- Main Script ------->
 <script src="js/main_script.min.js"></script>
 </body>
