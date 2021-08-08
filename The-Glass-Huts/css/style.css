@@ -1322,6 +1322,57 @@ body._touch .menu__list > li._active .menu__arrow {
 
 /*-------- Page About Us End -------*/
 
+/*-------- Page FAQ Start -------*/
+
+.faq-spoiler {
+  margin: 200px 0;
+}
+
+.block {
+  margin-bottom: 30px;
+  padding: 10px 30px;
+  border: 2px solid #000000;
+}
+
+.block__item {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+.block__title {
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+  line-height: 18px;
+  color: #333333;
+  position: relative;
+}
+
+.block__text {
+  margin: 20px 0;
+}
+
+.block._init .block__title::before,
+.block._init .block__title::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  transition: transform 0.3s ease 0s;
+}
+
+.block._init .block__title::after {
+  transform: rotate(-90deg);
+}
+
+.block._init .block__title._active::after {
+  transform: rotate(0deg);
+}
+
+/*-------- Page FAQ End -------*/
+
 @media (min-width: 576px) {
   .about__item {
     margin-bottom: 30px;

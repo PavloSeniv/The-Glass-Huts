@@ -8,8 +8,6 @@
     <title>The Glass Huts</title>
     <!------- Іконка ------->
     <link rel="shortcut icon" href="img/index/favicon.ico">
-    <!------- Swiper ------->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!------- Style ------->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -17,14 +15,55 @@
 
 @@include('html/_header.html')
 
-<main>
-    <section></section>
+<main class="_container">
+    <section class="faq-spoiler">
+        <div data-spollers data-one-spoller class="block block__1">
+            <div class="block__item">
+                <button tabindex="-1" type="button" data-spoller class="block__title">Lorem.</button>
+                <div class="block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur
+                    dolorum facere labore minima necessitatibus nisi reiciendis sapiente tempora veritatis!
+                </div>
+            </div>
+            <div class="block__item">
+                <button tabindex="-1" type="button" data-spoller class="block__title">Lorem.</button>
+                <div class="block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur
+                    dolorum facere labore minima necessitatibus nisi reiciendis sapiente tempora veritatis!
+                </div>
+            </div>
+            <div class="block__item">
+                <button tabindex="-1" type="button" data-spoller class="block__title">Lorem.</button>
+                <div class="block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur
+                    dolorum facere labore minima necessitatibus nisi reiciendis sapiente tempora veritatis!
+                </div>
+            </div>
+        </div>
+        <div data-spollers="768,min" class="block block__2">
+            <div class="block__item">
+                <button tabindex="-1" type="button" data-spoller class="block__title">Lorem.</button>
+                <div class="block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur
+                    dolorum facere labore minima necessitatibus nisi reiciendis sapiente tempora veritatis!
+                </div>
+            </div>
+        </div>
+        <div data-spollers="991,max" class="block block__3">
+            <div class="block__item">
+                <button tabindex="-1" type="button" data-spoller class="block__title">Lorem.</button>
+                <div class="block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur
+                    dolorum facere labore minima necessitatibus nisi reiciendis sapiente tempora veritatis!
+                </div>
+            </div>
+            <div class="block__item">
+                <button tabindex="-1" type="button" data-spoller class="block__title">Lorem.</button>
+                <div class="block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur
+                    dolorum facere labore minima necessitatibus nisi reiciendis sapiente tempora veritatis!
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 @@include('html/_footer.html')
 
-<!------- Swiper ------->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!------- Main Script ------->
 <script src="js/main_script.min.js"></script>
 </body>
