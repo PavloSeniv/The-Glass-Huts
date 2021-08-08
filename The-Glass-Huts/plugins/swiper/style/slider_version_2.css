@@ -649,3 +649,29 @@ button.swiper-pagination-bullet {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+
+@media (min-width: 0) and (max-width: 575px) {
+
+
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+        bottom: 10px;
+        left: 81%;
+        top: 108%;
+        width: 20%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+        bottom: 10px;
+        left: 83%;
+        top: 108%;
+        width: 20%;
+    }
+}

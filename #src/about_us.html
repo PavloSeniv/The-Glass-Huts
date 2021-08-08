@@ -17,6 +17,25 @@
 @@include('html/_header.html')
 
 <main class="_container">
+    <!-- The Area BEM-->
+    <section class="photo-background">
+        <div class="photo-img">
+            <!--Атрибут alt виходить за лінію-->
+            <picture>
+                <source srcset="img/about_us/about_us_background/about_us_background_mobile.png, img/about_us/about_us_background/about_us_background_mobile.webp"
+                        media="(max-width:767px)">
+                <img class="photo-img__back" src="img/about_us/about_us_background/about_us_background_desktop.png"
+                     srcset="img/about_us/about_us_background/about_us_background_desktop.webp" alt="about_us_background_desktop">
+            </picture>
+        </div>
+        <div class="photo-background__info">
+            <h1 class="photo-background__title">About Us</h1>
+            <h2 class="photo-background__subtitle-location"></h2>
+            <a class="photo-background__button" href="#">Contact Us</a>
+            <a class="photo-background__button" href="#">Red Faq</a>
+        </div>
+    </section>
+
     <section class="about-us-content-1">
         <div class="about-us-content-content-1__photo">
             <img class="about-us-content-1__img" src="img/about_us/about_us_content_1/about_us_content_1_photo.png" alt="about_us_content_1_photo">

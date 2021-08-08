@@ -22,6 +22,14 @@ $color-font-gray-1: #333333;
   left: 40%;
   padding: 0 20px;
   text-align-last: center;
+  @media (max-width: 575px) {
+    top: 30%;
+    left: 25%;
+  }
+  @media (max-width: 767px) {
+    top: 30%;
+    left: 35%;
+  }
 }
 
 .photo-background__title {
@@ -97,6 +105,12 @@ $color-font-gray-1: #333333;
 .__container-swiper-other-page {
   max-width: 546px;
   overflow: visible;
+  @media (max-width: 575px) {
+    max-width: 350px;
+  }
+  @media (max-width: 767px) {
+    max-width: 450px;
+  }
 }
 
 .slider-info {
@@ -104,12 +118,24 @@ $color-font-gray-1: #333333;
   margin-bottom: 100px;
   padding: 0 100px;
   flex-wrap: wrap;
+  @media (max-width: 991px) {
+    padding: 0 25px;
+  }
+  @media (max-width: 1199px) {
+    padding: 0 40px;
+  }
+  @media (max-width: 1399px) {
+    padding: 0 50px;
+  }
 }
 
 .slider-info__swiper {
   flex: 0 0 50%;
   display: flex;
   @media (max-width: 991px) {
+    flex: 0 0 100%;
+  }
+  @media (max-width: 1199px) {
     flex: 0 0 100%;
   }
 }
@@ -131,6 +157,16 @@ $color-font-gray-1: #333333;
     align-items: center;
     text-align: justify;
   }
+  @media (max-width: 1199px) {
+    flex: 0 0 100%;
+    padding: 5px;
+    margin-top: 100px;
+    align-items: center;
+    text-align: justify;
+  }
+  @media (max-width: 1399px) {
+    padding-left: 50px;
+  }
 }
 
 .text__title-slider {
@@ -139,7 +175,9 @@ $color-font-gray-1: #333333;
   line-height: 40px;
   color: $color-bg;
   margin-bottom: 50px;
-
+  @media (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .text__subtitle-slider {
@@ -180,6 +218,20 @@ $color-font-gray-1: #333333;
   line-height: 56px;
   color: $color-bg;
   padding-left: 100px;
+  @media (max-width: 575px) {
+    padding: 0 10px;
+    font-size: 25px;
+    line-height: 38px;
+
+  }
+  @media (max-width: 767px) {
+    padding: 0 20px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 46px;
+    margin-bottom: 25px;
+  }
+
 }
 
 .map-info__photo {
@@ -192,6 +244,13 @@ $color-font-gray-1: #333333;
 .map-info__img {
   width: 100%;
   padding: 100px;
+
+  @media (max-width: 575px) {
+    padding: 0 15px;
+  }
+  @media (max-width: 767px) {
+    padding: 0 25px;
+  }
 }
 
 /*-------- Map Info End -------*/
@@ -206,6 +265,10 @@ $color-font-gray-1: #333333;
   line-height: 56px;
   color: $color-bg;
   margin-bottom: 50px;
+  padding: 0 10px;
+  @media (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .activities__slider_1 {
@@ -213,6 +276,17 @@ $color-font-gray-1: #333333;
   flex-wrap: wrap;
   padding: 0 100px;
   margin-bottom: 200px;
+  @media (max-width: 991px) {
+    padding: 0 25px;
+    margin-bottom: 100px;
+  }
+  @media (max-width: 1199px) {
+    padding: 0 40px;
+    margin-bottom: 100px;
+  }
+  @media (max-width: 1399px) {
+    padding: 0 50px;
+  }
 }
 
 .text__subtitle-slider_menu {
@@ -235,11 +309,25 @@ $color-font-gray-1: #333333;
   flex-wrap: wrap;
   padding: 0 100px;
   margin-bottom: 200px;
+  @media (max-width: 991px) {
+    padding: 0 25px;
+    margin-bottom: 100px;
+  }
+  @media (max-width: 1199px) {
+    padding: 0 40px;
+    margin-bottom: 100px;
+  }
+  @media (max-width: 1399px) {
+    padding: 0 50px;
+  }
 }
 
 .slider-info__order_2 {
   order: -1;
   @media (max-width: 991px) {
+    order: 1;
+  }
+  @media (max-width: 1199px) {
     order: 1;
   }
 }
@@ -249,6 +337,17 @@ $color-font-gray-1: #333333;
   flex-wrap: wrap;
   padding: 0 100px;
   margin-bottom: 200px;
+  @media (max-width: 991px) {
+    padding: 0 25px;
+    margin-bottom: 100px;
+  }
+  @media (max-width: 1199px) {
+    padding: 0 40px;
+    margin-bottom: 100px;
+  }
+  @media (max-width: 1399px) {
+    padding: 0 50px;
+  }
 }
 
 .activities__slider_4 {
@@ -256,6 +355,17 @@ $color-font-gray-1: #333333;
   flex-wrap: wrap;
   padding: 0 100px;
   margin-bottom: 200px;
+  @media (max-width: 991px) {
+    padding: 0 25px;
+    margin-bottom: 100px;
+  }
+  @media (max-width: 1199px) {
+    padding: 0 40px;
+    margin-bottom: 100px;
+  }
+  @media (max-width: 1399px) {
+    padding: 0 50px;
+  }
 }
 
 /*-------- Activities End -------*/
