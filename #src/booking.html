@@ -17,8 +17,24 @@
 
 @@include('html/_header.html')
 
-<main>
-    <section></section>
+<main class="_container">
+    <!-- The Area BEM-->
+    <section class="photo-background">
+        <div class="photo-img">
+            <!--Атрибут alt виходить за лінію-->
+            <picture>
+                <source srcset="img/booking/booking_background/booking_background_mobile.png, img/booking/booking_background/booking_background_mobile.webp"
+                        media="(max-width:767px)">
+                <img class="photo-img__back" src="img/booking/booking_background/booking_background_desktop.png"
+                     srcset="img/booking/booking_background/booking_background_desktop.png" alt="booking_background_desktop">
+            </picture>
+        </div>
+        <div class="photo-background__info">
+            <h1 class="photo-background__title">Booking</h1>
+            <h2 class="photo-background__subtitle-location">
+                <a class="subtitle-location__link" href="#">Vesterbord, Denmark</a></h2>
+        </div>
+    </section>
 </main>
 
 @@include('html/_footer.html')
