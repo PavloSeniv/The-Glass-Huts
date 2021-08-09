@@ -12,19 +12,21 @@ let path = {
         img: project_folder + "/img/",
         video: project_folder + "/video/",
         fonts: project_folder + "/fonts/",
-        plugins: project_folder + "/plugins/",
+        pluginsJs: project_folder + "/plugins/",
+        pluginsCss: project_folder + "/plugins/"
     },
     //Папка із початковими файлами
     src: {
         // Виключення всіх файлів html які починаються з _ із папки dist
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
         css: source_folder + "/style/scss/style.scss",
-        js: source_folder + "/js/main_script.js",
+        js: [source_folder + "/js/main_script.js", source_folder + "/js/_plugins*.js"],
         //Якщо не  вказати розширення також іх верхнього регістру то можливий варіант не копіювання зображення
         img: source_folder + "/img/**/*.+(png|PNG|jpg|JPG|gif|ico|svg|webp)",
         video: source_folder + "/video/**/*.+(mp4|mp3)",
         fonts: source_folder + "/fonts/*.ttf",
-        plugins: source_folder + "/plugins/**/*.{js,css}",
+        pluginsJs: source_folder + "/plugins/**/*.js",
+        pluginsCss: source_folder + "/plugins/**/*.css",
     },
     //Об'єкт  для слідкування за файлами в реальному часі(browserSync)
     watch: {
@@ -34,7 +36,8 @@ let path = {
         js: source_folder + "/js/**/*.js",
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
         video: source_folder + "/video/**/*.+(mp4|mp3)",
-        plugins: source_folder + "/plugins/**/*.{js,css}"
+        pluginsJs: source_folder + "/plugins/**/*.js",
+        pluginsCss: source_folder + "/plugins/**/*.css"
     },
     clean: "./" + project_folder + "/"
 }
@@ -216,12 +219,35 @@ function video(params) {
         .pipe(browsersync.stream())
 }
 
-function plugins(params) {
-    return src(path.src.plugins)
-        .pipe(dest(path.build.plugins))
+function pluginsJs(params) {
+    return src(path.src.pluginsJs)
+        .pipe(fileinclude())
+        .pipe(dest(path.build.pluginsJs))
+        .pipe(
+            uglify()
+        )
+        .pipe(
+            rename({
+                extname: ".min.js"
+            })
+        )
+        .pipe(dest(path.build.pluginsJs))
         .pipe(browsersync.stream())
 }
 
+
+function pluginsCss(params) {
+    return src(path.src.pluginsCss)
+        .pipe(dest(path.build.pluginsCss))
+        .pipe(clean_css())
+        .pipe(
+            rename({
+                extname: ".min.css"
+            })
+        )
+        .pipe(dest(path.build.pluginsCss))
+        .pipe(browsersync.stream())
+}
 
 //Слідкування за файлами в реальному часі
 function watchFiles(params) {
@@ -230,7 +256,9 @@ function watchFiles(params) {
     gulp.watch([path.watch.js], js); // Для js
     gulp.watch([path.watch.img], images); // Для img
     gulp.watch([path.watch.video], video); // Для video
-    gulp.watch([path.watch.plugins], plugins); // Для plugins
+    gulp.watch([path.watch.pluginsJs], pluginsJs); // Для plugins .js file
+    gulp.watch([path.watch.pluginsCss], pluginsCss); // Для plugins .css file
+
 }
 
 function clean(params) {
@@ -238,10 +266,11 @@ function clean(params) {
 }
 
 //Процес виконання
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, video, fonts, plugins), fontsStyle); //тут присутній варіант паралельного запису шрифтів та відео
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, video, fonts, pluginsJs, pluginsCss), fontsStyle); //тут присутній варіант паралельного запису шрифтів та відео
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
-exports.plugins = plugins;
+exports.pluginsCss = pluginsCss;
+exports.pluginsJs = pluginsJs;
 exports.video = video;
 exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;

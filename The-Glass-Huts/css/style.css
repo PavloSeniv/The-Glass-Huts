@@ -1329,26 +1329,27 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .block {
-  margin-bottom: 30px;
-  padding: 10px 30px;
-  border: 2px solid #000000;
+  margin: 0 0 10px 0;
 }
 
 .block__item {
-  padding: 10px 20px;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
 }
 
 .block__title {
   font-family: OpenSans-Regular;
   font-size: 18px;
   line-height: 18px;
-  color: #333333;
+  color: black;
   position: relative;
 }
 
-.block__text {
-  margin: 20px 0;
+.block._init .block__title {
+  cursor: pointer;
+}
+
+.block._init .block__title {
+  padding: 10px 40px 10px 10px;
 }
 
 .block._init .block__title::before,
@@ -1356,7 +1357,7 @@ body._touch .menu__list > li._active .menu__arrow {
   content: "";
   width: 20px;
   height: 1px;
-  background-color: black;
+  background-color: #ffffff;
   position: absolute;
   right: 10px;
   top: 20px;
@@ -1369,6 +1370,23 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .block._init .block__title._active::after {
   transform: rotate(0deg);
+}
+
+.block__text {
+  padding: 0 10px 10px;
+  line-height: 130%;
+}
+
+.block_1 .block__item {
+  background-color: darkmagenta;
+}
+
+.block_2 .block__item {
+  background-color: deepskyblue;
+}
+
+.block_3 .block__item {
+  background-color: greenyellow;
 }
 
 /*-------- Page FAQ End -------*/
