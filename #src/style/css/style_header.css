@@ -45,6 +45,7 @@ body._lock {
     z-index: 5;
     display: flex;
     flex: 0 0 auto;
+    margin-left: 5%;
 }
 
 .menu__icon {
@@ -199,7 +200,7 @@ body._touch .menu__list > li._active .menu__arrow {
     }
 
     .header__logo {
-        padding-left: 20px;
+        margin-left: 0;
     }
 
     .menu__icon {

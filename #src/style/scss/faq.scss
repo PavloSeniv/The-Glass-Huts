@@ -1,64 +1,82 @@
 .faq-spoiler {
-  margin: 200px 0;
+  margin: 200px 0 100px 0;
+  @media (max-width: 767px) {
+    margin: 150px 0 50px 0;
+  }
 }
 
-.block {
+.spoiler-block {
+  margin: 0 0 10px;
+  padding: 0 20px;
+}
+
+.spoiler-block__item {
   margin: 0 0 10px 0;
 }
 
-.block__item{
-  margin: 0 0 10px 0;
-}
-
-.block__title {
+.spoiler-block__title {
   font-family: OpenSans-Regular;
   font-size: 18px;
   line-height: 18px;
   color: black;
   position: relative;
+  width: 100%;
+  text-align: start;
+  border: 1px solid #000000;
+  background-color: unset;
 }
 
-.block._init .block__title {
+.spoiler-block._init .spoiler-block__title {
   cursor: pointer;
 }
 
-.block._init .block__title {
+.spoiler-block .spoiler-block__title {
   padding: 10px 40px 10px 10px;
 }
 
-.block._init .block__title::before,
-.block._init .block__title::after {
+.spoiler-block._init .spoiler-block__title {
+  padding: 10px 40px 10px 10px;
+}
+
+.spoiler-block._init .spoiler-block__title::before {
   content: "";
   width: 20px;
   height: 1px;
-  background-color: #ffffff;
+  background-color: #000;
   position: absolute;
-  right: 10px;
+  right: 20px;
+  transform: rotate(45deg);
   top: 20px;
-  transition: transform 0.3s ease 0s;
+  transition: transform .3s ease 0s;
 }
 
-.block._init .block__title::after {
-  transform: rotate(-90deg);
+
+.spoiler-block._init .spoiler-block__title::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  right: 6px;
+  top: 20px;
+  transition: transform .3s ease 0s;
+  transform: rotate(133deg);
 }
 
-.block._init .block__title._active::after {
-  transform: rotate(0deg);
+.spoiler-block._init .spoiler-block__title._active::before {
+  transform: rotate(-45deg);
 }
 
-.block__text {
-  padding: 0 10px 10px;
+.spoiler-block._init .spoiler-block__title._active::after {
+  transform: rotate(228deg);
+}
+
+.spoiler-block__content {
+  padding: 20px 0;
   line-height: 130%;
 }
 
-.block_1 .block__item {
-  background-color: darkmagenta;
-}
-
-.block_2 .block__item {
-  background-color: deepskyblue;
-}
-
-.block_3 .block__item {
-  background-color: greenyellow;
+.spoiler-block__text {
+  padding: 20px 10px;
+  border: 1px solid #000000;
 }

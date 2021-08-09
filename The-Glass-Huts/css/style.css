@@ -247,6 +247,7 @@ body._lock {
   z-index: 5;
   display: flex;
   flex: 0 0 auto;
+  margin-left: 5%;
 }
 
 .menu__icon {
@@ -992,11 +993,24 @@ body._touch .menu__list > li._active .menu__arrow {
 .photo-background__info {
   position: absolute;
   z-index: 1;
-  top: 25%;
-  left: 40%;
   padding: 0 20px;
   -moz-text-align-last: center;
   text-align-last: center;
+}
+
+.photo-background__position_the-area {
+  top: 25%;
+  left: 40%;
+}
+
+.photo-background__position_about-us {
+  top: 25%;
+  left: 40%;
+}
+
+.photo-background__position_booking {
+  top: 25%;
+  left: 40%;
 }
 
 .photo-background__title {
@@ -1031,7 +1045,12 @@ body._touch .menu__list > li._active .menu__arrow {
   text-decoration-line: underline;
 }
 
+.photo-background__buttons {
+  display: flex;
+}
+
 .photo-background__button {
+  flex: 0 0 50%;
   font-family: DINPro-Light;
   font-size: 14px;
   line-height: 28px;
@@ -1052,6 +1071,14 @@ body._touch .menu__list > li._active .menu__arrow {
 .photo-background__button:active,
 .photo-background__button :focus {
   background-color: #79857f;
+}
+
+.photo-background__button:nth-child(1) {
+  margin: 0 5px 0 0;
+}
+
+.photo-background__button:nth-child(2) {
+  margin: 0 0 0 5px;
 }
 
 /*-------- Background Photo End -------*/
@@ -1325,68 +1352,82 @@ body._touch .menu__list > li._active .menu__arrow {
 /*-------- Page FAQ Start -------*/
 
 .faq-spoiler {
-  margin: 200px 0;
+  margin: 200px 0 100px 0;
 }
 
-.block {
+.spoiler-block {
+  margin: 0 0 10px;
+  padding: 0 20px;
+}
+
+.spoiler-block__item {
   margin: 0 0 10px 0;
 }
 
-.block__item {
-  margin: 0 0 10px 0;
-}
-
-.block__title {
+.spoiler-block__title {
   font-family: OpenSans-Regular;
   font-size: 18px;
   line-height: 18px;
   color: black;
   position: relative;
+  width: 100%;
+  text-align: start;
+  border: 1px solid #000000;
+  background-color: unset;
 }
 
-.block._init .block__title {
+.spoiler-block._init .spoiler-block__title {
   cursor: pointer;
 }
 
-.block._init .block__title {
+.spoiler-block .spoiler-block__title {
   padding: 10px 40px 10px 10px;
 }
 
-.block._init .block__title::before,
-.block._init .block__title::after {
+.spoiler-block._init .spoiler-block__title {
+  padding: 10px 40px 10px 10px;
+}
+
+.spoiler-block._init .spoiler-block__title::before {
   content: "";
   width: 20px;
   height: 1px;
-  background-color: #ffffff;
+  background-color: #000;
   position: absolute;
-  right: 10px;
+  right: 20px;
+  transform: rotate(45deg);
   top: 20px;
-  transition: transform 0.3s ease 0s;
+  transition: transform .3s ease 0s;
 }
 
-.block._init .block__title::after {
-  transform: rotate(-90deg);
+.spoiler-block._init .spoiler-block__title::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  right: 6px;
+  top: 20px;
+  transition: transform .3s ease 0s;
+  transform: rotate(133deg);
 }
 
-.block._init .block__title._active::after {
-  transform: rotate(0deg);
+.spoiler-block._init .spoiler-block__title._active::before {
+  transform: rotate(-45deg);
 }
 
-.block__text {
-  padding: 0 10px 10px;
+.spoiler-block._init .spoiler-block__title._active::after {
+  transform: rotate(228deg);
+}
+
+.spoiler-block__content {
+  padding: 20px 0;
   line-height: 130%;
 }
 
-.block_1 .block__item {
-  background-color: darkmagenta;
-}
-
-.block_2 .block__item {
-  background-color: deepskyblue;
-}
-
-.block_3 .block__item {
-  background-color: greenyellow;
+.spoiler-block__text {
+  padding: 20px 10px;
+  border: 1px solid #000000;
 }
 
 /*-------- Page FAQ End -------*/
@@ -1680,7 +1721,7 @@ body._touch .menu__list > li._active .menu__arrow {
   }
 
   .header__logo {
-    padding-left: 20px;
+    margin-left: 0;
   }
 
   .menu__icon {
@@ -1894,7 +1935,17 @@ body._touch .menu__list > li._active .menu__arrow {
     padding: 2em 2em;
   }
 
-  .photo-background__info {
+  .photo-background__position_the-area {
+    top: 30%;
+    left: 35%;
+  }
+
+  .photo-background__position_about-us {
+    top: 30%;
+    left: 35%;
+  }
+
+  .photo-background__position_booking {
     top: 30%;
     left: 35%;
   }
@@ -1927,6 +1978,10 @@ body._touch .menu__list > li._active .menu__arrow {
   .about-us-gallery__photo {
     grid-template-areas: "my-about-us-gallery__photo_2 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2" "my-about-us-gallery__photo-text my-about-us-gallery__photo-text my-about-us-gallery__photo-text" "my-about-us-gallery__photo_1 my-about-us-gallery__photo_1 my-about-us-gallery__photo_1" "my-about-us-gallery__photo_3 my-about-us-gallery__photo_3 my-about-us-gallery__photo_3" "my-about-us-gallery__photo_4 my-about-us-gallery__photo_4 my-about-us-gallery__photo_4";
   }
+
+  .faq-spoiler {
+    margin: 150px 0 50px 0;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1958,7 +2013,17 @@ body._touch .menu__list > li._active .menu__arrow {
     padding: 2em 2em;
   }
 
-  .photo-background__info {
+  .photo-background__position_the-area {
+    top: 30%;
+    left: 25%;
+  }
+
+  .photo-background__position_about-us {
+    top: 30%;
+    left: 25%;
+  }
+
+  .photo-background__position_booking {
     top: 30%;
     left: 25%;
   }
