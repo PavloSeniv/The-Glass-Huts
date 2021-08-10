@@ -22,8 +22,15 @@
   position: relative;
   width: 100%;
   text-align: start;
-  border: 1px solid #000000;
+  border: 0.7px solid #5B6460;
   background-color: unset;
+  text-transform: uppercase;
+}
+
+.spoiler-block__title._active {
+  background-color: #e9ece0;
+  border: unset;
+
 }
 
 .spoiler-block._init .spoiler-block__title {
@@ -31,36 +38,50 @@
 }
 
 .spoiler-block .spoiler-block__title {
-  padding: 10px 40px 10px 10px;
+  padding: 20px 40px 20px 30px;
 }
 
 .spoiler-block._init .spoiler-block__title {
-  padding: 10px 40px 10px 10px;
+  padding: 20px 40px 20px 30px;
 }
 
 .spoiler-block._init .spoiler-block__title::before {
   content: "";
-  width: 20px;
+  width: 15px;
   height: 1px;
   background-color: #000;
   position: absolute;
   right: 20px;
   transform: rotate(45deg);
-  top: 20px;
+  top: 30px;
   transition: transform .3s ease 0s;
+  z-index: 2;
 }
 
 
+.spoiler-block._init .spoiler-block__title span {
+  content: "";
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #e9ece0;
+  position: absolute;
+  right: 6px;
+  top: 11px;
+  z-index: 1;
+}
+
 .spoiler-block._init .spoiler-block__title::after {
   content: "";
-  width: 20px;
+  width: 15px;
   height: 1px;
   background-color: #000;
   position: absolute;
-  right: 6px;
-  top: 20px;
+  right: 10px;
+  top: 30px;
   transition: transform .3s ease 0s;
   transform: rotate(133deg);
+  z-index: 2;
 }
 
 .spoiler-block._init .spoiler-block__title._active::before {
@@ -72,11 +93,18 @@
 }
 
 .spoiler-block__content {
-  padding: 20px 0;
   line-height: 130%;
 }
 
 .spoiler-block__text {
-  padding: 20px 10px;
-  border: 1px solid #000000;
+  margin-bottom: 5px;
+}
+
+.spoiler-block__text:nth-last-child(1) {
+  margin-bottom: 0
+}
+
+.spoiler-block__info {
+  padding: 10px 30px 30px 30px;
+  background-color: #e9ece0;
 }
