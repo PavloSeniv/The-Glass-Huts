@@ -883,6 +883,10 @@ body._touch .menu__list > li._active .menu__arrow {
   grid-template-areas: "my-newsletter my-license" "my-security-police my-security-police";
 }
 
+.newsletter__form {
+  position: relative;
+}
+
 .newsletter__title {
   font-family: "Open Sans Semibold";
   color: var(--footer-bg-newsletter-color);
@@ -892,7 +896,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .newsletter__input {
-  width: 90%;
+  width: 100%;
   background-color: var(--footer-bg-color);
   border-bottom: 2px solid var(--footer-bg-newsletter-color);
   padding: 3px;
@@ -927,6 +931,8 @@ body._touch .menu__list > li._active .menu__arrow {
 .newsletter__button {
   position: absolute;
   display: inline-block;
+  right: 2px;
+  top: 43px;
   background-color: unset;
 }
 
