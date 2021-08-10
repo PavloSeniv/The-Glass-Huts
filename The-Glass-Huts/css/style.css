@@ -999,17 +999,22 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .photo-background__position_the-area {
-  top: 25%;
+  top: 18%;
   left: 40%;
 }
 
 .photo-background__position_about-us {
   top: 25%;
-  left: 40%;
+  left: 35%;
 }
 
 .photo-background__position_booking {
-  top: 25%;
+  top: 30%;
+  left: 40%;
+}
+
+.photo-background__position_the-hut {
+  top: 40%;
   left: 40%;
 }
 
@@ -1047,6 +1052,8 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .photo-background__buttons {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .photo-background__button {
@@ -1059,7 +1066,7 @@ body._touch .menu__list > li._active .menu__arrow {
   color: #fff;
   letter-spacing: 1px;
   width: 180px;
-  margin: 0 auto;
+  margin: 0 5px;
   padding: 15px 30px;
   border: 1px solid #fff;
 }
@@ -1071,14 +1078,6 @@ body._touch .menu__list > li._active .menu__arrow {
 .photo-background__button:active,
 .photo-background__button :focus {
   background-color: #79857f;
-}
-
-.photo-background__button:nth-child(1) {
-  margin: 0 5px 0 0;
-}
-
-.photo-background__button:nth-child(2) {
-  margin: 0 0 0 5px;
 }
 
 /*-------- Background Photo End -------*/
@@ -1641,6 +1640,26 @@ body._touch .menu__list > li._active .menu__arrow {
     padding: 4em 5em;
   }
 
+  .photo-background__position_the-area {
+    top: 25%;
+    left: 38%;
+  }
+
+  .photo-background__position_about-us {
+    top: 30%;
+    left: 25%;
+  }
+
+  .photo-background__position_booking {
+    top: 40%;
+    left: 43%;
+  }
+
+  .photo-background__position_the-hut {
+    top: 40%;
+    left: 43%;
+  }
+
   .photo-background__title {
     font-size: 35px;
     line-height: 37px;
@@ -1941,13 +1960,18 @@ body._touch .menu__list > li._active .menu__arrow {
   }
 
   .photo-background__position_about-us {
-    top: 30%;
-    left: 35%;
+    top: 35%;
+    left: 20%;
   }
 
   .photo-background__position_booking {
-    top: 30%;
-    left: 35%;
+    top: 45%;
+    left: 40%;
+  }
+
+  .photo-background__position_the-hut {
+    top: 45%;
+    left: 40%;
   }
 
   .__container-swiper-other-page {
@@ -2019,13 +2043,30 @@ body._touch .menu__list > li._active .menu__arrow {
   }
 
   .photo-background__position_about-us {
-    top: 30%;
-    left: 25%;
+    top: 20%;
+    left: 5%;
   }
 
   .photo-background__position_booking {
-    top: 30%;
-    left: 25%;
+    top: 45%;
+    left: 35%;
+  }
+
+  .photo-background__position_the-hut {
+    top: 45%;
+    left: 35%;
+  }
+
+  .photo-background__buttons {
+    flex-wrap: wrap;
+  }
+
+  .photo-background__button {
+    flex: 0 0 100%;
+  }
+
+  .photo-background__button:nth-child(1) {
+    margin-bottom: 10px;
   }
 
   .__container-swiper-other-page {

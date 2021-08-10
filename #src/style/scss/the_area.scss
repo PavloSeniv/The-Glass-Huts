@@ -20,11 +20,10 @@ $color-font-gray-1: #333333;
   z-index: 1;
   padding: 0 20px;
   text-align-last: center;
-
 }
 
 .photo-background__position_the-area {
-  top: 25%;
+  top: 18%;
   left: 40%;
   @media (max-width: 575px) {
     top: 30%;
@@ -33,35 +32,67 @@ $color-font-gray-1: #333333;
   @media (max-width: 767px) {
     top: 30%;
     left: 35%;
+  }
+
+  @media (max-width: 991px) {
+    top: 25%;
+    left: 38%;
   }
 }
 
 .photo-background__position_about-us {
   top: 25%;
-  left: 40%;
+  left: 35%;
   @media (max-width: 575px) {
-    top: 30%;
-    left: 25%;
+    top: 20%;
+    left: 5%;
   }
   @media (max-width: 767px) {
+    top: 35%;
+    left: 20%;
+  }
+
+  @media (max-width: 991px) {
     top: 30%;
-    left: 35%;
+    left: 25%;
   }
 }
 
 .photo-background__position_booking {
-  top: 25%;
+  top: 30%;
   left: 40%;
   @media (max-width: 575px) {
-    top: 30%;
-    left: 25%;
+    top: 45%;
+    left: 35%;
   }
   @media (max-width: 767px) {
-    top: 30%;
-    left: 35%;
+    top: 45%;
+    left: 40%;;
+  }
+
+  @media (max-width: 991px) {
+    top: 40%;
+    left: 43%;
   }
 }
 
+.photo-background__position_the-hut {
+  top: 40%;
+  left: 40%;
+  @media (max-width: 575px) {
+    top: 45%;
+    left: 35%;
+  }
+  @media (max-width: 767px) {
+    top: 45%;
+    left: 40%;;
+  }
+
+  @media (max-width: 991px) {
+    top: 40%;
+    left: 43%;
+  }
+}
 
 .photo-background__title {
   font-family: OpenSans-Light;
@@ -110,6 +141,11 @@ $color-font-gray-1: #333333;
 
 .photo-background__buttons {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  @media (max-width: 575px) {
+    flex-wrap: wrap;
+  }
 }
 
 .photo-background__button {
@@ -122,7 +158,7 @@ $color-font-gray-1: #333333;
   color: $color-font-white;
   letter-spacing: 1px;
   width: 180px;
-  margin: 0 auto;
+  margin: 0 5px;
   padding: 15px 30px;
   border: 1px solid $color-font-white;
 
@@ -134,12 +170,12 @@ $color-font-gray-1: #333333;
     background-color: $color-bg-active;
   }
 
-  &:nth-child(1) {
-    margin: 0 5px 0 0;
-  }
 
-  &:nth-child(2) {
-    margin: 0 0 0 5px;
+  @media (max-width: 575px) {
+    flex: 0 0 100%;
+    &:nth-child(1) {
+      margin-bottom: 10px;
+    }
   }
 }
 
