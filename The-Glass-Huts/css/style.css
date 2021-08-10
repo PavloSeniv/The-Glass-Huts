@@ -307,6 +307,9 @@ body._lock {
 
 .menu__sub-list li {
   margin: 10px 0;
+  background-color: white;
+  text-align: center;
+  border-radius: 10%;
 }
 
 .menu__sub-link {
@@ -317,8 +320,8 @@ body._lock {
 }
 
 .menu__sub-link:hover {
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: overline;
+  text-decoration-line: overline;
 }
 
 .menu__arrow {
