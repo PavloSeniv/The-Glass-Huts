@@ -4,26 +4,10 @@
     color: #fff;
 }
 
-:root {
-    --about-text-title-color: #5b6460;
-    --about-link-text-color: #5b6460;
-    --about-link-line-color: #5b6460;
-
-    --facilities-bg-color: #5b6460;
-    --facilities-color-text: #fff;
-    --facilities-sub-title-color: #fff;
-
-    --about-us-stay-color: #5b6460;
-    --about-us-stay-color-hover: #808e88;
-    --button-us-stay-price-info-bg-color: #e9ece0;
-
-}
-
 ._container {
     max-width: 1408px;
     margin: 0 auto;
 }
-
 /*-------- All -------*/
 
 /*-------- About Start -------*/
@@ -354,6 +338,13 @@
 
 .button__block {
     background-color: var(--about-us-stay-color);
+}
+
+.button__block-home {
+    padding: 30px 65px;
+}
+
+.button__block-about-us-stay {
     padding: 30px 65px;
 }
 
@@ -372,6 +363,7 @@
     font-size: 18px;
     text-transform: uppercase;
     color: #ffffff;
+    line-height: 21px;
 }
 
 .button__info-price {
@@ -442,9 +434,21 @@
     .contact__title {
         font-size: 27px;
     }
+
+    .button__block-home {
+        padding: 25px 40px;
+    }
+
+    .button__block-about-us-stay {
+        padding: 20px 40px;
+    }
+
 }
 
 @media (max-width: 767px) {
+    .about {
+        margin: 50px 0 0 0;
+    }
 
     .about__photo-gallery {
         display: grid;
@@ -452,6 +456,8 @@
                 "my-about-photo-item-1 my-about-photo-item-1 my-about-photo-item-1"
                 "my-about-photo-item-3 my-about-photo-item-3 my-about-photo-item-3"
                 "my-about-photo-item-2 my-about-photo-item-2 my-about-photo-item-2";
+        margin: 100px 0;
+
     }
 
     .about__photo-item_1 {
@@ -486,7 +492,8 @@
     }
 
     .about-us-stay {
-        padding: 2em 2em;
+        padding: 0 2em;
+        margin: 50px 0;
     }
 
     .more-about-us {
@@ -522,7 +529,8 @@
 
     .about__text {
         flex: 0 0 100%;
-        padding: 20px 20px;
+        padding: 0 20px;
+        margin-bottom: 50px;
     }
 
     .about__photo {

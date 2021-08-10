@@ -1,9 +1,4 @@
 /*-------- Footer Start -------*/
-:root {
-    --footer-bg-color: #5b6460;
-    --footer-bg-newsletter-color: #fff;
-    --footer-newsletter-sub-text-color: #fff;
-}
 
 .footer {
     background-color: var(--footer-bg-color);

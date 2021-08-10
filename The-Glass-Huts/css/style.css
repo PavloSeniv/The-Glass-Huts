@@ -199,8 +199,6 @@ h6 {
 
 /*-------- Обнулення -------*/
 
-/*-------- Header Start -------*/
-
 :root {
   --header-bg-color: #ffffff;
   --header-width-container: 1408px;
@@ -215,7 +213,21 @@ h6 {
   --header-menu-button-color-hover: #808e88;
   --header-menu-button-color-active: #79857f;
   --header-menu-arrow-color: #000000;
+  --about-text-title-color: #5b6460;
+  --about-link-text-color: #5b6460;
+  --about-link-line-color: #5b6460;
+  --facilities-bg-color: #5b6460;
+  --facilities-color-text: #fff;
+  --facilities-sub-title-color: #fff;
+  --about-us-stay-color: #5b6460;
+  --about-us-stay-color-hover: #808e88;
+  --button-us-stay-price-info-bg-color: #e9ece0;
+  --footer-bg-color: #5b6460;
+  --footer-bg-newsletter-color: #fff;
+  --footer-newsletter-sub-text-color: #fff;
 }
+
+/*-------- Header Start -------*/
 
 body._lock {
   overflow: hidden;
@@ -440,18 +452,6 @@ body._touch .menu__list > li._active .menu__arrow {
 ::selection {
   background-color: #41906d;
   color: #fff;
-}
-
-:root {
-  --about-text-title-color: #5b6460;
-  --about-link-text-color: #5b6460;
-  --about-link-line-color: #5b6460;
-  --facilities-bg-color: #5b6460;
-  --facilities-color-text: #fff;
-  --facilities-sub-title-color: #fff;
-  --about-us-stay-color: #5b6460;
-  --about-us-stay-color-hover: #808e88;
-  --button-us-stay-price-info-bg-color: #e9ece0;
 }
 
 ._container {
@@ -792,6 +792,13 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .button__block {
   background-color: var(--about-us-stay-color);
+}
+
+.button__block-home {
+  padding: 30px 65px;
+}
+
+.button__block-about-us-stay {
   padding: 30px 65px;
 }
 
@@ -810,6 +817,7 @@ body._touch .menu__list > li._active .menu__arrow {
   font-size: 18px;
   text-transform: uppercase;
   color: #ffffff;
+  line-height: 21px;
 }
 
 .button__info-price {
@@ -843,12 +851,6 @@ body._touch .menu__list > li._active .menu__arrow {
 /*-------- index End -------*/
 
 /*-------- Footer Start -------*/
-
-:root {
-  --footer-bg-color: #5b6460;
-  --footer-bg-newsletter-color: #fff;
-  --footer-newsletter-sub-text-color: #fff;
-}
 
 .footer {
   background-color: var(--footer-bg-color);
@@ -1611,7 +1613,8 @@ body._touch .menu__list > li._active .menu__arrow {
 
   .about__text {
     flex: 0 0 100%;
-    padding: 20px 20px;
+    padding: 0 20px;
+    margin-bottom: 50px;
   }
 
   .about__photo {
@@ -1918,9 +1921,14 @@ body._touch .menu__list > li._active .menu__arrow {
     position: unset;
   }
 
+  .about {
+    margin: 50px 0 0 0;
+  }
+
   .about__photo-gallery {
     display: grid;
     grid-template-areas: "my-about-photo-item-1 my-about-photo-item-1 my-about-photo-item-1" "my-about-photo-item-3 my-about-photo-item-3 my-about-photo-item-3" "my-about-photo-item-2 my-about-photo-item-2 my-about-photo-item-2";
+    margin: 100px 0;
   }
 
   .about__photo-item_1 {
@@ -1953,7 +1961,8 @@ body._touch .menu__list > li._active .menu__arrow {
   }
 
   .about-us-stay {
-    padding: 2em 2em;
+    padding: 0 2em;
+    margin: 50px 0;
   }
 
   .more-about-us {
@@ -2041,6 +2050,14 @@ body._touch .menu__list > li._active .menu__arrow {
 
   .contact__title {
     font-size: 27px;
+  }
+
+  .button__block-home {
+    padding: 25px 40px;
+  }
+
+  .button__block-about-us-stay {
+    padding: 20px 40px;
   }
 
   .footer {
