@@ -10,7 +10,7 @@ $color-bg-light-green: #e9ece0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 200px 0 100px 0;
+  margin: 100px 0 100px 0;
 }
 
 .about-us-content-content-1__photo {
@@ -19,6 +19,8 @@ $color-bg-light-green: #e9ece0;
   @media (max-width: 991px) {
     flex: 0 0 100%;
     padding-left: 0;
+    order: 1;
+    margin-top: 40px
   }
 }
 
@@ -41,6 +43,9 @@ $color-bg-light-green: #e9ece0;
   line-height: 36px;
   color: $color-bg;
   margin-bottom: 32px;
+  @media (max-width: 991px) {
+    text-align: center;
+  }
 }
 
 .about-us-content-1__subtitle {
@@ -48,6 +53,9 @@ $color-bg-light-green: #e9ece0;
   font-size: 16px;
   line-height: 30px;
   color: $color-font-gray-1;
+  @media (max-width: 991px) {
+    text-align: justify;
+  }
 }
 
 /*-------- About Us Content End -------*/
@@ -63,7 +71,7 @@ $color-bg-light-green: #e9ece0;
   color: $color-bg;
   text-align: center;
   margin-bottom: 100px;
-padding: 0 20px;
+  padding: 0 20px;
   @media (min-width: 0) and (max-width: 575px) {
     font-size: 25px;
     line-height: 36px;
@@ -75,6 +83,7 @@ padding: 0 20px;
     line-height: 46px;
   }
 }
+
 .about-us-gallery__photo {
   display: grid;
   grid-gap: 25px;

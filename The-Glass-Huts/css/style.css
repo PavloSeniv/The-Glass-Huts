@@ -1251,7 +1251,7 @@ body._touch .menu__list > li._active .menu__arrow {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 200px 0 100px 0;
+  margin: 100px 0 100px 0;
 }
 
 .about-us-content-content-1__photo {
@@ -1726,11 +1726,21 @@ body._touch .menu__list > li._active .menu__arrow {
   .about-us-content-content-1__photo {
     flex: 0 0 100%;
     padding-left: 0;
+    order: 1;
+    margin-top: 40px;
   }
 
   .about-us-content-1__info {
     flex: 0 0 100%;
     padding: 10px;
+  }
+
+  .about-us-content-1__title {
+    text-align: center;
+  }
+
+  .about-us-content-1__subtitle {
+    text-align: justify;
   }
 }
 
