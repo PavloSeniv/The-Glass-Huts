@@ -20,7 +20,7 @@ let path = {
         // Виключення всіх файлів html які починаються з _ із папки dist
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
         css: source_folder + "/style/scss/style.scss",
-        js: [source_folder + "/js/main_script.js", source_folder + "/js/_plugins*.js"],
+        js: [source_folder + "/js/main_script.js", source_folder + "/js/plugins*.js"],
         //Якщо не  вказати розширення також іх верхнього регістру то можливий варіант не копіювання зображення
         img: source_folder + "/img/**/*.+(png|PNG|jpg|JPG|gif|ico|svg|webp)",
         video: source_folder + "/video/**/*.+(mp4|mp3)",
