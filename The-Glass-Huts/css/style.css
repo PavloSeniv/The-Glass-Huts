@@ -1121,7 +1121,7 @@ body._touch .menu__list > li._active .menu__arrow {
   float: right;
 }
 
-.choose-services__trash {
+.trash {
   border: 0.7px solid #5b6460;
   flex: 0 0 30%;
   padding: 24px;
