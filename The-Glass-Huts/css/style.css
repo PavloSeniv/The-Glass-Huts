@@ -1374,7 +1374,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .about-us-contact-us .contact__title {
-  flex: 0 0 100%;
+  width: 100%;
 }
 
 .about-us-contact-us .about-us-stay__contact {
@@ -1436,8 +1436,8 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .about-us-contact-us .contacts-form__last-name {
-  display: flex;
   justify-content: flex-end;
+  display: flex;
   flex: 0 0 50%;
   margin-bottom: 24px;
 }
@@ -2078,6 +2078,18 @@ body._touch .menu__list > li._active .menu__arrow {
   .about-us-content-1__subtitle {
     text-align: justify;
   }
+
+  .about-us-contact-us .contact__title {
+    text-align: center;
+  }
+
+  .about-us-contact-us .about-us-stay__contact {
+    flex: 0 0 100%;
+  }
+
+  .about-us-contact-us .contact-form {
+    flex: 0 0 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2354,6 +2366,31 @@ body._touch .menu__list > li._active .menu__arrow {
 
   .about-us-gallery__photo {
     grid-template-areas: "my-about-us-gallery__photo_2 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2" "my-about-us-gallery__photo-text my-about-us-gallery__photo-text my-about-us-gallery__photo-text" "my-about-us-gallery__photo_1 my-about-us-gallery__photo_1 my-about-us-gallery__photo_1" "my-about-us-gallery__photo_3 my-about-us-gallery__photo_3 my-about-us-gallery__photo_3" "my-about-us-gallery__photo_4 my-about-us-gallery__photo_4 my-about-us-gallery__photo_4";
+  }
+
+  .contact-us {
+    padding: 0 20px;
+    margin-bottom: 100px;
+  }
+
+  .about-us-contact-us .contacts-form__first-name {
+    flex: 0 0 100%;
+  }
+
+  .about-us-contact-us .contacts-form__first-name input {
+    width: 100%;
+  }
+
+  .about-us-contact-us .contacts-form__last-name {
+    flex: 0 0 100%;
+  }
+
+  .about-us-contact-us .contacts-form__last-name input {
+    width: 100%;
+  }
+
+  .with-love {
+    margin-bottom: 100px;
   }
 
   .faq-spoiler {

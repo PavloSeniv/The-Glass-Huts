@@ -159,6 +159,11 @@ $color-bg-light-green: #e9ece0;
 .contact-us {
   padding: 0 50px;
   margin-bottom: 150px;
+  @media (max-width: 767px) {
+    padding: 0 20px;
+    margin-bottom: 100px;
+
+  }
 }
 
 .about-us-contact-us {
@@ -166,15 +171,24 @@ $color-bg-light-green: #e9ece0;
   flex-wrap: wrap;
 
   .contact__title {
-    flex: 0 0 100%;
+    width: 100%;
+    @media (max-width: 991px) {
+      text-align: center;
+    }
   }
 
   .about-us-stay__contact {
     flex: 0 0 40%;
+    @media (max-width: 991px) {
+      flex: 0 0 100%;
+    }
   }
 
   .contact-form {
     flex: 0 0 60%;
+    @media (max-width: 991px) {
+      flex: 0 0 100%;
+    }
   }
 
   .contacts-form__action {
@@ -186,6 +200,9 @@ $color-bg-light-green: #e9ece0;
     display: flex;
     flex: 0 0 50%;
     margin-bottom: 24px;
+    @media (max-width: 767px) {
+      flex: 0 0 100%;
+    }
     & input {
       width: 90%;
       border: 0.7px solid #5b6460;
@@ -196,6 +213,9 @@ $color-bg-light-green: #e9ece0;
       font-size: 16px;
       line-height: 18px;
       color: #333333;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
     }
 
     ::placeholder {
@@ -213,10 +233,13 @@ $color-bg-light-green: #e9ece0;
     }
   }
   .contacts-form__last-name {
-    display: flex;
     justify-content: flex-end;
+    display: flex;
     flex: 0 0 50%;
     margin-bottom: 24px;
+    @media (max-width: 767px) {
+      flex: 0 0 100%;
+    }
     & input {
       width: 90%;
       border: 0.7px solid #5b6460;
@@ -227,6 +250,9 @@ $color-bg-light-green: #e9ece0;
       font-size: 16px;
       line-height: 18px;
       color: #333333;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
     }
 
     ::placeholder {
@@ -351,13 +377,16 @@ $color-bg-light-green: #e9ece0;
   display: flex;
   justify-content: center;
   margin-bottom: 150px;
+  @media (max-width: 767px) {
+    margin-bottom: 100px;
+  }
 }
 .with-love__title {
   font-family: Handlee-Regular;
-font-size: 20px;
-line-height: 24px;
-text-align: center;
-color: #5b6460;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #5b6460;
 }
 .with-love__subtitle {
   text-align: center;
