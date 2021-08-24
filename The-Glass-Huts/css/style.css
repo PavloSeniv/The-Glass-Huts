@@ -992,6 +992,30 @@ body._touch .menu__list > li._active .menu__arrow {
 
 /*-------- Footer End -------*/
 
+/*-------- Page Booking Start -------*/
+
+/*-------- Choose Services Start -------*/
+
+.choose-services {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+
+.choose-services__additional {
+  flex: 0 0 60%;
+}
+
+.choose-services__trash {
+  flex: 0 0 30%;
+}
+
+/*-------- Choose Services End -------*/
+
+/*-------- Page Booking End -------*/
+
 /*-------- Page The Area Start -------*/
 
 /*-------- Background Photo Start -------*/

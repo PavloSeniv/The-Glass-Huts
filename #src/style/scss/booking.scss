@@ -1,0 +1,34 @@
+// Variable
+$color-font-white: #fff;
+$color-bg: #5b6460;
+$color-bg-active: #79857f;
+$color-font-gray-1: #333333;
+$color-bg-light-green: #e9ece0;
+
+/*-------- Choose Services Start -------*/
+.choose-services {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+.choose-services__additional {
+    flex: 0 0 60%;
+}
+.choose-services__spoiler {
+}
+.choose-services__spoiler-item {
+}
+.choose-services__spoiler-title-button {
+}
+.choose-services__spoiler-content {
+}
+.choose-services__spoiler-info {
+}
+.choose-services__spoiler-text {
+}
+.choose-services__trash {
+    flex: 0 0 30%;
+}
+/*-------- Choose Services End -------*/
