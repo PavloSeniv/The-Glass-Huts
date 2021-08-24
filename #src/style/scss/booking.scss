@@ -127,4 +127,104 @@ $color-bg-light-green: #e9ece0;
     flex: 0 0 30%;
     padding: 24px;
 }
+
+.trash__sum-title {
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: $color-font-gray-1;
+    & > span {
+        font-family: OpenSans-SemiBold;
+        font-size: 24px;
+        color: $color-font-gray-1;
+    }
+    margin-bottom: 20px;
+}
+.trash__table {
+    padding: 10px 20px;
+    display: flex;
+    border: 0.7px solid $color-bg;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.trash__item-table {
+    font-family: OpenSans-SemiBold;
+    font-size: 12px;
+    font-weight: 500;
+    color: $color-font-gray-1;
+    border-right: 0.7px solid #333333;
+    padding-right: 20px;
+    &:nth-last-child(1) {
+        border-right: unset;
+        padding-right: 0;
+    }
+
+    & > h3 {
+        margin-bottom: 10px;
+    }
+}
+
+.trash__guest-oper {
+    display: flex;
+    justify-content: space-between;
+}
+.trash__button {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #5b6460;
+    color: #fff;
+    font-family: OpenSans-Light;
+    font-size: 14px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.trash__services-info {
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: $color-font-gray-1;
+    border-bottom: 0.7px solid #333333;
+    margin-bottom: 30px;
+}
+
+.trash__block-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.trash__discount {
+    color: #41916d;
+}
+.trash__total {
+    display: flex;
+    justify-content: space-between;
+    font-family: OpenSans-SemiBold;
+    font-size: 20px;
+    color: $color-font-gray-1;
+    margin-bottom: 30px;
+}
+.trash__coupon {
+    display: flex;
+}
+.trash__button-input {
+    flex: 0 0 70%;
+    border: 0.7px solid $color-font-gray-1;
+    padding: 15px 20px;
+    background-color: unset;
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: #333333;
+}
+.trash__button-cuppon {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    background-color: $color-bg;
+    color: $color-font-white;
+    text-transform: uppercase;
+}
 /*-------- Choose Services End -------*/
