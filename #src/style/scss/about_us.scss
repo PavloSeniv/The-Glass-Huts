@@ -376,12 +376,14 @@ $color-bg-light-green: #e9ece0;
 .with-love {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 150px;
   @media (max-width: 767px) {
     margin-bottom: 100px;
   }
 }
 .with-love__title {
+  flex: 0 0 100%;
   font-family: Handlee-Regular;
   font-size: 20px;
   line-height: 24px;
@@ -390,5 +392,6 @@ $color-bg-light-green: #e9ece0;
 }
 .with-love__subtitle {
   text-align: center;
+  flex: 0 0 100%;
 }
 /*-------- With Love End -------*/
