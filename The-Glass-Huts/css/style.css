@@ -1361,6 +1361,269 @@ body._touch .menu__list > li._active .menu__arrow {
 
 /*-------- About Us Gallery End -------*/
 
+/*-------- About Us Contact Us Start -------*/
+
+.contact-us {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.about-us-contact-us {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-us-contact-us .contact__title {
+  flex: 0 0 100%;
+}
+
+.about-us-contact-us .about-us-stay__contact {
+  flex: 0 0 40%;
+}
+
+.about-us-contact-us .contact-form {
+  flex: 0 0 60%;
+}
+
+.about-us-contact-us .contacts-form__action {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.about-us-contact-us .contacts-form__first-name {
+  display: flex;
+  flex: 0 0 50%;
+  margin-bottom: 24px;
+}
+
+.about-us-contact-us .contacts-form__first-name input {
+  width: 90%;
+  border: 0.7px solid #5b6460;
+  background-color: #fff;
+  height: 50px;
+  padding: 20px;
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.about-us-contact-us .contacts-form__first-name ::-moz-placeholder {
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.about-us-contact-us .contacts-form__first-name :-ms-input-placeholder {
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.about-us-contact-us .contacts-form__first-name ::placeholder {
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.about-us-contact-us .contacts-form__first-name :hover,
+.about-us-contact-us .contacts-form__first-name :focus {
+  box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.about-us-contact-us .contacts-form__last-name {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0 0 50%;
+  margin-bottom: 24px;
+}
+
+.about-us-contact-us .contacts-form__last-name input {
+  width: 90%;
+  border: 0.7px solid #5b6460;
+  background-color: #fff;
+  height: 50px;
+  padding: 20px;
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.about-us-contact-us .contacts-form__last-name ::-moz-placeholder {
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.about-us-contact-us .contacts-form__last-name :-ms-input-placeholder {
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.about-us-contact-us .contacts-form__last-name ::placeholder {
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.about-us-contact-us .contacts-form__last-name :hover,
+.about-us-contact-us .contacts-form__last-name :focus {
+  box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.about-us-contact-us .contacts-form__mail {
+  flex: 0 0 100%;
+  margin-bottom: 24px;
+}
+
+.about-us-contact-us .contacts-form__mail input {
+  width: 100%;
+  border: 0.7px solid #5b6460;
+  background-color: #fff;
+  height: 50px;
+  padding: 20px;
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.about-us-contact-us .contacts-form__mail ::-moz-placeholder {
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.about-us-contact-us .contacts-form__mail :-ms-input-placeholder {
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.about-us-contact-us .contacts-form__mail ::placeholder {
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.about-us-contact-us .contacts-form__mail :hover,
+.about-us-contact-us .contacts-form__mail :focus {
+  box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.about-us-contact-us .contacts-form__subject {
+  flex: 0 0 100%;
+  margin-bottom: 24px;
+}
+
+.about-us-contact-us .contacts-form__subject input {
+  width: 100%;
+  border: 0.7px solid #5b6460;
+  background-color: #fff;
+  height: 50px;
+  padding: 20px;
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.about-us-contact-us .contacts-form__subject ::-moz-placeholder {
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.about-us-contact-us .contacts-form__subject :-ms-input-placeholder {
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.about-us-contact-us .contacts-form__subject ::placeholder {
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.about-us-contact-us .contacts-form__subject :hover,
+.about-us-contact-us .contacts-form__subject :focus {
+  box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.about-us-contact-us .contacts-form__message {
+  flex: 0 0 100%;
+  margin-bottom: 24px;
+}
+
+.about-us-contact-us .contacts-form__message textarea {
+  resize: vertical;
+  min-height: 124px;
+  max-height: 500px;
+  width: 100%;
+  border: 0.7px solid #5b6460;
+  background-color: #fff;
+  height: 50px;
+  padding: 20px;
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.about-us-contact-us .contacts-form__message ::-moz-placeholder {
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.about-us-contact-us .contacts-form__message :-ms-input-placeholder {
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.about-us-contact-us .contacts-form__message ::placeholder {
+  font-family: Open OpenSans-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.about-us-contact-us .contacts-form__message :hover,
+.about-us-contact-us .contacts-form__message :focus {
+  box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.about-us-contact-us .contact-form__button {
+  width: 200px;
+  height: 60px;
+  background-color: #5b6460;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: DINPro-Light;
+}
+
+/*-------- About Us Contact Us End -------*/
+
 /*-------- Page About Us End -------*/
 
 /*-------- Page FAQ Start -------*/

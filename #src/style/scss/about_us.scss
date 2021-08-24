@@ -20,7 +20,7 @@ $color-bg-light-green: #e9ece0;
     flex: 0 0 100%;
     padding-left: 0;
     order: 1;
-    margin-top: 40px
+    margin-top: 40px;
   }
 }
 
@@ -75,7 +75,6 @@ $color-bg-light-green: #e9ece0;
   @media (min-width: 0) and (max-width: 575px) {
     font-size: 25px;
     line-height: 36px;
-
   }
 
   @media (max-width: 767px) {
@@ -88,37 +87,33 @@ $color-bg-light-green: #e9ece0;
   display: grid;
   grid-gap: 25px;
   grid-template-areas:
-          "my-about-us-gallery__photo_1 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2"
-          "my-about-us-gallery__photo_3 my-about-us-gallery__photo-text my-about-us-gallery__photo_4";
+    "my-about-us-gallery__photo_1 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2"
+    "my-about-us-gallery__photo_3 my-about-us-gallery__photo-text my-about-us-gallery__photo_4";
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 
   @media (min-width: 0) and (max-width: 575px) {
-
   }
 
   @media (max-width: 767px) {
     grid-template-areas:
-          "my-about-us-gallery__photo_2 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2"
-          "my-about-us-gallery__photo-text my-about-us-gallery__photo-text my-about-us-gallery__photo-text"
-          "my-about-us-gallery__photo_1 my-about-us-gallery__photo_1 my-about-us-gallery__photo_1"
-          "my-about-us-gallery__photo_3 my-about-us-gallery__photo_3 my-about-us-gallery__photo_3"
-          "my-about-us-gallery__photo_4 my-about-us-gallery__photo_4 my-about-us-gallery__photo_4";
+      "my-about-us-gallery__photo_2 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2"
+      "my-about-us-gallery__photo-text my-about-us-gallery__photo-text my-about-us-gallery__photo-text"
+      "my-about-us-gallery__photo_1 my-about-us-gallery__photo_1 my-about-us-gallery__photo_1"
+      "my-about-us-gallery__photo_3 my-about-us-gallery__photo_3 my-about-us-gallery__photo_3"
+      "my-about-us-gallery__photo_4 my-about-us-gallery__photo_4 my-about-us-gallery__photo_4";
   }
 
   @media (max-width: 991px) {
-
   }
 
   @media (max-width: 1199px) {
     grid-template-areas:
-          "my-about-us-gallery__photo_2 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2"
-          "my-about-us-gallery__photo-text my-about-us-gallery__photo-text my-about-us-gallery__photo-text"
-          "my-about-us-gallery__photo_4 my-about-us-gallery__photo_1 my-about-us-gallery__photo_3";
-
+      "my-about-us-gallery__photo_2 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2"
+      "my-about-us-gallery__photo-text my-about-us-gallery__photo-text my-about-us-gallery__photo-text"
+      "my-about-us-gallery__photo_4 my-about-us-gallery__photo_1 my-about-us-gallery__photo_3";
   }
 
   @media (max-width: 1399px) {
-
   }
 }
 
@@ -160,3 +155,194 @@ $color-bg-light-green: #e9ece0;
 
 /*-------- About Us Gallery End -------*/
 
+/*-------- About Us Contact Us Start -------*/
+.contact-us {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.about-us-contact-us {
+  display: flex;
+  flex-wrap: wrap;
+
+  .contact__title {
+    flex: 0 0 100%;
+  }
+
+  .about-us-stay__contact {
+    flex: 0 0 40%;
+  }
+
+  .contact-form {
+    flex: 0 0 60%;
+  }
+
+  .contacts-form__action {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .contacts-form__first-name {
+    display: flex;
+    flex: 0 0 50%;
+    margin-bottom: 24px;
+    & input {
+      width: 90%;
+      border: 0.7px solid #5b6460;
+      background-color: #fff;
+      height: 50px;
+      padding: 20px;
+      font-family: Open OpenSans-Regular;
+      font-size: 16px;
+      line-height: 18px;
+      color: #333333;
+    }
+
+    ::placeholder {
+      font-family: Open OpenSans-Regular;
+      font-size: 16px;
+      line-height: 18px;
+      color: #828282;
+    }
+
+    & :hover,
+    & :focus {
+      -webkit-box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .contacts-form__last-name {
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 0 50%;
+    margin-bottom: 24px;
+    & input {
+      width: 90%;
+      border: 0.7px solid #5b6460;
+      background-color: #fff;
+      height: 50px;
+      padding: 20px;
+      font-family: Open OpenSans-Regular;
+      font-size: 16px;
+      line-height: 18px;
+      color: #333333;
+    }
+
+    ::placeholder {
+      font-family: Open OpenSans-Regular;
+      font-size: 16px;
+      line-height: 18px;
+      color: #828282;
+    }
+
+    & :hover,
+    & :focus {
+      -webkit-box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .contacts-form__mail {
+    flex: 0 0 100%;
+    margin-bottom: 24px;
+    & input {
+      width: 100%;
+      border: 0.7px solid #5b6460;
+      background-color: #fff;
+      height: 50px;
+      padding: 20px;
+      font-family: Open OpenSans-Regular;
+      font-size: 16px;
+      line-height: 18px;
+      color: #333333;
+    }
+
+    ::placeholder {
+      font-family: Open OpenSans-Regular;
+      font-size: 16px;
+      line-height: 18px;
+      color: #828282;
+    }
+
+    & :hover,
+    & :focus {
+      -webkit-box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .contacts-form__subject {
+    flex: 0 0 100%;
+    margin-bottom: 24px;
+    & input {
+      width: 100%;
+      border: 0.7px solid #5b6460;
+      background-color: #fff;
+      height: 50px;
+      padding: 20px;
+      font-family: Open OpenSans-Regular;
+      font-size: 16px;
+      line-height: 18px;
+      color: #333333;
+    }
+
+    ::placeholder {
+      font-family: Open OpenSans-Regular;
+      font-size: 16px;
+      line-height: 18px;
+      color: #828282;
+    }
+
+    & :hover,
+    & :focus {
+      -webkit-box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .contacts-form__message {
+    flex: 0 0 100%;
+    margin-bottom: 24px;
+    & textarea {
+      resize: vertical;
+      min-height: 124px;
+      max-height: 500px;
+      width: 100%;
+      border: 0.7px solid #5b6460;
+      background-color: #fff;
+      height: 50px;
+      padding: 20px;
+      font-family: Open OpenSans-Regular;
+      font-size: 16px;
+      line-height: 18px;
+      color: #333333;
+    }
+
+    ::placeholder {
+      font-family: Open OpenSans-Regular;
+      font-size: 16px;
+      line-height: 18px;
+      color: #828282;
+    }
+
+    & :hover,
+    & :focus {
+      -webkit-box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .contact-form__button {
+    width: 200px;
+    height: 60px;
+    background-color: #5b6460;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: DINPro-Light;
+  }
+}
+
+/*-------- About Us Contact Us End -------*/

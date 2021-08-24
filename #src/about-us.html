@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
     <meta name="author" content="Seniv Pavlo, https://github.com/PavloSeniv">
@@ -14,7 +13,8 @@
     <!------- Style ------->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-
+<body>
+    
 @@include('html/_header.html')
 
 <main class="_container">
@@ -78,7 +78,63 @@
         </div>
     </section>
 
-    <section class="about-us-contact-us contact-us"></section>
+    <section class="about-us-contact-us contact-us">
+        <h2 class="contact__title">Stay in touch with us</h2>
+
+        <div class="about-us-stay__contact">
+            <h4 class="contact__sub-title">Vesterbord, Denmark</h4>
+            <a class="contact__phone" href="tel:+123 456 789 000">+123 456 789 000</a>
+            <a class="contact__mail" href="mailto:info@theglasshuts.com">info@theglasshuts.com</a>
+            <ul class="contact__link-social">
+                <li>
+                    <a class="link-social__item" href="https://www.instagram.com/" target="_blank">
+                        <img src="img/index/about_us_stay/social_item_insta.png" alt="social__item-insta">
+                    </a>
+                </li>
+                <li>
+                    <a class="link-social__item" href="https://uk-ua.facebook.com/" target="_blank">
+                        <!--Атрибут alt виходить за лінію-->
+                        <img src="img/index/about_us_stay/social_item_facebook.png" alt="social__item-facebook">
+                    </a>
+                </li>
+                <li>
+                    <a class="link-social__item" href="https://twitter.com/?lang=uk" target="_blank">
+                        <img src="img/index/about_us_stay/social_item_twitter.png" alt="social__item-twitter">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+    <div class="contact-form">
+        <form class="contacts-form__action"  action="" method="post">
+            
+            <div class="contacts-form__first-name" >
+                <input tabindex="1" type="text" name="first-name" placeholder="First Name">
+            </div>
+
+            <div class="contacts-form__last-name" >
+                <input tabindex="1" type="text" name="last-name" placeholder="Last Name">
+            </div>
+
+            <div class="contacts-form__mail" >
+                <input tabindex="1" type="text" name="mail" placeholder="Email">
+            </div>
+
+            <div class="contacts-form__subject" >
+                <input tabindex="1" type="text" name="subject" placeholder="Subject">
+            </div>
+
+            <div class="contacts-form__message" >
+                <textarea tabindex="1" name="message" placeholder="Message" cols="30"
+                    rows="10"></textarea>
+            </div>
+
+            <button tabindex="1" type="submit" class="contact-form__button">Send</button>
+        </form>
+    </div>
+    
+    </section>
 </main>
 
 @@include('html/_footer.html')
