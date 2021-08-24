@@ -52,6 +52,9 @@ $color-bg-light-green: #e9ece0;
 .choose-services__spoiler-item {
     width: 100%;
     margin-bottom: 20px;
+    &:nth-last-child(1) {
+        margin-bottom: 100px;
+    }
 }
 .choose-services__spoiler-title-button {
     padding: 13px 20px;
@@ -76,7 +79,7 @@ $color-bg-light-green: #e9ece0;
     padding: 20px;
 }
 
-.choose-services__spoiler-title{
+.choose-services__spoiler-title {
     font-family: OpenSans-SemiBold;
     font-size: 16px;
     line-height: 20px;
@@ -89,6 +92,36 @@ $color-bg-light-green: #e9ece0;
     line-height: 20px;
     color: #333333;
 }
+
+.choose-services__info {
+    margin-bottom: 90px;
+}
+.choose-services__subtitle {
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    line-height: 18px;
+    color: #333333;
+    margin-bottom: 10px;
+    &:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+}
+
+.choose-services__button {
+    display: flex;
+    width: 180px;
+    height: 55px;
+    background-color: #5b6460;
+    font-family: OpenSans-Light;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+
 .choose-services__trash {
     border: 0.7px solid $color-bg;
     flex: 0 0 30%;
