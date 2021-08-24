@@ -16,19 +16,82 @@ $color-bg-light-green: #e9ece0;
 .choose-services__additional {
     flex: 0 0 60%;
 }
+
+.choose-services__title {
+    font-family: OpenSans-Regular;
+    font-size: 24px;
+    line-height: 27px;
+    color: $color-bg;
+    margin-bottom: 20px;
+
+    &::after {
+        content: "";
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+        background-color: $color-bg;
+        height: 0.7px;
+    }
+}
 .choose-services__spoiler {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.choose-services__button-plus {
+    background-color: #fff;
+    padding: 5px;
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: 20px;
 }
 .choose-services__spoiler-item {
+    width: 100%;
+    margin-bottom: 20px;
 }
 .choose-services__spoiler-title-button {
+    padding: 13px 20px;
+    width: 100%;
+    background-color: #e9ece0;
+    font-family: OpenSans-SemiBold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #333333;
+    & > p {
+        margin-top: 5px;
+        font-family: OpenSans-Regular;
+        font-size: 16px;
+        line-height: 18px;
+        color: #333333;
+    }
+    text-align: start;
 }
+
 .choose-services__spoiler-content {
+    background-color: #fff;
+    padding: 20px;
 }
-.choose-services__spoiler-info {
+
+.choose-services__spoiler-title{
+    font-family: OpenSans-SemiBold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 10px;
 }
 .choose-services__spoiler-text {
+    font-family: OpenSans-Light;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
 }
 .choose-services__trash {
+    border: 0.7px solid $color-bg;
     flex: 0 0 30%;
+    padding: 24px;
 }
 /*-------- Choose Services End -------*/
