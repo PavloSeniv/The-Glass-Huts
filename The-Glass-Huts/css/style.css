@@ -1244,6 +1244,46 @@ body._touch .menu__list > li._active .menu__arrow {
 
 /*-------- Page Payment Start -------*/
 
+/*-------- Payment Personal Info Start -------*/
+
+/*-------- Payment Personal Info End -------*/
+
+.paymant-content {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 250px 0 150px 0;
+}
+
+.choose-services__additional {
+  flex: 0 0 60%;
+}
+
+.choose-services__title {
+  font-family: OpenSans-Regular;
+  font-size: 24px;
+  line-height: 27px;
+  color: #5b6460;
+  margin-bottom: 20px;
+}
+
+.choose-services__title::after {
+  content: "";
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  background-color: #5b6460;
+  height: 0.7px;
+}
+
+.trash__geo-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*-------- Choose Services End -------*/
+
 /*-------- Page Payment End -------*/
 
 /*-------- Page The Area Start -------*/
@@ -2240,6 +2280,11 @@ body._touch .menu__list > li._active .menu__arrow {
 
   .trash {
     flex: 0 0 100%;
+  }
+
+  .choose-services__additional {
+    flex: 0 0 100%;
+    margin-bottom: 50px;
   }
 
   .photo-background__position_the-area {

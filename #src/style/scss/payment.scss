@@ -1,0 +1,49 @@
+// Variable
+$color-font-white: #fff;
+$color-bg: #5b6460;
+$color-bg-active: #79857f;
+$color-font-gray-1: #333333;
+$color-bg-light-green: #e9ece0;
+
+/*-------- Payment Personal Info Start -------*/
+
+/*-------- Payment Personal Info End -------*/
+
+.paymant-content {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 250px 0 150px 0;
+}
+.choose-services__additional {
+    flex: 0 0 60%;
+    @media (max-width: 991px) {
+        flex: 0 0 100%;
+        margin-bottom: 50px;
+    }
+}
+
+.choose-services__title {
+    font-family: OpenSans-Regular;
+    font-size: 24px;
+    line-height: 27px;
+    color: $color-bg;
+    margin-bottom: 20px;
+
+    &::after {
+        content: "";
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+        background-color: $color-bg;
+        height: 0.7px;
+    }
+}
+
+.trash__geo-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*-------- Choose Services End -------*/
