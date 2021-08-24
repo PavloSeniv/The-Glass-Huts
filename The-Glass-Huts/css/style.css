@@ -1365,7 +1365,7 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .contact-us {
   padding: 0 50px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .about-us-contact-us {
@@ -1623,6 +1623,28 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 /*-------- About Us Contact Us End -------*/
+
+/*-------- With Love Start -------*/
+
+.with-love {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.with-love__title {
+  font-family: Handlee-Regular;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #5b6460;
+}
+
+.with-love__subtitle {
+  text-align: center;
+}
+
+/*-------- With Love End -------*/
 
 /*-------- Page About Us End -------*/
 
