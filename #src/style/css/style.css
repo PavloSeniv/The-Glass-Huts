@@ -1,574 +1,579 @@
 /*-------- All -------*/
 ::selection {
-    background-color: #41906d;
-    color: #fff;
+  background-color: #41906d;
+  color: #fff;
 }
 
 ._container {
-    max-width: 1408px;
-    margin: 0 auto;
+  max-width: 1408px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #b4b4b8, #333);
 }
 
 /*-------- All -------*/
 
 /*-------- About Start -------*/
 .about {
-    display: flex;
-    margin: 100px 0 0 0;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  margin: 100px 0 0 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .about__text {
-    flex: 0 0 50%;
-    padding: 89px 105px 0 147px;
+  flex: 0 0 50%;
+  padding: 89px 105px 0 147px;
 }
 
 .text__title {
-    font-family: OpenSans-Regular;
-    font-size: 40px;
-    color: var(--about-text-title-color);
-    margin-bottom: 45px;
+  font-family: OpenSans-Regular;
+  font-size: 40px;
+  color: var(--about-text-title-color);
+  margin-bottom: 45px;
 }
 
 .text__subtitle {
-    font-family: OpenSans-Light;
-    font-size: 16px;
-    line-height: 25px;
-    color: #000000;
-    margin-bottom: 30px;
+  font-family: OpenSans-Light;
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 30px;
 }
 
 .about__link {
-    display: inline-block;
-    font-family: "Open Sans Semibold";
-    font-size: 16px;
-    color: var(--about-link-text-color);
+  display: inline-block;
+  font-family: "Open Sans Semibold";
+  font-size: 16px;
+  color: var(--about-link-text-color);
 }
 
 .about__link:after {
-    display: inline-block;
-    content: "";
-    width: 100%;
-    height: 3px;
-    background-color: var(--about-link-line-color);
+  display: inline-block;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: var(--about-link-line-color);
 }
 
 .about__link:hover {
-    color: #000000;
+  color: #000000;
 }
 
 .about__photo {
-    flex: 0 0 50%
+  flex: 0 0 50%;
 }
 
 .photo__bad {
-    width: 100%;
+  width: 100%;
 }
 
 .about__photo-gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 150px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 150px 0;
 }
 
 .about__item {
-    width: 100%;
+  width: 100%;
 }
 
 /*-------- About End -------*/
 
 /*-------- Forest Start -------*/
 .forest {
-    display: grid;
-    grid-template-areas:
-            "my-map my-forest-info"
-            "my-map my-forest-info";
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-areas:
+    "my-map my-forest-info"
+    "my-map my-forest-info";
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .forest__map {
-    grid-area: my-map;
-    width: 100%;
+  grid-area: my-map;
+  width: 100%;
 }
 
 .forest__info {
-    grid-area: my-forest-info;
-    display: flex;
-    padding: 10em 6em;
-    background-color: #e9ece0;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
+  grid-area: my-forest-info;
+  display: flex;
+  padding: 10em 6em;
+  background-color: #e9ece0;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .forest__title {
-    font-family: OpenSans-Regular;
-    font-size: 40px;
-    line-height: 40px;
-    color: #5B6460;
-    margin-bottom: 50px;
+  font-family: OpenSans-Regular;
+  font-size: 40px;
+  line-height: 40px;
+  color: #5b6460;
+  margin-bottom: 50px;
 }
 
 .forest__subtitle {
-    font-family: OpenSans-Regular;
-    font-size: 16px;
-    line-height: 30px;
-    color: #000000;
-    margin-bottom: 25px;
+  font-family: OpenSans-Regular;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 25px;
 }
 
 .forest__link {
-    display: inline-block;
-    font-family: OpenSans-Italic;
-    font-size: 16px;
-    color: #5B6460;
+  display: inline-block;
+  font-family: OpenSans-Italic;
+  font-size: 16px;
+  color: #5b6460;
 }
 
 .forest__link:hover {
-    color: #000;
+  color: #000;
 }
 
 .forest__link::after {
-    margin-top: -5px;
-    display: inline-block;
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: #5B6460;
+  margin-top: -5px;
+  display: inline-block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #5b6460;
 }
 
 .map__google {
-    width: 100%;
+  width: 100%;
 }
 
 /*-------- Forest End -------*/
 
 /*-------- Facilities Start -------*/
 .facilities {
-    background-color: var(--facilities-bg-color);
-    padding: 10em 20em;
+  background-color: var(--facilities-bg-color);
+  padding: 10em 20em;
 }
 
 .facilities__text {
-    color: var(--facilities-color-text);
+  color: var(--facilities-color-text);
 }
 
 .facilities__title {
-    font-family: OpenSans-Light;
-    font-size: 40px;
-    margin-bottom: 100px;
-    text-align: center;
+  font-family: OpenSans-Light;
+  font-size: 40px;
+  margin-bottom: 100px;
+  text-align: center;
 }
 
 .facilities__icons {
-    display: grid;
-    grid-gap: 100px;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
 
 .icons__photo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 .icons__sub-title {
-    font-family: OpenSans-Regular;
-    font-size: 18px;
-    color: var(--facilities-sub-title-color);
-    margin-top: 25px;
-    line-height: 2em;
-    text-align: center;
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+  color: var(--facilities-sub-title-color);
+  margin-top: 25px;
+  line-height: 2em;
+  text-align: center;
 }
 
 /*-------- Facilities End -------*/
 
 /*-------- More-About-Us Start -------*/
 .more-about-us {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0;
-    grid-row-gap: 0;
-    align-items: center;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  align-items: center;
+  justify-items: center;
 }
 
 .more-about-us__photo-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-area: 1 / 1 / 5 / 7;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-area: 1 / 1 / 5 / 7;
 }
 
 .item__photo-gallery {
-    width: 100%;
+  width: 100%;
 }
 
 .more-about-us__button {
-    grid-area: 2 / 3 / 4 / 5;
-
+  grid-area: 2 / 3 / 4 / 5;
 }
 
 .more-about-us__link {
-    font-family: DINPro-Medium;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-    color: #000;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #e9ece0;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+  font-family: DINPro-Medium;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #000;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #e9ece0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .more-about-us__link:hover {
-    background-color: #5B6460;
-    color: #fff;
-    text-decoration-line: underline;
+  background-color: #5b6460;
+  color: #fff;
+  text-decoration-line: underline;
 }
 
 /*-------- More-About-Us End -------*/
 
 /*-------- Contact-Us-Stay Start -------*/
 .about-us-stay {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 8em 10em;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8em 10em;
 }
 
 .about-us-stay__contact {
-    flex: 0 0 50%;
+  flex: 0 0 50%;
 }
 
 .contact__title {
-    display: block;
-    font-family: OpenSans-Regular;
-    font-size: 40px;
-    color: var(--about-us-stay-color);
-    margin-bottom: 50px;
-    line-height: 55px;
+  display: block;
+  font-family: OpenSans-Regular;
+  font-size: 40px;
+  color: var(--about-us-stay-color);
+  margin-bottom: 50px;
+  line-height: 55px;
 }
 
 .contact__sub-title {
-    font-family: OpenSans-Light;
-    font-size: 16px;
-    color: #000000;
-    margin-bottom: 20px;
+  font-family: OpenSans-Light;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 20px;
 }
 
 .contact__phone {
-    display: block;
-    font-family: OpenSans-Light;
-    font-size: 16px;
-    color: #000000;
-    margin-bottom: 10px;
+  display: block;
+  font-family: OpenSans-Light;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 10px;
 }
 
 .contact__phone:hover {
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 .contact__mail {
-    display: block;
-    font-family: OpenSans-Light;
-    font-size: 16px;
-    color: #000000;
-    margin-bottom: 50px;
+  display: block;
+  font-family: OpenSans-Light;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 50px;
 }
 
 .contact__mail:hover {
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 .contact__link-social {
-    display: flex;
-    width: 50%;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .link-social__item {
-    display: flex;
-    padding: 10px;
-    background-color: var(--about-us-stay-color);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  padding: 10px;
+  background-color: var(--about-us-stay-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .link-social__item:hover {
-    background-color: var(--about-us-stay-color-hover);
-    color: #000000;
-
+  background-color: var(--about-us-stay-color-hover);
+  color: #000000;
 }
 
-.link-social__item:nth-last-child(-n+1) {
-    margin-right: 0;
+.link-social__item:nth-last-child(-n + 1) {
+  margin-right: 0;
 }
 
-.link-social__item:nth-child(n+1) {
-    margin-left: 0;
+.link-social__item:nth-child(n + 1) {
+  margin-left: 0;
 }
 
 .about-us-stay__little-book {
-    padding: 45px 0;
-    flex: 0 0 50%;
+  padding: 45px 0;
+  flex: 0 0 50%;
 }
 
 .little-book-photo {
-    width: 100%;
+  width: 100%;
 }
 
 .little-book__button {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .button__block {
-    background-color: var(--about-us-stay-color);
+  background-color: var(--about-us-stay-color);
 }
 
 .button__block-home {
-    padding: 30px 65px;
+  padding: 30px 65px;
 }
 
 .button__block-about-us-stay {
-    padding: 30px 65px;
+  padding: 30px 65px;
 }
 
 .button__block:hover {
-    background-color: var(--about-us-stay-color-hover);
+  background-color: var(--about-us-stay-color-hover);
 }
 
 .block__book {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .book__title {
-    font-family: DINPro-Light;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #ffffff;
-    line-height: 21px;
+  font-family: DINPro-Light;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 21px;
 }
 
 .button__info-price {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    background-color: var(--button-us-stay-price-info-bg-color);
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: var(--button-us-stay-price-info-bg-color);
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .info-price__text {
-    font-family: DINPro-Light;
-    font-size: 12px;
-    color: #000000;
+  font-family: DINPro-Light;
+  font-size: 12px;
+  color: #000000;
 }
 
 .text__price-book_2 {
-    font-family: DINPro-Medium;
-    font-size: 20px;
+  font-family: DINPro-Medium;
+  font-size: 20px;
 }
 
 .text__price-book_3 {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*-------- Contact-Us-Stay End -------*/
 
 @media (min-width: 1400px) {
-    .about {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 576px) {
-    .about__item {
-        margin-bottom: 30px;
-    }
+  .about__item {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 575px) {
-    .forest {
-        grid-template-areas:
-            "my-forest-info my-forest-info"
-            "my-map my-map";
-    }
+  .forest {
+    grid-template-areas:
+      "my-forest-info my-forest-info"
+      "my-map my-map";
+  }
 
-    .facilities {
-        padding: 3em 3em;
-    }
+  .facilities {
+    padding: 3em 3em;
+  }
 
-    .text__title {
-        text-align: center;
-    }
+  .text__title {
+    text-align: center;
+  }
 
-    .about__item {
-        margin-bottom: 30px;
-    }
+  .about__item {
+    margin-bottom: 30px;
+  }
 
-    .about-us-stay {
-        padding: 3em 3em;
-    }
+  .about-us-stay {
+    padding: 3em 3em;
+  }
 
-    .contact__title {
-        font-size: 27px;
-    }
+  .contact__title {
+    font-size: 27px;
+  }
 
-    .button__block-home {
-        padding: 25px 40px;
-    }
+  .button__block-home {
+    padding: 25px 40px;
+  }
 
-    .button__block-about-us-stay {
-        padding: 20px 40px;
-    }
-
+  .button__block-about-us-stay {
+    padding: 20px 40px;
+  }
 }
 
 @media (max-width: 767px) {
-    .about {
-        margin: 50px 0 0 0;
-    }
+  .about {
+    margin: 50px 0 0 0;
+  }
 
-    .about__photo-gallery {
-        display: grid;
-        grid-template-areas:
-                "my-about-photo-item-1 my-about-photo-item-1 my-about-photo-item-1"
-                "my-about-photo-item-3 my-about-photo-item-3 my-about-photo-item-3"
-                "my-about-photo-item-2 my-about-photo-item-2 my-about-photo-item-2";
-        margin: 100px 0;
+  .about__photo-gallery {
+    display: grid;
+    grid-template-areas:
+      "my-about-photo-item-1 my-about-photo-item-1 my-about-photo-item-1"
+      "my-about-photo-item-3 my-about-photo-item-3 my-about-photo-item-3"
+      "my-about-photo-item-2 my-about-photo-item-2 my-about-photo-item-2";
+    margin: 100px 0;
+  }
 
-    }
+  .about__photo-item_1 {
+    grid-area: my-about-photo-item-1;
+  }
 
-    .about__photo-item_1 {
-        grid-area: my-about-photo-item-1;
-    }
+  .about__photo-item_2 {
+    grid-area: my-about-photo-item-2;
+  }
 
-    .about__photo-item_2 {
-        grid-area: my-about-photo-item-2;
-    }
+  .about__photo-item_3 {
+    grid-area: my-about-photo-item-3;
+  }
 
-    .about__photo-item_3 {
-        grid-area: my-about-photo-item-3;
-    }
+  .forest {
+    display: grid;
+    grid-template-areas:
+      "my-forest-info my-forest-info"
+      "my-map my-map";
+  }
 
-    .forest {
-        display: grid;
-        grid-template-areas:
-            "my-forest-info my-forest-info"
-            "my-map my-map";
-    }
+  .about__photo-gallery {
+    justify-content: center;
+  }
 
-    .about__photo-gallery {
-        justify-content: center;
-    }
+  .facilities {
+    padding: 5em 5em;
+  }
 
-    .facilities {
-        padding: 5em 5em;
-    }
+  .text__subtitle {
+    text-align: justify;
+  }
 
-    .text__subtitle {
-        text-align: justify;
-    }
+  .about-us-stay {
+    padding: 0 2em;
+    margin: 50px 0;
+  }
 
-    .about-us-stay {
-        padding: 0 2em;
-        margin: 50px 0;
-    }
-
-    .more-about-us {
-        display: none;
-    }
-
+  .more-about-us {
+    display: none;
+  }
 }
 
 @media (max-width: 991px) {
-    .facilities {
-        padding: 5em 5em;
-    }
+  .facilities {
+    padding: 5em 5em;
+  }
 
-    .about-us-stay {
-        padding: 4em 5em;
-    }
+  .about-us-stay {
+    padding: 4em 5em;
+  }
 
-    .forest {
-        grid-template-areas:
-            "my-forest-info my-forest-info"
-            "my-map my-map";
-    }
+  .forest {
+    grid-template-areas:
+      "my-forest-info my-forest-info"
+      "my-map my-map";
+  }
 
-    .forest__info {
-        padding: 5em 3em;
-        text-align: justify;
-    }
+  .forest__info {
+    padding: 5em 3em;
+    text-align: justify;
+  }
 
-    .map__google {
-        width: 100%;
-        height: 600px;
-    }
+  .map__google {
+    width: 100%;
+    height: 600px;
+  }
 
-    .about__text {
-        flex: 0 0 100%;
-        padding: 0 20px;
-        margin-bottom: 50px;
-    }
+  .about__text {
+    flex: 0 0 100%;
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
 
-    .about__photo {
-        flex: 0 0 100%
-    }
+  .about__photo {
+    flex: 0 0 100%;
+  }
 
-    .about-us-stay__contact {
-        display: flex;
-        flex: 0 0 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 50px;
-    }
+  .about-us-stay__contact {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 
-    .about-us-stay__little-book {
-        padding: 0;
-        flex: 0 0 100%;
-    }
+  .about-us-stay__little-book {
+    padding: 0;
+    flex: 0 0 100%;
+  }
 }
 
 @media (max-width: 1199px) {
+  .about__text {
+    padding: 20px 20px;
+  }
 
-    .about__text {
-        padding: 20px 20px;
-    }
-
-    .contact__title {
-        font-size: 35px;
-    }
-
+  .contact__title {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 1399px) {
-
-    .about__text {
-        padding: 0 50px 50px 50px;
-    }
-
+  .about__text {
+    padding: 0 50px 50px 50px;
+  }
 }
