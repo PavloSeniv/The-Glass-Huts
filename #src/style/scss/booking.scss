@@ -67,17 +67,79 @@ $color-bg-light-green: #e9ece0;
     font-family: OpenSans-SemiBold;
     font-size: 18px;
     line-height: 20px;
-    color: #333333;
-    & > p {
+    color: #333;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    & .choose-services__spoiler-title-text {
+        margin-left: 40px;
+    }
+    & p {
         margin-top: 5px;
         font-family: OpenSans-Regular;
         font-size: 16px;
         line-height: 18px;
         color: #333333;
     }
-    text-align: start;
+    & .bi-chevron-down {
+        transition: transform 0.5s ease 0s;
+    }
+
+    & span::before {
+        content: "";
+        width: 15px;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        right: 10px;
+        transform: rotate(90deg);
+        top: 18px;
+        transition: transform 0.3s ease 0s;
+        z-index: 2;
+    }
+    & span._active::before {
+        transform: rotate(-45deg);
+    }
+
+    & span {
+        content: "";
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        position: absolute;
+        z-index: 10;
+    }
+
+    & span::after {
+        content: "";
+        width: 15px;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        right: 10px;
+        top: 18px;
+        transition: transform 0.3s ease 0s;
+        transform: rotate(180deg);
+        z-index: 2;
+        &._active {
+            transform: rotate(-45deg);
+        }
+    }
+
+     & span._active::before {
+        transform: rotate(-45deg);
+    }
 }
 
+.choose-services__spoiler-title-button._active {
+    & .bi-chevron-down {
+        transform: rotate(180deg);
+    }
+}
 .choose-services__spoiler-content {
     background-color: #fff;
     padding: 20px;

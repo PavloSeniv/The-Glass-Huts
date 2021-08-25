@@ -1,272 +1,356 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
     <title>The Glass Huts</title>
     <!------- Іконка ------->
     <link rel="shortcut icon" href="img/index/favicon.ico">
     <!------- Style ------->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
-@@include('html/_header.html')
+    @@include('html/_header.html')
 
-<main class="_container">
-    <!-- The Area BEM-->
-    <section class="photo-background">
-        <div class="photo-img">
-            <!--Атрибут alt виходить за лінію-->
-            <picture>
-                <source srcset="img/booking/booking_background/booking_background_mobile.png, img/booking/booking_background/booking_background_mobile.webp"
+    <main class="_container">
+        <!-- The Area BEM-->
+        <section class="photo-background">
+            <div class="photo-img">
+                <!--Атрибут alt виходить за лінію-->
+                <picture>
+                    <source
+                        srcset="img/booking/booking_background/booking_background_mobile.png, img/booking/booking_background/booking_background_mobile.webp"
                         media="(max-width:767px)">
-                <img class="photo-img__back" src="img/booking/booking_background/booking_background_desktop.png"
-                     srcset="img/booking/booking_background/booking_background_desktop.png" alt="booking_background_desktop">
-            </picture>
-        </div>
-        <div class="photo-background__info photo-background__position_booking">
-            <h1 class="photo-background__title">Booking</h1>
-            <h2 class="photo-background__subtitle-location">
-                <a class="subtitle-location__link" href="#">Vesterbord, Denmark</a></h2>
-        </div>
-    </section>
+                    <img class="photo-img__back" src="img/booking/booking_background/booking_background_desktop.png"
+                        srcset="img/booking/booking_background/booking_background_desktop.png"
+                        alt="booking_background_desktop">
+                </picture>
+            </div>
+            <div class="photo-background__info photo-background__position_booking">
+                <h1 class="photo-background__title">Booking</h1>
+                <h2 class="photo-background__subtitle-location">
+                    <a class="subtitle-location__link" href="#">Vesterbord, Denmark</a>
+                </h2>
+            </div>
+        </section>
 
 
-    <section class="choose-services">
-    
-        <div class="choose-services__additional">
-    
-            <h2 class="choose-services__title">Choose Additional Services</h2>
-    
-            <div data-spollers data-one-spoller class="choose-services__spoiler">
-    
-                <div class="choose-services__spoiler-item">
-                    <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
-                        
-                        Fresh Breakfast for one
-                        <p>400kr</p>
-                        <span></span>
-                    </button>
-                    <div class="choose-services__spoiler-content">
-                        <div class="choose-services__spoiler-info">
-                            <p class="choose-services__spoiler-title">
-                                Clasic Dinner
-                            </p>
-                            <p class="choose-services__spoiler-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa deserunt
-                                doloremque
-                                ex exercitationem iure, laboriosam totam. A consectetur, officia!
-                            </p>
-    
+        <section class="choose-services">
+
+            <div class="choose-services__additional">
+
+                <h2 class="choose-services__title">Choose Additional Services</h2>
+
+                <div data-spollers data-one-spoller class="choose-services__spoiler">
+
+                    <div class="choose-services__spoiler-item">
+                        <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
+                            <span class="choise-services__spoiler-icon-plus"></span>
+                            <div class="choose-services__spoiler-title-text">
+                                Fresh Breakfast for one
+                                <p>400kr</p>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-chevron-down" viewbox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+                        <div class="choose-services__spoiler-content">
+                            <div class="choose-services__spoiler-info">
+                                <p class="choose-services__spoiler-title">
+                                    Clasic Dinner
+                                </p>
+                                <p class="choose-services__spoiler-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa deserunt
+                                    doloremque
+                                    ex exercitationem iure, laboriosam totam. A consectetur, officia!
+                                </p>
+
+                            </div>
+
                         </div>
-    
+                    </div>
+
+                    <div class="choose-services__spoiler-item">
+                        <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
+                            <span class="choise-services__spoiler-icon-plus"></span>
+                            <div class="choose-services__spoiler-title-text">
+                                Fresh Breakfast for one
+                                <p>400kr</p>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-chevron-down" viewbox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+                        <div class="choose-services__spoiler-content">
+                            <div class="choose-services__spoiler-info">
+                                <p class="choose-services__spoiler-title">
+                                    Clasic Dinner
+                                </p>
+                                <p class="choose-services__spoiler-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa deserunt
+                                    doloremque
+                                    ex exercitationem iure, laboriosam totam. A consectetur, officia!
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="choose-services__spoiler-item">
+                        <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
+                            <span class="choise-services__spoiler-icon-plus"></span>
+                            <div class="choose-services__spoiler-title-text">
+                                Fresh Breakfast for one
+                                <p>400kr</p>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-chevron-down" viewbox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+                        <div class="choose-services__spoiler-content">
+                            <div class="choose-services__spoiler-info">
+                                <p class="choose-services__spoiler-title">
+                                    Clasic Dinner
+                                </p>
+                                <p class="choose-services__spoiler-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa deserunt
+                                    doloremque
+                                    ex exercitationem iure, laboriosam totam. A consectetur, officia!
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="choose-services__spoiler-item">
+                        <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
+                            <span class="choise-services__spoiler-icon-plus"></span>
+                            <div class="choose-services__spoiler-title-text">
+                                Fresh Breakfast for one
+                                <p>400kr</p>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-chevron-down" viewbox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+                        <div class="choose-services__spoiler-content">
+                            <div class="choose-services__spoiler-info">
+                                <p class="choose-services__spoiler-title">
+                                    Clasic Dinner
+                                </p>
+                                <p class="choose-services__spoiler-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa deserunt
+                                    doloremque
+                                    ex exercitationem iure, laboriosam totam. A consectetur, officia!
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="choose-services__spoiler-item">
+                        <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
+                            <span class="choise-services__spoiler-icon-plus"></span>
+                            <div class="choose-services__spoiler-title-text">
+                                Fresh Breakfast for one
+                                <p>400kr</p>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-chevron-down" viewbox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+                        <div class="choose-services__spoiler-content">
+                            <div class="choose-services__spoiler-info">
+                                <p class="choose-services__spoiler-title">
+                                    Clasic Dinner
+                                </p>
+                                <p class="choose-services__spoiler-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa deserunt
+                                    doloremque
+                                    ex exercitationem iure, laboriosam totam. A consectetur, officia!
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="choose-services__spoiler-item">
+                        <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
+                            <span class="choise-services__spoiler-icon-plus"></span>
+                            <div class="choose-services__spoiler-title-text">
+                                Fresh Breakfast for one
+                                <p>400kr</p>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-chevron-down" viewbox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+                        <div class="choose-services__spoiler-content">
+                            <div class="choose-services__spoiler-info">
+                                <p class="choose-services__spoiler-title">
+                                    Clasic Dinner
+                                </p>
+                                <p class="choose-services__spoiler-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa deserunt
+                                    doloremque
+                                    ex exercitationem iure, laboriosam totam. A consectetur, officia!
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="choose-services__info">
+                    <h2 class="choose-services__title">Hut Rules</h2>
+                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                        molestias.</p>
+                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                        molestias.</p>
+                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                        molestias.</p>
+                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                        molestias.</p>
+                </div>
+
+                <div class="choose-services__info">
+                    <h2 class="choose-services__title">Hut Rules</h2>
+                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                        molestias.</p>
+                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                        molestias.</p>
+                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                        molestias.</p>
+                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                        molestias.</p>
+                </div>
+
+                <div class="choose-services__info">
+                    <h2 class="choose-services__title">Hut Rules</h2>
+                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                        molestias.</p>
+                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                        molestias.</p>
+                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                        molestias.</p>
+                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                        molestias.</p>
+                </div>
+
+                <a class="choose-services__button" href="faq.html"> Read Faq</a>
+            </div>
+
+            <aside class="trash-block">
+                <div class="trash">
+
+                    <h2 class="trash__sum-title"><span>3.200kr</span> / night</h2>
+
+                    <div class="trash__table">
+
+                        <div class="trash__item-table">
+                            <h3>Check in</h3>
+                            <p>
+                                4/29/2021
+                            </p>
+                        </div>
+
+                        <div class="trash__item-table">
+                            <h3>Check in</h3>
+                            <p>
+                                4/29/2021
+                            </p>
+                        </div>
+
+                        <div class="trash__item-table">
+                            <h3>Check in</h3>
+                            <div class="trash__guest-oper">
+                                <p>
+                                    -
+                                </p>
+                                <p>
+                                    1
+                                </p>
+                                <p>
+                                    +
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <a class="trash__button" href="payment.html"> Book</a>
+
+                    <div class="trash__services-info">
+                        <div class="trash__block-info">
+                            <p>Lorem, ipsum.</p>
+                            <p>6340</p>
+                        </div>
+                        <div class="trash__block-info">
+                            <p>Lorem, ipsum.</p>
+                            <p>6340</p>
+                        </div>
+                        <div class="trash__block-info">
+                            <p>Lorem, ipsum.</p>
+                            <p>6340</p>
+                        </div>
+                        <div class="trash__block-info trash__discount">
+                            <p>Lorem, ipsum.</p>
+                            <p>6340</p>
+                        </div>
+                    </div>
+
+                    <div class="trash__total">
+                        <h2 class="trash__title-total">Total</h2>
+                        <h2 class="trash__title-total">7.000kr</h2>
+                    </div>
+
+                    <div class="trash__coupon">
+                        <input class="trash__button-input" type="text" placeholder="Coupon Code">
+                        <a class="trash__button-cuppon" href="#"> Apply</a>
                     </div>
                 </div>
 
-                <div class="choose-services__spoiler-item">
-                    <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
-                        
-                        Fresh Breakfast for one
-                        <p>400kr</p>
-                        <span></span>
-                    </button>
-                    <div class="choose-services__spoiler-content">
-                        <div class="choose-services__spoiler-info">
-                            <p class="choose-services__spoiler-title">
-                                Clasic Dinner
-                            </p>
-                            <p class="choose-services__spoiler-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa deserunt
-                                doloremque
-                                ex exercitationem iure, laboriosam totam. A consectetur, officia!
-                            </p>
-    
-                        </div>
-    
-                    </div>
-                </div>
-    
-                <div class="choose-services__spoiler-item">
-                    <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
-                        
-                        Fresh Breakfast for one
-                        <p>400kr</p>
-                        <span></span>
-                    </button>
-                    <div class="choose-services__spoiler-content">
-                        <div class="choose-services__spoiler-info">
-                            <p class="choose-services__spoiler-title">
-                                Clasic Dinner
-                            </p>
-                            <p class="choose-services__spoiler-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa deserunt
-                                doloremque
-                                ex exercitationem iure, laboriosam totam. A consectetur, officia!
-                            </p>
-    
-                        </div>
-    
-                    </div>
-                </div>
+            </aside>
 
-                <div class="choose-services__spoiler-item">
-                    <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
-                        
-                        Fresh Breakfast for one
-                        <p>400kr</p>
-                        <span></span>
-                    </button>
-                    <div class="choose-services__spoiler-content">
-                        <div class="choose-services__spoiler-info">
-                            <p class="choose-services__spoiler-title">
-                                Clasic Dinner
-                            </p>
-                            <p class="choose-services__spoiler-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa deserunt
-                                doloremque
-                                ex exercitationem iure, laboriosam totam. A consectetur, officia!
-                            </p>
-    
-                        </div>
-    
-                    </div>
-                </div>
+        </section>
+    </main>
 
-                <div class="choose-services__spoiler-item">
-                    <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
-                        
-                        Fresh Breakfast for one
-                        <p>400kr</p>
-                        <span></span>
-                    </button>
-                    <div class="choose-services__spoiler-content">
-                        <div class="choose-services__spoiler-info">
-                            <p class="choose-services__spoiler-title">
-                                Clasic Dinner
-                            </p>
-                            <p class="choose-services__spoiler-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa deserunt
-                                doloremque
-                                ex exercitationem iure, laboriosam totam. A consectetur, officia!
-                            </p>
-    
-                        </div>
-    
-                    </div>
-                </div>
+    @@include('html/_footer.html')
 
-            </div>
-
-            <div class="choose-services__info">
-                <h2 class="choose-services__title">Hut Rules</h2>
-                <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, molestias.</p>
-                <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, molestias.</p>
-                <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, molestias.</p>
-                <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, molestias.</p>
-            </div>
-
-            <div class="choose-services__info">
-                <h2 class="choose-services__title">Hut Rules</h2>
-                <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, molestias.</p>
-                <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, molestias.</p>
-                <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, molestias.</p>
-                <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, molestias.</p>
-            </div>
-
-            <div class="choose-services__info">
-                <h2 class="choose-services__title">Hut Rules</h2>
-                <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, molestias.</p>
-                <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, molestias.</p>
-                <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, molestias.</p>
-                <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, molestias.</p>
-            </div>
-
-            <a class="choose-services__button" href="faq.html"> Read Faq</a>
-        </div>
-
-    <aside class="trash-block">
-        <div class="trash">
-
-        <h2 class="trash__sum-title"><span>3.200kr</span> / night</h2>
-    
-        <div class="trash__table">
-    
-            <div class="trash__item-table">
-                <h3>Check in</h3>
-                <p>
-                    4/29/2021
-                </p>
-            </div>
-    
-            <div class="trash__item-table">
-                <h3>Check in</h3>
-                <p>
-                    4/29/2021
-                </p>
-            </div>
-    
-            <div class="trash__item-table">
-                <h3>Check in</h3>
-                <div class="trash__guest-oper">
-                    <p>
-                        -
-                    </p>
-                    <p>
-                        1
-                    </p>
-                    <p>
-                        +
-                    </p>
-                </div>
-            
-            </div>
-        </div>
-    
-        <a class="trash__button" href="payment.html"> Book</a>
-    
-        <div class="trash__services-info">
-            <div class="trash__block-info">
-                <p>Lorem, ipsum.</p>
-                <p>6340</p>
-            </div>
-            <div class="trash__block-info">
-                <p>Lorem, ipsum.</p>
-                <p>6340</p>
-            </div>
-            <div class="trash__block-info">
-                <p>Lorem, ipsum.</p>
-                <p>6340</p>
-            </div>
-            <div class="trash__block-info trash__discount">
-                <p>Lorem, ipsum.</p>
-                <p>6340</p>
-            </div>
-        </div>
-
-        <div class="trash__total">
-            <h2 class="trash__title-total">Total</h2>
-            <h2 class="trash__title-total">7.000kr</h2>
-        </div>
-
-        <div class="trash__coupon">
-            <input class="trash__button-input" type="text" placeholder="Coupon Code">
-            <a class="trash__button-cuppon" href="#"> Apply</a>
-        </div>
-    </div>
-
-    </aside>
-
-    </section>
-</main>
-
-@@include('html/_footer.html')
-
-<!------- Spoiler Script ------->
-<script src="js/plugins_spollers_acordeon.min.js"></script>
-<!------- Main Script ------->
-<script src="js/main_script.min.js"></script>
+    <!------- Spoiler Script ------->
+    <script src="js/plugins_spollers_acordeon.min.js"></script>
+    <!------- Main Script ------->
+    <script src="js/main_script.min.js"></script>
 </body>
+
 </html>
