@@ -461,7 +461,7 @@ body._touch .menu__list > li._active .menu__arrow {
   color: #fff;
 }
 
-._container {
+.__container {
   max-width: 1408px;
   margin: 0 auto;
 }
@@ -556,7 +556,8 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .forest {
   display: grid;
-  grid-template-areas: "my-map my-forest-info" "my-map my-forest-info";
+  grid-template-areas: "my-map my-forest-info"
+ "my-map my-forest-info";
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -902,7 +903,8 @@ body._touch .menu__list > li._active .menu__arrow {
 /*Шаблон вигляду футера*/
 
 .footer__container {
-  grid-template-areas: "my-newsletter my-license" "my-security-police my-security-police";
+  grid-template-areas: "my-newsletter my-license"
+ "my-security-police my-security-police";
 }
 
 .newsletter__form {
@@ -1327,7 +1329,7 @@ body._touch .menu__list > li._active .menu__arrow {
 
 /*-------- Payment Personal Info End -------*/
 
-.paymant-content {
+.payment-content {
   padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
@@ -1692,7 +1694,8 @@ body._touch .menu__list > li._active .menu__arrow {
 .about-us-gallery__photo {
   display: grid;
   grid-gap: 25px;
-  grid-template-areas: "my-about-us-gallery__photo_1 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2" "my-about-us-gallery__photo_3 my-about-us-gallery__photo-text my-about-us-gallery__photo_4";
+  grid-template-areas: "my-about-us-gallery__photo_1 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2"
+ "my-about-us-gallery__photo_3 my-about-us-gallery__photo-text my-about-us-gallery__photo_4";
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
@@ -2278,7 +2281,9 @@ body._touch .menu__list > li._active .menu__arrow {
   }
 
   .about-us-gallery__photo {
-    grid-template-areas: "my-about-us-gallery__photo_2 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2" "my-about-us-gallery__photo-text my-about-us-gallery__photo-text my-about-us-gallery__photo-text" "my-about-us-gallery__photo_4 my-about-us-gallery__photo_1 my-about-us-gallery__photo_3";
+    grid-template-areas: "my-about-us-gallery__photo_2 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2"
+ "my-about-us-gallery__photo-text my-about-us-gallery__photo-text my-about-us-gallery__photo-text"
+ "my-about-us-gallery__photo_4 my-about-us-gallery__photo_1 my-about-us-gallery__photo_3";
   }
 }
 
@@ -2307,7 +2312,8 @@ body._touch .menu__list > li._active .menu__arrow {
   }
 
   .forest {
-    grid-template-areas: "my-forest-info my-forest-info" "my-map my-map";
+    grid-template-areas: "my-forest-info my-forest-info"
+ "my-map my-map";
   }
 
   .forest__info {
@@ -2345,7 +2351,9 @@ body._touch .menu__list > li._active .menu__arrow {
   }
 
   .footer__container {
-    grid-template-areas: "my-newsletter my-newsletter" "my-license my-license" "my-security-police my-security-police";
+    grid-template-areas: "my-newsletter my-newsletter"
+ "my-license my-license"
+ "my-security-police my-security-police";
   }
 
   .footer {
@@ -2663,7 +2671,9 @@ body._touch .menu__list > li._active .menu__arrow {
 
   .about__photo-gallery {
     display: grid;
-    grid-template-areas: "my-about-photo-item-1 my-about-photo-item-1 my-about-photo-item-1" "my-about-photo-item-3 my-about-photo-item-3 my-about-photo-item-3" "my-about-photo-item-2 my-about-photo-item-2 my-about-photo-item-2";
+    grid-template-areas: "my-about-photo-item-1 my-about-photo-item-1 my-about-photo-item-1"
+ "my-about-photo-item-3 my-about-photo-item-3 my-about-photo-item-3"
+ "my-about-photo-item-2 my-about-photo-item-2 my-about-photo-item-2";
     margin: 100px 0;
   }
 
@@ -2681,7 +2691,8 @@ body._touch .menu__list > li._active .menu__arrow {
 
   .forest {
     display: grid;
-    grid-template-areas: "my-forest-info my-forest-info" "my-map my-map";
+    grid-template-areas: "my-forest-info my-forest-info"
+ "my-map my-map";
   }
 
   .about__photo-gallery {
@@ -2755,7 +2766,11 @@ body._touch .menu__list > li._active .menu__arrow {
   }
 
   .about-us-gallery__photo {
-    grid-template-areas: "my-about-us-gallery__photo_2 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2" "my-about-us-gallery__photo-text my-about-us-gallery__photo-text my-about-us-gallery__photo-text" "my-about-us-gallery__photo_1 my-about-us-gallery__photo_1 my-about-us-gallery__photo_1" "my-about-us-gallery__photo_3 my-about-us-gallery__photo_3 my-about-us-gallery__photo_3" "my-about-us-gallery__photo_4 my-about-us-gallery__photo_4 my-about-us-gallery__photo_4";
+    grid-template-areas: "my-about-us-gallery__photo_2 my-about-us-gallery__photo_2 my-about-us-gallery__photo_2"
+ "my-about-us-gallery__photo-text my-about-us-gallery__photo-text my-about-us-gallery__photo-text"
+ "my-about-us-gallery__photo_1 my-about-us-gallery__photo_1 my-about-us-gallery__photo_1"
+ "my-about-us-gallery__photo_3 my-about-us-gallery__photo_3 my-about-us-gallery__photo_3"
+ "my-about-us-gallery__photo_4 my-about-us-gallery__photo_4 my-about-us-gallery__photo_4";
   }
 
   .contact-us {
@@ -2790,7 +2805,8 @@ body._touch .menu__list > li._active .menu__arrow {
 
 @media (max-width: 575px) {
   .forest {
-    grid-template-areas: "my-forest-info my-forest-info" "my-map my-map";
+    grid-template-areas: "my-forest-info my-forest-info"
+ "my-map my-map";
   }
 
   .facilities {
