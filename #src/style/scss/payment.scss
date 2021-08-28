@@ -41,9 +41,19 @@ $color-bg-light-green: #e9ece0;
     }
 }
 
-.trash__geo-info{
+.trash__geo-info {
     display: flex;
     justify-content: space-between;
+    & .trash__geo {
+        display: list-item;
+        font-family: OpenSans-Regular;
+        font-size: 16px;
+        color: $color-font-gray-1;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 /*-------- Choose Services End -------*/
