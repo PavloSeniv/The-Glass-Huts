@@ -1200,9 +1200,12 @@ body._touch .menu__list > li._active .menu__arrow {
   float: right;
 }
 
+.trash-block {
+  flex: 0 0 30%;
+}
+
 .trash {
   border: 0.7px solid #5b6460;
-  flex: 0 0 40%;
   padding: 24px;
 }
 
@@ -2367,7 +2370,7 @@ body._touch .menu__list > li._active .menu__arrow {
     margin-bottom: 50px;
   }
 
-  .trash {
+  .trash-block {
     flex: 0 0 100%;
   }
 

@@ -187,14 +187,16 @@ $color-bg-light-green: #e9ece0;
     align-items: center;
     float: right;
 }
-
-.trash {
-    border: 0.7px solid $color-bg;
-    flex: 0 0 40%;
-    padding: 24px;
+.trash-block{
+    flex: 0 0 30%;
     @media (max-width: 991px) {
         flex: 0 0 100%;
     }
+}
+.trash {
+    border: 0.7px solid $color-bg;
+    padding: 24px;
+    
 }
 
 .trash__sum-title {
