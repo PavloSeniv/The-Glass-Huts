@@ -1296,7 +1296,6 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .trash__button-input {
-  flex: 0 0 70%;
   border: 0.7px solid #333333;
   padding: 15px 20px;
   background-color: unset;
@@ -1306,7 +1305,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .trash__button-cuppon {
-  flex: 0 0 30%;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;

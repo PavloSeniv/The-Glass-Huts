@@ -277,7 +277,6 @@ $color-bg-light-green: #e9ece0;
     display: flex;
 }
 .trash__button-input {
-    flex: 0 0 70%;
     border: 0.7px solid $color-font-gray-1;
     padding: 15px 20px;
     background-color: unset;
@@ -286,7 +285,7 @@ $color-bg-light-green: #e9ece0;
     color: #333333;
 }
 .trash__button-cuppon {
-    flex: 0 0 30%;
+    padding: 0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
