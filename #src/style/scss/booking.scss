@@ -189,6 +189,9 @@ $color-bg-light-green: #e9ece0;
 }
 .trash-block{
     flex: 0 0 30%;
+    position: sticky;
+    top: 15%;
+    height: 61.5vh;
     @media (max-width: 991px) {
         flex: 0 0 100%;
     }

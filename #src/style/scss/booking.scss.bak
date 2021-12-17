@@ -1,0 +1,300 @@
+// Variable
+$color-font-white: #fff;
+$color-bg: #5b6460;
+$color-bg-active: #79857f;
+$color-font-gray-1: #333333;
+$color-bg-light-green: #e9ece0;
+
+/*-------- Choose Services Start -------*/
+.choose-services {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+.choose-services__additional {
+    flex: 0 0 60%;
+    @media (max-width: 991px) {
+        flex: 0 0 100%;
+        margin-bottom: 50px;
+    }
+}
+
+.choose-services__title {
+    font-family: OpenSans-Regular;
+    font-size: 24px;
+    line-height: 27px;
+    color: $color-bg;
+    margin-bottom: 20px;
+
+    &::after {
+        content: "";
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+        background-color: $color-bg;
+        height: 0.7px;
+    }
+}
+.choose-services__spoiler {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.choose-services__button-plus {
+    background-color: #fff;
+    padding: 5px;
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: 20px;
+}
+.choose-services__spoiler-item {
+    width: 100%;
+    margin-bottom: 20px;
+    &:nth-last-child(1) {
+        margin-bottom: 100px;
+    }
+}
+.choose-services__spoiler-title-button {
+    padding: 13px 20px;
+    width: 100%;
+    background-color: #e9ece0;
+    font-family: OpenSans-SemiBold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #333;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    & .choose-services__spoiler-title-text {
+        margin-left: 40px;
+    }
+    & p {
+        margin-top: 5px;
+        font-family: OpenSans-Regular;
+        font-size: 16px;
+        line-height: 18px;
+        color: #333333;
+    }
+    & .bi-chevron-down {
+        transition: transform 0.5s ease 0s;
+    }
+
+    & span::before {
+        content: "";
+        width: 15px;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        right: 10px;
+        transform: rotate(90deg);
+        top: 18px;
+        transition: transform 0.3s ease 0s;
+        z-index: 2;
+    }
+    & span._active::before {
+        transform: rotate(-45deg);
+    }
+
+    & span {
+        content: "";
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        position: absolute;
+        z-index: 10;
+    }
+
+    & span::after {
+        content: "";
+        width: 15px;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        right: 10px;
+        top: 18px;
+        transition: transform 0.3s ease 0s;
+        transform: rotate(180deg);
+        z-index: 2;
+        &._active {
+            transform: rotate(-45deg);
+        }
+    }
+
+     & span._active::before {
+        transform: rotate(-45deg);
+    }
+}
+
+.choose-services__spoiler-title-button._active {
+    & .bi-chevron-down {
+        transform: rotate(180deg);
+    }
+}
+.choose-services__spoiler-content {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.choose-services__spoiler-title {
+    font-family: OpenSans-SemiBold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.choose-services__spoiler-text {
+    font-family: OpenSans-Light;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.choose-services__info {
+    margin-bottom: 90px;
+}
+.choose-services__subtitle {
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    line-height: 18px;
+    color: #333333;
+    margin-bottom: 10px;
+    &:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+}
+
+.choose-services__button {
+    display: flex;
+    width: 180px;
+    height: 55px;
+    background-color: #5b6460;
+    font-family: OpenSans-Light;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+.trash-block{
+    flex: 0 0 30%;
+    @media (max-width: 991px) {
+        flex: 0 0 100%;
+    }
+}
+.trash {
+    border: 0.7px solid $color-bg;
+    padding: 24px;
+    
+}
+
+.trash__sum-title {
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: $color-font-gray-1;
+    & > span {
+        font-family: OpenSans-SemiBold;
+        font-size: 24px;
+        color: $color-font-gray-1;
+    }
+    margin-bottom: 20px;
+}
+.trash__table {
+    padding: 10px 20px;
+    display: flex;
+    border: 0.7px solid $color-bg;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.trash__item-table {
+    font-family: OpenSans-SemiBold;
+    font-size: 12px;
+    font-weight: 500;
+    color: $color-font-gray-1;
+    border-right: 0.7px solid #333333;
+    padding-right: 20px;
+    &:nth-last-child(1) {
+        border-right: unset;
+        padding-right: 0;
+    }
+
+    & > h3 {
+        margin-bottom: 10px;
+    }
+}
+
+.trash__guest-oper {
+    display: flex;
+    justify-content: space-between;
+}
+.trash__button {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #5b6460;
+    color: #fff;
+    font-family: OpenSans-Light;
+    font-size: 14px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.trash__services-info {
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: $color-font-gray-1;
+    border-bottom: 0.7px solid #333333;
+    margin-bottom: 30px;
+}
+
+.trash__block-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.trash__discount {
+    color: #41916d;
+}
+.trash__total {
+    display: flex;
+    justify-content: space-between;
+    font-family: OpenSans-SemiBold;
+    font-size: 20px;
+    color: $color-font-gray-1;
+    margin-bottom: 30px;
+}
+.trash__coupon {
+    display: flex;
+}
+.trash__button-input {
+    border: 0.7px solid $color-font-gray-1;
+    padding: 15px 20px;
+    background-color: unset;
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: #333333;
+}
+.trash__button-cuppon {
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    background-color: $color-bg;
+    color: $color-font-white;
+    text-transform: uppercase;
+}
+/*-------- Choose Services End -------*/
