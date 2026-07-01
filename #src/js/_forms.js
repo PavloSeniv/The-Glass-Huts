@@ -80,6 +80,12 @@
                 form.reset();
                 var inv = form.querySelectorAll("._invalid");
                 for (var j = 0; j < inv.length; j++) inv[j].classList.remove("_invalid");
+                // після успіху можемо перенаправити (напр. з оплати — на головну)
+                var redirect = form.getAttribute("data-redirect");
+                if (redirect) {
+                    try { localStorage.removeItem("thg_booking"); } catch (e) { /* ignore */ }
+                    setTimeout(function () { window.location.href = redirect; }, 1400);
+                }
             });
         })(forms[i]);
     }
