@@ -10,7 +10,7 @@
     "build": "gulp build",
     "otf2ttf": "gulp otf2ttf",
     "svgsprite": "gulp svgSprite",
-    "i18n": "node i18n-src/build-i18n.js \"#src/js/_i18n_translations.js\" i18n-src/i18n-strings.json i18n-src/page-strings.json i18n-src/legal-strings.json",
+    "i18n": "node i18n-src/build-i18n.js \"#src/js/_i18n_translations.js\" i18n-src/i18n-strings.json i18n-src/page-strings.json i18n-src/legal-strings.json i18n-src/loc-strings.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {

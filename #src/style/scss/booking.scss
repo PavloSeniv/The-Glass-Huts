@@ -340,6 +340,31 @@ $color-bg-light-green: #e9ece0;
     }
 }
 
+/*-------- Location selector (booking / the-area) -------*/
+.booking-location {
+    margin-bottom: 24px;
+}
+.booking-location__label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: OpenSans-SemiBold;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #5b6460;
+}
+.booking-location__select {
+    width: 100%;
+    max-width: 320px;
+    padding: 12px 16px;
+    border: 0.7px solid #5b6460;
+    background-color: #fff;
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: #333333;
+    cursor: pointer;
+}
+
 /*-------- Payment: selected services list (left block) -------*/
 .payment-services {
     margin-top: 10px;

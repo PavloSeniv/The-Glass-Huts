@@ -19,7 +19,7 @@ testWebP(function (support) {
 });
 
 // АВТОЗГЕНЕРОВАНО білдером i18n-src/build-i18n.js — не редагувати вручну.
-// Джерела: i18n-strings.json, page-strings.json, legal-strings.json
+// Джерела: i18n-strings.json, page-strings.json, legal-strings.json, loc-strings.json
 window.THG_I18N = {
     "en": {
         "nav.home": "Home",
@@ -229,6 +229,7 @@ window.THG_I18N = {
         "payment.method_bank": "Bank transfer",
         "payment.confirm_button": "Confirm booking",
         "payment.toast_thanks": "Thank you! We'll contact you shortly.",
+        "booking.per_night_suffix": "/ night",
         "terms.s1_heading": "1. Introduction",
         "terms.s1_text": "These Terms and Conditions govern your booking and stay at The Glass Huts, our collection of glass cabins near the Mariager fjord in Vesterbord, Denmark. By making a reservation or staying with us, you agree to the terms set out below.",
         "terms.s2_heading": "2. Bookings and Payment",
@@ -271,7 +272,52 @@ window.THG_I18N = {
         "privacy.s6_heading": "6. Your Rights",
         "privacy.s6_text": "You have the right to access, correct or delete the personal information we hold about you, and to withdraw consent for marketing at any time. To exercise these rights, simply get in touch with us.",
         "privacy.s7_heading": "7. Contact",
-        "privacy.s7_text": "If you have any questions about this Privacy Policy or your data, please contact us at <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a>."
+        "privacy.s7_text": "If you have any questions about this Privacy Policy or your data, please contact us at <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a>.",
+        "loc.norway.label": "Aurland, Norway",
+        "loc.iceland.label": "Vík, Iceland",
+        "booking.location_label": "Location",
+        "booking.norway_service_1_name": "Fjord Kayak Morning",
+        "booking.norway_service_1_title": "Sunrise Fjord Kayak",
+        "booking.norway_service_1_text": "Slip onto glassy water before the world wakes and paddle beneath the steep walls of the Aurlandsfjord. Your guide keeps the pace gentle while mist lifts off the surface. Wetsuits, dry bags and hot drinks are provided.",
+        "booking.norway_service_2_name": "Private Fjord Cruise",
+        "booking.norway_service_2_title": "Silent Electric Fjord Cruise",
+        "booking.norway_service_2_text": "Glide deep into the UNESCO-listed fjord aboard a quiet electric boat, with waterfalls tumbling from the cliffs on either side. Wrap up on deck or stay warm in the cabin as your skipper shares the stories of these shores.",
+        "booking.norway_service_3_name": "Floating Sauna & Cold Dip",
+        "booking.norway_service_3_title": "Wood-Fired Floating Sauna",
+        "booking.norway_service_3_text": "Warm up in a wood-fired sauna moored at the water's edge, then step straight into the cold, clear fjord for an unforgettable plunge. Repeat as often as you dare, then relax on the deck as the light softens over the mountains.",
+        "booking.norway_service_4_name": "Stegastein Viewpoint Tour",
+        "booking.norway_service_4_title": "Guided Stegastein Drive",
+        "booking.norway_service_4_text": "Ride up the switchbacks to the Stegastein viewpoint, where a slender platform juts out 650 metres above the fjord. Your guide times the trip for the best light and quietest crowds, with plenty of stops for photographs along the way.",
+        "booking.norway_service_5_name": "Nærøyfjord Day Trip",
+        "booking.norway_service_5_title": "UNESCO Nærøyfjord Excursion",
+        "booking.norway_service_5_text": "Spend a full day exploring the narrowest arm of the Sognefjord, one of the most dramatic landscapes in Norway. Travel by boat and rail through tiny hamlets and past thundering waterfalls, returning to your hut by early evening.",
+        "booking.norway_service_6_name": "Norwegian Larder Board",
+        "booking.norway_service_6_title": "Local Tasting Board",
+        "booking.norway_service_6_text": "A generous board of Norwegian favourites delivered to your hut: cured meats, brown cheese, smoked trout from the fjord, crispbreads and cloudberry preserve. Paired with a local craft cider, or an alcohol-free option on request.",
+        "booking.iceland_service_1_name": "Northern Lights Wake-Up",
+        "booking.iceland_service_1_title": "Aurora Wake-Up Call",
+        "booking.iceland_service_1_text": "Sleep easy knowing you won't miss the show. When the aurora forecast comes alive, we gently wake you so you can step outside beneath a sky rippling with green and violet light, blankets and hot cocoa ready by the door. Available in the dark-sky season.",
+        "booking.iceland_service_2_name": "Black Sand Beach Walk",
+        "booking.iceland_service_2_title": "Guided Reynisfjara Walk",
+        "booking.iceland_service_2_text": "Walk the famous black volcanic sands of Reynisfjara with a local guide who reads the waves and keeps you safe. Marvel at the basalt columns and sea stacks rising from the surf, and learn the folklore that clings to this wild coast.",
+        "booking.iceland_service_3_name": "Geothermal Hot Spring Soak",
+        "booking.iceland_service_3_title": "Private Hot Spring Soak",
+        "booking.iceland_service_3_text": "Sink into naturally heated water and let Iceland's volcanic warmth melt the miles away. We reserve a quiet slot for you away from the crowds, with towels and robes provided so you can soak under an open sky.",
+        "booking.iceland_service_4_name": "Glacier Hike",
+        "booking.iceland_service_4_title": "Sólheimajökull Glacier Hike",
+        "booking.iceland_service_4_text": "Strap on crampons and step onto a living glacier with a certified guide, exploring blue ice, ridges and crevasses on a route matched to your pace. All technical equipment and a safety briefing are included.",
+        "booking.iceland_service_5_name": "Wildlife Boat Tour",
+        "booking.iceland_service_5_title": "Dyrhólaey Puffin & Cliffs Tour",
+        "booking.iceland_service_5_text": "Cruise beneath the towering Dyrhólaey arch and sea cliffs alive with nesting seabirds. In summer, watch puffins wheel overhead; year-round, keep an eye out for seals basking on the rocks below. Warm suits are provided.",
+        "booking.iceland_service_6_name": "Icelandic Tasting Board",
+        "booking.iceland_service_6_title": "Nordic Tasting Board",
+        "booking.iceland_service_6_text": "Discover the flavours of the island with a board of Icelandic specialities: smoked arctic char, skyr, rye bread baked in geothermal heat, and honey from hardy northern bees. A warming shot of local spirit is offered on the side.",
+        "area.norway_title": "Aurland",
+        "area.norway_subtitle": "On the Aurlandsfjord, western Norway",
+        "area.norway_text": "Our Norwegian hut sits high above the Aurlandsfjord, a slender arm of the vast Sognefjord where mountains fall almost vertically into deep blue water. Days here are spent kayaking beneath waterfalls, riding the Flåm railway and standing at the Stegastein viewpoint as clouds drift below you. Evenings belong to the quiet — just the water, the peaks and a sky that never quite goes dark in summer.",
+        "area.iceland_title": "Vík",
+        "area.iceland_subtitle": "On the south coast of Iceland",
+        "area.iceland_text": "Perched near the village of Vík on Iceland's dramatic south coast, this hut looks out over black-sand beaches, sea stacks and the distant white of the Mýrdalsjökull glacier. Waterfalls, glacier tongues and geothermal springs lie within easy reach, and when the nights draw in the aurora often dances directly overhead. It is raw, elemental Iceland, with a warm bed and a glass roof to watch it all from."
     },
     "da": {
         "nav.home": "Hjem",
@@ -481,6 +527,7 @@ window.THG_I18N = {
         "payment.method_bank": "Bankoverførsel",
         "payment.confirm_button": "Bekræft booking",
         "payment.toast_thanks": "Tak! Vi kontakter dig snarest.",
+        "booking.per_night_suffix": "/ nat",
         "terms.s1_heading": "1. Introduktion",
         "terms.s1_text": "Disse vilkår og betingelser gælder for din booking og dit ophold hos The Glass Huts, vores samling af glashytter nær Mariager Fjord i Vesterbord, Danmark. Ved at foretage en reservation eller opholde dig hos os accepterer du de vilkår, der er fastsat nedenfor.",
         "terms.s2_heading": "2. Bookinger og betaling",
@@ -523,7 +570,52 @@ window.THG_I18N = {
         "privacy.s6_heading": "6. Dine rettigheder",
         "privacy.s6_text": "Du har ret til at få adgang til, rette eller slette de personoplysninger, vi har om dig, og til at trække dit samtykke til markedsføring tilbage til enhver tid. For at udøve disse rettigheder skal du blot kontakte os.",
         "privacy.s7_heading": "7. Kontakt",
-        "privacy.s7_text": "Hvis du har spørgsmål om denne privatlivspolitik eller dine data, bedes du kontakte os på <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a>."
+        "privacy.s7_text": "Hvis du har spørgsmål om denne privatlivspolitik eller dine data, bedes du kontakte os på <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a>.",
+        "loc.norway.label": "Aurland, Norge",
+        "loc.iceland.label": "Vík, Island",
+        "booking.location_label": "Beliggenhed",
+        "booking.norway_service_1_name": "Fjordkajak om morgenen",
+        "booking.norway_service_1_title": "Fjordkajak i solopgang",
+        "booking.norway_service_1_text": "Glid ud på det spejlblanke vand, før verden vågner, og padl under de stejle vægge langs Aurlandsfjord. Din guide holder et roligt tempo, mens tågen letter fra overfladen. Våddragter, vandtætte tasker og varme drikke er inkluderet.",
+        "booking.norway_service_2_name": "Privat fjordkrydstogt",
+        "booking.norway_service_2_title": "Stille elektrisk fjordkrydstogt",
+        "booking.norway_service_2_text": "Glid dybt ind i den UNESCO-listede fjord om bord på en lydløs elektrisk båd, mens vandfald styrter ned ad klipperne på begge sider. Nyd luften på dækket, eller hold varmen i kahytten, mens din skipper fortæller om disse kysters historie.",
+        "booking.norway_service_3_name": "Flydende sauna og koldt dyp",
+        "booking.norway_service_3_title": "Brændefyret flydende sauna",
+        "booking.norway_service_3_text": "Varm dig i en brændefyret sauna fortøjet ved vandkanten, og træd derefter direkte ud i den kolde, klare fjord til et uforglemmeligt dyp. Gentag så ofte, du tør, og slap så af på dækket, mens lyset bliver blødt over bjergene.",
+        "booking.norway_service_4_name": "Tur til Stegastein-udsigtspunktet",
+        "booking.norway_service_4_title": "Guidet køretur til Stegastein",
+        "booking.norway_service_4_text": "Kør op ad serpentinervejene til Stegastein-udsigtspunktet, hvor en slank platform rager 650 meter ud over fjorden. Din guide planlægger turen efter det bedste lys og den mindste trængsel, med masser af stop til fotografering undervejs.",
+        "booking.norway_service_5_name": "Dagstur til Nærøyfjord",
+        "booking.norway_service_5_title": "UNESCO-udflugt til Nærøyfjord",
+        "booking.norway_service_5_text": "Tilbring en hel dag med at udforske den smalleste arm af Sognefjord, et af de mest dramatiske landskaber i Norge. Rejs med båd og tog gennem små landsbyer og forbi buldrende vandfald, og vend tilbage til din hytte hen mod aften.",
+        "booking.norway_service_6_name": "Norsk tapasbræt",
+        "booking.norway_service_6_title": "Lokalt smagebræt",
+        "booking.norway_service_6_text": "Et generøst bræt med norske favoritter leveret til din hytte: spegepølse, brunost, røget ørred fra fjorden, knækbrød og multebærsyltetøj. Serveres med en lokal håndværkscider eller et alkoholfrit alternativ efter ønske.",
+        "booking.iceland_service_1_name": "Nordlysvækning",
+        "booking.iceland_service_1_title": "Vækning ved nordlys",
+        "booking.iceland_service_1_text": "Sov trygt i vished om, at du ikke går glip af skuespillet. Når nordlysvarslet vågner til live, vækker vi dig blidt, så du kan træde udenfor under en himmel, der bølger af grønt og violet lys, med tæpper og varm kakao klar ved døren. Tilgængelig i mørketidssæsonen.",
+        "booking.iceland_service_2_name": "Gåtur på den sorte sandstrand",
+        "booking.iceland_service_2_title": "Guidet gåtur på Reynisfjara",
+        "booking.iceland_service_2_text": "Gå på det berømte sorte vulkanske sand ved Reynisfjara med en lokal guide, der læser bølgerne og holder dig i sikkerhed. Bliv betaget af basaltsøjlerne og klippeskærene, der rejser sig af brændingen, og hør folketroen, der klæber til denne vilde kyst.",
+        "booking.iceland_service_3_name": "Bad i geotermisk varm kilde",
+        "booking.iceland_service_3_title": "Privat bad i varm kilde",
+        "booking.iceland_service_3_text": "Synk ned i naturligt opvarmet vand, og lad Islands vulkanske varme smelte kilometerne bort. Vi reserverer en rolig tid til dig væk fra mængderne, med håndklæder og badekåber inkluderet, så du kan bade under åben himmel.",
+        "booking.iceland_service_4_name": "Gletsjervandring",
+        "booking.iceland_service_4_title": "Gletsjervandring på Sólheimajökull",
+        "booking.iceland_service_4_text": "Spænd stigjern på og træd ud på en levende gletsjer med en certificeret guide, og udforsk blå is, rygge og gletsjerspalter på en rute tilpasset dit tempo. Alt teknisk udstyr og en sikkerhedsbriefing er inkluderet.",
+        "booking.iceland_service_5_name": "Bådtur til dyrelivet",
+        "booking.iceland_service_5_title": "Tur til Dyrhólaey med lunder og klipper",
+        "booking.iceland_service_5_text": "Sejl under den mægtige Dyrhólaey-bue og forbi klipper, der myldrer med rugende havfugle. Om sommeren kan du se lunder svæve over dig; året rundt kan du holde udkig efter sæler, der soler sig på klipperne nedenfor. Varme dragter er inkluderet.",
+        "booking.iceland_service_6_name": "Islandsk smagebræt",
+        "booking.iceland_service_6_title": "Nordisk smagebræt",
+        "booking.iceland_service_6_text": "Oplev øens smage med et bræt af islandske specialiteter: røget fjeldørred, skyr, rugbrød bagt i geotermisk varme og honning fra hårdføre nordiske bier. En varmende snaps af lokal spiritus tilbydes ved siden af.",
+        "area.norway_title": "Aurland",
+        "area.norway_subtitle": "Ved Aurlandsfjord, det vestlige Norge",
+        "area.norway_text": "Vores norske hytte ligger højt over Aurlandsfjord, en slank arm af den vældige Sognefjord, hvor bjergene falder næsten lodret ned i det dybblå vand. Dagene her tilbringes med at padle kajak under vandfald, køre med Flåm-banen og stå på Stegastein-udsigtspunktet, mens skyerne driver af sted under dig. Aftenerne tilhører stilheden — kun vandet, tinderne og en himmel, der aldrig helt bliver mørk om sommeren.",
+        "area.iceland_title": "Vík",
+        "area.iceland_subtitle": "På Islands sydkyst",
+        "area.iceland_text": "Beliggende nær landsbyen Vík på Islands dramatiske sydkyst kigger denne hytte ud over sorte sandstrande, klippeskær og det fjerne hvide skær fra Mýrdalsjökull-gletsjeren. Vandfald, gletsjertunger og geotermiske kilder ligger inden for rækkevidde, og når nætterne trækker ind, danser nordlyset ofte lige over dig. Det er det rå, oprindelige Island, med en varm seng og et glastag at nyde det hele fra."
     },
     "uk": {
         "nav.home": "Головна",
@@ -733,6 +825,7 @@ window.THG_I18N = {
         "payment.method_bank": "Банківський переказ",
         "payment.confirm_button": "Підтвердити бронювання",
         "payment.toast_thanks": "Дякуємо! Ми з вами зв'яжемося найближчим часом.",
+        "booking.per_night_suffix": "/ ніч",
         "terms.s1_heading": "1. Вступ",
         "terms.s1_text": "Ці Умови та положення регулюють Ваше бронювання та перебування в The Glass Huts, нашій колекції скляних будиночків поблизу Маріагер-фьорду у Вестерборді, Данія. Здійснюючи бронювання або зупиняючись у нас, Ви погоджуєтеся з викладеними нижче умовами.",
         "terms.s2_heading": "2. Бронювання та оплата",
@@ -775,7 +868,52 @@ window.THG_I18N = {
         "privacy.s6_heading": "6. Ваші права",
         "privacy.s6_text": "Ви маєте право отримувати доступ до особистої інформації, яку ми зберігаємо про Вас, виправляти чи видаляти її, а також відкликати згоду на маркетинг у будь-який час. Щоб скористатися цими правами, просто зв’яжіться з нами.",
         "privacy.s7_heading": "7. Контакти",
-        "privacy.s7_text": "Якщо у Вас виникли будь-які запитання щодо цієї Політики конфіденційності чи Ваших даних, будь ласка, зв’яжіться з нами за адресою <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a>."
+        "privacy.s7_text": "Якщо у Вас виникли будь-які запитання щодо цієї Політики конфіденційності чи Ваших даних, будь ласка, зв’яжіться з нами за адресою <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a>.",
+        "loc.norway.label": "Aurland, Норвегія",
+        "loc.iceland.label": "Vík, Ісландія",
+        "booking.location_label": "Розташування",
+        "booking.norway_service_1_name": "Ранковий каякінг фіордом",
+        "booking.norway_service_1_title": "Каякінг фіордом на світанку",
+        "booking.norway_service_1_text": "Вирушайте на дзеркальну воду ще до того, як прокинеться світ, і веслуйте попід стрімкими схилами Aurlandsfjord. Ваш гід тримає спокійний темп, доки над поверхнею здіймається туман. Гідрокостюми, водонепроникні мішки та гарячі напої надаються.",
+        "booking.norway_service_2_name": "Приватний круїз фіордом",
+        "booking.norway_service_2_title": "Тихий круїз фіордом на електрочовні",
+        "booking.norway_service_2_text": "Пропливіть углиб фіорду, внесеного до списку UNESCO, на тихому електричному човні, поки з обох боків зі скель спадають водоспади. Кутайтеся на палубі або залишайтеся в теплій каюті, доки Ваш шкіпер ділиться історіями цих берегів.",
+        "booking.norway_service_3_name": "Плавуча сауна та занурення в холодну воду",
+        "booking.norway_service_3_title": "Плавуча сауна на дровах",
+        "booking.norway_service_3_text": "Зігрійтеся в сауні на дровах, пришвартованій біля самої води, а потім ступіть просто в холодний прозорий фіорд для незабутнього занурення. Повторюйте стільки разів, скільки наважитеся, а потім відпочивайте на палубі, доки світло м'якшає над горами.",
+        "booking.norway_service_4_name": "Екскурсія до оглядового майданчика Stegastein",
+        "booking.norway_service_4_title": "Поїздка до Stegastein із гідом",
+        "booking.norway_service_4_text": "Підніміться серпантином до оглядового майданчика Stegastein, де тонка платформа виступає на 650 метрів над фіордом. Ваш гід підбирає час поїздки для найкращого світла та найменшого напливу людей, з численними зупинками для фотографій дорогою.",
+        "booking.norway_service_5_name": "Одноденна подорож до Nærøyfjord",
+        "booking.norway_service_5_title": "Екскурсія до Nærøyfjord (UNESCO)",
+        "booking.norway_service_5_text": "Проведіть цілий день, досліджуючи найвужчий рукав Sognefjord, один із найвражаючіших краєвидів Норвегії. Подорожуйте човном і залізницею через крихітні селища та повз гуркітливі водоспади, повертаючись до своєї хатини раннього вечора.",
+        "booking.norway_service_6_name": "Норвезька дегустаційна дошка",
+        "booking.norway_service_6_title": "Дошка місцевих смаків",
+        "booking.norway_service_6_text": "Щедра дошка норвезьких делікатесів, доставлена до Вашої хатини: в'ялене м'ясо, коричневий сир, копчена форель із фіорду, хрусткі хлібці та варення з морошки. У поєднанні з місцевим крафтовим сидром або безалкогольним варіантом на замовлення.",
+        "booking.iceland_service_1_name": "Пробудження заради північного сяйва",
+        "booking.iceland_service_1_title": "Пробудження заради полярного сяйва",
+        "booking.iceland_service_1_text": "Спіть спокійно, знаючи, що не пропустите видовища. Коли прогноз полярного сяйва оживає, ми делікатно розбудимо Вас, щоб Ви могли вийти надвір під небо, що мерехтить зеленим і фіолетовим світлом, а ковдри й гаряче какао вже чекатимуть біля дверей. Доступно в сезон темного неба.",
+        "booking.iceland_service_2_name": "Прогулянка чорним піщаним пляжем",
+        "booking.iceland_service_2_title": "Прогулянка Reynisfjara з гідом",
+        "booking.iceland_service_2_text": "Пройдіться знаменитими чорними вулканічними пісками Reynisfjara з місцевим гідом, який читає хвилі й дбає про Вашу безпеку. Замилуйтеся базальтовими колонами та скелями, що здіймаються з прибою, і дізнайтеся фольклор, який огортає це дике узбережжя.",
+        "booking.iceland_service_3_name": "Купання в геотермальному гарячому джерелі",
+        "booking.iceland_service_3_title": "Приватне купання в гарячому джерелі",
+        "booking.iceland_service_3_text": "Зануртеся в природно нагріту воду й дозвольте вулканічному теплу Ісландії розтопити всю втому й відстані. Ми зарезервуємо для Вас тихий час подалі від натовпу, а рушники та халати надаються, щоб Ви могли купатися під відкритим небом.",
+        "booking.iceland_service_4_name": "Похід льодовиком",
+        "booking.iceland_service_4_title": "Похід льодовиком Sólheimajökull",
+        "booking.iceland_service_4_text": "Прикріпіть кішки й ступіть на живий льодовик із сертифікованим гідом, досліджуючи блакитний лід, гребені та тріщини на маршруті, дібраному під Ваш темп. Усе технічне спорядження та інструктаж із безпеки включено.",
+        "booking.iceland_service_5_name": "Човнова екскурсія до дикої природи",
+        "booking.iceland_service_5_title": "Екскурсія до тупиків і скель Dyrhólaey",
+        "booking.iceland_service_5_text": "Пропливіть попід величною аркою Dyrhólaey та морськими скелями, де гніздяться морські птахи. Улітку спостерігайте, як над головою кружляють тупики; цілий рік виглядайте тюленів, що вигріваються на скелях унизу. Теплі костюми надаються.",
+        "booking.iceland_service_6_name": "Ісландська дегустаційна дошка",
+        "booking.iceland_service_6_title": "Скандинавська дегустаційна дошка",
+        "booking.iceland_service_6_text": "Відкрийте для себе смаки острова з дошкою ісландських делікатесів: копчений арктичний голець, skyr, житній хліб, спечений на геотермальному теплі, та мед від витривалих північних бджіл. На додачу пропонується зігрівальна чарка місцевого міцного напою.",
+        "area.norway_title": "Aurland",
+        "area.norway_subtitle": "На Aurlandsfjord, західна Норвегія",
+        "area.norway_text": "Наша норвезька хатина розташована високо над Aurlandsfjord, вузьким рукавом величезного Sognefjord, де гори майже вертикально спадають у глибоку синю воду. Дні тут минають за каякінгом попід водоспадами, поїздками залізницею Flåm і на оглядовому майданчику Stegastein, доки хмари пропливають унизу під Вами. Вечори належать тиші — лише вода, вершини та небо, яке влітку так і не темніє до кінця.",
+        "area.iceland_title": "Vík",
+        "area.iceland_subtitle": "На південному узбережжі Ісландії",
+        "area.iceland_text": "Розташована поблизу села Vík на вражаючому південному узбережжі Ісландії, ця хатина виходить на чорні піщані пляжі, морські скелі та далеку білизну льодовика Mýrdalsjökull. Водоспади, льодовикові язики та геотермальні джерела лежать у легкій досяжності, а коли ночі стають довшими, полярне сяйво часто танцює просто над головою. Це первозданна, стихійна Ісландія — з теплим ліжком і скляним дахом, крізь який можна споглядати все це."
     },
     "de": {
         "nav.home": "Startseite",
@@ -985,6 +1123,7 @@ window.THG_I18N = {
         "payment.method_bank": "Banküberweisung",
         "payment.confirm_button": "Buchung bestätigen",
         "payment.toast_thanks": "Danke! Wir kontaktieren Sie in Kürze.",
+        "booking.per_night_suffix": "/ Nacht",
         "terms.s1_heading": "1. Einführung",
         "terms.s1_text": "Diese Allgemeinen Geschäftsbedingungen regeln Ihre Buchung und Ihren Aufenthalt bei The Glass Huts, unserer Sammlung von Glashütten in der Nähe des Mariager Fjords in Vesterbord, Dänemark. Mit der Vornahme einer Reservierung oder Ihrem Aufenthalt bei uns erklären Sie sich mit den nachstehend aufgeführten Bedingungen einverstanden.",
         "terms.s2_heading": "2. Buchungen und Zahlung",
@@ -1027,7 +1166,52 @@ window.THG_I18N = {
         "privacy.s6_heading": "6. Ihre Rechte",
         "privacy.s6_text": "Sie haben das Recht, auf die personenbezogenen Informationen, die wir über Sie gespeichert haben, zuzugreifen, sie zu berichtigen oder zu löschen, sowie Ihre Einwilligung zum Marketing jederzeit zu widerrufen. Um diese Rechte auszuüben, nehmen Sie einfach Kontakt mit uns auf.",
         "privacy.s7_heading": "7. Kontakt",
-        "privacy.s7_text": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie oder zu Ihren Daten haben, kontaktieren Sie uns bitte unter <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a>."
+        "privacy.s7_text": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie oder zu Ihren Daten haben, kontaktieren Sie uns bitte unter <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a>.",
+        "loc.norway.label": "Aurland, Norwegen",
+        "loc.iceland.label": "Vík, Island",
+        "booking.location_label": "Standort",
+        "booking.norway_service_1_name": "Fjord-Kajak am Morgen",
+        "booking.norway_service_1_title": "Kajaktour im Fjord bei Sonnenaufgang",
+        "booking.norway_service_1_text": "Gleiten Sie auf spiegelglattes Wasser, bevor die Welt erwacht, und paddeln Sie unter den steilen Wänden des Aurlandsfjords. Ihr Guide hält das Tempo sanft, während sich der Nebel von der Oberfläche hebt. Neoprenanzüge, Trockensäcke und heiße Getränke werden gestellt.",
+        "booking.norway_service_2_name": "Private Fjordfahrt",
+        "booking.norway_service_2_title": "Lautlose Elektro-Fjordfahrt",
+        "booking.norway_service_2_text": "Gleiten Sie an Bord eines leisen Elektrobootes tief in den von der UNESCO gelisteten Fjord hinein, während zu beiden Seiten Wasserfälle von den Klippen stürzen. Machen Sie es sich an Deck warm oder bleiben Sie in der Kabine geborgen, während Ihr Skipper Ihnen die Geschichten dieser Küsten erzählt.",
+        "booking.norway_service_3_name": "Schwimmende Sauna & kaltes Bad",
+        "booking.norway_service_3_title": "Schwimmende Sauna mit Holzofen",
+        "booking.norway_service_3_text": "Wärmen Sie sich in einer holzbefeuerten Sauna auf, die am Wasserrand vertäut liegt, und steigen Sie anschließend direkt in den kalten, klaren Fjord für ein unvergessliches Bad. Wiederholen Sie es so oft, wie Sie sich trauen, und entspannen Sie dann an Deck, während das Licht über den Bergen sanfter wird.",
+        "booking.norway_service_4_name": "Tour zum Aussichtspunkt Stegastein",
+        "booking.norway_service_4_title": "Geführte Fahrt zum Stegastein",
+        "booking.norway_service_4_text": "Fahren Sie die Serpentinen hinauf zum Aussichtspunkt Stegastein, wo eine schlanke Plattform 650 Meter über dem Fjord hinausragt. Ihr Guide plant die Tour so, dass Sie das beste Licht und die geringsten Besuchermengen erleben, mit zahlreichen Fotostopps entlang des Weges.",
+        "booking.norway_service_5_name": "Tagesausflug in den Nærøyfjord",
+        "booking.norway_service_5_title": "UNESCO-Exkursion in den Nærøyfjord",
+        "booking.norway_service_5_text": "Verbringen Sie einen ganzen Tag damit, den schmalsten Arm des Sognefjords zu erkunden, eine der eindrucksvollsten Landschaften Norwegens. Reisen Sie per Boot und Bahn durch winzige Weiler und vorbei an tosenden Wasserfällen und kehren Sie am frühen Abend zu Ihrer Hütte zurück.",
+        "booking.norway_service_6_name": "Norwegische Vorratsplatte",
+        "booking.norway_service_6_title": "Regionale Verkostungsplatte",
+        "booking.norway_service_6_text": "Eine üppige Platte mit norwegischen Spezialitäten, direkt zu Ihrer Hütte geliefert: luftgetrocknetes Fleisch, Braunkäse, geräucherte Forelle aus dem Fjord, Knäckebrot und Multbeerenkonfitüre. Dazu ein regionaler Craft-Cider oder auf Wunsch eine alkoholfreie Alternative.",
+        "booking.iceland_service_1_name": "Weckruf zum Nordlicht",
+        "booking.iceland_service_1_title": "Aurora-Weckruf",
+        "booking.iceland_service_1_text": "Schlafen Sie beruhigt in dem Wissen, dass Sie das Schauspiel nicht verpassen. Wenn die Aurora-Vorhersage aufleuchtet, wecken wir Sie behutsam, damit Sie unter einen Himmel treten können, der in grünem und violettem Licht schimmert – Decken und heiße Schokolade stehen an der Tür bereit. Verfügbar in der dunklen Jahreszeit.",
+        "booking.iceland_service_2_name": "Spaziergang am schwarzen Sandstrand",
+        "booking.iceland_service_2_title": "Geführter Spaziergang in Reynisfjara",
+        "booking.iceland_service_2_text": "Wandern Sie über den berühmten schwarzen Vulkansand von Reynisfjara mit einem einheimischen Guide, der die Wellen liest und für Ihre Sicherheit sorgt. Bewundern Sie die Basaltsäulen und Felsnadeln, die sich aus der Brandung erheben, und lernen Sie die Sagen kennen, die dieser wilden Küste anhaften.",
+        "booking.iceland_service_3_name": "Bad in der geothermalen Quelle",
+        "booking.iceland_service_3_title": "Privates Bad in der heißen Quelle",
+        "booking.iceland_service_3_text": "Tauchen Sie in natürlich erwärmtes Wasser ein und lassen Sie Islands vulkanische Wärme die zurückgelegten Meilen dahinschmelzen. Wir reservieren für Sie einen ruhigen Zeitraum fernab der Menschenmengen, mit gestellten Handtüchern und Bademänteln, sodass Sie unter freiem Himmel baden können.",
+        "booking.iceland_service_4_name": "Gletscherwanderung",
+        "booking.iceland_service_4_title": "Gletscherwanderung auf dem Sólheimajökull",
+        "booking.iceland_service_4_text": "Schnallen Sie sich Steigeisen an und betreten Sie mit einem zertifizierten Guide einen lebendigen Gletscher, um blaues Eis, Grate und Gletscherspalten auf einer Ihrem Tempo angepassten Route zu erkunden. Die gesamte technische Ausrüstung und eine Sicherheitseinweisung sind inbegriffen.",
+        "booking.iceland_service_5_name": "Bootstour zur Tierwelt",
+        "booking.iceland_service_5_title": "Papageitaucher- & Klippentour bei Dyrhólaey",
+        "booking.iceland_service_5_text": "Fahren Sie unter dem aufragenden Bogen von Dyrhólaey und den Meeresklippen hindurch, die von nistenden Seevögeln erfüllt sind. Im Sommer beobachten Sie Papageitaucher, die über Ihnen kreisen; das ganze Jahr über halten Sie Ausschau nach Robben, die sich auf den Felsen darunter sonnen. Warme Anzüge werden gestellt.",
+        "booking.iceland_service_6_name": "Isländische Verkostungsplatte",
+        "booking.iceland_service_6_title": "Nordische Verkostungsplatte",
+        "booking.iceland_service_6_text": "Entdecken Sie die Aromen der Insel mit einer Platte isländischer Spezialitäten: geräucherter Saibling, Skyr, Roggenbrot, in geothermaler Hitze gebacken, und Honig von robusten nordischen Bienen. Ein wärmender Kurzer aus einheimischem Schnaps wird dazu gereicht.",
+        "area.norway_title": "Aurland",
+        "area.norway_subtitle": "Am Aurlandsfjord, im Westen Norwegens",
+        "area.norway_text": "Unsere norwegische Hütte liegt hoch über dem Aurlandsfjord, einem schlanken Arm des weiten Sognefjords, wo die Berge nahezu senkrecht in tiefblaues Wasser abfallen. Die Tage verbringt man hier beim Kajakfahren unter Wasserfällen, auf einer Fahrt mit der Flåm-Bahn und am Aussichtspunkt Stegastein stehend, während unter Ihnen die Wolken ziehen. Die Abende gehören der Stille – nur das Wasser, die Gipfel und ein Himmel, der im Sommer nie ganz dunkel wird.",
+        "area.iceland_title": "Vík",
+        "area.iceland_subtitle": "An der Südküste Islands",
+        "area.iceland_text": "Nahe dem Dorf Vík an Islands dramatischer Südküste gelegen, blickt diese Hütte über schwarze Sandstrände, Felsnadeln und das ferne Weiß des Gletschers Mýrdalsjökull. Wasserfälle, Gletscherzungen und geothermale Quellen liegen in bequemer Reichweite, und wenn die Nächte hereinbrechen, tanzt das Nordlicht oft direkt über Ihrem Kopf. Es ist ein raues, elementares Island, mit einem warmen Bett und einem gläsernen Dach, von dem aus man all dies betrachten kann."
     }
 };
 
@@ -1162,6 +1346,69 @@ window.THG_I18N = {
 })();
 
 
+// ------- Дані локацій (спільна модель для booking / payment / the-area) -------
+// Кожна локація має власні ціни та перелік послуг. Текстові поля зберігаються
+// як i18n-ключі (перекладаються через _i18n_translations.js). Ціни — у kr.
+"use strict";
+window.THG_LOCATIONS = {
+    order: ["denmark", "norway", "iceland"],
+
+    denmark: {
+        id: "denmark",
+        labelKey: "common.location", // "Vesterbord, Denmark"
+        map: "https://www.google.com/maps/search/?api=1&query=56.6486,9.9982",
+        priceNight: 3200,
+        guestFee: 800,
+        cleaning: 500,
+        area: { titleKey: "area.intro_title", subtitleKey: "area.intro_subtitle", textKey: "area.intro_text" },
+        services: [
+            { price: 400, nameKey: "booking.service_1_name", titleKey: "booking.service_1_title", textKey: "booking.service_1_text" },
+            { price: 400, nameKey: "booking.service_2_name", titleKey: "booking.service_2_title", textKey: "booking.service_2_text" },
+            { price: 400, nameKey: "booking.service_3_name", titleKey: "booking.service_3_title", textKey: "booking.service_3_text" },
+            { price: 400, nameKey: "booking.service_4_name", titleKey: "booking.service_4_title", textKey: "booking.service_4_text" },
+            { price: 400, nameKey: "booking.service_5_name", titleKey: "booking.service_5_title", textKey: "booking.service_5_text" },
+            { price: 400, nameKey: "booking.service_6_name", titleKey: "booking.service_6_title", textKey: "booking.service_6_text" }
+        ]
+    },
+
+    norway: {
+        id: "norway",
+        labelKey: "loc.norway.label", // "Aurland, Norway"
+        map: "https://www.google.com/maps/search/?api=1&query=60.9080,7.1892",
+        priceNight: 5200,
+        guestFee: 1000,
+        cleaning: 600,
+        area: { titleKey: "area.norway_title", subtitleKey: "area.norway_subtitle", textKey: "area.norway_text" },
+        services: [
+            { price: 500, nameKey: "booking.norway_service_1_name", titleKey: "booking.norway_service_1_title", textKey: "booking.norway_service_1_text" },
+            { price: 900, nameKey: "booking.norway_service_2_name", titleKey: "booking.norway_service_2_title", textKey: "booking.norway_service_2_text" },
+            { price: 600, nameKey: "booking.norway_service_3_name", titleKey: "booking.norway_service_3_title", textKey: "booking.norway_service_3_text" },
+            { price: 450, nameKey: "booking.norway_service_4_name", titleKey: "booking.norway_service_4_title", textKey: "booking.norway_service_4_text" },
+            { price: 1200, nameKey: "booking.norway_service_5_name", titleKey: "booking.norway_service_5_title", textKey: "booking.norway_service_5_text" },
+            { price: 400, nameKey: "booking.norway_service_6_name", titleKey: "booking.norway_service_6_title", textKey: "booking.norway_service_6_text" }
+        ]
+    },
+
+    iceland: {
+        id: "iceland",
+        labelKey: "loc.iceland.label", // "Vík, Iceland"
+        map: "https://www.google.com/maps/search/?api=1&query=63.4187,-19.0060",
+        priceNight: 6200,
+        guestFee: 1200,
+        cleaning: 700,
+        area: { titleKey: "area.iceland_title", subtitleKey: "area.iceland_subtitle", textKey: "area.iceland_text" },
+        services: [
+            { price: 700, nameKey: "booking.iceland_service_1_name", titleKey: "booking.iceland_service_1_title", textKey: "booking.iceland_service_1_text" },
+            { price: 500, nameKey: "booking.iceland_service_2_name", titleKey: "booking.iceland_service_2_title", textKey: "booking.iceland_service_2_text" },
+            { price: 600, nameKey: "booking.iceland_service_3_name", titleKey: "booking.iceland_service_3_title", textKey: "booking.iceland_service_3_text" },
+            { price: 1400, nameKey: "booking.iceland_service_4_name", titleKey: "booking.iceland_service_4_title", textKey: "booking.iceland_service_4_text" },
+            { price: 900, nameKey: "booking.iceland_service_5_name", titleKey: "booking.iceland_service_5_title", textKey: "booking.iceland_service_5_text" },
+            { price: 450, nameKey: "booking.iceland_service_6_name", titleKey: "booking.iceland_service_6_title", textKey: "booking.iceland_service_6_text" }
+        ]
+    }
+};
+
+
 // Перевірка на тип пристрою
 "use strict"
 const isMobile = {
@@ -1250,27 +1497,30 @@ if (menuLinks.length > 0) {
     }
 }
 
-// ------- Калькулятор бронювання (booking.html) -------
-// Рахує ночі за датами, доплату за 2-го гостя, обрані послуги, знижку за
-// промокодом і підсумок. Формат ціни — данський (3.200kr). Стан зберігається
-// в localStorage (thg_booking), щоб сторінка оплати підхопила його.
+// ------- Калькулятор бронювання (booking.html) — багатолокаційний -------
+// Локація визначається параметром ?loc= (зі слайдера на головній) або
+// селектором. Послуги й ціни беруться з обраної локації (window.THG_LOCATIONS).
+// Рахує ночі, доплату за 2-го гостя, послуги, знижку за промокодом і підсумок.
+// Стан зберігається в localStorage (thg_booking) для сторінки оплати.
 "use strict";
 (function () {
     var root = document.querySelector("[data-booking]");
-    if (!root) return; // виконуємо лише на сторінці бронювання
+    if (!root) return;
+    var LOCS = window.THG_LOCATIONS;
+    if (!LOCS) return;
 
-    var PRICE_NIGHT = parseInt(root.getAttribute("data-price-night"), 10) || 0;
-    var GUEST_FEE = parseInt(root.getAttribute("data-guest-fee"), 10) || 0; // доплата за кожного додаткового гостя/ніч
-    var CLEANING = parseInt(root.getAttribute("data-cleaning"), 10) || 0;
-    var MIN_GUESTS = 1, MAX_GUESTS = 2; // будиночок розрахований на двох
-
-    // Демо-промокоди: pct — відсоток, fixed — фіксована сума (kr)
+    var MIN_GUESTS = 1, MAX_GUESTS = 2;
     var COUPONS = {
         "GLASS10": { type: "pct", value: 10 },
         "FOREST20": { type: "pct", value: 20 },
         "WELCOME500": { type: "fixed", value: 500 }
     };
 
+    // Елементи керування
+    var locSelect = document.querySelector("[data-location-select]");
+    var heroLabel = document.querySelector("[data-location-label]");
+    var priceDisplay = root.querySelector("[data-price-display]");
+    var servicesBox = document.querySelector("[data-services-container]");
     var checkin = root.querySelector("[data-checkin]");
     var checkout = root.querySelector("[data-checkout]");
     var guestCount = root.querySelector("[data-guest-count]");
@@ -1279,9 +1529,6 @@ if (menuLinks.length > 0) {
     var couponInput = root.querySelector("[data-coupon-input]");
     var couponApply = root.querySelector("[data-coupon-apply]");
     var couponMsg = root.querySelector("[data-coupon-msg]");
-    // Чекбокси послуг лежать у лівій колонці, поза .trash
-    var serviceChecks = document.querySelectorAll("[data-service]");
-
     var out = {
         nights: root.querySelector("[data-sum-nights]"),
         guest: root.querySelector("[data-sum-guest]"),
@@ -1292,26 +1539,22 @@ if (menuLinks.length > 0) {
         total: root.querySelector("[data-sum-total]")
     };
 
+    // Стан
+    var current = null;               // поточна локація
+    var PRICE_NIGHT = 0, GUEST_FEE = 0, CLEANING = 0;
     var guests = MIN_GUESTS;
-    var coupon = null;     // застосований об'єкт промокоду
-    var couponCode = "";   // код застосованого промокоду
+    var coupon = null, couponCode = "";
 
     // ---- утиліти ----
     function fmt(n) {
         n = Math.max(0, Math.round(n));
-        // тисячний роздільник "." (данський формат): 3200 -> 3.200
         return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".") + "kr";
     }
     function pad(n) { return n < 10 ? "0" + n : "" + n; }
     function iso(d) { return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()); }
-    function parseDate(v) {
-        if (!v) return null;
-        var d = new Date(v + "T00:00:00");
-        return isNaN(d.getTime()) ? null : d;
-    }
+    function parseDate(v) { if (!v) return null; var d = new Date(v + "T00:00:00"); return isNaN(d.getTime()) ? null : d; }
     function nightsBetween() {
-        var a = parseDate(checkin && checkin.value);
-        var b = parseDate(checkout && checkout.value);
+        var a = parseDate(checkin && checkin.value), b = parseDate(checkout && checkout.value);
         if (!a || !b) return 0;
         var diff = Math.floor((b - a) / 86400000);
         return diff > 0 ? diff : 0;
@@ -1319,15 +1562,75 @@ if (menuLinks.length > 0) {
     function t(key, fallback) {
         return (window.THG && typeof window.THG.t === "function" && window.THG.t(key)) || fallback;
     }
+    function el(tag, cls) { var e = document.createElement(tag); if (cls) e.className = cls; return e; }
 
-    // Перелік обраних послуг: {key, name, titleKey, title, textKey, text, price}
-    // — щоб сторінка оплати показала їх поіменно з описом і перекладала за i18n.
+    var CHEVRON = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>';
+
+    // ---- рендер послуг обраної локації ----
+    function renderServices(loc) {
+        if (!servicesBox) return;
+        servicesBox.innerHTML = "";
+        loc.services.forEach(function (s) {
+            var item = el("div", "choose-services__spoiler-item");
+
+            var btn = el("button", "choose-services__spoiler-title-button");
+            btn.type = "button";
+            btn.setAttribute("tabindex", "-1");
+            btn.setAttribute("data-spoller", "");
+            var icon = el("span", "choise-services__spoiler-icon-plus");
+            var titleText = el("div", "choose-services__spoiler-title-text");
+            var nameSpan = el("span");
+            nameSpan.setAttribute("data-i18n", s.nameKey);
+            nameSpan.textContent = t(s.nameKey, "");
+            var priceP = el("p");
+            priceP.textContent = s.price + "kr";
+            titleText.appendChild(nameSpan);
+            titleText.appendChild(priceP);
+            btn.appendChild(icon);
+            btn.appendChild(titleText);
+            btn.insertAdjacentHTML("beforeend", CHEVRON);
+
+            var content = el("div", "choose-services__spoiler-content");
+            content.hidden = true; // спойлер згорнутий; плагін розгортає по кліку
+            var info = el("div", "choose-services__spoiler-info");
+            var titleP = el("p", "choose-services__spoiler-title");
+            titleP.setAttribute("data-i18n", s.titleKey);
+            titleP.textContent = t(s.titleKey, "");
+            var textP = el("p", "choose-services__spoiler-text");
+            textP.setAttribute("data-i18n", s.textKey);
+            textP.textContent = t(s.textKey, "");
+            var label = el("label", "service-add");
+            var check = el("input", "service-add__check");
+            check.type = "checkbox";
+            check.setAttribute("data-service", "");
+            check.setAttribute("data-price", String(s.price));
+            var addSpan = el("span", "service-add__label");
+            addSpan.setAttribute("data-i18n", "booking.service_add");
+            addSpan.textContent = t("booking.service_add", "Add to booking");
+            var priceSpan = el("span", "service-add__price");
+            priceSpan.textContent = s.price + "kr";
+            label.appendChild(check);
+            label.appendChild(addSpan);
+            label.appendChild(priceSpan);
+            info.appendChild(titleP);
+            info.appendChild(textP);
+            info.appendChild(label);
+            content.appendChild(info);
+
+            item.appendChild(btn);
+            item.appendChild(content);
+            servicesBox.appendChild(item);
+        });
+    }
+
     function selectedServices() {
         var items = [];
-        for (var i = 0; i < serviceChecks.length; i++) {
-            if (!serviceChecks[i].checked) continue;
-            var price = parseInt(serviceChecks[i].getAttribute("data-price"), 10) || 0;
-            var itemEl = serviceChecks[i].closest(".choose-services__spoiler-item");
+        if (!servicesBox) return items;
+        var checks = servicesBox.querySelectorAll("[data-service]");
+        for (var i = 0; i < checks.length; i++) {
+            if (!checks[i].checked) continue;
+            var price = parseInt(checks[i].getAttribute("data-price"), 10) || 0;
+            var itemEl = checks[i].closest(".choose-services__spoiler-item");
             var nameEl = itemEl && itemEl.querySelector(".choose-services__spoiler-title-text [data-i18n]");
             var titleEl = itemEl && itemEl.querySelector(".choose-services__spoiler-title");
             var textEl = itemEl && itemEl.querySelector(".choose-services__spoiler-text");
@@ -1344,11 +1647,11 @@ if (menuLinks.length > 0) {
         return items;
     }
 
-    // ---- головний перерахунок ----
+    // ---- перерахунок ----
     function recalc() {
         var nights = nightsBetween();
         var accommodation = nights * PRICE_NIGHT;
-        var guestExtra = nights * GUEST_FEE * (guests - 1); // доплата за додаткових гостей
+        var guestExtra = nights * GUEST_FEE * (guests - 1);
         var serviceItems = selectedServices();
         var services = 0;
         for (var si = 0; si < serviceItems.length; si++) services += serviceItems[si].price;
@@ -1364,7 +1667,7 @@ if (menuLinks.length > 0) {
 
         if (out.nights) out.nights.textContent = fmt(accommodation);
         if (out.guest) out.guest.textContent = fmt(guestExtra);
-        if (out.guestRow) out.guestRow.hidden = guestExtra <= 0; // рядок лише коли є доплата
+        if (out.guestRow) out.guestRow.hidden = guestExtra <= 0;
         if (out.services) out.services.textContent = fmt(services);
         if (out.cleaning) out.cleaning.textContent = fmt(cleaning);
         if (out.discount) out.discount.textContent = (discount > 0 ? "-" : "") + fmt(discount);
@@ -1372,15 +1675,45 @@ if (menuLinks.length > 0) {
 
         try {
             localStorage.setItem("thg_booking", JSON.stringify({
+                location: current ? current.id : "",
+                locationLabelKey: current ? current.labelKey : "",
                 checkin: checkin ? checkin.value : "",
                 checkout: checkout ? checkout.value : "",
                 nights: nights, guests: guests,
                 priceNight: PRICE_NIGHT, guestFee: GUEST_FEE, guestExtra: guestExtra,
                 accommodation: accommodation, services: services, serviceItems: serviceItems,
-                cleaning: cleaning, discount: Math.round(discount),
-                total: total, coupon: couponCode
+                cleaning: cleaning, discount: Math.round(discount), total: total, coupon: couponCode
             }));
-        } catch (e) { /* localStorage недоступний */ }
+        } catch (e) { /* ignore */ }
+    }
+
+    // ---- локація ----
+    function setLocation(id) {
+        current = LOCS[id] || LOCS[LOCS.order[0]];
+        PRICE_NIGHT = current.priceNight;
+        GUEST_FEE = current.guestFee;
+        CLEANING = current.cleaning;
+        if (heroLabel) {
+            heroLabel.setAttribute("data-i18n", current.labelKey);
+            heroLabel.textContent = t(current.labelKey, "");
+        }
+        if (priceDisplay) priceDisplay.textContent = fmt(PRICE_NIGHT);
+        renderServices(current);
+        recalc();
+    }
+
+    function buildSelector(initId) {
+        if (!locSelect) return;
+        locSelect.innerHTML = "";
+        LOCS.order.forEach(function (id) {
+            var o = el("option");
+            o.value = id;
+            o.setAttribute("data-i18n", LOCS[id].labelKey);
+            o.textContent = t(LOCS[id].labelKey, id);
+            locSelect.appendChild(o);
+        });
+        locSelect.value = initId;
+        locSelect.addEventListener("change", function () { setLocation(locSelect.value); });
     }
 
     // ---- гості ----
@@ -1407,25 +1740,22 @@ if (menuLinks.length > 0) {
     function initDates() {
         var today = new Date();
         var t2 = new Date(); t2.setDate(t2.getDate() + 2);
-        if (checkin) {
-            checkin.min = iso(today);
-            if (!checkin.value) checkin.value = iso(today);
-        }
+        if (checkin) { checkin.min = iso(today); if (!checkin.value) checkin.value = iso(today); }
         if (checkout && !checkout.value) checkout.value = iso(t2);
         syncCheckoutMin();
     }
     if (checkin) checkin.addEventListener("change", function () { syncCheckoutMin(); recalc(); });
     if (checkout) checkout.addEventListener("change", recalc);
 
-    // ---- послуги ----
-    for (var i = 0; i < serviceChecks.length; i++) {
-        serviceChecks[i].addEventListener("change", recalc);
-    }
+    // послуги: делегування (елементи рендеряться динамічно)
+    if (servicesBox) servicesBox.addEventListener("change", function (e) {
+        if (e.target && e.target.hasAttribute && e.target.hasAttribute("data-service")) recalc();
+    });
 
     // ---- промокод ----
     function showMsg(key, ok) {
         if (!couponMsg) return;
-        couponMsg.setAttribute("data-i18n", key); // оновлюється при зміні мови
+        couponMsg.setAttribute("data-i18n", key);
         couponMsg.textContent = t(key, key);
         couponMsg.hidden = false;
         couponMsg.classList.toggle("_ok", !!ok);
@@ -1434,26 +1764,23 @@ if (menuLinks.length > 0) {
     function applyCoupon(e) {
         if (e) e.preventDefault();
         var code = (couponInput && couponInput.value || "").trim().toUpperCase();
-        if (COUPONS[code]) {
-            coupon = COUPONS[code];
-            couponCode = code;
-            showMsg("booking.coupon_applied", true);
-        } else {
-            coupon = null;
-            couponCode = "";
-            showMsg("booking.coupon_invalid", false);
-        }
+        if (COUPONS[code]) { coupon = COUPONS[code]; couponCode = code; showMsg("booking.coupon_applied", true); }
+        else { coupon = null; couponCode = ""; showMsg("booking.coupon_invalid", false); }
         recalc();
     }
     if (couponApply) couponApply.addEventListener("click", applyCoupon);
-    if (couponInput) couponInput.addEventListener("keydown", function (e) {
-        if (e.key === "Enter") applyCoupon(e);
-    });
+    if (couponInput) couponInput.addEventListener("keydown", function (e) { if (e.key === "Enter") applyCoupon(e); });
 
     // ---- ініціалізація ----
+    var params = new URLSearchParams(window.location.search);
+    var initLoc = params.get("loc");
+    if (!initLoc || !LOCS[initLoc]) initLoc = LOCS.order[0];
+    buildSelector(initLoc);
     initDates();
-    setGuests(guests);
-    recalc();
+    guests = MIN_GUESTS;
+    if (guestCount) guestCount.textContent = String(guests);
+    if (guestDec) guestDec.disabled = true;
+    setLocation(initLoc);
 })();
 
 
@@ -1489,6 +1816,15 @@ if (menuLinks.length > 0) {
     var elGuests = root.querySelector("[data-pay-guests]");
     var elLines = root.querySelector("[data-pay-lines]");
     var elTotal = root.querySelector("[data-pay-total]");
+
+    // Локація обраного будиночка (назва + посилання на карту)
+    var elLocation = root.querySelector("[data-pay-location]");
+    if (elLocation && data.locationLabelKey) {
+        elLocation.setAttribute("data-i18n", data.locationLabelKey);
+        elLocation.textContent = t(data.locationLabelKey, elLocation.textContent);
+        var loc = window.THG_LOCATIONS && window.THG_LOCATIONS[data.location];
+        if (loc && loc.map) elLocation.setAttribute("href", loc.map);
+    }
 
     if (elCheckin) elCheckin.textContent = fmtDate(data.checkin);
     if (elCheckout) elCheckout.textContent = fmtDate(data.checkout);
@@ -1581,6 +1917,64 @@ if (menuLinks.length > 0) {
             });
         }
     }
+})();
+
+
+// ------- Локації на сторінці the-area -------
+// Перемикає опис/локацію/маршрут між локаціями (window.THG_LOCATIONS).
+// Стартова локація — з параметра ?loc= (зі слайдера чи бронювання) або перша.
+"use strict";
+(function () {
+    // працюємо лише на the-area (там є блок опису локації)
+    if (!document.querySelector("[data-area-title]")) return;
+    var LOCS = window.THG_LOCATIONS;
+    if (!LOCS) return;
+
+    var select = document.querySelector("[data-location-select]");
+    var heroLabel = document.querySelector("[data-location-label]");
+    var directions = document.querySelector("[data-directions]");
+    var titleEl = document.querySelector("[data-area-title]");
+    var subtitleEl = document.querySelector("[data-area-subtitle]");
+    var textEl = document.querySelector("[data-area-text]");
+
+    function t(key, fallback) {
+        return (window.THG && typeof window.THG.t === "function" && window.THG.t(key)) || fallback;
+    }
+    function setI18n(elm, key) {
+        if (!elm || !key) return;
+        elm.setAttribute("data-i18n", key); // щоб оновлювалось при зміні мови
+        elm.textContent = t(key, elm.textContent);
+    }
+
+    function setLocation(id) {
+        var loc = LOCS[id] || LOCS[LOCS.order[0]];
+        setI18n(heroLabel, loc.labelKey);
+        if (loc.area) {
+            setI18n(titleEl, loc.area.titleKey);
+            setI18n(subtitleEl, loc.area.subtitleKey);
+            setI18n(textEl, loc.area.textKey);
+        }
+        if (directions && loc.map) directions.setAttribute("href", loc.map);
+    }
+
+    var params = new URLSearchParams(window.location.search);
+    var initLoc = params.get("loc");
+    if (!initLoc || !LOCS[initLoc]) initLoc = LOCS.order[0];
+
+    if (select) {
+        select.innerHTML = "";
+        LOCS.order.forEach(function (id) {
+            var o = document.createElement("option");
+            o.value = id;
+            o.setAttribute("data-i18n", LOCS[id].labelKey);
+            o.textContent = t(LOCS[id].labelKey, id);
+            select.appendChild(o);
+        });
+        select.value = initLoc;
+        select.addEventListener("change", function () { setLocation(select.value); });
+    }
+
+    setLocation(initLoc);
 })();
 
 

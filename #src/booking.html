@@ -35,7 +35,7 @@
             <div class="photo-background__info photo-background__position_booking">
                 <h1 class="photo-background__title" data-i18n="booking.hero_title">Booking</h1>
                 <h2 class="photo-background__subtitle-location">
-                    <a class="subtitle-location__link" href="#" data-i18n="common.location">Vesterbord, Denmark</a>
+                    <a class="subtitle-location__link" href="#" data-location-label>Vesterbord, Denmark</a>
                 </h2>
             </div>
         </section>
@@ -45,9 +45,14 @@
 
             <div class="choose-services__additional">
 
+                <div class="booking-location">
+                    <label class="booking-location__label" data-i18n="booking.location_label">Location</label>
+                    <select class="booking-location__select" data-location-select></select>
+                </div>
+
                 <h2 class="choose-services__title" data-i18n="booking.services_title">Choose Additional Services</h2>
 
-                <div data-spollers data-one-spoller class="choose-services__spoiler">
+                <div data-spollers data-one-spoller class="choose-services__spoiler" data-services-container>
 
                     <div class="choose-services__spoiler-item">
                         <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
@@ -304,7 +309,7 @@
             <aside class="trash-block">
                 <div class="trash" data-booking data-price-night="3200" data-guest-fee="800" data-cleaning="500">
 
-                    <h2 class="trash__sum-title" data-i18n-html="booking.cart_price_per_night"><span>3.200kr</span> / night</h2>
+                    <h2 class="trash__sum-title"><span data-price-display>3.200kr</span> <span data-i18n="booking.per_night_suffix">/ night</span></h2>
 
                     <div class="trash__table">
 

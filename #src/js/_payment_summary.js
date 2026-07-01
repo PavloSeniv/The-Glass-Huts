@@ -31,6 +31,15 @@
     var elLines = root.querySelector("[data-pay-lines]");
     var elTotal = root.querySelector("[data-pay-total]");
 
+    // Локація обраного будиночка (назва + посилання на карту)
+    var elLocation = root.querySelector("[data-pay-location]");
+    if (elLocation && data.locationLabelKey) {
+        elLocation.setAttribute("data-i18n", data.locationLabelKey);
+        elLocation.textContent = t(data.locationLabelKey, elLocation.textContent);
+        var loc = window.THG_LOCATIONS && window.THG_LOCATIONS[data.location];
+        if (loc && loc.map) elLocation.setAttribute("href", loc.map);
+    }
+
     if (elCheckin) elCheckin.textContent = fmtDate(data.checkin);
     if (elCheckout) elCheckout.textContent = fmtDate(data.checkout);
     if (elGuests) elGuests.textContent = String(data.guests || 1);

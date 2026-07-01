@@ -1244,5 +1244,12 @@
     "da": "Tak! Vi kontakter dig snarest.",
     "uk": "Дякуємо! Ми з вами зв'яжемося найближчим часом.",
     "de": "Danke! Wir kontaktieren Sie in Kürze."
+  },
+  {
+    "key": "booking.per_night_suffix",
+    "en": "/ night",
+    "da": "/ nat",
+    "uk": "/ ніч",
+    "de": "/ Nacht"
   }
 ]
