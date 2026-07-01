@@ -28,6 +28,27 @@
 
                 <div class="payment-services" data-pay-services></div>
 
+                <form class="payment-form" action="" method="post" data-validate data-success="payment.toast_thanks" novalidate>
+                    <h2 class="choose-services__title" data-i18n="payment.form_title">Your details</h2>
+
+                    <div class="payment-form__row">
+                        <input class="payment-form__input" type="text" name="first-name" required placeholder="First name" data-i18n-ph="payment.form_first_name">
+                        <input class="payment-form__input" type="text" name="last-name" required placeholder="Last name" data-i18n-ph="payment.form_last_name">
+                    </div>
+
+                    <input class="payment-form__input" type="email" name="email" required placeholder="Email" data-i18n-ph="payment.form_email">
+                    <input class="payment-form__input" type="tel" name="phone" required placeholder="Phone" data-i18n-ph="payment.form_phone">
+
+                    <select class="payment-form__input payment-form__select" name="method" required>
+                        <option value="" data-i18n="payment.select_placeholder">Choose a payment method</option>
+                        <option value="card" data-i18n="payment.method_card">Credit / debit card</option>
+                        <option value="paypal" data-i18n="payment.method_paypal">PayPal</option>
+                        <option value="bank" data-i18n="payment.method_bank">Bank transfer</option>
+                    </select>
+
+                    <button class="payment-form__button" type="submit" data-i18n="payment.confirm_button">Confirm booking</button>
+                </form>
+
             </div>
 
             <aside class="trash-block">

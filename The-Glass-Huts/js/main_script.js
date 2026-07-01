@@ -215,6 +215,20 @@ window.THG_I18N = {
         "payment.line_item_wellness": "Wellness & sauna access",
         "payment.line_item_discount": "Early-bird discount",
         "payment.total_label": "Total",
+        "forms.toast_subscribed": "Thanks for subscribing!",
+        "forms.invalid": "Please fill in the highlighted fields correctly.",
+        "about.toast_sent": "Thank you! We'll get back to you soon.",
+        "payment.form_title": "Your details",
+        "payment.form_first_name": "First name",
+        "payment.form_last_name": "Last name",
+        "payment.form_email": "Email",
+        "payment.form_phone": "Phone",
+        "payment.select_placeholder": "Choose a payment method",
+        "payment.method_card": "Credit / debit card",
+        "payment.method_paypal": "PayPal",
+        "payment.method_bank": "Bank transfer",
+        "payment.confirm_button": "Confirm booking",
+        "payment.toast_thanks": "Thank you! We'll contact you shortly.",
         "terms.s1_heading": "1. Introduction",
         "terms.s1_text": "These Terms and Conditions govern your booking and stay at The Glass Huts, our collection of glass cabins near the Mariager fjord in Vesterbord, Denmark. By making a reservation or staying with us, you agree to the terms set out below.",
         "terms.s2_heading": "2. Bookings and Payment",
@@ -453,6 +467,20 @@ window.THG_I18N = {
         "payment.line_item_wellness": "Adgang til wellness og sauna",
         "payment.line_item_discount": "Early-bird-rabat",
         "payment.total_label": "I alt",
+        "forms.toast_subscribed": "Tak for din tilmelding!",
+        "forms.invalid": "Udfyld venligst de markerede felter korrekt.",
+        "about.toast_sent": "Tak! Vi vender tilbage til dig snarest.",
+        "payment.form_title": "Dine oplysninger",
+        "payment.form_first_name": "Fornavn",
+        "payment.form_last_name": "Efternavn",
+        "payment.form_email": "E-mail",
+        "payment.form_phone": "Telefon",
+        "payment.select_placeholder": "Vælg en betalingsmetode",
+        "payment.method_card": "Kredit-/betalingskort",
+        "payment.method_paypal": "PayPal",
+        "payment.method_bank": "Bankoverførsel",
+        "payment.confirm_button": "Bekræft booking",
+        "payment.toast_thanks": "Tak! Vi kontakter dig snarest.",
         "terms.s1_heading": "1. Introduktion",
         "terms.s1_text": "Disse vilkår og betingelser gælder for din booking og dit ophold hos The Glass Huts, vores samling af glashytter nær Mariager Fjord i Vesterbord, Danmark. Ved at foretage en reservation eller opholde dig hos os accepterer du de vilkår, der er fastsat nedenfor.",
         "terms.s2_heading": "2. Bookinger og betaling",
@@ -691,6 +719,20 @@ window.THG_I18N = {
         "payment.line_item_wellness": "Доступ до велнесу та сауни",
         "payment.line_item_discount": "Знижка за ранє бронювання",
         "payment.total_label": "Разом",
+        "forms.toast_subscribed": "Дякуємо за підписку!",
+        "forms.invalid": "Будь ласка, правильно заповніть виділені поля.",
+        "about.toast_sent": "Дякуємо! Ми скоро з вами зв'яжемося.",
+        "payment.form_title": "Ваші дані",
+        "payment.form_first_name": "Ім'я",
+        "payment.form_last_name": "Прізвище",
+        "payment.form_email": "Електронна пошта",
+        "payment.form_phone": "Телефон",
+        "payment.select_placeholder": "Оберіть спосіб оплати",
+        "payment.method_card": "Кредитна / дебетова картка",
+        "payment.method_paypal": "PayPal",
+        "payment.method_bank": "Банківський переказ",
+        "payment.confirm_button": "Підтвердити бронювання",
+        "payment.toast_thanks": "Дякуємо! Ми з вами зв'яжемося найближчим часом.",
         "terms.s1_heading": "1. Вступ",
         "terms.s1_text": "Ці Умови та положення регулюють Ваше бронювання та перебування в The Glass Huts, нашій колекції скляних будиночків поблизу Маріагер-фьорду у Вестерборді, Данія. Здійснюючи бронювання або зупиняючись у нас, Ви погоджуєтеся з викладеними нижче умовами.",
         "terms.s2_heading": "2. Бронювання та оплата",
@@ -929,6 +971,20 @@ window.THG_I18N = {
         "payment.line_item_wellness": "Wellness- & Saunazugang",
         "payment.line_item_discount": "Frühbucherrabatt",
         "payment.total_label": "Gesamt",
+        "forms.toast_subscribed": "Danke für deine Anmeldung!",
+        "forms.invalid": "Bitte füllen Sie die markierten Felder korrekt aus.",
+        "about.toast_sent": "Danke! Wir melden uns bald bei Ihnen.",
+        "payment.form_title": "Ihre Daten",
+        "payment.form_first_name": "Vorname",
+        "payment.form_last_name": "Nachname",
+        "payment.form_email": "E-Mail",
+        "payment.form_phone": "Telefon",
+        "payment.select_placeholder": "Zahlungsmethode wählen",
+        "payment.method_card": "Kredit-/Debitkarte",
+        "payment.method_paypal": "PayPal",
+        "payment.method_bank": "Banküberweisung",
+        "payment.confirm_button": "Buchung bestätigen",
+        "payment.toast_thanks": "Danke! Wir kontaktieren Sie in Kürze.",
         "terms.s1_heading": "1. Einführung",
         "terms.s1_text": "Diese Allgemeinen Geschäftsbedingungen regeln Ihre Buchung und Ihren Aufenthalt bei The Glass Huts, unserer Sammlung von Glashütten in der Nähe des Mariager Fjords in Vesterbord, Dänemark. Mit der Vornahme einer Reservierung oder Ihrem Aufenthalt bei uns erklären Sie sich mit den nachstehend aufgeführten Bedingungen einverstanden.",
         "terms.s2_heading": "2. Buchungen und Zahlung",
@@ -1524,5 +1580,93 @@ if (menuLinks.length > 0) {
                 elServices.appendChild(card);
             });
         }
+    }
+})();
+
+
+// ------- Форми: валідація + тост-повідомлення -------
+// Будь-яка <form data-validate data-success="<i18n-ключ>"> перехоплюється:
+// поля перевіряються (required + email), при помилці показується тост і
+// підсвічуються поля; при успіху — тост подяки і форма очищується.
+// Тост також доступний глобально: window.THG.toast(text, "ok"|"err").
+"use strict";
+(function () {
+    // ---- тост ----
+    var container = null;
+    function ensureContainer() {
+        if (container) return container;
+        container = document.createElement("div");
+        container.className = "toast-container";
+        document.body.appendChild(container);
+        return container;
+    }
+    function showToast(message, type) {
+        var c = ensureContainer();
+        var el = document.createElement("div");
+        el.className = "toast toast--" + (type || "ok");
+        el.setAttribute("role", "status");
+        el.textContent = message;
+        c.appendChild(el);
+        requestAnimationFrame(function () { el.classList.add("_show"); });
+        var hide = function () {
+            el.classList.remove("_show");
+            setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 300);
+        };
+        var timer = setTimeout(hide, 4000);
+        el.addEventListener("click", function () { clearTimeout(timer); hide(); });
+    }
+    window.THG = window.THG || {};
+    window.THG.toast = showToast;
+
+    function t(key, fallback) {
+        return (window.THG && typeof window.THG.t === "function" && window.THG.t(key)) || fallback;
+    }
+
+    // ---- валідація ----
+    var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    function isEmailField(el) {
+        return el.type === "email" || el.getAttribute("data-type") === "email";
+    }
+    function validateField(el) {
+        var val = (el.value || "").trim();
+        var ok = true;
+        if (el.hasAttribute("required") && !val) ok = false;
+        else if (val && isEmailField(el) && !EMAIL_RE.test(val)) ok = false;
+        el.classList.toggle("_invalid", !ok);
+        return ok;
+    }
+    function validateForm(form) {
+        var fields = form.querySelectorAll("input, textarea, select");
+        var valid = true;
+        for (var i = 0; i < fields.length; i++) {
+            var el = fields[i];
+            if (el.type === "submit" || el.type === "button" || el.disabled) continue;
+            if (!validateField(el)) valid = false;
+        }
+        return valid;
+    }
+
+    var forms = document.querySelectorAll("form[data-validate]");
+    for (var i = 0; i < forms.length; i++) {
+        (function (form) {
+            // прибирати підсвічування помилки, коли користувач виправляє поле
+            form.addEventListener("input", function (e) {
+                if (e.target.classList && e.target.classList.contains("_invalid")) validateField(e.target);
+            });
+            form.addEventListener("change", function (e) {
+                if (e.target.tagName === "SELECT" && e.target.classList.contains("_invalid")) validateField(e.target);
+            });
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                if (!validateForm(form)) {
+                    showToast(t("forms.invalid", "Please fill in the highlighted fields correctly."), "err");
+                    return;
+                }
+                showToast(t(form.getAttribute("data-success"), "Thank you!"), "ok");
+                form.reset();
+                var inv = form.querySelectorAll("._invalid");
+                for (var j = 0; j < inv.length; j++) inv[j].classList.remove("_invalid");
+            });
+        })(forms[i]);
     }
 })();

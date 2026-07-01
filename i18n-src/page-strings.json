@@ -1146,5 +1146,103 @@
     "da": "I alt",
     "uk": "Разом",
     "de": "Gesamt"
+  },
+  {
+    "key": "forms.toast_subscribed",
+    "en": "Thanks for subscribing!",
+    "da": "Tak for din tilmelding!",
+    "uk": "Дякуємо за підписку!",
+    "de": "Danke für deine Anmeldung!"
+  },
+  {
+    "key": "forms.invalid",
+    "en": "Please fill in the highlighted fields correctly.",
+    "da": "Udfyld venligst de markerede felter korrekt.",
+    "uk": "Будь ласка, правильно заповніть виділені поля.",
+    "de": "Bitte füllen Sie die markierten Felder korrekt aus."
+  },
+  {
+    "key": "about.toast_sent",
+    "en": "Thank you! We'll get back to you soon.",
+    "da": "Tak! Vi vender tilbage til dig snarest.",
+    "uk": "Дякуємо! Ми скоро з вами зв'яжемося.",
+    "de": "Danke! Wir melden uns bald bei Ihnen."
+  },
+  {
+    "key": "payment.form_title",
+    "en": "Your details",
+    "da": "Dine oplysninger",
+    "uk": "Ваші дані",
+    "de": "Ihre Daten"
+  },
+  {
+    "key": "payment.form_first_name",
+    "en": "First name",
+    "da": "Fornavn",
+    "uk": "Ім'я",
+    "de": "Vorname"
+  },
+  {
+    "key": "payment.form_last_name",
+    "en": "Last name",
+    "da": "Efternavn",
+    "uk": "Прізвище",
+    "de": "Nachname"
+  },
+  {
+    "key": "payment.form_email",
+    "en": "Email",
+    "da": "E-mail",
+    "uk": "Електронна пошта",
+    "de": "E-Mail"
+  },
+  {
+    "key": "payment.form_phone",
+    "en": "Phone",
+    "da": "Telefon",
+    "uk": "Телефон",
+    "de": "Telefon"
+  },
+  {
+    "key": "payment.select_placeholder",
+    "en": "Choose a payment method",
+    "da": "Vælg en betalingsmetode",
+    "uk": "Оберіть спосіб оплати",
+    "de": "Zahlungsmethode wählen"
+  },
+  {
+    "key": "payment.method_card",
+    "en": "Credit / debit card",
+    "da": "Kredit-/betalingskort",
+    "uk": "Кредитна / дебетова картка",
+    "de": "Kredit-/Debitkarte"
+  },
+  {
+    "key": "payment.method_paypal",
+    "en": "PayPal",
+    "da": "PayPal",
+    "uk": "PayPal",
+    "de": "PayPal"
+  },
+  {
+    "key": "payment.method_bank",
+    "en": "Bank transfer",
+    "da": "Bankoverførsel",
+    "uk": "Банківський переказ",
+    "de": "Banküberweisung"
+  },
+  {
+    "key": "payment.confirm_button",
+    "en": "Confirm booking",
+    "da": "Bekræft booking",
+    "uk": "Підтвердити бронювання",
+    "de": "Buchung bestätigen"
+  },
+  {
+    "key": "payment.toast_thanks",
+    "en": "Thank you! We'll contact you shortly.",
+    "da": "Tak! Vi kontakter dig snarest.",
+    "uk": "Дякуємо! Ми з вами зв'яжемося найближчим часом.",
+    "de": "Danke! Wir kontaktieren Sie in Kürze."
   }
 ]

@@ -9,3 +9,5 @@
 @@include('_booking_calc.js')
 
 @@include('_payment_summary.js')
+
+@@include('_forms.js')
