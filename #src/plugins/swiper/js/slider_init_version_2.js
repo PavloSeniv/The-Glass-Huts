@@ -3,10 +3,9 @@
 // (new Swiper('.swiper-container') створив би лише перший — решта «не вантажаться»),
 // а кнопки/пагінацію прив'язуємо до елементів усередині свого контейнера,
 // щоб слайдери не перехоплювали керування один в одного.
-// Ефект — 'fade': контейнер має overflow: visible (щоб показати стрілки/лічильник
-// під слайдером), тож горизонтальний 'slide' показував би сусідні слайди збоку.
-// Fade накладає слайди один на одного — видно лише активний. (cube + freeMode +
-// loop давали збої під час переходів.)
+// Ефект — 'cube' (як і задумано дизайном). Раніше він глючив через freeMode +
+// loopedSlides та через те, що ініціалізувався лише перший слайдер. Тепер кожен
+// слайдер ініціалізується окремо, без freeMode — куб працює коректно.
 "use strict";
 (function () {
     if (typeof Swiper === "undefined") return;
@@ -32,8 +31,13 @@
                     delay: 5000,
                     disableOnInteraction: false
                 },
-                effect: "fade",
-                fadeEffect: { crossFade: true },
+                effect: "cube",
+                cubeEffect: {
+                    slideShadows: false,
+                    shadow: true,
+                    shadowOffset: 20,
+                    shadowScale: 0.94
+                },
                 a11y: {
                     prevSlideMessage: "Previous slide",
                     nextSlideMessage: "Next slide"
