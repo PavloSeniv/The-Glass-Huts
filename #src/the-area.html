@@ -10,7 +10,7 @@
     <meta http-equiv="copyright" content="Seniv Pavlo">
     <title>The Glass Huts</title>
     <!------- Іконка ------->
-    <link rel="shortcut icon" href="img/index/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="img/index/favicon.svg">
     <!------- Swiper ------->
     <link rel="stylesheet" href="plugins/swiper/dist/swiper_bundle.min.css"/>
     <!------- Style for swiper in page ------->
@@ -34,10 +34,10 @@
             </picture>
         </div>
         <div class="photo-background__info photo-background__position_the-area">
-            <h1 class="photo-background__title">The Area</h1>
+            <h1 class="photo-background__title" data-i18n="area.hero_title">The Area</h1>
             <h2 class="photo-background__subtitle-location">
-                <a class="subtitle-location__link" href="#">Vesterbord, Denmark</a></h2>
-            <a class="photo-background__button" href="#">Get Directions</a>
+                <a class="subtitle-location__link" href="#" data-i18n="common.location">Vesterbord, Denmark</a></h2>
+            <a class="photo-background__button" href="#" data-i18n="area.hero_directions">Get Directions</a>
         </div>
     </section>
 
@@ -72,22 +72,23 @@
         </div>
 
         <div class="slider-info__text">
-            <h2 class="text__title-slider">Vesterbord</h2>
-            <p class="text__subtitle-slider">
-                Lorem ipsum dolor sit amet, consectetur.
+            <h2 class="text__title-slider" data-i18n="area.intro_title">Vesterbord</h2>
+            <p class="text__subtitle-slider" data-i18n="area.intro_subtitle">
+                Where the forest meets the fjord.
             </p>
-            <p class="text__info-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid
-                corporis dolor enim eos explicabo harum iusto magni maxime nam natus, pariatur repellendus
-                reprehenderit sed temporibus ullam veritatis? Aliquid, dignissimos dolores esse facilis harum id
-                incidunt laborum libero minus nobis quasi quidem, quo quod rem tempora temporibus voluptatum.
-                Possimus, voluptatem?</p>
+            <p class="text__info-slider" data-i18n="area.intro_text">Tucked into the quiet countryside near the Mariager
+                fjord, Vesterbord is a place of soft light, still water and open sky. Ancient woodland gives way to
+                reed-lined shores, and the days move to the slow rhythm of the tide. Here there are no crowds and no
+                hurry, only birdsong at dawn, mist over the meadows and a horizon wide enough to breathe into. The
+                Glass Huts sit at the heart of it all, close enough to wander out on foot and far enough to feel
+                genuinely alone with nature.</p>
         </div>
     </section>
 
     <section class="map-info">
         <div class="map-info__text">
-            <h2 class="map-info__title">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit lorem ipsum....
+            <h2 class="map-info__title" data-i18n="area.map_title">
+                A short drive from Aarhus, yet a world away from everything.
             </h2>
         </div>
         <div class="map-info__photo">
@@ -96,7 +97,7 @@
     </section>
 
     <section class="activities">
-        <h2 class="activities__title">Activities</h2>
+        <h2 class="activities__title" data-i18n="area.activities_title">Activities</h2>
 
         <div class="activities__slider_1">
             <div class="slider-info__swiper">
@@ -129,27 +130,27 @@
             </div>
 
             <div class="slider-info__text">
-                <h2 class="text__title-slider">Restaurants & shopping </h2>
+                <h2 class="text__title-slider" data-i18n="area.slider1_title">Restaurants & shopping </h2>
                 <div class="text__subtitle-slider_menu">
-                    <a class="subtitle-slider_menu__button_1-1" href="#">Lorem ipsum</a>
-                    <a class="subtitle-slider_menu__button_1-2" href="#">Lorem ipsum</a>
+                    <a class="subtitle-slider_menu__button_1-1" href="#" data-i18n="area.slider1_tab_1">Dining</a>
+                    <a class="subtitle-slider_menu__button_1-2" href="#" data-i18n="area.slider1_tab_2">Local shops</a>
                 </div>
                 <div class="text__info_1-1" style="display: block;">
-                    <p class="text__info-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                        aliquid
-                        corporis dolor enim eos explicabo harum iusto magni maxime nam natus, pariatur repellendus
-                        reprehenderit sed temporibus ullam veritatis? Aliquid, dignissimos dolores esse facilis harum id
-                        incidunt laborum libero minus nobis quasi quidem, quo quod rem tempora temporibus voluptatum.
-                        Possimus, voluptatem?
+                    <p class="text__info-slider" data-i18n="area.slider1_text_1">The kitchens near the fjord cook with
+                        the seasons. Expect just-landed fish, smoked and cured the old way, wild herbs foraged from the
+                        forest floor, and slow-braised local game served beside vegetables pulled from nearby
+                        market gardens. A handful of intimate restaurants and harbourside cafes are a short drive away,
+                        each pouring crisp Danish beer and thoughtful natural wines. Ask us to reserve your table and we
+                        will point you to our own quiet favourites.
                     </p>
                 </div>
                 <div class="text__info_1-2" style="display: none;">
-                    <p class="text__info-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                        aliquid
-                        corporis dolor enim eos explicabo harum iusto magni maxime nam natus, pariatur repellendus
-                        reprehenderit sed temporibus ullam veritatis? Aliquid, dignissimos dolores esse facilis harum id
-                        incidunt laborum libero minus nobis quasi quidem, quo quod rem tempora temporibus voluptatum.
-                        Possimus, voluptatem!!!!!?
+                    <p class="text__info-slider" data-i18n="area.slider1_text_2">Browse the region at an unhurried pace.
+                        Independent studios and workshops sell hand-thrown ceramics, woven textiles and Scandinavian
+                        homeware made by makers who live and work along the coast. Farm stalls and delis brim with
+                        honey, cheese, rye bread and preserves, everything you need to lay out a slow breakfast back at
+                        your hut. The nearby town centres keep boutiques and galleries within an easy stroll, so an
+                        afternoon of gentle browsing never feels rushed.
                     </p>
                 </div>
             </div>
@@ -186,27 +187,26 @@
             </div>
 
             <div class="slider-info__text slider-info__order_2">
-                <h2 class="text__title-slider">Experiences in nature </h2>
+                <h2 class="text__title-slider" data-i18n="area.slider2_title">Experiences in nature </h2>
                 <div class="text__subtitle-slider_menu">
-                    <a class="subtitle-slider_menu__button_2-1" href="#">Lorem ipsum</a>
-                    <a class="subtitle-slider_menu__button_2-2" href="#">Lorem ipsum</a>
+                    <a class="subtitle-slider_menu__button_2-1" href="#" data-i18n="area.slider2_tab_1">On the water</a>
+                    <a class="subtitle-slider_menu__button_2-2" href="#" data-i18n="area.slider2_tab_2">Forest & trails</a>
                 </div>
                 <div class="text__info_2-1" style="display: block;">
-                    <p class="text__info-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                        aliquid
-                        corporis dolor enim eos explicabo harum iusto magni maxime nam natus, pariatur repellendus
-                        reprehenderit sed temporibus ullam veritatis? Aliquid, dignissimos dolores esse facilis harum id
-                        incidunt laborum libero minus nobis quasi quidem, quo quod rem tempora temporibus voluptatum.
-                        Possimus, voluptatem?
+                    <p class="text__info-slider" data-i18n="area.slider2_text_1">The Mariager fjord is one of Denmark's
+                        longest and most sheltered, its calm water made for slow mornings. Slip out by kayak or
+                        stand-up paddleboard at first light, drift past reed beds where herons stand watch, and let
+                        the ripple of the paddle be the only sound. In summer the shallow inlets are warm enough for a
+                        swim, and guided boat trips reveal seals basking on the sandbanks near the fjord's mouth.
                     </p>
                 </div>
                 <div class="text__info_2-2" style="display: none;">
-                    <p class="text__info-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                        aliquid
-                        corporis dolor enim eos explicabo harum iusto magni maxime nam natus, pariatur repellendus
-                        reprehenderit sed temporibus ullam veritatis? Aliquid, dignissimos dolores esse facilis harum id
-                        incidunt laborum libero minus nobis quasi quidem, quo quod rem tempora temporibus voluptatum.
-                        Possimus, voluptatem!!!!!?
+                    <p class="text__info-slider" data-i18n="area.slider2_text_2">Beyond your door, marked trails thread
+                        through beech and pine, past clearings carpeted with wood anemones in spring and glowing gold in
+                        autumn. Walk quietly and you may glimpse roe deer at the treeline, red squirrels overhead or a
+                        white-tailed eagle circling the fjord. When darkness falls the low horizon and near-total lack
+                        of light pollution turn the sky into a canopy of stars, the finest kind of stargazing right
+                        outside your glass wall.
                     </p>
                 </div>
             </div>
@@ -243,27 +243,27 @@
             </div>
 
             <div class="slider-info__text">
-                <h2 class="text__title-slider">Go for a drive </h2>
+                <h2 class="text__title-slider" data-i18n="area.slider3_title">Go for a drive </h2>
                 <div class="text__subtitle-slider_menu">
-                    <a class="subtitle-slider_menu__button_3-1" href="#">Lorem ipsum</a>
-                    <a class="subtitle-slider_menu__button_3-2" href="#">Lorem ipsum</a>
+                    <a class="subtitle-slider_menu__button_3-1" href="#" data-i18n="area.slider3_tab_1">Coastal route</a>
+                    <a class="subtitle-slider_menu__button_3-2" href="#" data-i18n="area.slider3_tab_2">Day trips</a>
                 </div>
                 <div class="text__info_3-1" style="display: block;">
-                    <p class="text__info-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                        aliquid
-                        corporis dolor enim eos explicabo harum iusto magni maxime nam natus, pariatur repellendus
-                        reprehenderit sed temporibus ullam veritatis? Aliquid, dignissimos dolores esse facilis harum id
-                        incidunt laborum libero minus nobis quasi quidem, quo quod rem tempora temporibus voluptatum.
-                        Possimus, voluptatem?
+                    <p class="text__info-slider" data-i18n="area.slider3_text_1">Some of the region's finest scenery
+                        unfolds through the windscreen. Follow the winding lanes that trace the fjord, where the road
+                        rises over rolling farmland then dips back down to water shining between the trees. Pull over at
+                        the old harbour towns of Mariager and Hobro, wander their cobbled streets and half-timbered
+                        houses, and stop wherever a view or a coffee tempts you. It is a drive best taken slowly, with
+                        the windows down.
                     </p>
                 </div>
                 <div class="text__info_3-2" style="display: none;">
-                    <p class="text__info-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                        aliquid
-                        corporis dolor enim eos explicabo harum iusto magni maxime nam natus, pariatur repellendus
-                        reprehenderit sed temporibus ullam veritatis? Aliquid, dignissimos dolores esse facilis harum id
-                        incidunt laborum libero minus nobis quasi quidem, quo quod rem tempora temporibus voluptatum.
-                        Possimus, voluptatem!!!!!?
+                    <p class="text__info-slider" data-i18n="area.slider3_text_2">Set out a little further and the day
+                        opens up. The salt meadows and birdlife of the Lille Vildmose reserve lie within easy reach, as
+                        do Viking-age burial mounds and windswept Baltic beaches. The city of Aarhus, with its art
+                        museums, design shops and harbour restaurants, is under an hour away, an effortless contrast to
+                        the quiet of the huts. Whichever direction you choose, you will be back by dusk in time to watch
+                        the light fade over the fjord.
                     </p>
                 </div>
             </div>
@@ -300,27 +300,27 @@
             </div>
 
             <div class="slider-info__text slider-info__order_2">
-                <h2 class="text__title-slider">Small-town charm </h2>
+                <h2 class="text__title-slider" data-i18n="area.slider4_title">Small-town charm </h2>
                 <div class="text__subtitle-slider_menu">
-                    <a class="subtitle-slider_menu__button_4-1" href="#">Lorem ipsum</a>
-                    <a class="subtitle-slider_menu__button_4-2" href="#">Lorem ipsum</a>
+                    <a class="subtitle-slider_menu__button_4-1" href="#" data-i18n="area.slider4_tab_1">Old town</a>
+                    <a class="subtitle-slider_menu__button_4-2" href="#" data-i18n="area.slider4_tab_2">Culture</a>
                 </div>
                 <div class="text__info_4-1" style="display: block;">
-                    <p class="text__info-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                        aliquid
-                        corporis dolor enim eos explicabo harum iusto magni maxime nam natus, pariatur repellendus
-                        reprehenderit sed temporibus ullam veritatis? Aliquid, dignissimos dolores esse facilis harum id
-                        incidunt laborum libero minus nobis quasi quidem, quo quod rem tempora temporibus voluptatum.
-                        Possimus, voluptatem?
+                    <p class="text__info-slider" data-i18n="area.slider4_text_1">Mariager is known across Denmark as the
+                        town of roses, a cluster of pastel cottages, climbing blooms and cobbled squares that seem to
+                        have paused somewhere in the last century. Wander lanes lined with tiny craft shops and
+                        tea rooms, pause in the courtyard of the medieval abbey, and let the pace of a place with barely
+                        two thousand souls settle over you. It is the kind of afternoon that ends with an ice cream by
+                        the water.
                     </p>
                 </div>
                 <div class="text__info_4-2" style="display: none;">
-                    <p class="text__info-slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                        aliquid
-                        corporis dolor enim eos explicabo harum iusto magni maxime nam natus, pariatur repellendus
-                        reprehenderit sed temporibus ullam veritatis? Aliquid, dignissimos dolores esse facilis harum id
-                        incidunt laborum libero minus nobis quasi quidem, quo quod rem tempora temporibus voluptatum.
-                        Possimus, voluptatem!!!!!?
+                    <p class="text__info-slider" data-i18n="area.slider4_text_2">Behind the postcard streets there is
+                        real living history to explore. Ride the vintage steam railway that puffs along the fjord in
+                        summer, step aboard the salt centre to see how the region's white gold was once harvested, or
+                        time your visit for a village market or midsummer bonfire. Small galleries and local musicians
+                        keep the towns quietly alive after dark, and everyone you meet has the time for an unhurried
+                        conversation.
                     </p>
                 </div>
             </div>

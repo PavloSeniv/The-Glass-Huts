@@ -1,0 +1,35 @@
+[
+  { "key": "nav.home", "en": "Home", "da": "Hjem", "uk": "Головна", "de": "Startseite" },
+  { "key": "nav.hut", "en": "The Hut", "da": "Hytten", "uk": "Будиночок", "de": "Die Hütte" },
+  { "key": "nav.area", "en": "The Area", "da": "Området", "uk": "Місцевість", "de": "Die Umgebung" },
+  { "key": "nav.booking", "en": "Booking", "da": "Booking", "uk": "Бронювання", "de": "Buchung" },
+  { "key": "nav.about", "en": "About Us", "da": "Om os", "uk": "Про нас", "de": "Über uns" },
+  { "key": "nav.faq", "en": "FAQ", "da": "FAQ", "uk": "Питання", "de": "FAQ" },
+
+  { "key": "common.book_now", "en": "Book now", "da": "Book nu", "uk": "Забронювати", "de": "Jetzt buchen" },
+  { "key": "common.book_a_hut", "en": "Book A Hut", "da": "Book en hytte", "uk": "Забронювати будиночок", "de": "Hütte buchen" },
+  { "key": "common.read_more", "en": "Read More", "da": "Læs mere", "uk": "Докладніше", "de": "Mehr erfahren" },
+  { "key": "common.from", "en": "from", "da": "fra", "uk": "від", "de": "ab" },
+  { "key": "common.per_night", "en": "per night", "da": "pr. nat", "uk": "за ніч", "de": "pro Nacht" },
+  { "key": "common.location", "en": "Vesterbord, Denmark", "da": "Vesterbord, Danmark", "uk": "Вестерборд, Данія", "de": "Vesterbord, Dänemark" },
+
+  { "key": "footer.newsletter", "en": "Newsletter", "da": "Nyhedsbrev", "uk": "Розсилка", "de": "Newsletter" },
+  { "key": "footer.email_placeholder", "en": "Email Address", "da": "E-mailadresse", "uk": "Електронна адреса", "de": "E-Mail-Adresse" },
+  { "key": "footer.newsletter_text", "en": "Sign up to our newsletter for special things and receive 10% off your next order.", "da": "Tilmeld dig vores nyhedsbrev for særlige tilbud og få 10 % rabat på din næste booking.", "uk": "Підпишіться на нашу розсилку, щоб першими отримувати особливі пропозиції та знижку 10% на наступне бронювання.", "de": "Abonnieren Sie unseren Newsletter für besondere Angebote und erhalten Sie 10 % Rabatt auf Ihre nächste Buchung." },
+  { "key": "footer.terms", "en": "TERMS AND CONDITIONS", "da": "VILKÅR OG BETINGELSER", "uk": "УМОВИ ТА ПОЛОЖЕННЯ", "de": "ALLGEMEINE GESCHÄFTSBEDINGUNGEN" },
+  { "key": "footer.cancellation", "en": "CANCELLATION POLICY", "da": "AFBESTILLINGSPOLITIK", "uk": "ПОЛІТИКА СКАСУВАННЯ", "de": "STORNIERUNGSRICHTLINIE" },
+  { "key": "footer.privacy", "en": "PRIVACY POLICY", "da": "PRIVATLIVSPOLITIK", "uk": "ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ", "de": "DATENSCHUTZRICHTLINIE" },
+
+  { "key": "hero.title_1", "en": "Find peace in the Forest", "da": "Find ro i skoven", "uk": "Знайдіть спокій у лісі", "de": "Finden Sie Ruhe im Wald" },
+  { "key": "hero.subtitle_1", "en": "Come and stay at a hotel hut near <br> the Mariager fjord in Denmark", "da": "Kom og bo i en hotelhytte nær <br> Mariager fjord i Danmark", "uk": "Завітайте й зупиніться в готельному будиночку <br> біля Маріагер-фіорду в Данії", "de": "Übernachten Sie in einer Hotelhütte nahe <br> dem Mariager Fjord in Dänemark" },
+  { "key": "hero.title_2", "en": "Find peace in Nature", "da": "Find ro i naturen", "uk": "Знайдіть спокій на природі", "de": "Finden Sie Ruhe in der Natur" },
+  { "key": "hero.subtitle_2", "en": "Come and stay at a hotel hut in <br> Norway", "da": "Kom og bo i en hotelhytte i <br> Norge", "uk": "Завітайте й зупиніться в готельному будиночку <br> у Норвегії", "de": "Übernachten Sie in einer Hotelhütte in <br> Norwegen" },
+  { "key": "hero.title_3", "en": "Find peace in the Stars", "da": "Find ro under stjernerne", "uk": "Знайдіть спокій під зорями", "de": "Finden Sie Ruhe unter den Sternen" },
+  { "key": "hero.subtitle_3", "en": "Come and stay at a hotel hut in <br> Iceland", "da": "Kom og bo i en hotelhytte på <br> Island", "uk": "Завітайте й зупиніться в готельному будиночку <br> в Ісландії", "de": "Übernachten Sie in einer Hotelhütte auf <br> Island" },
+
+  { "key": "legal.last_updated", "en": "Last updated", "da": "Senest opdateret", "uk": "Останнє оновлення", "de": "Zuletzt aktualisiert" },
+  { "key": "legal.note", "en": "This page is a sample template provided for demonstration purposes only and does not constitute legal advice.", "da": "Denne side er en eksempelskabelon, der udelukkende er til demonstrationsformål og udgør ikke juridisk rådgivning.", "uk": "Ця сторінка є демонстраційним шаблоном і не є юридичною консультацією.", "de": "Diese Seite ist eine Beispielvorlage, die ausschließlich zu Demonstrationszwecken dient und keine Rechtsberatung darstellt." },
+  { "key": "terms.title", "en": "Terms and Conditions", "da": "Vilkår og betingelser", "uk": "Умови та положення", "de": "Allgemeine Geschäftsbedingungen" },
+  { "key": "cancellation.title", "en": "Cancellation Policy", "da": "Afbestillingspolitik", "uk": "Політика скасування", "de": "Stornierungsrichtlinie" },
+  { "key": "privacy.title", "en": "Privacy Policy", "da": "Privatlivspolitik", "uk": "Політика конфіденційності", "de": "Datenschutzrichtlinie" }
+]

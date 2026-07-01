@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80" role="img" aria-label="The Glass Huts">
+    <rect width="80" height="80" rx="16" fill="#ffffff"/>
+    <g transform="translate(9 18) scale(0.83)" fill="#23423a">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M37.7281 45.1436L69.4795 49.9608V21.4259L37.0484 5.02082L16.895 0.839514L0.787186 13.8923V49.1202L37.7281 45.1436ZM0.0065918 49.9893V13.5202L16.6911 0L37.3084 4.27753L70.2601 20.946V50.8687L37.711 45.9305L0.0065918 49.9893Z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M66.6904 24.2088L60.1855 30.9739L59.6228 30.4329L66.1278 23.6677L66.6904 24.2088Z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M48.6941 32.7363L54.4184 37.1597L53.9412 37.7774L48.2168 33.354L48.6941 32.7363Z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M59.3884 49.1775L59.3884 8.19632L60.169 8.19632L60.169 49.1775L59.3884 49.1775Z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M53.7134 26.8202L53.7134 1.04081L54.494 1.0408L54.494 26.8202L53.7134 26.8202Z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M53.7134 54.9019L53.7134 24.0684L54.494 24.0684L54.494 54.9019L53.7134 54.9019Z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M67.45 27.9713H63.0266V27.1907H67.45V27.9713Z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3989 47.7465V0.520508H17.1795V47.7465H16.3989Z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M36.9546 45.6648V4.68359H37.7352V45.6648H36.9546Z"/>
+    </g>
+</svg>

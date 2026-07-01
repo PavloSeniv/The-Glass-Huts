@@ -1,0 +1,303 @@
+[
+  {
+    "key": "terms.s1_heading",
+    "en": "1. Introduction",
+    "da": "1. Introduktion",
+    "uk": "1. Вступ",
+    "de": "1. Einführung"
+  },
+  {
+    "key": "terms.s1_text",
+    "en": "These Terms and Conditions govern your booking and stay at The Glass Huts, our collection of glass cabins near the Mariager fjord in Vesterbord, Denmark. By making a reservation or staying with us, you agree to the terms set out below.",
+    "da": "Disse vilkår og betingelser gælder for din booking og dit ophold hos The Glass Huts, vores samling af glashytter nær Mariager Fjord i Vesterbord, Danmark. Ved at foretage en reservation eller opholde dig hos os accepterer du de vilkår, der er fastsat nedenfor.",
+    "uk": "Ці Умови та положення регулюють Ваше бронювання та перебування в The Glass Huts, нашій колекції скляних будиночків поблизу Маріагер-фьорду у Вестерборді, Данія. Здійснюючи бронювання або зупиняючись у нас, Ви погоджуєтеся з викладеними нижче умовами.",
+    "de": "Diese Allgemeinen Geschäftsbedingungen regeln Ihre Buchung und Ihren Aufenthalt bei The Glass Huts, unserer Sammlung von Glashütten in der Nähe des Mariager Fjords in Vesterbord, Dänemark. Mit der Vornahme einer Reservierung oder Ihrem Aufenthalt bei uns erklären Sie sich mit den nachstehend aufgeführten Bedingungen einverstanden."
+  },
+  {
+    "key": "terms.s2_heading",
+    "en": "2. Bookings and Payment",
+    "da": "2. Bookinger og betaling",
+    "uk": "2. Бронювання та оплата",
+    "de": "2. Buchungen und Zahlung"
+  },
+  {
+    "key": "terms.s2_text1",
+    "en": "A reservation is confirmed once we have received your booking request and full or partial payment as indicated during checkout. Prices are shown in euros (EUR) per hut, per night, and include applicable taxes unless stated otherwise.",
+    "da": "En reservation er bekræftet, når vi har modtaget din bookingforespørgsel og hel eller delvis betaling som angivet under betalingen. Priserne er angivet i euro (EUR) pr. hytte pr. nat og inkluderer gældende skatter og afgifter, medmindre andet er angivet.",
+    "uk": "Бронювання підтверджується після того, як ми отримаємо Ваш запит на бронювання та повну або часткову оплату, як зазначено під час оформлення замовлення. Ціни вказані в євро (EUR) за будиночок за ніч і включають відповідні податки, якщо не зазначено інше.",
+    "de": "Eine Reservierung ist bestätigt, sobald wir Ihre Buchungsanfrage und die vollständige oder teilweise Zahlung gemäß den Angaben während des Bezahlvorgangs erhalten haben. Die Preise werden in Euro (EUR) pro Hütte und pro Nacht angegeben und beinhalten, sofern nicht anders angegeben, die anfallenden Steuern."
+  },
+  {
+    "key": "terms.s2_text2",
+    "en": "We reserve the right to cancel a reservation if payment is not completed within the time specified at booking. Any promotional codes or discounts must be applied at the time of booking and cannot be added retroactively.",
+    "da": "Vi forbeholder os retten til at annullere en reservation, hvis betalingen ikke er gennemført inden for den tid, der er angivet ved bookingen. Eventuelle rabatkoder eller rabatter skal anvendes på bookingtidspunktet og kan ikke tilføjes med tilbagevirkende kraft.",
+    "uk": "Ми залишаємо за собою право скасувати бронювання, якщо оплату не буде завершено протягом строку, зазначеного під час бронювання. Будь-які промокоди чи знижки мають бути застосовані під час бронювання та не можуть бути додані заднім числом.",
+    "de": "Wir behalten uns das Recht vor, eine Reservierung zu stornieren, wenn die Zahlung nicht innerhalb der bei der Buchung angegebenen Frist abgeschlossen wird. Etwaige Aktionscodes oder Rabatte müssen zum Zeitpunkt der Buchung angewendet werden und können nicht nachträglich hinzugefügt werden."
+  },
+  {
+    "key": "terms.s3_heading",
+    "en": "3. Check-in and Check-out",
+    "da": "3. Check-in og check-ud",
+    "uk": "3. Заїзд та виїзд",
+    "de": "3. Check-in und Check-out"
+  },
+  {
+    "key": "terms.s3_text",
+    "en": "Check-in is from 3:00 PM and check-out is by 11:00 AM. Early check-in or late check-out may be arranged in advance, subject to availability and an additional fee. Please contact us if you expect to arrive outside our reception hours.",
+    "da": "Check-in er fra kl. 15:00, og check-ud er senest kl. 11:00. Tidlig check-in eller sen check-ud kan aftales på forhånd med forbehold for tilgængelighed og mod et ekstra gebyr. Kontakt os venligst, hvis du forventer at ankomme uden for vores åbningstider i receptionen.",
+    "uk": "Заїзд можливий з 15:00, а виїзд — до 11:00. Ранній заїзд або пізній виїзд можна організувати заздалегідь за наявності можливості та за додаткову плату. Будь ласка, зв’яжіться з нами, якщо Ви очікуєте прибути поза годинами роботи нашої стійки реєстрації.",
+    "de": "Der Check-in ist ab 15:00 Uhr und der Check-out bis 11:00 Uhr möglich. Ein früherer Check-in oder späterer Check-out kann im Voraus vereinbart werden, vorbehaltlich der Verfügbarkeit und gegen eine zusätzliche Gebühr. Bitte kontaktieren Sie uns, wenn Sie voraussichtlich außerhalb unserer Rezeptionszeiten ankommen."
+  },
+  {
+    "key": "terms.s4_heading",
+    "en": "4. Guest Responsibilities",
+    "da": "4. Gæstens ansvar",
+    "uk": "4. Обов’язки гостей",
+    "de": "4. Verantwortlichkeiten der Gäste"
+  },
+  {
+    "key": "terms.s4_text",
+    "en": "Guests are asked to treat each hut and the surrounding nature with care. Smoking is not permitted inside the huts, and open fires are only allowed in the designated areas. You are responsible for any damage caused during your stay beyond normal wear and tear.",
+    "da": "Gæster bedes behandle hver hytte og den omkringliggende natur med omhu. Rygning er ikke tilladt inde i hytterne, og åben ild er kun tilladt i de anviste områder. Du er ansvarlig for enhver skade forårsaget under dit ophold ud over normalt slid.",
+    "uk": "Ми просимо гостей дбайливо ставитися до кожного будиночка та навколишньої природи. Куріння всередині будиночків заборонено, а розведення відкритого вогню дозволено лише у відведених для цього місцях. Ви несете відповідальність за будь-які пошкодження, завдані під час Вашого перебування, що виходять за межі звичайного зносу.",
+    "de": "Wir bitten die Gäste, jede Hütte und die umgebende Natur mit Sorgfalt zu behandeln. Das Rauchen ist im Inneren der Hütten nicht gestattet, und offene Feuer sind nur in den dafür vorgesehenen Bereichen erlaubt. Sie sind für jeden während Ihres Aufenthalts verursachten Schaden verantwortlich, der über die normale Abnutzung hinausgeht."
+  },
+  {
+    "key": "terms.s5_heading",
+    "en": "5. Liability",
+    "da": "5. Ansvar",
+    "uk": "5. Відповідальність",
+    "de": "5. Haftung"
+  },
+  {
+    "key": "terms.s5_text",
+    "en": "The Glass Huts is not liable for loss of or damage to personal belongings, nor for injury arising from the misuse of facilities or failure to follow posted safety guidance. Our huts are located in a natural environment, and guests enter surrounding trails and waterways at their own risk.",
+    "da": "The Glass Huts er ikke ansvarlig for tab af eller skade på personlige ejendele, ej heller for personskade opstået som følge af forkert brug af faciliteterne eller manglende overholdelse af de opslåede sikkerhedsanvisninger. Vores hytter ligger i naturomgivelser, og gæster færdes på de omkringliggende stier og vandveje på eget ansvar.",
+    "uk": "The Glass Huts не несе відповідальності за втрату особистих речей чи їх пошкодження, а також за травми, спричинені неправильним використанням обладнання чи недотриманням розміщених вказівок з безпеки. Наші будиночки розташовані в природному середовищі, і гості виходять на навколишні стежки та водойми на власний ризик.",
+    "de": "The Glass Huts haftet nicht für Verlust oder Beschädigung persönlicher Gegenstände und ebenso wenig für Verletzungen, die aus dem Missbrauch der Einrichtungen oder der Nichtbeachtung der ausgehängten Sicherheitshinweise entstehen. Unsere Hütten befinden sich in einer natürlichen Umgebung, und Gäste betreten die umliegenden Wege und Wasserwege auf eigene Gefahr."
+  },
+  {
+    "key": "terms.s6_heading",
+    "en": "6. Governing Law",
+    "da": "6. Gældende lov",
+    "uk": "6. Застосовне право",
+    "de": "6. Anwendbares Recht"
+  },
+  {
+    "key": "terms.s6_text",
+    "en": "These Terms are governed by the laws of Denmark. Any dispute arising from your booking or stay shall be subject to the exclusive jurisdiction of the Danish courts.",
+    "da": "Disse vilkår er underlagt dansk lovgivning. Enhver tvist, der opstår som følge af din booking eller dit ophold, er underlagt de danske domstoles eksklusive jurisdiktion.",
+    "uk": "Ці Умови регулюються законодавством Данії. Будь-який спір, що виникає з Вашого бронювання чи перебування, підлягає виключній юрисдикції данських судів.",
+    "de": "Diese Bedingungen unterliegen dem Recht Dänemarks. Jede Streitigkeit, die sich aus Ihrer Buchung oder Ihrem Aufenthalt ergibt, unterliegt der ausschließlichen Zuständigkeit der dänischen Gerichte."
+  },
+  {
+    "key": "terms.s7_heading",
+    "en": "7. Contact",
+    "da": "7. Kontakt",
+    "uk": "7. Контакти",
+    "de": "7. Kontakt"
+  },
+  {
+    "key": "terms.s7_text",
+    "en": "Questions about these Terms can be sent to <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a>. We are happy to help before, during and after your stay.",
+    "da": "Spørgsmål om disse vilkår kan sendes til <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a>. Vi hjælper dig gerne før, under og efter dit ophold.",
+    "uk": "Запитання щодо цих Умов можна надіслати на <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a>. Ми будемо раді допомогти до, під час та після Вашого перебування.",
+    "de": "Fragen zu diesen Bedingungen können an <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a> gesendet werden. Wir helfen Ihnen gerne vor, während und nach Ihrem Aufenthalt."
+  },
+  {
+    "key": "cancellation.s1_heading",
+    "en": "1. Overview",
+    "da": "1. Oversigt",
+    "uk": "1. Огляд",
+    "de": "1. Überblick"
+  },
+  {
+    "key": "cancellation.s1_text",
+    "en": "We understand that plans can change. This policy explains how cancellations and date changes are handled for stays at The Glass Huts. The conditions that apply to your booking are shown at checkout and in your confirmation email.",
+    "da": "Vi forstår, at planer kan ændre sig. Denne politik forklarer, hvordan afbestillinger og datoændringer håndteres for ophold hos The Glass Huts. De betingelser, der gælder for din booking, vises ved betalingen og i din bekræftelsesmail.",
+    "uk": "Ми розуміємо, що плани можуть змінюватися. Ця політика пояснює, як обробляються скасування та зміни дат для перебування в The Glass Huts. Умови, що застосовуються до Вашого бронювання, зазначені під час оформлення замовлення та у Вашому електронному листі з підтвердженням.",
+    "de": "Wir verstehen, dass sich Pläne ändern können. Diese Richtlinie erläutert, wie Stornierungen und Datumsänderungen für Aufenthalte bei The Glass Huts gehandhabt werden. Die für Ihre Buchung geltenden Bedingungen werden beim Bezahlvorgang und in Ihrer Bestätigungs-E-Mail angezeigt."
+  },
+  {
+    "key": "cancellation.s2_heading",
+    "en": "2. Free Cancellation",
+    "da": "2. Gratis afbestilling",
+    "uk": "2. Безкоштовне скасування",
+    "de": "2. Kostenlose Stornierung"
+  },
+  {
+    "key": "cancellation.s2_text",
+    "en": "Cancellations made 14 days or more before your arrival date are fully refundable, minus any non-refundable booking fee shown at checkout. To cancel, use the link in your confirmation email or contact our team directly.",
+    "da": "Afbestillinger foretaget 14 dage eller mere før din ankomstdato refunderes fuldt ud, fratrukket et eventuelt ikke-refunderbart bookinggebyr, der vises ved betalingen. For at afbestille skal du bruge linket i din bekræftelsesmail eller kontakte vores team direkte.",
+    "uk": "Скасування, здійснені за 14 днів або більше до дати Вашого прибуття, підлягають повному відшкодуванню за вирахуванням будь-якого невідшкодовуваного збору за бронювання, зазначеного під час оформлення замовлення. Щоб скасувати, скористайтеся посиланням у Вашому електронному листі з підтвердженням або зв’яжіться безпосередньо з нашою командою.",
+    "de": "Stornierungen, die 14 Tage oder mehr vor Ihrem Anreisedatum vorgenommen werden, sind vollständig erstattungsfähig, abzüglich etwaiger nicht erstattungsfähiger Buchungsgebühren, die beim Bezahlvorgang angezeigt werden. Um zu stornieren, verwenden Sie den Link in Ihrer Bestätigungs-E-Mail oder kontaktieren Sie unser Team direkt."
+  },
+  {
+    "key": "cancellation.s3_heading",
+    "en": "3. Partial Refunds",
+    "da": "3. Delvise refusioner",
+    "uk": "3. Часткові відшкодування",
+    "de": "3. Teilweise Erstattungen"
+  },
+  {
+    "key": "cancellation.s3_text",
+    "en": "Cancellations made between 13 and 3 days before arrival are eligible for a 50% refund of the accommodation cost. Cancellations made within 48 hours of arrival are non-refundable, as the hut is reserved exclusively for you.",
+    "da": "Afbestillinger foretaget mellem 13 og 3 dage før ankomst er berettiget til en refusion på 50 % af overnatningsprisen. Afbestillinger foretaget inden for 48 timer før ankomst er ikke-refunderbare, da hytten er reserveret udelukkende til dig.",
+    "uk": "Скасування, здійснені за 13–3 дні до прибуття, підлягають відшкодуванню 50% вартості проживання. Скасування, здійснені протягом 48 годин до прибуття, не підлягають відшкодуванню, оскільки будиночок зарезервовано виключно для Вас.",
+    "de": "Stornierungen, die zwischen 13 und 3 Tagen vor der Anreise vorgenommen werden, sind für eine Erstattung von 50 % der Unterkunftskosten berechtigt. Stornierungen, die innerhalb von 48 Stunden vor der Anreise vorgenommen werden, sind nicht erstattungsfähig, da die Hütte ausschließlich für Sie reserviert ist."
+  },
+  {
+    "key": "cancellation.s4_heading",
+    "en": "4. No-show",
+    "da": "4. Udeblivelse",
+    "uk": "4. Неявка",
+    "de": "4. Nichterscheinen"
+  },
+  {
+    "key": "cancellation.s4_text",
+    "en": "If you do not arrive on your check-in date and have not contacted us, the reservation is treated as a no-show and the full amount is charged. Your hut will be released after the first night.",
+    "da": "Hvis du ikke ankommer på din check-in-dato og ikke har kontaktet os, behandles reservationen som en udeblivelse, og hele beløbet opkræves. Din hytte frigives efter den første nat.",
+    "uk": "Якщо Ви не прибудете в дату свого заїзду та не зв’яжетеся з нами, бронювання розглядається як неявка, і стягується повна сума. Ваш будиночок буде звільнено після першої ночі.",
+    "de": "Wenn Sie an Ihrem Check-in-Datum nicht anreisen und uns nicht kontaktiert haben, wird die Reservierung als Nichterscheinen behandelt und der volle Betrag wird berechnet. Ihre Hütte wird nach der ersten Nacht freigegeben."
+  },
+  {
+    "key": "cancellation.s5_heading",
+    "en": "5. Changing Your Dates",
+    "da": "5. Ændring af dine datoer",
+    "uk": "5. Зміна Ваших дат",
+    "de": "5. Änderung Ihrer Daten"
+  },
+  {
+    "key": "cancellation.s5_text",
+    "en": "You may request a date change up to 7 days before arrival, subject to availability and any difference in the nightly rate. We will always do our best to find dates that suit you rather than cancel your stay.",
+    "da": "Du kan anmode om en datoændring op til 7 dage før ankomst, med forbehold for tilgængelighed og enhver forskel i overnatningsprisen. Vi vil altid gøre vores bedste for at finde datoer, der passer dig, frem for at annullere dit ophold.",
+    "uk": "Ви можете подати запит на зміну дати не пізніше ніж за 7 днів до прибуття, за наявності можливості та з урахуванням будь-якої різниці у вартості за ніч. Ми завжди докладатимемо максимум зусиль, щоб знайти дати, які Вам підходять, замість скасування Вашого перебування.",
+    "de": "Sie können bis zu 7 Tage vor der Anreise eine Datumsänderung beantragen, vorbehaltlich der Verfügbarkeit und einer etwaigen Differenz beim Übernachtungspreis. Wir werden stets unser Bestes tun, um Daten zu finden, die Ihnen passen, anstatt Ihren Aufenthalt zu stornieren."
+  },
+  {
+    "key": "cancellation.s6_heading",
+    "en": "6. Refund Processing",
+    "da": "6. Behandling af refusion",
+    "uk": "6. Обробка відшкодувань",
+    "de": "6. Erstattungsabwicklung"
+  },
+  {
+    "key": "cancellation.s6_text",
+    "en": "Approved refunds are returned to the original payment method within 5 to 10 business days. Depending on your bank or card provider, it may take a little longer for the funds to appear on your statement.",
+    "da": "Godkendte refusioner returneres til den oprindelige betalingsmetode inden for 5 til 10 hverdage. Afhængigt af din bank eller kortudsteder kan det tage lidt længere tid, før beløbet fremgår af din kontoudskrift.",
+    "uk": "Схвалені відшкодування повертаються на початковий спосіб оплати протягом 5–10 робочих днів. Залежно від Вашого банку чи постачальника картки, кошти можуть відображатися у Вашій виписці трохи довше.",
+    "de": "Genehmigte Erstattungen werden innerhalb von 5 bis 10 Werktagen auf die ursprüngliche Zahlungsmethode zurückerstattet. Je nach Ihrer Bank oder Ihrem Kartenanbieter kann es etwas länger dauern, bis die Beträge auf Ihrer Abrechnung erscheinen."
+  },
+  {
+    "key": "cancellation.s7_heading",
+    "en": "7. Contact",
+    "da": "7. Kontakt",
+    "uk": "7. Контакти",
+    "de": "7. Kontakt"
+  },
+  {
+    "key": "cancellation.s7_text",
+    "en": "To cancel, change your dates, or ask about a refund, email us at <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a> and we will take care of the rest.",
+    "da": "For at afbestille, ændre dine datoer eller spørge om en refusion kan du skrive til os på <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a>, så tager vi os af resten.",
+    "uk": "Щоб скасувати, змінити свої дати чи запитати про відшкодування, напишіть нам на <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a>, і ми подбаємо про решту.",
+    "de": "Um zu stornieren, Ihre Daten zu ändern oder eine Erstattung zu erfragen, schreiben Sie uns eine E-Mail an <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a> und wir kümmern uns um den Rest."
+  },
+  {
+    "key": "privacy.s1_heading",
+    "en": "1. Introduction",
+    "da": "1. Introduktion",
+    "uk": "1. Вступ",
+    "de": "1. Einführung"
+  },
+  {
+    "key": "privacy.s1_text",
+    "en": "This Privacy Policy explains how The Glass Huts collects, uses and protects the personal information you share with us when you visit our website or make a booking. We are committed to handling your data responsibly and transparently.",
+    "da": "Denne privatlivspolitik forklarer, hvordan The Glass Huts indsamler, bruger og beskytter de personoplysninger, du deler med os, når du besøger vores hjemmeside eller foretager en booking. Vi er forpligtet til at håndtere dine data ansvarligt og gennemsigtigt.",
+    "uk": "Ця Політика конфіденційності пояснює, як The Glass Huts збирає, використовує та захищає особисту інформацію, якою Ви ділитеся з нами під час відвідування нашого вебсайту чи здійснення бронювання. Ми прагнемо поводитися з Вашими даними відповідально та прозоро.",
+    "de": "Diese Datenschutzrichtlinie erläutert, wie The Glass Huts die personenbezogenen Informationen erhebt, verwendet und schützt, die Sie mit uns teilen, wenn Sie unsere Website besuchen oder eine Buchung vornehmen. Wir verpflichten uns, Ihre Daten verantwortungsvoll und transparent zu handhaben."
+  },
+  {
+    "key": "privacy.s2_heading",
+    "en": "2. Information We Collect",
+    "da": "2. Oplysninger, vi indsamler",
+    "uk": "2. Інформація, яку ми збираємо",
+    "de": "2. Informationen, die wir erheben"
+  },
+  {
+    "key": "privacy.s2_text",
+    "en": "We collect the details you provide when booking, such as your name, email address, phone number and payment information. We also collect limited technical data — such as your browser type and pages visited — to help us improve the site.",
+    "da": "Vi indsamler de oplysninger, du angiver, når du booker, såsom dit navn, din e-mailadresse, dit telefonnummer og dine betalingsoplysninger. Vi indsamler også begrænsede tekniske data — såsom din browsertype og de besøgte sider — for at hjælpe os med at forbedre siden.",
+    "uk": "Ми збираємо дані, які Ви надаєте під час бронювання, зокрема Ваше ім’я, адресу електронної пошти, номер телефону та платіжну інформацію. Ми також збираємо обмежені технічні дані — такі як тип Вашого браузера та відвідані сторінки — щоб допомогти нам покращити сайт.",
+    "de": "Wir erheben die Angaben, die Sie bei der Buchung machen, wie zum Beispiel Ihren Namen, Ihre E-Mail-Adresse, Ihre Telefonnummer und Ihre Zahlungsinformationen. Wir erheben außerdem begrenzte technische Daten – wie Ihren Browsertyp und die besuchten Seiten –, um uns zu helfen, die Website zu verbessern."
+  },
+  {
+    "key": "privacy.s3_heading",
+    "en": "3. How We Use Your Information",
+    "da": "3. Sådan bruger vi dine oplysninger",
+    "uk": "3. Як ми використовуємо Вашу інформацію",
+    "de": "3. Wie wir Ihre Informationen verwenden"
+  },
+  {
+    "key": "privacy.s3_text",
+    "en": "Your information is used to confirm and manage your reservation, to communicate with you about your stay, and to send you offers only when you have asked to receive our newsletter. We do not sell your personal data to anyone.",
+    "da": "Dine oplysninger bruges til at bekræfte og administrere din reservation, til at kommunikere med dig om dit ophold og til at sende dig tilbud, kun når du har bedt om at modtage vores nyhedsbrev. Vi sælger ikke dine personoplysninger til nogen.",
+    "uk": "Ваша інформація використовується для підтвердження Вашого бронювання та управління ним, для спілкування з Вами щодо Вашого перебування, а також для надсилання Вам пропозицій лише тоді, коли Ви попросили отримувати нашу розсилку. Ми нікому не продаємо Ваші особисті дані.",
+    "de": "Ihre Informationen werden verwendet, um Ihre Reservierung zu bestätigen und zu verwalten, um mit Ihnen über Ihren Aufenthalt zu kommunizieren und um Ihnen Angebote nur dann zu senden, wenn Sie darum gebeten haben, unseren Newsletter zu erhalten. Wir verkaufen Ihre personenbezogenen Daten an niemanden."
+  },
+  {
+    "key": "privacy.s4_heading",
+    "en": "4. Cookies",
+    "da": "4. Cookies",
+    "uk": "4. Файли cookie",
+    "de": "4. Cookies"
+  },
+  {
+    "key": "privacy.s4_text",
+    "en": "Our website uses cookies to remember your preferences — including your chosen language — and to understand how visitors use the site. You can disable cookies in your browser settings, though some features may not work as expected.",
+    "da": "Vores hjemmeside bruger cookies til at huske dine præferencer — herunder dit valgte sprog — og til at forstå, hvordan besøgende bruger siden. Du kan deaktivere cookies i din browsers indstillinger, men nogle funktioner fungerer måske ikke som forventet.",
+    "uk": "Наш вебсайт використовує файли cookie, щоб запам’ятовувати Ваші налаштування — включно з обраною Вами мовою — та розуміти, як відвідувачі користуються сайтом. Ви можете вимкнути файли cookie в налаштуваннях свого браузера, однак деякі функції можуть працювати не так, як очікується.",
+    "de": "Unsere Website verwendet Cookies, um sich Ihre Präferenzen – einschließlich Ihrer gewählten Sprache – zu merken und um zu verstehen, wie Besucher die Website nutzen. Sie können Cookies in Ihren Browsereinstellungen deaktivieren, wobei einige Funktionen möglicherweise nicht wie erwartet funktionieren."
+  },
+  {
+    "key": "privacy.s5_heading",
+    "en": "5. Data Sharing",
+    "da": "5. Deling af data",
+    "uk": "5. Передавання даних",
+    "de": "5. Datenweitergabe"
+  },
+  {
+    "key": "privacy.s5_text",
+    "en": "We share information only with trusted service providers who help us operate — for example, payment processors and email services — and only to the extent needed to deliver our service. These partners are required to protect your data.",
+    "da": "Vi deler kun oplysninger med betroede tjenesteudbydere, der hjælper os med driften — for eksempel betalingsformidlere og e-mailtjenester — og kun i det omfang, det er nødvendigt for at levere vores service. Disse partnere er forpligtet til at beskytte dine data.",
+    "uk": "Ми передаємо інформацію лише перевіреним постачальникам послуг, які допомагають нам працювати — наприклад, платіжним системам та поштовим сервісам — і лише в обсязі, необхідному для надання нашої послуги. Ці партнери зобов’язані захищати Ваші дані.",
+    "de": "Wir geben Informationen nur an vertrauenswürdige Dienstleister weiter, die uns beim Betrieb unterstützen – zum Beispiel Zahlungsdienstleister und E-Mail-Dienste –, und nur in dem Umfang, der zur Erbringung unserer Dienstleistung erforderlich ist. Diese Partner sind verpflichtet, Ihre Daten zu schützen."
+  },
+  {
+    "key": "privacy.s6_heading",
+    "en": "6. Your Rights",
+    "da": "6. Dine rettigheder",
+    "uk": "6. Ваші права",
+    "de": "6. Ihre Rechte"
+  },
+  {
+    "key": "privacy.s6_text",
+    "en": "You have the right to access, correct or delete the personal information we hold about you, and to withdraw consent for marketing at any time. To exercise these rights, simply get in touch with us.",
+    "da": "Du har ret til at få adgang til, rette eller slette de personoplysninger, vi har om dig, og til at trække dit samtykke til markedsføring tilbage til enhver tid. For at udøve disse rettigheder skal du blot kontakte os.",
+    "uk": "Ви маєте право отримувати доступ до особистої інформації, яку ми зберігаємо про Вас, виправляти чи видаляти її, а також відкликати згоду на маркетинг у будь-який час. Щоб скористатися цими правами, просто зв’яжіться з нами.",
+    "de": "Sie haben das Recht, auf die personenbezogenen Informationen, die wir über Sie gespeichert haben, zuzugreifen, sie zu berichtigen oder zu löschen, sowie Ihre Einwilligung zum Marketing jederzeit zu widerrufen. Um diese Rechte auszuüben, nehmen Sie einfach Kontakt mit uns auf."
+  },
+  {
+    "key": "privacy.s7_heading",
+    "en": "7. Contact",
+    "da": "7. Kontakt",
+    "uk": "7. Контакти",
+    "de": "7. Kontakt"
+  },
+  {
+    "key": "privacy.s7_text",
+    "en": "If you have any questions about this Privacy Policy or your data, please contact us at <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a>.",
+    "da": "Hvis du har spørgsmål om denne privatlivspolitik eller dine data, bedes du kontakte os på <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a>.",
+    "uk": "Якщо у Вас виникли будь-які запитання щодо цієї Політики конфіденційності чи Ваших даних, будь ласка, зв’яжіться з нами за адресою <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a>.",
+    "de": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie oder zu Ihren Daten haben, kontaktieren Sie uns bitte unter <a href=\"mailto:info@theglasshuts.com\">info@theglasshuts.com</a>."
+  }
+]

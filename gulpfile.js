@@ -48,7 +48,8 @@ let {src, dest} = require('gulp'),
     browsersync = require("browser-sync").create(),// Для плагіна browser-sync
     fileinclude = require("gulp-file-include"), // Для об'єднання декількох html файлів в єдиний index.html
     del = require("del"),
-    scss = require("gulp-sass"),
+    scss = require("gulp-sass")(require("sass")), // gulp-sass v5 потребує явно передати компілятор Dart Sass
+
     autoprefixer = require("gulp-autoprefixer"),
     group_media = require("gulp-group-css-media-queries"), // Для збирання всіх медіа запитів в кінець файлу
     clean_css = require("gulp-clean-css"), //Очищення та зжимання css файлу
@@ -155,13 +156,14 @@ function images() {
 }
 
 function fonts(params) {
-    src(path.src.fonts)
-        .pipe(ttf2woff())
-        .pipe(dest(path.build.fonts));
+    // Єдиний послідовний потік (без гонки за створення теки, як у два паралельні dest):
+    // ttf -> woff -> запис, потім повторно читаємо ttf -> woff2 -> запис
     return src(path.src.fonts)
+        .pipe(ttf2woff())
+        .pipe(dest(path.build.fonts))
+        .pipe(src(path.src.fonts))
         .pipe(ttf2woff2())
         .pipe(dest(path.build.fonts));
-
 }
 
 gulp.task("otf2ttf", function () {
@@ -189,28 +191,27 @@ gulp.task("svgSprite", function () {
         .pipe(dest(path.build.img))
 })
 
-// Для автоматичного запису шрифтів в css
-function fontsStyle(params) {
-    let file_content = fs.readFileSync(source_folder + '/style/scss/fonts.scss');
+// Для автоматичного запису шрифтів в css.
+// Синхронна реалізація + виклик done() на всіх шляхах, щоб gulp 4 коректно
+// отримав сигнал завершення (інакше "Did you forget to signal async completion?").
+function fontsStyle(done) {
+    let fontsFile = source_folder + '/style/scss/fonts.scss';
+    let file_content = fs.readFileSync(fontsFile);
     if (file_content == '') {
-        fs.writeFile(source_folder + '/style/scss/fonts.scss', '', callBack);
-        return fs.readdir(path.build.fonts, function (err, items) {
-            if (items) {
-                let c_fontname;
-                for (var i = 0; i < items.length; i++) {
-                    let fontname = items[i].split('.');
-                    fontname = fontname[0];
-                    if (c_fontname != fontname) {
-                        fs.appendFile(source_folder + '/style/scss/fonts.scss', '@include font("' + fontname + '", "' + fontname + '", "400", "normal");\r\n', callBack);
-                    }
-                    c_fontname = fontname;
+        fs.writeFileSync(fontsFile, '');
+        let items = fs.readdirSync(path.build.fonts);
+        if (items) {
+            let c_fontname;
+            for (var i = 0; i < items.length; i++) {
+                let fontname = items[i].split('.')[0];
+                if (c_fontname != fontname) {
+                    fs.appendFileSync(fontsFile, '@include font("' + fontname + '", "' + fontname + '", "400", "normal");\r\n');
                 }
+                c_fontname = fontname;
             }
-        })
+        }
     }
-}
-
-function callBack() {
+    done();
 }
 
 function video(params) {

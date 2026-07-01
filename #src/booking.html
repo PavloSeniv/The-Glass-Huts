@@ -9,7 +9,7 @@
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
     <title>The Glass Huts</title>
     <!------- Іконка ------->
-    <link rel="shortcut icon" href="img/index/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="img/index/favicon.svg">
     <!------- Style ------->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -33,9 +33,9 @@
                 </picture>
             </div>
             <div class="photo-background__info photo-background__position_booking">
-                <h1 class="photo-background__title">Booking</h1>
+                <h1 class="photo-background__title" data-i18n="booking.hero_title">Booking</h1>
                 <h2 class="photo-background__subtitle-location">
-                    <a class="subtitle-location__link" href="#">Vesterbord, Denmark</a>
+                    <a class="subtitle-location__link" href="#" data-i18n="common.location">Vesterbord, Denmark</a>
                 </h2>
             </div>
         </section>
@@ -45,7 +45,7 @@
 
             <div class="choose-services__additional">
 
-                <h2 class="choose-services__title">Choose Additional Services</h2>
+                <h2 class="choose-services__title" data-i18n="booking.services_title">Choose Additional Services</h2>
 
                 <div data-spollers data-one-spoller class="choose-services__spoiler">
 
@@ -53,7 +53,7 @@
                         <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
                             <span class="choise-services__spoiler-icon-plus"></span>
                             <div class="choose-services__spoiler-title-text">
-                                Fresh Breakfast for one
+                                <span data-i18n="booking.service_1_name">Fresh Breakfast for one</span>
                                 <p>400kr</p>
                             </div>
 
@@ -65,13 +65,13 @@
                         </button>
                         <div class="choose-services__spoiler-content">
                             <div class="choose-services__spoiler-info">
-                                <p class="choose-services__spoiler-title">
-                                    Clasic Dinner
+                                <p class="choose-services__spoiler-title" data-i18n="booking.service_1_title">
+                                    Sunrise Breakfast Basket
                                 </p>
-                                <p class="choose-services__spoiler-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa deserunt
-                                    doloremque
-                                    ex exercitationem iure, laboriosam totam. A consectetur, officia!
+                                <p class="choose-services__spoiler-text" data-i18n="booking.service_1_text">
+                                    A locally sourced morning spread delivered to your hut door: warm sourdough, Danish
+                                    cheeses, seasonal fruit, house granola and freshly brewed coffee. Enjoy it in bed or
+                                    on your private terrace as the forest wakes.
                                 </p>
 
                             </div>
@@ -83,7 +83,7 @@
                         <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
                             <span class="choise-services__spoiler-icon-plus"></span>
                             <div class="choose-services__spoiler-title-text">
-                                Fresh Breakfast for one
+                                <span data-i18n="booking.service_2_name">Private Chef Dinner</span>
                                 <p>400kr</p>
                             </div>
 
@@ -95,13 +95,13 @@
                         </button>
                         <div class="choose-services__spoiler-content">
                             <div class="choose-services__spoiler-info">
-                                <p class="choose-services__spoiler-title">
-                                    Clasic Dinner
+                                <p class="choose-services__spoiler-title" data-i18n="booking.service_2_title">
+                                    Three-Course Nordic Dinner
                                 </p>
-                                <p class="choose-services__spoiler-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa deserunt
-                                    doloremque
-                                    ex exercitationem iure, laboriosam totam. A consectetur, officia!
+                                <p class="choose-services__spoiler-text" data-i18n="booking.service_2_text">
+                                    Our chef prepares a seasonal three-course menu built around Mariager fjord seafood
+                                    and produce from nearby farms, served in your hut by candlelight. Wine pairings and
+                                    vegetarian options available on request.
                                 </p>
 
                             </div>
@@ -113,7 +113,7 @@
                         <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
                             <span class="choise-services__spoiler-icon-plus"></span>
                             <div class="choose-services__spoiler-title-text">
-                                Fresh Breakfast for one
+                                <span data-i18n="booking.service_3_name">Wood-Fired Hot Tub</span>
                                 <p>400kr</p>
                             </div>
 
@@ -125,43 +125,13 @@
                         </button>
                         <div class="choose-services__spoiler-content">
                             <div class="choose-services__spoiler-info">
-                                <p class="choose-services__spoiler-title">
-                                    Clasic Dinner
+                                <p class="choose-services__spoiler-title" data-i18n="booking.service_3_title">
+                                    Private Wood-Fired Hot Tub
                                 </p>
-                                <p class="choose-services__spoiler-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa deserunt
-                                    doloremque
-                                    ex exercitationem iure, laboriosam totam. A consectetur, officia!
-                                </p>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    
-                    <div class="choose-services__spoiler-item">
-                        <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
-                            <span class="choise-services__spoiler-icon-plus"></span>
-                            <div class="choose-services__spoiler-title-text">
-                                Fresh Breakfast for one
-                                <p>400kr</p>
-                            </div>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                class="bi bi-chevron-down" viewbox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                            </svg>
-                        </button>
-                        <div class="choose-services__spoiler-content">
-                            <div class="choose-services__spoiler-info">
-                                <p class="choose-services__spoiler-title">
-                                    Clasic Dinner
-                                </p>
-                                <p class="choose-services__spoiler-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa deserunt
-                                    doloremque
-                                    ex exercitationem iure, laboriosam totam. A consectetur, officia!
+                                <p class="choose-services__spoiler-text" data-i18n="booking.service_3_text">
+                                    We heat a cedar hot tub beside your hut so it is ready at dusk. Soak under an open
+                                    sky, watch the stars appear over the treetops and let the day melt away. Towels and
+                                    robes are included.
                                 </p>
 
                             </div>
@@ -173,7 +143,7 @@
                         <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
                             <span class="choise-services__spoiler-icon-plus"></span>
                             <div class="choose-services__spoiler-title-text">
-                                Fresh Breakfast for one
+                                <span data-i18n="booking.service_4_name">In-Hut Massage</span>
                                 <p>400kr</p>
                             </div>
 
@@ -185,25 +155,25 @@
                         </button>
                         <div class="choose-services__spoiler-content">
                             <div class="choose-services__spoiler-info">
-                                <p class="choose-services__spoiler-title">
-                                    Clasic Dinner
+                                <p class="choose-services__spoiler-title" data-i18n="booking.service_4_title">
+                                    In-Hut Wellness Massage
                                 </p>
-                                <p class="choose-services__spoiler-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa deserunt
-                                    doloremque
-                                    ex exercitationem iure, laboriosam totam. A consectetur, officia!
+                                <p class="choose-services__spoiler-text" data-i18n="booking.service_4_text">
+                                    A qualified therapist comes to your hut for a 60-minute deep-relaxation massage using
+                                    organic Nordic oils. Choose a slot on arrival day or before dinner and unwind
+                                    completely in your own space.
                                 </p>
 
                             </div>
 
                         </div>
                     </div>
-                    
+
                     <div class="choose-services__spoiler-item">
                         <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
                             <span class="choise-services__spoiler-icon-plus"></span>
                             <div class="choose-services__spoiler-title-text">
-                                Fresh Breakfast for one
+                                <span data-i18n="booking.service_5_name">Guided Forest Walk</span>
                                 <p>400kr</p>
                             </div>
 
@@ -215,13 +185,43 @@
                         </button>
                         <div class="choose-services__spoiler-content">
                             <div class="choose-services__spoiler-info">
-                                <p class="choose-services__spoiler-title">
-                                    Clasic Dinner
+                                <p class="choose-services__spoiler-title" data-i18n="booking.service_5_title">
+                                    Guided Sunrise Forest Walk
                                 </p>
-                                <p class="choose-services__spoiler-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa deserunt
-                                    doloremque
-                                    ex exercitationem iure, laboriosam totam. A consectetur, officia!
+                                <p class="choose-services__spoiler-text" data-i18n="booking.service_5_text">
+                                    Join a local guide for a gentle two-hour walk through the woodland around the fjord,
+                                    learning to read the forest, forage in season and spot the wildlife that shares this
+                                    quiet corner of Denmark.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="choose-services__spoiler-item">
+                        <button tabindex="-1" type="button" data-spoller class="choose-services__spoiler-title-button">
+                            <span class="choise-services__spoiler-icon-plus"></span>
+                            <div class="choose-services__spoiler-title-text">
+                                <span data-i18n="booking.service_6_name">Stargazing Kit</span>
+                                <p>400kr</p>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-chevron-down" viewbox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+                        <div class="choose-services__spoiler-content">
+                            <div class="choose-services__spoiler-info">
+                                <p class="choose-services__spoiler-title" data-i18n="booking.service_6_title">
+                                    Stargazing Kit &amp; Star Map
+                                </p>
+                                <p class="choose-services__spoiler-text" data-i18n="booking.service_6_text">
+                                    Away from city light, the night sky here is extraordinary. We leave a telescope,
+                                    warm blankets and a seasonal star map in your hut so you can trace constellations
+                                    from your bed through the glass roof.
                                 </p>
 
                             </div>
@@ -232,67 +232,68 @@
                 </div>
 
                 <div class="choose-services__info">
-                    <h2 class="choose-services__title">Hut Rules</h2>
-                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                        molestias.</p>
-                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                        molestias.</p>
-                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                        molestias.</p>
-                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                        molestias.</p>
+                    <h2 class="choose-services__title" data-i18n="booking.rules_title">Hut Rules</h2>
+                    <p class="choose-services__subtitle" data-i18n="booking.rules_1">Check-in is from 15:00 and
+                        check-out is by 11:00. Let us know your arrival time and we will have your hut warm and ready.</p>
+                    <p class="choose-services__subtitle" data-i18n="booking.rules_2">The Glass Huts are a quiet,
+                        adults-focused retreat. We keep evenings peaceful so every guest can enjoy the stillness of the
+                        forest.</p>
+                    <p class="choose-services__subtitle" data-i18n="booking.rules_3">Smoking is not permitted inside the
+                        huts. Open flames stay in the designated fire pit and wood-fired tub only.</p>
+                    <p class="choose-services__subtitle" data-i18n="booking.rules_4">Please treat the huts and their
+                        surroundings gently, so the next guest can arrive to the same untouched calm.</p>
                 </div>
 
                 <div class="choose-services__info">
-                    <h2 class="choose-services__title">Hut Rules</h2>
-                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                        molestias.</p>
-                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                        molestias.</p>
-                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                        molestias.</p>
-                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                        molestias.</p>
+                    <h2 class="choose-services__title" data-i18n="booking.cancellation_title">Cancellation Policy</h2>
+                    <p class="choose-services__subtitle" data-i18n="booking.cancellation_1">Cancel free of charge up to
+                        14 days before arrival and receive a full refund of your payment.</p>
+                    <p class="choose-services__subtitle" data-i18n="booking.cancellation_2">Cancel between 14 and 7 days
+                        before arrival and we retain 50% of the total stay.</p>
+                    <p class="choose-services__subtitle" data-i18n="booking.cancellation_3">Cancellations within 7 days
+                        of arrival are non-refundable, though dates can often be moved subject to availability.</p>
+                    <p class="choose-services__subtitle" data-i18n="booking.cancellation_4">Added services and
+                        experiences can be adjusted up to 48 hours before your stay begins.</p>
                 </div>
 
                 <div class="choose-services__info">
-                    <h2 class="choose-services__title">Hut Rules</h2>
-                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                        molestias.</p>
-                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                        molestias.</p>
-                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                        molestias.</p>
-                    <p class="choose-services__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                        molestias.</p>
+                    <h2 class="choose-services__title" data-i18n="booking.know_title">Good to Know</h2>
+                    <p class="choose-services__subtitle" data-i18n="booking.know_1">Each hut sleeps two guests and
+                        includes a private bathroom, kitchenette, heating and a glass roof made for stargazing.</p>
+                    <p class="choose-services__subtitle" data-i18n="booking.know_2">Parking is a short, signposted walk
+                        from the huts to keep the setting calm and car-free. We help carry your bags on arrival.</p>
+                    <p class="choose-services__subtitle" data-i18n="booking.know_3">Wi-Fi is available, but we gently
+                        encourage you to disconnect and let the forest set the pace of your stay.</p>
+                    <p class="choose-services__subtitle" data-i18n="booking.know_4">Have a special request or occasion in
+                        mind? Add a note at checkout and we will do our best to arrange it.</p>
                 </div>
 
-                <a class="choose-services__button" href="faq.html"> Read Faq</a>
+                <a class="choose-services__button" href="faq.html" data-i18n="booking.read_faq"> Read Faq</a>
             </div>
 
             <aside class="trash-block">
                 <div class="trash">
 
-                    <h2 class="trash__sum-title"><span>3.200kr</span> / night</h2>
+                    <h2 class="trash__sum-title" data-i18n-html="booking.cart_price_per_night"><span>3.200kr</span> / night</h2>
 
                     <div class="trash__table">
 
                         <div class="trash__item-table">
-                            <h3>Check in</h3>
+                            <h3 data-i18n="booking.cart_check_in">Check in</h3>
                             <p>
                                 4/29/2021
                             </p>
                         </div>
 
                         <div class="trash__item-table">
-                            <h3>Check in</h3>
+                            <h3 data-i18n="booking.cart_check_out">Check out</h3>
                             <p>
                                 4/29/2021
                             </p>
                         </div>
 
                         <div class="trash__item-table">
-                            <h3>Check in</h3>
+                            <h3 data-i18n="booking.cart_guests">Guests</h3>
                             <div class="trash__guest-oper">
                                 <p>
                                     -
@@ -308,35 +309,35 @@
                         </div>
                     </div>
 
-                    <a class="trash__button" href="payment.html"> Book</a>
+                    <a class="trash__button" href="payment.html" data-i18n="common.book_now"> Book</a>
 
                     <div class="trash__services-info">
                         <div class="trash__block-info">
-                            <p>Lorem, ipsum.</p>
+                            <p data-i18n="booking.summary_nights">Nights</p>
                             <p>6340</p>
                         </div>
                         <div class="trash__block-info">
-                            <p>Lorem, ipsum.</p>
+                            <p data-i18n="booking.summary_services">Additional services</p>
                             <p>6340</p>
                         </div>
                         <div class="trash__block-info">
-                            <p>Lorem, ipsum.</p>
+                            <p data-i18n="booking.summary_cleaning">Cleaning fee</p>
                             <p>6340</p>
                         </div>
                         <div class="trash__block-info trash__discount">
-                            <p>Lorem, ipsum.</p>
+                            <p data-i18n="booking.summary_discount">Discount</p>
                             <p>6340</p>
                         </div>
                     </div>
 
                     <div class="trash__total">
-                        <h2 class="trash__title-total">Total</h2>
+                        <h2 class="trash__title-total" data-i18n="booking.summary_total">Total</h2>
                         <h2 class="trash__title-total">7.000kr</h2>
                     </div>
 
                     <div class="trash__coupon">
-                        <input class="trash__button-input" type="text" placeholder="Coupon Code">
-                        <a class="trash__button-cuppon" href="#"> Apply</a>
+                        <input class="trash__button-input" type="text" placeholder="Coupon Code" data-i18n-ph="booking.coupon_placeholder">
+                        <a class="trash__button-cuppon" href="#" data-i18n="booking.coupon_apply"> Apply</a>
                     </div>
                 </div>
 

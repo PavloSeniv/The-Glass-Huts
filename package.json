@@ -1,16 +1,39 @@
 {
-  "name": "The-Glass-Huts",
-  "version": "1.0.0",
-  "description": "Project for practice",
+  "name": "the-glass-huts",
+  "version": "1.1.0",
+  "description": "The Glass Huts — a multilingual static landing site for a glass-cabin retreat, built with a Gulp 4 + Dart Sass pipeline.",
+  "type": "commonjs",
   "main": "index.html",
   "scripts": {
+    "start": "gulp",
+    "dev": "gulp",
+    "build": "gulp build",
+    "otf2ttf": "gulp otf2ttf",
+    "svgsprite": "gulp svgSprite",
+    "i18n": "node i18n-src/build-i18n.js \"#src/js/_i18n_translations.js\" i18n-src/i18n-strings.json i18n-src/page-strings.json i18n-src/legal-strings.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "gulp",
+    "dart-sass",
+    "static-site",
+    "landing-page",
+    "browser-sync",
+    "i18n"
+  ],
   "author": "Seniv Pavlo",
   "license": "ISC",
+  "homepage": "https://pavloseniv.github.io/The-Glass-Huts/The-Glass-Huts/index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PavloSeniv/The-Glass-Huts.git"
+  },
   "devDependencies": {
-    "browser-sync": "^2.26.14",
-    "del": "^6.0.0",
+    "browser-sync": "^2.29.3",
+    "del": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
@@ -19,13 +42,14 @@
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^5.1.0",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-ttf2woff": "^1.1.1",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
     "gulp-webp-css": "^1.1.0",
-    "gulp-webp-html": "^1.0.2"
+    "gulp-webp-html": "^1.0.2",
+    "sass": "^1.77.8"
   }
 }

@@ -20,36 +20,47 @@
         </div>
         <nav class="menu__body">
             <ul class="menu__list">
-                <li class="menu__list-link"><a class="menu__link" href="index.html">Home</a></li>
-                <li class="menu__list-link"><a class="menu__link" href="the-hut.html">The Hut</a></li>
-                <li class="menu__list-link"><a class="menu__link" href="the-area.html">The Area</a></li>
-                <li class="menu__list-link"><a class="menu__link" href="booking.html">Booking</a></li>
-                <li class="menu__list-link"><a class="menu__link" href="about-us.html">About Us</a></li>
-                <li class="menu__list-link"><a class="menu__link" href="faq.html">Faq</a></li>
-                <li>
-                    <a class="menu__link" href="#">Language</a>
+                <li class="menu__list-link"><a class="menu__link" href="index.html" data-i18n="nav.home">Home</a></li>
+                <li class="menu__list-link"><a class="menu__link" href="the-hut.html" data-i18n="nav.hut">The Hut</a></li>
+                <li class="menu__list-link"><a class="menu__link" href="the-area.html" data-i18n="nav.area">The Area</a></li>
+                <li class="menu__list-link"><a class="menu__link" href="about-us.html" data-i18n="nav.about">About Us</a></li>
+                <li class="menu__list-link"><a class="menu__link" href="faq.html" data-i18n="nav.faq">Faq</a></li>
+                <li class="menu__lang lang">
+                    <a class="menu__link lang__current" href="#" data-lang-current aria-label="Language">
+                        <img class="lang__flag" src="img/index/header/united_kingdom.svg" alt="English" data-lang-current-flag>
+                        <span class="lang__code" data-lang-current-label>EN</span>
+                    </a>
                     <span class="menu__arrow"></span>
-                    <ul class="menu__sub-list">
-                        <li>
-                            <a class="menu__sub-link" href="#">
-                                <img src="img/index/header/germany.png" alt="germany">German
+                    <ul class="menu__sub-list lang__list">
+                        <li class="lang__item">
+                            <a class="menu__sub-link lang__option" href="#" data-lang-option="en" data-lang-label="EN">
+                                <img class="lang__flag" src="img/index/header/united_kingdom.svg" alt="English">
+                                <span class="lang__name">English</span>
                             </a>
                         </li>
-                        <li>
-                            <a class="menu__sub-link" href="#">
-                                <img src="img/index/header/united_kingdom.png" alt="united_kingdom">English
+                        <li class="lang__item">
+                            <a class="menu__sub-link lang__option" href="#" data-lang-option="da" data-lang-label="DA">
+                                <img class="lang__flag" src="img/index/header/denmark.svg" alt="Dansk">
+                                <span class="lang__name">Dansk</span>
                             </a>
                         </li>
-                        <li>
-                            <a class="menu__sub-link" href="#">
-                                <img src="img/index/header/denmark.png" alt="denmark">Danish
+                        <li class="lang__item">
+                            <a class="menu__sub-link lang__option" href="#" data-lang-option="uk" data-lang-label="UK">
+                                <img class="lang__flag" src="img/index/header/ukraine.svg" alt="Українська">
+                                <span class="lang__name">Українська</span>
+                            </a>
+                        </li>
+                        <li class="lang__item">
+                            <a class="menu__sub-link lang__option" href="#" data-lang-option="de" data-lang-label="DE">
+                                <img class="lang__flag" src="img/index/header/germany.svg" alt="Deutsch">
+                                <span class="lang__name">Deutsch</span>
                             </a>
                         </li>
                     </ul>
                 </li>
             </ul>
-            <a class="menu__button-mobile" href="#">Book now</a>
+            <a class="menu__button-mobile" href="booking.html" data-i18n="common.book_now">Book now</a>
         </nav>
-        <a class="menu__button-desktop" href="#">Book now</a>
+        <a class="menu__button-desktop" href="booking.html" data-i18n="common.book_now">Book now</a>
     </div>
 </header>

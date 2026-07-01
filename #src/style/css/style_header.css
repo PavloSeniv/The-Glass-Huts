@@ -351,4 +351,128 @@ body._touch .menu__list > li._active .menu__arrow {
     }
 }
 
+/*-------- Language switcher Start -------*/
+.lang {
+    position: relative;
+}
+
+.lang .lang__current {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: auto;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.lang .lang__flag {
+    display: block;
+    width: auto;
+    height: 15px;
+    margin: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .12);
+    object-fit: cover;
+}
+
+.lang .lang__code {
+    font-weight: 700;
+    letter-spacing: .04em;
+}
+
+.lang .lang__list {
+    right: 0;
+    min-width: 190px;
+    padding: 6px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, .18);
+}
+
+.lang .lang__item {
+    margin: 2px 0;
+    background: transparent;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.lang .lang__option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 9px 12px;
+    border-radius: 8px;
+    color: #23423a;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: none;
+    -webkit-text-stroke: 0;
+    white-space: nowrap;
+    transition: background-color .2s ease 0s;
+}
+
+.lang .lang__option .lang__flag {
+    width: auto;
+    height: 18px;
+}
+
+.lang .lang__option:hover {
+    background-color: #eef3f0;
+    text-decoration: none;
+}
+
+.lang .lang__option._active {
+    background-color: #e0ebe5;
+}
+
+.lang .lang__option._active .lang__name::after {
+    content: " \2713";
+    color: #2e7d5b;
+    font-weight: 700;
+}
+
+@media (max-width: 767px) {
+    .lang .lang__current {
+        justify-content: flex-start;
+        font-size: 24px;
+    }
+
+    .lang .lang__flag {
+        width: auto;
+        height: 20px;
+    }
+
+    .lang .lang__list {
+        min-width: 0;
+        width: 100%;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .lang .lang__item {
+        flex: 1 1 100%;
+    }
+
+    .lang .lang__option {
+        justify-content: flex-start;
+        color: var(--header-menu-sub-link-color);
+        font-size: 22px;
+    }
+
+    .lang .lang__option .lang__flag {
+        width: auto;
+        height: 26px;
+    }
+
+    .lang .lang__option:hover,
+    .lang .lang__option._active {
+        background-color: rgba(255, 255, 255, .12);
+    }
+}
+
+/*-------- Language switcher End -------*/
+
 /*-------- Header End -------*/
