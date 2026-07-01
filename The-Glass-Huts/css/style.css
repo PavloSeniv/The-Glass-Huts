@@ -1305,10 +1305,11 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .trash__table {
-  padding: 10px 20px;
+  padding: 10px 14px;
   display: flex;
   border: 0.7px solid #5b6460;
   justify-content: space-between;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
@@ -1318,7 +1319,8 @@ body._touch .menu__list > li._active .menu__arrow {
   font-weight: 500;
   color: #333333;
   border-right: 0.7px solid #333333;
-  padding-right: 20px;
+  padding-right: 12px;
+  min-width: 0;
 }
 
 .trash__item-table:nth-last-child(1) {
@@ -1333,6 +1335,35 @@ body._touch .menu__list > li._active .menu__arrow {
 .trash__guest-oper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.trash__guest-btn {
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+  font-family: OpenSans-SemiBold;
+  font-size: 16px;
+  line-height: 1;
+  color: #333333;
+  padding: 0 4px;
+}
+
+.trash__guest-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.trash__date {
+  width: 100%;
+  max-width: 108px;
+  min-width: 0;
+  border: 0.7px solid #5b6460;
+  background-color: unset;
+  padding: 4px 6px;
+  font-family: OpenSans-Regular;
+  font-size: 11px;
+  color: #333333;
 }
 
 .trash__button {
@@ -1399,6 +1430,94 @@ body._touch .menu__list > li._active .menu__arrow {
   background-color: #5b6460;
   color: #fff;
   text-transform: uppercase;
+}
+
+.trash__coupon-msg {
+  margin-top: 10px;
+  font-family: OpenSans-Regular;
+  font-size: 14px;
+}
+
+.trash__coupon-msg._ok {
+  color: #41916d;
+}
+
+.trash__coupon-msg._err {
+  color: #b23a3a;
+}
+
+/*-------- Payment: selected services list (left block) -------*/
+
+.payment-services {
+  margin-top: 10px;
+}
+
+.payment-service {
+  padding: 18px 0;
+  border-bottom: 0.7px solid #5b6460;
+}
+
+.payment-service:nth-last-child(1) {
+  border-bottom: unset;
+}
+
+.payment-service__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-family: OpenSans-SemiBold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.payment-service__title {
+  font-family: OpenSans-SemiBold;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+  margin-bottom: 6px;
+}
+
+.payment-service__text {
+  font-family: OpenSans-Light;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.payment-service__empty {
+  font-family: OpenSans-Regular;
+  font-size: 16px;
+  color: #333333;
+}
+
+/*-------- Add-service selector (spoiler content) -------*/
+
+.service-add {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  cursor: pointer;
+  font-family: OpenSans-Regular;
+  font-size: 14px;
+  color: #333333;
+}
+
+.service-add__check {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  cursor: pointer;
+  accent-color: #5b6460;
+}
+
+.service-add__price {
+  margin-left: auto;
+  font-family: OpenSans-SemiBold;
 }
 
 /*-------- Choose Services End -------*/

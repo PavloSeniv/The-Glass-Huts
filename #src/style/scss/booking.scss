@@ -214,10 +214,11 @@ $color-bg-light-green: #e9ece0;
     margin-bottom: 20px;
 }
 .trash__table {
-    padding: 10px 20px;
+    padding: 10px 14px;
     display: flex;
     border: 0.7px solid $color-bg;
     justify-content: space-between;
+    gap: 10px;
     margin-bottom: 20px;
 }
 .trash__item-table {
@@ -226,7 +227,8 @@ $color-bg-light-green: #e9ece0;
     font-weight: 500;
     color: $color-font-gray-1;
     border-right: 0.7px solid #333333;
-    padding-right: 20px;
+    padding-right: 12px;
+    min-width: 0;
     &:nth-last-child(1) {
         border-right: unset;
         padding-right: 0;
@@ -240,6 +242,32 @@ $color-bg-light-green: #e9ece0;
 .trash__guest-oper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.trash__guest-btn {
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+    font-family: OpenSans-SemiBold;
+    font-size: 16px;
+    line-height: 1;
+    color: $color-font-gray-1;
+    padding: 0 4px;
+    &:disabled {
+        opacity: 0.35;
+        cursor: default;
+    }
+}
+.trash__date {
+    width: 100%;
+    max-width: 108px;
+    min-width: 0;
+    border: 0.7px solid $color-bg;
+    background-color: unset;
+    padding: 4px 6px;
+    font-family: OpenSans-Regular;
+    font-size: 11px;
+    color: $color-font-gray-1;
 }
 .trash__button {
     display: flex;
@@ -299,5 +327,80 @@ $color-bg-light-green: #e9ece0;
     background-color: $color-bg;
     color: $color-font-white;
     text-transform: uppercase;
+}
+.trash__coupon-msg {
+    margin-top: 10px;
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    &._ok {
+        color: #41916d;
+    }
+    &._err {
+        color: #b23a3a;
+    }
+}
+
+/*-------- Payment: selected services list (left block) -------*/
+.payment-services {
+    margin-top: 10px;
+}
+.payment-service {
+    padding: 18px 0;
+    border-bottom: 0.7px solid $color-bg;
+    &:nth-last-child(1) {
+        border-bottom: unset;
+    }
+}
+.payment-service__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    font-family: OpenSans-SemiBold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+.payment-service__title {
+    font-family: OpenSans-SemiBold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 6px;
+}
+.payment-service__text {
+    font-family: OpenSans-Light;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+}
+.payment-service__empty {
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: #333333;
+}
+
+/*-------- Add-service selector (spoiler content) -------*/
+.service-add {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+    cursor: pointer;
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: $color-font-gray-1;
+}
+.service-add__check {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 auto;
+    cursor: pointer;
+    accent-color: $color-bg;
+}
+.service-add__price {
+    margin-left: auto;
+    font-family: OpenSans-SemiBold;
 }
 /*-------- Choose Services End -------*/

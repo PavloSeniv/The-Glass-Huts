@@ -742,6 +742,13 @@
     "de": "Rabatt"
   },
   {
+    "key": "booking.summary_guest_extra",
+    "en": "Extra guest",
+    "da": "Ekstra gæst",
+    "uk": "Додатковий гість",
+    "de": "Zusätzlicher Gast"
+  },
+  {
     "key": "booking.summary_total",
     "en": "Total",
     "da": "I alt",
@@ -761,6 +768,27 @@
     "da": "Anvend",
     "uk": "Застосувати",
     "de": "Anwenden"
+  },
+  {
+    "key": "booking.service_add",
+    "en": "Add to booking",
+    "da": "Tilføj til booking",
+    "uk": "Додати до бронювання",
+    "de": "Zur Buchung hinzufügen"
+  },
+  {
+    "key": "booking.coupon_applied",
+    "en": "Applied",
+    "da": "Anvendt",
+    "uk": "Застосовано",
+    "de": "Angewendet"
+  },
+  {
+    "key": "booking.coupon_invalid",
+    "en": "Invalid code",
+    "da": "Ugyldig kode",
+    "uk": "Недійсний код",
+    "de": "Ungültiger Code"
   },
   {
     "key": "about.hero_title",
@@ -1037,10 +1065,17 @@
   },
   {
     "key": "payment.additional_services_title",
-    "en": "Choose Additional Services",
-    "da": "Vælg ekstra ydelser",
-    "uk": "Оберіть додаткові послуги",
-    "de": "Zusätzliche Leistungen wählen"
+    "en": "Selected Services",
+    "da": "Valgte ydelser",
+    "uk": "Обрані послуги",
+    "de": "Ausgewählte Leistungen"
+  },
+  {
+    "key": "payment.no_services",
+    "en": "No additional services selected.",
+    "da": "Ingen ekstra ydelser valgt.",
+    "uk": "Додаткові послуги не обрано.",
+    "de": "Keine zusätzlichen Leistungen ausgewählt."
   },
   {
     "key": "payment.summary_hut_name",

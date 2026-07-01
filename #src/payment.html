@@ -24,12 +24,14 @@
 
             <div class="choose-services__additional">
 
-                <h2 class="choose-services__title" data-i18n="payment.additional_services_title">Choose Additional Services</h2>
+                <h2 class="choose-services__title" data-i18n="payment.additional_services_title">Selected Services</h2>
+
+                <div class="payment-services" data-pay-services></div>
 
             </div>
 
             <aside class="trash-block">
-                <div class="trash">
+                <div class="trash" data-payment>
 
                     <div class="trash__geo-info">
                         <h2 class="trash__sum-title" data-i18n="payment.summary_hut_name">The Glass Hut</h2>
@@ -40,36 +42,25 @@
 
                         <div class="trash__item-table">
                             <h3 data-i18n="payment.table_check_in">Check in</h3>
-                            <p>
+                            <p data-pay-checkin>
                                 4/29/2021
                             </p>
                         </div>
 
                         <div class="trash__item-table">
                             <h3 data-i18n="payment.table_check_out">Check out</h3>
-                            <p>
+                            <p data-pay-checkout>
                                 4/29/2021
                             </p>
                         </div>
 
                         <div class="trash__item-table">
                             <h3 data-i18n="payment.table_guests">Guests</h3>
-                            <div class="trash__guest-oper">
-                                <p>
-                                    -
-                                </p>
-                                <p>
-                                    1
-                                </p>
-                                <p>
-                                    +
-                                </p>
-                            </div>
-
+                            <p data-pay-guests>1</p>
                         </div>
                     </div>
 
-                    <div class="trash__services-info">
+                    <div class="trash__services-info" data-pay-lines>
                         <div class="trash__block-info">
                             <p data-i18n="payment.line_item_stay">3 nights in a glass hut</p>
                             <p>6340</p>
@@ -90,7 +81,7 @@
 
                     <div class="trash__total">
                         <h2 class="trash__title-total" data-i18n="payment.total_label">Total</h2>
-                        <h2 class="trash__title-total">7.000kr</h2>
+                        <h2 class="trash__title-total" data-pay-total>7.000kr</h2>
                     </div>
                 </div>
 

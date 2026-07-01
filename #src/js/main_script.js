@@ -5,3 +5,7 @@
 @@include('_i18n.js')
 
 @@include('_header_menu_burger.js')
+
+@@include('_booking_calc.js')
+
+@@include('_payment_summary.js')

@@ -157,9 +157,13 @@ window.THG_I18N = {
         "booking.summary_services": "Additional services",
         "booking.summary_cleaning": "Cleaning fee",
         "booking.summary_discount": "Discount",
+        "booking.summary_guest_extra": "Extra guest",
         "booking.summary_total": "Total",
         "booking.coupon_placeholder": "Coupon Code",
         "booking.coupon_apply": "Apply",
+        "booking.service_add": "Add to booking",
+        "booking.coupon_applied": "Applied",
+        "booking.coupon_invalid": "Invalid code",
         "about.hero_title": "About Us",
         "about.hero_contact_us": "Contact Us",
         "about.hero_read_faq": "Read Faq",
@@ -199,7 +203,8 @@ window.THG_I18N = {
         "faq.a_checkin_1": "Check-in opens from 15:00, giving us time to air the hut and lay the fire before you arrive. Check-out is by 11:00, when the forest is at its freshest for your final morning coffee.",
         "faq.a_checkin_2": "Arrival is contactless and calm. A few days before your stay we send a personal door code and a simple map to your hut, so you can slip straight into the quiet without a reception desk.",
         "faq.a_checkin_3": "Arriving early or leaving late? Depending on the day we can often hold your bags or extend your hut for a small fee. Just ask, and we will do our best to make the day unhurried.",
-        "payment.additional_services_title": "Choose Additional Services",
+        "payment.additional_services_title": "Selected Services",
+        "payment.no_services": "No additional services selected.",
         "payment.summary_hut_name": "The Glass Hut",
         "payment.summary_location": "Vesterbord, Denmark",
         "payment.table_check_in": "Check in",
@@ -390,9 +395,13 @@ window.THG_I18N = {
         "booking.summary_services": "Ekstra ydelser",
         "booking.summary_cleaning": "Rengøringsgebyr",
         "booking.summary_discount": "Rabat",
+        "booking.summary_guest_extra": "Ekstra gæst",
         "booking.summary_total": "I alt",
         "booking.coupon_placeholder": "Rabatkode",
         "booking.coupon_apply": "Anvend",
+        "booking.service_add": "Tilføj til booking",
+        "booking.coupon_applied": "Anvendt",
+        "booking.coupon_invalid": "Ugyldig kode",
         "about.hero_title": "Om os",
         "about.hero_contact_us": "Kontakt os",
         "about.hero_read_faq": "Læs FAQ",
@@ -432,7 +441,8 @@ window.THG_I18N = {
         "faq.a_checkin_1": "Check-in åbner fra kl. 15:00, hvilket giver os tid til at lufte ud i hytten og lægge op til pejsen, før du ankommer. Check-ud er senest kl. 11:00, når skoven er allerfriskest til din sidste morgenkaffe.",
         "faq.a_checkin_2": "Ankomsten er kontaktløs og rolig. Nogle dage før dit ophold sender vi en personlig dørkode og et enkelt kort til din hytte, så du kan glide direkte ind i stilheden uden en reception.",
         "faq.a_checkin_3": "Ankommer du tidligt eller rejser sent? Afhængigt af dagen kan vi ofte opbevare din bagage eller forlænge din hytte mod et lille gebyr. Spørg endelig, så gør vi vores bedste for at gøre dagen uden hastværk.",
-        "payment.additional_services_title": "Vælg ekstra ydelser",
+        "payment.additional_services_title": "Valgte ydelser",
+        "payment.no_services": "Ingen ekstra ydelser valgt.",
         "payment.summary_hut_name": "Glashytten",
         "payment.summary_location": "Vesterbord, Danmark",
         "payment.table_check_in": "Ankomst",
@@ -623,9 +633,13 @@ window.THG_I18N = {
         "booking.summary_services": "Додаткові послуги",
         "booking.summary_cleaning": "Плата за прибирання",
         "booking.summary_discount": "Знижка",
+        "booking.summary_guest_extra": "Додатковий гість",
         "booking.summary_total": "Разом",
         "booking.coupon_placeholder": "Промокод",
         "booking.coupon_apply": "Застосувати",
+        "booking.service_add": "Додати до бронювання",
+        "booking.coupon_applied": "Застосовано",
+        "booking.coupon_invalid": "Недійсний код",
         "about.hero_title": "Про нас",
         "about.hero_contact_us": "Зв'язатися з нами",
         "about.hero_read_faq": "Читати FAQ",
@@ -665,7 +679,8 @@ window.THG_I18N = {
         "faq.a_checkin_1": "Заїзд відкривається з 15:00, що дає нам час провітрити хатину та розпалити камін до вашого прибуття. Виїзд — до 11:00, коли ліс найсвіжіший для вашої останньої ранкової кави.",
         "faq.a_checkin_2": "Прибуття безконтактне й спокійне. За кілька днів до вашого перебування ми надсилаємо персональний код від дверей та просту мапу до вашої хатини, тож ви можете одразу зануритися в тишу без стійки реєстрації.",
         "faq.a_checkin_3": "Прибуваєте раніше чи виїжджаєте пізніше? Залежно від дня ми часто можемо зберегти ваш багаж або продовжити перебування в хатині за невелику плату. Просто запитайте, і ми зробимо все можливе, щоб день минув без поспіху.",
-        "payment.additional_services_title": "Оберіть додаткові послуги",
+        "payment.additional_services_title": "Обрані послуги",
+        "payment.no_services": "Додаткові послуги не обрано.",
         "payment.summary_hut_name": "Скляна хатина",
         "payment.summary_location": "Вестерборд, Данія",
         "payment.table_check_in": "Заїзд",
@@ -856,9 +871,13 @@ window.THG_I18N = {
         "booking.summary_services": "Zusätzliche Leistungen",
         "booking.summary_cleaning": "Reinigungsgebühr",
         "booking.summary_discount": "Rabatt",
+        "booking.summary_guest_extra": "Zusätzlicher Gast",
         "booking.summary_total": "Gesamt",
         "booking.coupon_placeholder": "Gutscheincode",
         "booking.coupon_apply": "Anwenden",
+        "booking.service_add": "Zur Buchung hinzufügen",
+        "booking.coupon_applied": "Angewendet",
+        "booking.coupon_invalid": "Ungültiger Code",
         "about.hero_title": "Über uns",
         "about.hero_contact_us": "Kontakt",
         "about.hero_read_faq": "FAQ lesen",
@@ -898,7 +917,8 @@ window.THG_I18N = {
         "faq.a_checkin_1": "Der Check-in ist ab 15:00 Uhr möglich, sodass wir Zeit haben, die Hütte zu lüften und das Feuer vorzubereiten, bevor Sie ankommen. Der Check-out ist bis 11:00 Uhr, wenn der Wald für Ihren letzten Morgenkaffee am frischesten ist.",
         "faq.a_checkin_2": "Die Ankunft ist kontaktlos und ruhig. Einige Tage vor Ihrem Aufenthalt senden wir Ihnen einen persönlichen Türcode und eine einfache Karte zu Ihrer Hütte, sodass Sie ohne Rezeption direkt in die Stille eintauchen können.",
         "faq.a_checkin_3": "Reisen Sie früher an oder später ab? Je nach Tag können wir oft Ihr Gepäck aufbewahren oder Ihre Hütte gegen eine kleine Gebühr verlängern. Fragen Sie einfach, und wir tun unser Bestes, damit der Tag ohne Eile verläuft.",
-        "payment.additional_services_title": "Zusätzliche Leistungen wählen",
+        "payment.additional_services_title": "Ausgewählte Leistungen",
+        "payment.no_services": "Keine zusätzlichen Leistungen ausgewählt.",
         "payment.summary_hut_name": "Die Glashütte",
         "payment.summary_location": "Vesterbord, Dänemark",
         "payment.table_check_in": "Anreise",
@@ -1073,6 +1093,10 @@ window.THG_I18N = {
     // Публічний доступ (напр. з консолі): THG.setLang('uk')
     window.THG = window.THG || {};
     window.THG.setLang = setLang;
+    // Переклад ключа для поточної мови (для динамічного тексту з JS)
+    window.THG.t = function (key) {
+        return translate(key, document.documentElement.getAttribute("lang") || DEFAULT_LANG);
+    };
 
     if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", init);
@@ -1169,3 +1193,336 @@ if (menuLinks.length > 0) {
         }
     }
 }
+
+// ------- Калькулятор бронювання (booking.html) -------
+// Рахує ночі за датами, доплату за 2-го гостя, обрані послуги, знижку за
+// промокодом і підсумок. Формат ціни — данський (3.200kr). Стан зберігається
+// в localStorage (thg_booking), щоб сторінка оплати підхопила його.
+"use strict";
+(function () {
+    var root = document.querySelector("[data-booking]");
+    if (!root) return; // виконуємо лише на сторінці бронювання
+
+    var PRICE_NIGHT = parseInt(root.getAttribute("data-price-night"), 10) || 0;
+    var GUEST_FEE = parseInt(root.getAttribute("data-guest-fee"), 10) || 0; // доплата за кожного додаткового гостя/ніч
+    var CLEANING = parseInt(root.getAttribute("data-cleaning"), 10) || 0;
+    var MIN_GUESTS = 1, MAX_GUESTS = 2; // будиночок розрахований на двох
+
+    // Демо-промокоди: pct — відсоток, fixed — фіксована сума (kr)
+    var COUPONS = {
+        "GLASS10": { type: "pct", value: 10 },
+        "FOREST20": { type: "pct", value: 20 },
+        "WELCOME500": { type: "fixed", value: 500 }
+    };
+
+    var checkin = root.querySelector("[data-checkin]");
+    var checkout = root.querySelector("[data-checkout]");
+    var guestCount = root.querySelector("[data-guest-count]");
+    var guestDec = root.querySelector("[data-guest-dec]");
+    var guestInc = root.querySelector("[data-guest-inc]");
+    var couponInput = root.querySelector("[data-coupon-input]");
+    var couponApply = root.querySelector("[data-coupon-apply]");
+    var couponMsg = root.querySelector("[data-coupon-msg]");
+    // Чекбокси послуг лежать у лівій колонці, поза .trash
+    var serviceChecks = document.querySelectorAll("[data-service]");
+
+    var out = {
+        nights: root.querySelector("[data-sum-nights]"),
+        guest: root.querySelector("[data-sum-guest]"),
+        guestRow: root.querySelector("[data-sum-guest-row]"),
+        services: root.querySelector("[data-sum-services]"),
+        cleaning: root.querySelector("[data-sum-cleaning]"),
+        discount: root.querySelector("[data-sum-discount]"),
+        total: root.querySelector("[data-sum-total]")
+    };
+
+    var guests = MIN_GUESTS;
+    var coupon = null;     // застосований об'єкт промокоду
+    var couponCode = "";   // код застосованого промокоду
+
+    // ---- утиліти ----
+    function fmt(n) {
+        n = Math.max(0, Math.round(n));
+        // тисячний роздільник "." (данський формат): 3200 -> 3.200
+        return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".") + "kr";
+    }
+    function pad(n) { return n < 10 ? "0" + n : "" + n; }
+    function iso(d) { return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()); }
+    function parseDate(v) {
+        if (!v) return null;
+        var d = new Date(v + "T00:00:00");
+        return isNaN(d.getTime()) ? null : d;
+    }
+    function nightsBetween() {
+        var a = parseDate(checkin && checkin.value);
+        var b = parseDate(checkout && checkout.value);
+        if (!a || !b) return 0;
+        var diff = Math.floor((b - a) / 86400000);
+        return diff > 0 ? diff : 0;
+    }
+    function t(key, fallback) {
+        return (window.THG && typeof window.THG.t === "function" && window.THG.t(key)) || fallback;
+    }
+
+    // Перелік обраних послуг: {key, name, titleKey, title, textKey, text, price}
+    // — щоб сторінка оплати показала їх поіменно з описом і перекладала за i18n.
+    function selectedServices() {
+        var items = [];
+        for (var i = 0; i < serviceChecks.length; i++) {
+            if (!serviceChecks[i].checked) continue;
+            var price = parseInt(serviceChecks[i].getAttribute("data-price"), 10) || 0;
+            var itemEl = serviceChecks[i].closest(".choose-services__spoiler-item");
+            var nameEl = itemEl && itemEl.querySelector(".choose-services__spoiler-title-text [data-i18n]");
+            var titleEl = itemEl && itemEl.querySelector(".choose-services__spoiler-title");
+            var textEl = itemEl && itemEl.querySelector(".choose-services__spoiler-text");
+            items.push({
+                key: nameEl ? nameEl.getAttribute("data-i18n") : "",
+                name: nameEl ? nameEl.textContent.trim() : "",
+                titleKey: titleEl ? titleEl.getAttribute("data-i18n") : "",
+                title: titleEl ? titleEl.textContent.trim() : "",
+                textKey: textEl ? textEl.getAttribute("data-i18n") : "",
+                text: textEl ? textEl.textContent.trim() : "",
+                price: price
+            });
+        }
+        return items;
+    }
+
+    // ---- головний перерахунок ----
+    function recalc() {
+        var nights = nightsBetween();
+        var accommodation = nights * PRICE_NIGHT;
+        var guestExtra = nights * GUEST_FEE * (guests - 1); // доплата за додаткових гостей
+        var serviceItems = selectedServices();
+        var services = 0;
+        for (var si = 0; si < serviceItems.length; si++) services += serviceItems[si].price;
+        var cleaning = nights > 0 ? CLEANING : 0;
+        var subtotal = accommodation + guestExtra + services + cleaning;
+
+        var discount = 0;
+        if (coupon) {
+            discount = coupon.type === "pct" ? subtotal * coupon.value / 100 : coupon.value;
+            discount = Math.min(discount, subtotal);
+        }
+        var total = Math.max(0, subtotal - discount);
+
+        if (out.nights) out.nights.textContent = fmt(accommodation);
+        if (out.guest) out.guest.textContent = fmt(guestExtra);
+        if (out.guestRow) out.guestRow.hidden = guestExtra <= 0; // рядок лише коли є доплата
+        if (out.services) out.services.textContent = fmt(services);
+        if (out.cleaning) out.cleaning.textContent = fmt(cleaning);
+        if (out.discount) out.discount.textContent = (discount > 0 ? "-" : "") + fmt(discount);
+        if (out.total) out.total.textContent = fmt(total);
+
+        try {
+            localStorage.setItem("thg_booking", JSON.stringify({
+                checkin: checkin ? checkin.value : "",
+                checkout: checkout ? checkout.value : "",
+                nights: nights, guests: guests,
+                priceNight: PRICE_NIGHT, guestFee: GUEST_FEE, guestExtra: guestExtra,
+                accommodation: accommodation, services: services, serviceItems: serviceItems,
+                cleaning: cleaning, discount: Math.round(discount),
+                total: total, coupon: couponCode
+            }));
+        } catch (e) { /* localStorage недоступний */ }
+    }
+
+    // ---- гості ----
+    function setGuests(v) {
+        guests = Math.min(MAX_GUESTS, Math.max(MIN_GUESTS, v));
+        if (guestCount) guestCount.textContent = String(guests);
+        if (guestDec) guestDec.disabled = guests <= MIN_GUESTS;
+        if (guestInc) guestInc.disabled = guests >= MAX_GUESTS;
+        recalc();
+    }
+    if (guestDec) guestDec.addEventListener("click", function () { setGuests(guests - 1); });
+    if (guestInc) guestInc.addEventListener("click", function () { setGuests(guests + 1); });
+
+    // ---- дати ----
+    function syncCheckoutMin() {
+        var a = parseDate(checkin && checkin.value);
+        if (a && checkout) {
+            var min = new Date(a); min.setDate(min.getDate() + 1);
+            checkout.min = iso(min);
+            var b = parseDate(checkout.value);
+            if (b && b <= a) checkout.value = iso(min);
+        }
+    }
+    function initDates() {
+        var today = new Date();
+        var t2 = new Date(); t2.setDate(t2.getDate() + 2);
+        if (checkin) {
+            checkin.min = iso(today);
+            if (!checkin.value) checkin.value = iso(today);
+        }
+        if (checkout && !checkout.value) checkout.value = iso(t2);
+        syncCheckoutMin();
+    }
+    if (checkin) checkin.addEventListener("change", function () { syncCheckoutMin(); recalc(); });
+    if (checkout) checkout.addEventListener("change", recalc);
+
+    // ---- послуги ----
+    for (var i = 0; i < serviceChecks.length; i++) {
+        serviceChecks[i].addEventListener("change", recalc);
+    }
+
+    // ---- промокод ----
+    function showMsg(key, ok) {
+        if (!couponMsg) return;
+        couponMsg.setAttribute("data-i18n", key); // оновлюється при зміні мови
+        couponMsg.textContent = t(key, key);
+        couponMsg.hidden = false;
+        couponMsg.classList.toggle("_ok", !!ok);
+        couponMsg.classList.toggle("_err", !ok);
+    }
+    function applyCoupon(e) {
+        if (e) e.preventDefault();
+        var code = (couponInput && couponInput.value || "").trim().toUpperCase();
+        if (COUPONS[code]) {
+            coupon = COUPONS[code];
+            couponCode = code;
+            showMsg("booking.coupon_applied", true);
+        } else {
+            coupon = null;
+            couponCode = "";
+            showMsg("booking.coupon_invalid", false);
+        }
+        recalc();
+    }
+    if (couponApply) couponApply.addEventListener("click", applyCoupon);
+    if (couponInput) couponInput.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") applyCoupon(e);
+    });
+
+    // ---- ініціалізація ----
+    initDates();
+    setGuests(guests);
+    recalc();
+})();
+
+
+// ------- Підсумок оплати (payment.html) -------
+// Читає збережене бронювання (localStorage: thg_booking від _booking_calc.js)
+// і заповнює: кошик (дати, гості, рядки, підсумок) та лівий блок із переліком
+// обраних послуг. Немає збереження — лишаємо типову розмітку сторінки.
+"use strict";
+(function () {
+    var root = document.querySelector("[data-payment]");
+    if (!root) return;
+
+    var data = null;
+    try { data = JSON.parse(localStorage.getItem("thg_booking") || "null"); } catch (e) { /* ignore */ }
+    if (!data) return; // прямий візит без бронювання — показуємо дефолт
+
+    function fmt(n) {
+        n = Math.max(0, Math.round(n || 0));
+        return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".") + "kr";
+    }
+    function t(key, fallback) {
+        return (window.THG && typeof window.THG.t === "function" && window.THG.t(key)) || fallback;
+    }
+    function fmtDate(iso) {
+        var d = iso ? new Date(iso + "T00:00:00") : null;
+        if (!d || isNaN(d.getTime())) return "—";
+        return d.toLocaleDateString(); // формат за локаллю браузера
+    }
+
+    // ---- правий кошик ----
+    var elCheckin = root.querySelector("[data-pay-checkin]");
+    var elCheckout = root.querySelector("[data-pay-checkout]");
+    var elGuests = root.querySelector("[data-pay-guests]");
+    var elLines = root.querySelector("[data-pay-lines]");
+    var elTotal = root.querySelector("[data-pay-total]");
+
+    if (elCheckin) elCheckin.textContent = fmtDate(data.checkin);
+    if (elCheckout) elCheckout.textContent = fmtDate(data.checkout);
+    if (elGuests) elGuests.textContent = String(data.guests || 1);
+    if (elTotal) elTotal.textContent = fmt(data.total);
+
+    function addLine(parent, labelText, valueText, opts) {
+        opts = opts || {};
+        var row = document.createElement("div");
+        row.className = "trash__block-info" + (opts.discount ? " trash__discount" : "");
+        var l = document.createElement("p");
+        if (opts.i18nKey) l.setAttribute("data-i18n", opts.i18nKey); // оновиться при зміні мови
+        l.textContent = labelText;
+        var v = document.createElement("p");
+        v.textContent = valueText;
+        row.appendChild(l);
+        row.appendChild(v);
+        parent.appendChild(row);
+    }
+
+    if (elLines) {
+        elLines.innerHTML = "";
+        var nights = data.nights || 0;
+        if (nights > 0) {
+            addLine(elLines, nights + " × " + fmt(data.priceNight), fmt(data.accommodation));
+        }
+        if (data.guestExtra > 0) {
+            addLine(elLines, t("booking.summary_guest_extra", "Extra guest"), fmt(data.guestExtra), { i18nKey: "booking.summary_guest_extra" });
+        }
+        if (data.serviceItems && data.serviceItems.length) {
+            data.serviceItems.forEach(function (s) {
+                addLine(elLines, t(s.key, s.name), fmt(s.price), { i18nKey: s.key });
+            });
+        } else if (data.services > 0) {
+            addLine(elLines, t("booking.summary_services", "Additional services"), fmt(data.services), { i18nKey: "booking.summary_services" });
+        }
+        if (data.cleaning > 0) {
+            addLine(elLines, t("booking.summary_cleaning", "Cleaning fee"), fmt(data.cleaning), { i18nKey: "booking.summary_cleaning" });
+        }
+        if (data.discount > 0) {
+            var label = t("booking.summary_discount", "Discount") + (data.coupon ? " (" + data.coupon + ")" : "");
+            addLine(elLines, label, "-" + fmt(data.discount), { discount: true });
+        }
+    }
+
+    // ---- лівий блок: перелік обраних послуг ----
+    var elServices = document.querySelector("[data-pay-services]");
+    if (elServices) {
+        elServices.innerHTML = "";
+        var items = data.serviceItems || [];
+        if (!items.length) {
+            var empty = document.createElement("p");
+            empty.className = "payment-service__empty";
+            empty.setAttribute("data-i18n", "payment.no_services");
+            empty.textContent = t("payment.no_services", "No additional services selected.");
+            elServices.appendChild(empty);
+        } else {
+            items.forEach(function (s) {
+                var card = document.createElement("div");
+                card.className = "payment-service";
+
+                var head = document.createElement("div");
+                head.className = "payment-service__head";
+                var nm = document.createElement("span");
+                nm.className = "payment-service__name";
+                if (s.key) nm.setAttribute("data-i18n", s.key);
+                nm.textContent = t(s.key, s.name);
+                var pr = document.createElement("span");
+                pr.className = "payment-service__price";
+                pr.textContent = fmt(s.price);
+                head.appendChild(nm);
+                head.appendChild(pr);
+                card.appendChild(head);
+
+                if (s.title) {
+                    var ti = document.createElement("p");
+                    ti.className = "payment-service__title";
+                    if (s.titleKey) ti.setAttribute("data-i18n", s.titleKey);
+                    ti.textContent = t(s.titleKey, s.title);
+                    card.appendChild(ti);
+                }
+                if (s.text) {
+                    var tx = document.createElement("p");
+                    tx.className = "payment-service__text";
+                    if (s.textKey) tx.setAttribute("data-i18n", s.textKey);
+                    tx.textContent = t(s.textKey, s.text);
+                    card.appendChild(tx);
+                }
+                elServices.appendChild(card);
+            });
+        }
+    }
+})();

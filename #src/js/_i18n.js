@@ -115,6 +115,10 @@
     // Публічний доступ (напр. з консолі): THG.setLang('uk')
     window.THG = window.THG || {};
     window.THG.setLang = setLang;
+    // Переклад ключа для поточної мови (для динамічного тексту з JS)
+    window.THG.t = function (key) {
+        return translate(key, document.documentElement.getAttribute("lang") || DEFAULT_LANG);
+    };
 
     if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", init);
