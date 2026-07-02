@@ -92,7 +92,12 @@ function css() {
         //Для scss файлів
         .pipe(
             scss({
-                outputStyle: "expanded" // Для формування файлу не стисненим
+                outputStyle: "expanded", // Для формування файлу не стисненим
+                // Приховуємо застарілі попередження Dart Sass, які ми не можемо
+                // прибрати без зміни інструментів/архітектури стилів:
+                //  - legacy-js-api: gulp-sass v5 всередині викликає застарілий render() API;
+                //  - import: перехід з @import на @use/@forward — окремий рефакторинг.
+                silenceDeprecations: ["legacy-js-api", "import"]
             })
         )
         .pipe(
