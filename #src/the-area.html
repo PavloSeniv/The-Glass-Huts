@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
     <meta name="author" content="Seniv Pavlo, https://github.com/PavloSeniv">
@@ -22,7 +22,7 @@
 
 @@include('html/_header.html')
 
-<main class="__container">
+<main class="__container" id="main" tabindex="-1">
     <!-- The Area BEM-->
     <section class="photo-background">
         <div class="photo-img">
@@ -73,8 +73,8 @@
 
         <div class="slider-info__text">
             <div class="booking-location">
-                <label class="booking-location__label" data-i18n="booking.location_label">Location</label>
-                <select class="booking-location__select" data-location-select></select>
+                <label class="booking-location__label" for="area-location-select" data-i18n="booking.location_label">Location</label>
+                <select class="booking-location__select" id="area-location-select" data-location-select></select>
             </div>
             <h2 class="text__title-slider" data-area-title data-i18n="area.intro_title">Vesterbord</h2>
             <p class="text__subtitle-slider" data-area-subtitle data-i18n="area.intro_subtitle">
@@ -89,7 +89,7 @@
         </div>
     </section>
 
-    <section class="map-info">
+    <section class="map-info _reveal">
         <div class="map-info__text">
             <h2 class="map-info__title" data-i18n="area.map_title">
                 A short drive from Aarhus, yet a world away from everything.
@@ -332,9 +332,9 @@
 
     </section>
 
-    <section class="map-the-area">
+    <section class="map-the-area _reveal">
         <div class="map-the-area__map">
-            <iframe class="map-area__google"
+            <iframe class="map-area__google" title="The Glass Huts area — Google map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7931.236668512817!2d10.21756605450385!3d56.09435310765334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c4100e889cca3%3A0x1c38363a89099a6d!2sImmobilien%20Invest%20ApS!5e0!3m2!1sru!2sua!4v1627919165670!5m2!1sru!2sua"
                     width="100%" height="517" style="border:0;" allowfullscreen="allowfullscreen" loading="lazy">
             </iframe>

@@ -1,5 +1,8 @@
 "use strict"
 
+// Лічильник для унікальних id панелей акордеону (ARIA, задача 21)
+let _spollerUid = 0;
+
 //Spollers
 const spollersArray = document.querySelectorAll('[data-spollers]');
 if (spollersArray.length > 0) {
@@ -80,10 +83,22 @@ if (spollersArray.length > 0) {
         const spollerTitles = spollersBlock.querySelectorAll('[data-spoller]');
         if (spollerTitles.length > 0) {
             spollerTitles.forEach(spollerTitle => {
+                // ARIA: пов'язуємо заголовок-кнопку з його панеллю (задача 21)
+                const panel = spollerTitle.nextElementSibling;
+                if (panel) {
+                    if (!panel.id) panel.id = 'spoller-panel-' + (++_spollerUid);
+                    if (!spollerTitle.id) spollerTitle.id = 'spoller-title-' + _spollerUid;
+                    spollerTitle.setAttribute('aria-controls', panel.id);
+                    if (!panel.getAttribute('role')) panel.setAttribute('role', 'region');
+                    if (!panel.getAttribute('aria-labelledby')) panel.setAttribute('aria-labelledby', spollerTitle.id);
+                }
                 if (hideSpollerBody) {
                     spollerTitle.removeAttribute('tabindex');
                     if (!spollerTitle.classList.contains('_active')) {
                         spollerTitle.nextElementSibling.hidden = true;
+                        spollerTitle.setAttribute('aria-expanded', 'false');
+                    } else {
+                        spollerTitle.setAttribute('aria-expanded', 'true');
                     }
                 } else {
                     spollerTitle.setAttribute('tabindex', '-1');
@@ -95,6 +110,9 @@ if (spollersArray.length > 0) {
 
     function setSpollerAction(e) {
         const el = e.target;
+        // Клік по керуючих елементах усередині заголовка (напр. кнопка +/✓ послуги)
+        // не повинен розкривати/згортати акордеон.
+        if (el.closest('[data-spoller-ignore]')) return;
         if (el.hasAttribute('data-spoller') || el.closest('[data-spoller]')) {
             const spollerTitle = el.hasAttribute('data-spoller') ? el : el.closest('[data-spoller]');
             const spollersBlock = spollerTitle.closest('[data-spollers]');
@@ -104,6 +122,7 @@ if (spollersArray.length > 0) {
                     hideSpollersBody(spollersBlock);
                 }
                 spollerTitle.classList.toggle('_active');
+                spollerTitle.setAttribute('aria-expanded', spollerTitle.classList.contains('_active') ? 'true' : 'false');
                 _slideToggle(spollerTitle.nextElementSibling, 500);
             }
             e.preventDefault();
@@ -114,6 +133,7 @@ if (spollersArray.length > 0) {
         const spollerActiveTitle = spollersBlock.querySelector('[data-spoller]._active');
         if (spollerActiveTitle) {
             spollerActiveTitle.classList.remove('_active');
+            spollerActiveTitle.setAttribute('aria-expanded', 'false');
             _slideUp(spollerActiveTitle.nextElementSibling, 500);
         }
     }

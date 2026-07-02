@@ -28,13 +28,18 @@ window.THG_I18N = {
         "nav.booking": "Booking",
         "nav.about": "About Us",
         "nav.faq": "FAQ",
+        "nav.menu": "Menu",
+        "nav.select_language": "Select language",
+        "nav.skip_to_content": "Skip to content",
         "common.book_now": "Book now",
         "common.book_a_hut": "Book A Hut",
         "common.read_more": "Read More",
         "common.from": "from",
         "common.per_night": "per night",
         "common.location": "Vesterbord, Denmark",
+        "common.close": "Close",
         "footer.newsletter": "Newsletter",
+        "footer.subscribe": "Subscribe",
         "footer.email_placeholder": "Email Address",
         "footer.newsletter_text": "Sign up to our newsletter for special things and receive 10% off your next order.",
         "footer.terms": "TERMS AND CONDITIONS",
@@ -55,6 +60,12 @@ window.THG_I18N = {
         "home.cabins_text": "Our glass cabins are built to disappear into the landscape and let the outside in. Floor-to-ceiling windows frame the forest, the fjord and an open sky, while warm oak, soft linen and quiet lighting keep the interior calm and grounded. Each hut is a private retreat for two, thoughtfully designed so that nothing stands between you and the season unfolding beyond the glass.",
         "home.forest_title": "The Forest",
         "home.forest_text": "Set in ancient woodland near the Mariager fjord, the forest is the reason The Glass Huts exists. Walk out at dawn to birdsong and mist between the trees, follow quiet trails to the water's edge, and return after dark to some of Denmark's clearest, star-filled skies. Here the pace slows, the phone stays in your pocket, and the only schedule is the light moving across the pines.",
+        "home.video_play": "Play the intro video",
+        "home.forest_modal_title": "The Forest",
+        "home.forest_modal_p1": "The forest around The Glass Huts is ancient mixed woodland on the shoulders of the Mariager fjord — pine and beech, moss-soft floors and light that shifts hour by hour.",
+        "home.forest_modal_p2": "Marked trails lead from your door to the water's edge, hidden clearings and quiet viewpoints. Mornings bring birdsong and mist; after dark the canopy opens onto some of Denmark's clearest, least light-polluted skies.",
+        "home.forest_modal_p3": "It is a protected habitat for deer, foxes and dozens of bird species, so we ask guests to tread lightly, keep to the paths and let the forest set the pace of the stay.",
+        "home.forest_modal_cta": "Explore the area",
         "home.facilities_title": "Facilities",
         "home.facility_mini_fridge": "Mini fridge",
         "home.facility_kitchenette": "Kitchenette",
@@ -149,6 +160,10 @@ window.THG_I18N = {
         "booking.know_3": "Wi-Fi is available, but we gently encourage you to disconnect and let the forest set the pace of your stay.",
         "booking.know_4": "Have a special request or occasion in mind? Add a note at checkout and we will do our best to arrange it.",
         "booking.read_faq": "Read Faq",
+        "booking.promo_list_title": "Active promo codes",
+        "booking.date_placeholder": "Select date",
+        "booking.guest_increase": "Increase guests",
+        "booking.guest_decrease": "Decrease guests",
         "booking.cart_price_per_night": "<span>3.200kr</span> / night",
         "booking.cart_check_in": "Check in",
         "booking.cart_check_out": "Check out",
@@ -178,7 +193,6 @@ window.THG_I18N = {
         "about.form_subject": "Subject",
         "about.form_message": "Message",
         "about.form_send": "Send",
-        "about.with_love_title": "From Denmark <br> With Love...",
         "faq.q_prices_title": "Prices",
         "faq.a_prices_1": "Rates start from €320 per night and vary with the season, the hut you choose and the length of your stay. Every night includes private access to your glass cabin, the surrounding forest and the shared wellness sauna by the fjord.",
         "faq.a_prices_2": "Stays of three nights or more receive a reduced nightly rate, and midweek arrivals are gentler on both your wallet and your calm. Live pricing for your exact dates always appears at the final step of the booking flow.",
@@ -326,13 +340,18 @@ window.THG_I18N = {
         "nav.booking": "Booking",
         "nav.about": "Om os",
         "nav.faq": "FAQ",
+        "nav.menu": "Menu",
+        "nav.select_language": "Vælg sprog",
+        "nav.skip_to_content": "Gå til indhold",
         "common.book_now": "Book nu",
         "common.book_a_hut": "Book en hytte",
         "common.read_more": "Læs mere",
         "common.from": "fra",
         "common.per_night": "pr. nat",
         "common.location": "Vesterbord, Danmark",
+        "common.close": "Luk",
         "footer.newsletter": "Nyhedsbrev",
+        "footer.subscribe": "Tilmeld",
         "footer.email_placeholder": "E-mailadresse",
         "footer.newsletter_text": "Tilmeld dig vores nyhedsbrev for særlige tilbud og få 10 % rabat på din næste booking.",
         "footer.terms": "VILKÅR OG BETINGELSER",
@@ -353,6 +372,12 @@ window.THG_I18N = {
         "home.cabins_text": "Vores glashytter er skabt til at forsvinde ind i landskabet og lukke naturen ind. Vinduer fra gulv til loft indrammer skoven, fjorden og den åbne himmel, mens varm eg, blødt linned og dæmpet belysning holder rummet roligt og nærværende. Hver hytte er et privat tilflugtssted for to, gennemtænkt indrettet, så intet står mellem dig og årstiden, der folder sig ud på den anden side af glasset.",
         "home.forest_title": "Skoven",
         "home.forest_text": "Placeret i gammel skov nær Mariager fjord er skoven selve grunden til, at The Glass Huts findes. Gå ud ved daggry til fuglesang og tåge mellem træerne, følg stille stier ned til vandkanten, og vend efter mørkets frembrud tilbage til nogle af Danmarks klareste, stjernefyldte himle. Her sænkes tempoet, telefonen bliver i lommen, og den eneste tidsplan er lyset, der bevæger sig hen over fyrretræerne.",
+        "home.video_play": "Afspil introvideoen",
+        "home.forest_modal_title": "Skoven",
+        "home.forest_modal_p1": "Skoven omkring The Glass Huts er gammel blandet skov på skråningerne ved Mariager fjord — fyr og bøg, mosbløde skovbunde og lys, der skifter time for time.",
+        "home.forest_modal_p2": "Afmærkede stier fører fra din dør til vandkanten, skjulte lysninger og stille udsigtspunkter. Morgener bringer fuglesang og tåge; efter mørkets frembrud åbner trækronerne sig mod nogle af Danmarks klareste og mindst lysforurenede himle.",
+        "home.forest_modal_p3": "Det er et beskyttet levested for rådyr, ræve og snesevis af fuglearter, så vi beder gæster om at træde varsomt, holde sig til stierne og lade skoven sætte tempoet for opholdet.",
+        "home.forest_modal_cta": "Udforsk området",
         "home.facilities_title": "Faciliteter",
         "home.facility_mini_fridge": "Minikøleskab",
         "home.facility_kitchenette": "Tekøkken",
@@ -447,6 +472,10 @@ window.THG_I18N = {
         "booking.know_3": "Der er Wi-Fi, men vi opfordrer dig blidt til at koble fra og lade skoven sætte tempoet for dit ophold.",
         "booking.know_4": "Har du et særligt ønske eller en anledning i tankerne? Tilføj en note ved betaling, så gør vi vores bedste for at arrangere det.",
         "booking.read_faq": "Læs FAQ",
+        "booking.promo_list_title": "Aktive rabatkoder",
+        "booking.date_placeholder": "Vælg dato",
+        "booking.guest_increase": "Flere gæster",
+        "booking.guest_decrease": "Færre gæster",
         "booking.cart_price_per_night": "<span>3.200kr</span> / nat",
         "booking.cart_check_in": "Indtjekning",
         "booking.cart_check_out": "Udtjekning",
@@ -476,7 +505,6 @@ window.THG_I18N = {
         "about.form_subject": "Emne",
         "about.form_message": "Besked",
         "about.form_send": "Send",
-        "about.with_love_title": "Fra Danmark <br> med kærlighed...",
         "faq.q_prices_title": "Priser",
         "faq.a_prices_1": "Priserne starter fra €320 pr. nat og varierer med sæsonen, den hytte du vælger og opholdets længde. Hver nat inkluderer privat adgang til din glashytte, den omkringliggende skov og den fælles wellness-sauna ved fjorden.",
         "faq.a_prices_2": "Ophold på tre nætter eller mere får en reduceret natpris, og ankomster midt på ugen er mildere for både din pengepung og din ro. Aktuelle priser for netop dine datoer vises altid i det sidste trin af bookingen.",
@@ -624,13 +652,18 @@ window.THG_I18N = {
         "nav.booking": "Бронювання",
         "nav.about": "Про нас",
         "nav.faq": "Питання",
+        "nav.menu": "Меню",
+        "nav.select_language": "Оберіть мову",
+        "nav.skip_to_content": "Перейти до вмісту",
         "common.book_now": "Забронювати",
         "common.book_a_hut": "Забронювати будиночок",
         "common.read_more": "Докладніше",
         "common.from": "від",
         "common.per_night": "за ніч",
         "common.location": "Вестерборд, Данія",
+        "common.close": "Закрити",
         "footer.newsletter": "Розсилка",
+        "footer.subscribe": "Підписатися",
         "footer.email_placeholder": "Електронна адреса",
         "footer.newsletter_text": "Підпишіться на нашу розсилку, щоб першими отримувати особливі пропозиції та знижку 10% на наступне бронювання.",
         "footer.terms": "УМОВИ ТА ПОЛОЖЕННЯ",
@@ -651,6 +684,12 @@ window.THG_I18N = {
         "home.cabins_text": "Наші скляні хатинки створені так, щоб розчинятися в ландшафті й впускати природу всередину. Вікна від підлоги до стелі обрамлюють ліс, фіорд і відкрите небо, а теплий дуб, м’яка льняна тканина та приглушене світло зберігають затишок і спокій усередині. Кожна хатинка — це приватний прихисток для двох, продуманий до дрібниць, щоб ніщо не стояло між вами й порою року, що розгортається за склом.",
         "home.forest_title": "Ліс",
         "home.forest_text": "Розташований у прадавньому лісі поблизу Маріагер-фіорду, ліс — це сама причина існування The Glass Huts. Вийдіть на світанку до пташиного співу й туману між деревами, пройдіться тихими стежками до води й повертайтеся після настання темряви під одне з найясніших, всіяних зорями небес Данії. Тут темп сповільнюється, телефон залишається в кишені, а єдиний розклад — це світло, що рухається по кронах сосен.",
+        "home.video_play": "Відтворити відео",
+        "home.forest_modal_title": "Ліс",
+        "home.forest_modal_p1": "Ліс навколо The Glass Huts — це прадавній мішаний гай на схилах Маріагер-фіорду: сосни й буки, м’який від моху ґрунт і світло, що змінюється щогодини.",
+        "home.forest_modal_p2": "Розмічені стежки ведуть від вашого порога до води, прихованих галявин і тихих оглядових точок. Ранки сповнені пташиного співу й туману; а після заходу сонця крони відкривають одне з найчистіших, найменш засвічених небес Данії.",
+        "home.forest_modal_p3": "Це охоронюваний осередок для оленів, лисиць і десятків видів птахів, тож ми просимо гостей ступати обережно, триматися стежок і дозволити лісу задавати темп відпочинку.",
+        "home.forest_modal_cta": "Дослідити місцевість",
         "home.facilities_title": "Зручності",
         "home.facility_mini_fridge": "Міні-холодильник",
         "home.facility_kitchenette": "Міні-кухня",
@@ -745,6 +784,10 @@ window.THG_I18N = {
         "booking.know_3": "Wi-Fi доступний, але ми лагідно закликаємо вас відключитися і дозволити лісу задавати ритм вашого відпочинку.",
         "booking.know_4": "Маєте особливе прохання чи привід для святкування? Додайте примітку під час оформлення, і ми зробимо все можливе, щоб це влаштувати.",
         "booking.read_faq": "Читати поширені запитання",
+        "booking.promo_list_title": "Активні промокоди",
+        "booking.date_placeholder": "Оберіть дату",
+        "booking.guest_increase": "Додати гостя",
+        "booking.guest_decrease": "Прибрати гостя",
         "booking.cart_price_per_night": "<span>3.200kr</span> / ніч",
         "booking.cart_check_in": "Заїзд",
         "booking.cart_check_out": "Виїзд",
@@ -774,7 +817,6 @@ window.THG_I18N = {
         "about.form_subject": "Тема",
         "about.form_message": "Повідомлення",
         "about.form_send": "Надіслати",
-        "about.with_love_title": "З Данії <br> з любов'ю...",
         "faq.q_prices_title": "Ціни",
         "faq.a_prices_1": "Ціни починаються від €320 за ніч і залежать від сезону, обраної хатини та тривалості перебування. Кожна ніч включає приватний доступ до вашої скляної хатини, навколишнього лісу та спільної велнес-сауни біля фіорду.",
         "faq.a_prices_2": "Перебування від трьох ночей і більше отримує знижену ціну за ніч, а прибуття серед тижня дбайливіше і до вашого гаманця, і до вашого спокою. Актуальні ціни на ваші конкретні дати завжди з'являються на останньому кроці бронювання.",
@@ -922,13 +964,18 @@ window.THG_I18N = {
         "nav.booking": "Buchung",
         "nav.about": "Über uns",
         "nav.faq": "FAQ",
+        "nav.menu": "Menü",
+        "nav.select_language": "Sprache wählen",
+        "nav.skip_to_content": "Zum Inhalt springen",
         "common.book_now": "Jetzt buchen",
         "common.book_a_hut": "Hütte buchen",
         "common.read_more": "Mehr erfahren",
         "common.from": "ab",
         "common.per_night": "pro Nacht",
         "common.location": "Vesterbord, Dänemark",
+        "common.close": "Schließen",
         "footer.newsletter": "Newsletter",
+        "footer.subscribe": "Abonnieren",
         "footer.email_placeholder": "E-Mail-Adresse",
         "footer.newsletter_text": "Abonnieren Sie unseren Newsletter für besondere Angebote und erhalten Sie 10 % Rabatt auf Ihre nächste Buchung.",
         "footer.terms": "ALLGEMEINE GESCHÄFTSBEDINGUNGEN",
@@ -949,6 +996,12 @@ window.THG_I18N = {
         "home.cabins_text": "Unsere Glashütten sind so gebaut, dass sie mit der Landschaft verschmelzen und die Natur hereinlassen. Raumhohe Fenster rahmen den Wald, den Fjord und den offenen Himmel, während warme Eiche, weiches Leinen und gedämpftes Licht das Innere ruhig und geerdet halten. Jede Hütte ist ein privater Rückzugsort für zwei, durchdacht gestaltet, sodass nichts zwischen Ihnen und der Jahreszeit steht, die sich hinter dem Glas entfaltet.",
         "home.forest_title": "Der Wald",
         "home.forest_text": "Eingebettet in einen alten Wald nahe dem Mariager Fjord ist der Wald der Grund, warum es The Glass Huts gibt. Treten Sie im Morgengrauen hinaus zu Vogelgesang und Nebel zwischen den Bäumen, folgen Sie stillen Pfaden bis ans Wasser und kehren Sie nach Einbruch der Dunkelheit unter einen der klarsten, sternenübersäten Himmel Dänemarks zurück. Hier verlangsamt sich das Tempo, das Telefon bleibt in der Tasche, und der einzige Zeitplan ist das Licht, das über die Kiefern wandert.",
+        "home.video_play": "Intro-Video abspielen",
+        "home.forest_modal_title": "Der Wald",
+        "home.forest_modal_p1": "Der Wald rund um The Glass Huts ist uralter Mischwald an den Hängen des Mariager Fjords — Kiefer und Buche, moosweiche Böden und Licht, das sich Stunde um Stunde wandelt.",
+        "home.forest_modal_p2": "Markierte Pfade führen von Ihrer Tür bis ans Wasser, zu versteckten Lichtungen und stillen Aussichtspunkten. Morgens erklingen Vogelgesang und Nebel; nach Einbruch der Dunkelheit öffnet sich das Blätterdach auf einen der klarsten, am wenigsten lichtverschmutzten Himmel Dänemarks.",
+        "home.forest_modal_p3": "Es ist ein geschützter Lebensraum für Rehe, Füchse und Dutzende Vogelarten, daher bitten wir unsere Gäste, achtsam zu gehen, auf den Wegen zu bleiben und den Wald das Tempo des Aufenthalts bestimmen zu lassen.",
+        "home.forest_modal_cta": "Die Umgebung entdecken",
         "home.facilities_title": "Ausstattung",
         "home.facility_mini_fridge": "Minikühlschrank",
         "home.facility_kitchenette": "Küchenzeile",
@@ -1043,6 +1096,10 @@ window.THG_I18N = {
         "booking.know_3": "WLAN ist vorhanden, doch wir laden Sie behutsam dazu ein, abzuschalten und den Wald das Tempo Ihres Aufenthalts bestimmen zu lassen.",
         "booking.know_4": "Haben Sie einen besonderen Wunsch oder Anlass im Sinn? Fügen Sie beim Bezahlen eine Notiz hinzu, und wir tun unser Bestes, um es zu ermöglichen.",
         "booking.read_faq": "FAQ lesen",
+        "booking.promo_list_title": "Aktive Promo-Codes",
+        "booking.date_placeholder": "Datum wählen",
+        "booking.guest_increase": "Gäste erhöhen",
+        "booking.guest_decrease": "Gäste verringern",
         "booking.cart_price_per_night": "<span>3.200kr</span> / Nacht",
         "booking.cart_check_in": "Anreise",
         "booking.cart_check_out": "Abreise",
@@ -1072,7 +1129,6 @@ window.THG_I18N = {
         "about.form_subject": "Betreff",
         "about.form_message": "Nachricht",
         "about.form_send": "Senden",
-        "about.with_love_title": "Aus Dänemark <br> mit Liebe...",
         "faq.q_prices_title": "Preise",
         "faq.a_prices_1": "Die Preise beginnen bei €320 pro Nacht und variieren je nach Saison, der gewählten Hütte und der Länge Ihres Aufenthalts. Jede Nacht umfasst den privaten Zugang zu Ihrer Glashütte, dem umliegenden Wald und der gemeinsamen Wellness-Sauna am Fjord.",
         "faq.a_prices_2": "Aufenthalte von drei Nächten oder mehr erhalten einen reduzierten Nächtigungspreis, und Anreisen unter der Woche schonen sowohl Ihren Geldbeutel als auch Ihre Ruhe. Die aktuellen Preise für Ihre genauen Daten erscheinen stets im letzten Schritt der Buchung.",
@@ -1264,6 +1320,10 @@ window.THG_I18N = {
             var v = translate(el.getAttribute("data-i18n-ph"), lang);
             if (v != null) el.setAttribute("placeholder", v);
         });
+        each("[data-i18n-aria]", function (el) {
+            var v = translate(el.getAttribute("data-i18n-aria"), lang);
+            if (v != null) el.setAttribute("aria-label", v);
+        });
 
         updateSwitcher(lang);
     }
@@ -1274,6 +1334,7 @@ window.THG_I18N = {
         each("[data-lang-option]", function (el) {
             var isActive = el.getAttribute("data-lang-option") === lang;
             el.classList.toggle("_active", isActive);
+            el.setAttribute("aria-current", isActive ? "true" : "false");
             if (isActive) activeOption = el;
         });
 
@@ -1319,6 +1380,38 @@ window.THG_I18N = {
         });
     }
 
+    // ARIA для випадаючого списку мов (стан розкриття по hover/focus)
+    function initLangA11y() {
+        var trigger = document.querySelector("[data-lang-current]");
+        if (!trigger) return;
+        var list = document.querySelector(".lang__list");
+        var langLi = trigger.closest(".lang");
+        trigger.setAttribute("aria-haspopup", "true");
+        trigger.setAttribute("aria-expanded", "false");
+        if (list) {
+            if (!list.id) list.id = "lang-menu";
+            trigger.setAttribute("aria-controls", list.id);
+        }
+        if (langLi) {
+            var setExpanded = function (v) { trigger.setAttribute("aria-expanded", v ? "true" : "false"); };
+            langLi.addEventListener("mouseenter", function () { setExpanded(true); });
+            langLi.addEventListener("mouseleave", function () { setExpanded(false); });
+            langLi.addEventListener("focusin", function () { setExpanded(true); });
+            langLi.addEventListener("focusout", function () { setExpanded(false); });
+
+            // У мобільному меню (і на touch-пристроях) ховера немає, а крихітна
+            // стрілка — заважка ціль. Тап по самій поточній мові відкриває/закриває
+            // список (клас ._active — той самий, що вмикає стрілка).
+            trigger.addEventListener("click", function (e) {
+                e.preventDefault(); // href="#" не мусить стрибати вгору сторінки
+                var mobileMenu = window.matchMedia && window.matchMedia("(max-width: 767px)").matches;
+                if (mobileMenu || document.body.classList.contains("_touch")) {
+                    setExpanded(langLi.classList.toggle("_active"));
+                }
+            });
+        }
+    }
+
     function init() {
         each("[data-lang-option]", function (el) {
             el.addEventListener("click", function (e) {
@@ -1326,6 +1419,7 @@ window.THG_I18N = {
                 setLang(el.getAttribute("data-lang-option"));
             });
         });
+        initLangA11y();
         updateYear();
         applyLang(getSavedLang());
     }
@@ -1350,6 +1444,14 @@ window.THG_I18N = {
 // Кожна локація має власні ціни та перелік послуг. Текстові поля зберігаються
 // як i18n-ключі (перекладаються через _i18n_translations.js). Ціни — у kr.
 "use strict";
+
+// Активні промокоди (спільні для booking і payment). pct — відсоток, fixed — kr.
+window.THG_COUPONS = {
+    "GLASS10": { type: "pct", value: 10 },
+    "FOREST20": { type: "pct", value: 20 },
+    "WELCOME500": { type: "fixed", value: 500 }
+};
+
 window.THG_LOCATIONS = {
     order: ["denmark", "norway", "iceland"],
 
@@ -1458,11 +1560,20 @@ const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
 const menuButton = document.querySelector('.menu__button-mobile');
 if (iconMenu) {
-    iconMenu.addEventListener('click', function (e) {
-        document.body.classList.toggle('_lock')
+    const toggleMenu = function () {
+        document.body.classList.toggle('_lock');
         iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
-        menuButton.classList.toggle('_active');
+        if (menuButton) menuButton.classList.toggle('_active');
+        iconMenu.setAttribute('aria-expanded', iconMenu.classList.contains('_active') ? 'true' : 'false');
+    };
+    iconMenu.addEventListener('click', toggleMenu);
+    // Клавіатурна доступність бургера (він — div[role=button])
+    iconMenu.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+            e.preventDefault();
+            toggleMenu();
+        }
     });
 }
 
@@ -1484,8 +1595,8 @@ if (menuLinks.length > 0) {
                 document.body.classList.remove('_lock')
                 iconMenu.classList.remove('_active');
                 menuBody.classList.remove('_active');
-                menuButton.classList.remove('_active');
-
+                if (menuButton) menuButton.classList.remove('_active');
+                iconMenu.setAttribute('aria-expanded', 'false');
             }
             //Для плавної прокрутки
             window.scrollTo({
@@ -1496,6 +1607,108 @@ if (menuLinks.length > 0) {
         }
     }
 }
+
+// ------- Спільний конструктор пункту акордеону послуги (booking + payment) -------
+// Кнопка "+/✓" (data-service-toggle) ДОДАЄ/ПРИБИРАЄ послугу і НЕ розкриває акордеон
+// (вона поза [data-spoller]; плагін спойлерів її ігнорує через data-spoller-ignore).
+// Заголовок (data-spoller) розкриває опис. Стан вибору тримає прихований чекбокс
+// [data-service][data-price], сумісний із selectedServices() у _booking_calc.js.
+"use strict";
+(function () {
+    window.THG = window.THG || {};
+
+    function t(key, fallback) {
+        return (window.THG && typeof window.THG.t === "function" && window.THG.t(key)) || fallback;
+    }
+    function el(tag, cls) { var e = document.createElement(tag); if (cls) e.className = cls; return e; }
+
+    var CHEVRON = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-down" viewbox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>';
+
+    // service: { price, nameKey, titleKey, textKey }
+    // opts: { selected:boolean, onToggle:fn(added, service, itemEl) }
+    function buildServiceItem(service, opts) {
+        opts = opts || {};
+        var item = el("div", "choose-services__spoiler-item");
+        if (opts.selected) item.classList.add("_added");
+
+        // Кнопка додати/прибрати
+        var toggle = el("button", "service-toggle");
+        toggle.type = "button";
+        toggle.setAttribute("data-service-toggle", "");
+        toggle.setAttribute("data-spoller-ignore", "");
+        toggle.setAttribute("aria-pressed", opts.selected ? "true" : "false");
+        toggle.setAttribute("data-i18n-aria", "booking.service_add");
+        toggle.setAttribute("aria-label", t("booking.service_add", "Add to booking"));
+        var icon = el("span", "service-toggle__icon");
+        icon.setAttribute("aria-hidden", "true");
+        toggle.appendChild(icon);
+
+        // Заголовок-акордеон
+        var btn = el("button", "choose-services__spoiler-title-button");
+        btn.type = "button";
+        btn.setAttribute("data-spoller", "");
+        btn.setAttribute("aria-expanded", "false");
+        var titleText = el("div", "choose-services__spoiler-title-text");
+        var nameSpan = el("span");
+        nameSpan.setAttribute("data-i18n", service.nameKey);
+        nameSpan.textContent = t(service.nameKey, "");
+        var priceP = el("p");
+        priceP.textContent = service.price + "kr";
+        titleText.appendChild(nameSpan);
+        titleText.appendChild(priceP);
+        btn.appendChild(titleText);
+        btn.insertAdjacentHTML("beforeend", CHEVRON);
+
+        // Контент акордеону
+        var content = el("div", "choose-services__spoiler-content");
+        content.hidden = true; // згорнутий; плагін розгортає по кліку
+        var info = el("div", "choose-services__spoiler-info");
+        var titleP = el("p", "choose-services__spoiler-title");
+        titleP.setAttribute("data-i18n", service.titleKey);
+        titleP.textContent = t(service.titleKey, "");
+        var textP = el("p", "choose-services__spoiler-text");
+        textP.setAttribute("data-i18n", service.textKey);
+        textP.textContent = t(service.textKey, "");
+        // Прихований чекбокс — джерело істини про вибір послуги
+        var check = el("input", "service-add__check");
+        check.type = "checkbox";
+        check.hidden = true;
+        check.setAttribute("data-service", "");
+        check.setAttribute("data-price", String(service.price));
+        check.checked = !!opts.selected;
+        info.appendChild(titleP);
+        info.appendChild(textP);
+        info.appendChild(check);
+        content.appendChild(info);
+
+        // ARIA: пов'язуємо кнопку-заголовок акордеону з панеллю опису (задача 21)
+        var uid = (service.nameKey || "svc").replace(/[^a-z0-9]+/gi, "-");
+        btn.id = "svc-title-" + uid;
+        content.id = "svc-panel-" + uid;
+        btn.setAttribute("aria-controls", content.id);
+        content.setAttribute("role", "region");
+        content.setAttribute("aria-labelledby", btn.id);
+
+        item.appendChild(toggle);
+        item.appendChild(btn);
+        item.appendChild(content);
+
+        toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation(); // не даємо кліку дійти до делегованого обробника спойлерів
+            var added = !check.checked;
+            check.checked = added;
+            item.classList.toggle("_added", added);
+            toggle.setAttribute("aria-pressed", added ? "true" : "false");
+            if (typeof opts.onToggle === "function") opts.onToggle(added, service, item);
+        });
+
+        return item;
+    }
+
+    window.THG.buildServiceItem = buildServiceItem;
+})();
+
 
 // ------- Калькулятор бронювання (booking.html) — багатолокаційний -------
 // Локація визначається параметром ?loc= (зі слайдера на головній) або
@@ -1510,11 +1723,7 @@ if (menuLinks.length > 0) {
     if (!LOCS) return;
 
     var MIN_GUESTS = 1, MAX_GUESTS = 2;
-    var COUPONS = {
-        "GLASS10": { type: "pct", value: 10 },
-        "FOREST20": { type: "pct", value: 20 },
-        "WELCOME500": { type: "fixed", value: 500 }
-    };
+    var COUPONS = window.THG_COUPONS || {};
 
     // Елементи керування
     var locSelect = document.querySelector("[data-location-select]");
@@ -1529,6 +1738,7 @@ if (menuLinks.length > 0) {
     var couponInput = root.querySelector("[data-coupon-input]");
     var couponApply = root.querySelector("[data-coupon-apply]");
     var couponMsg = root.querySelector("[data-coupon-msg]");
+    var couponList = root.querySelector("[data-coupon-list]");
     var out = {
         nights: root.querySelector("[data-sum-nights]"),
         guest: root.querySelector("[data-sum-guest]"),
@@ -1564,62 +1774,12 @@ if (menuLinks.length > 0) {
     }
     function el(tag, cls) { var e = document.createElement(tag); if (cls) e.className = cls; return e; }
 
-    var CHEVRON = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>';
-
-    // ---- рендер послуг обраної локації ----
+    // ---- рендер послуг обраної локації (спільний конструктор у _service_ui.js) ----
     function renderServices(loc) {
-        if (!servicesBox) return;
+        if (!servicesBox || !window.THG || !window.THG.buildServiceItem) return;
         servicesBox.innerHTML = "";
         loc.services.forEach(function (s) {
-            var item = el("div", "choose-services__spoiler-item");
-
-            var btn = el("button", "choose-services__spoiler-title-button");
-            btn.type = "button";
-            btn.setAttribute("tabindex", "-1");
-            btn.setAttribute("data-spoller", "");
-            var icon = el("span", "choise-services__spoiler-icon-plus");
-            var titleText = el("div", "choose-services__spoiler-title-text");
-            var nameSpan = el("span");
-            nameSpan.setAttribute("data-i18n", s.nameKey);
-            nameSpan.textContent = t(s.nameKey, "");
-            var priceP = el("p");
-            priceP.textContent = s.price + "kr";
-            titleText.appendChild(nameSpan);
-            titleText.appendChild(priceP);
-            btn.appendChild(icon);
-            btn.appendChild(titleText);
-            btn.insertAdjacentHTML("beforeend", CHEVRON);
-
-            var content = el("div", "choose-services__spoiler-content");
-            content.hidden = true; // спойлер згорнутий; плагін розгортає по кліку
-            var info = el("div", "choose-services__spoiler-info");
-            var titleP = el("p", "choose-services__spoiler-title");
-            titleP.setAttribute("data-i18n", s.titleKey);
-            titleP.textContent = t(s.titleKey, "");
-            var textP = el("p", "choose-services__spoiler-text");
-            textP.setAttribute("data-i18n", s.textKey);
-            textP.textContent = t(s.textKey, "");
-            var label = el("label", "service-add");
-            var check = el("input", "service-add__check");
-            check.type = "checkbox";
-            check.setAttribute("data-service", "");
-            check.setAttribute("data-price", String(s.price));
-            var addSpan = el("span", "service-add__label");
-            addSpan.setAttribute("data-i18n", "booking.service_add");
-            addSpan.textContent = t("booking.service_add", "Add to booking");
-            var priceSpan = el("span", "service-add__price");
-            priceSpan.textContent = s.price + "kr";
-            label.appendChild(check);
-            label.appendChild(addSpan);
-            label.appendChild(priceSpan);
-            info.appendChild(titleP);
-            info.appendChild(textP);
-            info.appendChild(label);
-            content.appendChild(info);
-
-            item.appendChild(btn);
-            item.appendChild(content);
-            servicesBox.appendChild(item);
+            servicesBox.appendChild(window.THG.buildServiceItem(s, { selected: false, onToggle: recalc }));
         });
     }
 
@@ -1696,6 +1856,11 @@ if (menuLinks.length > 0) {
         if (heroLabel) {
             heroLabel.setAttribute("data-i18n", current.labelKey);
             heroLabel.textContent = t(current.labelKey, "");
+            if (current.map) {
+                heroLabel.setAttribute("href", current.map);
+                heroLabel.setAttribute("target", "_blank");
+                heroLabel.setAttribute("rel", "noopener");
+            }
         }
         if (priceDisplay) priceDisplay.textContent = fmt(PRICE_NIGHT);
         renderServices(current);
@@ -1771,6 +1936,31 @@ if (menuLinks.length > 0) {
     if (couponApply) couponApply.addEventListener("click", applyCoupon);
     if (couponInput) couponInput.addEventListener("keydown", function (e) { if (e.key === "Enter") applyCoupon(e); });
 
+    // ---- перелік активних промокодів (клік підставляє й застосовує код) ----
+    function renderCoupons() {
+        if (!couponList) return;
+        couponList.innerHTML = "";
+        Object.keys(COUPONS).forEach(function (code) {
+            var c = COUPONS[code];
+            var li = el("li", "trash__promo-item");
+            var codeBtn = el("button", "trash__promo-code");
+            codeBtn.type = "button";
+            codeBtn.textContent = code;
+            codeBtn.setAttribute("data-coupon-fill", code);
+            var val = el("span", "trash__promo-val");
+            val.textContent = c.type === "pct" ? "−" + c.value + "%" : "−" + fmt(c.value);
+            li.appendChild(codeBtn);
+            li.appendChild(val);
+            couponList.appendChild(li);
+        });
+    }
+    if (couponList) couponList.addEventListener("click", function (e) {
+        var b = e.target.closest("[data-coupon-fill]");
+        if (!b) return;
+        if (couponInput) couponInput.value = b.getAttribute("data-coupon-fill");
+        applyCoupon(e);
+    });
+
     // ---- ініціалізація ----
     var params = new URLSearchParams(window.location.search);
     var initLoc = params.get("loc");
@@ -1780,14 +1970,16 @@ if (menuLinks.length > 0) {
     guests = MIN_GUESTS;
     if (guestCount) guestCount.textContent = String(guests);
     if (guestDec) guestDec.disabled = true;
+    renderCoupons();
     setLocation(initLoc);
 })();
 
 
 // ------- Підсумок оплати (payment.html) -------
-// Читає збережене бронювання (localStorage: thg_booking від _booking_calc.js)
-// і заповнює: кошик (дати, гості, рядки, підсумок) та лівий блок із переліком
-// обраних послуг. Немає збереження — лишаємо типову розмітку сторінки.
+// Читає збережене бронювання (localStorage: thg_booking від _booking_calc.js).
+// Лівий блок: акордеон послуг обраної локації (як у booking) з можливістю
+// додавати/прибирати послуги прямо тут. Правий блок: кошик (дати, гості,
+// рядки, підсумок). Зміни перераховуються і зберігаються назад у thg_booking.
 "use strict";
 (function () {
     var root = document.querySelector("[data-payment]");
@@ -1807,36 +1999,41 @@ if (menuLinks.length > 0) {
     function fmtDate(iso) {
         var d = iso ? new Date(iso + "T00:00:00") : null;
         if (!d || isNaN(d.getTime())) return "—";
-        return d.toLocaleDateString(); // формат за локаллю браузера
+        return d.toLocaleDateString();
     }
 
-    // ---- правий кошик ----
+    var LOCS = window.THG_LOCATIONS || {};
+    var COUPONS = window.THG_COUPONS || {};
+    var loc = LOCS[data.location];
+    var catalog = (loc && loc.services) || [];
+
+    // Множина обраних послуг (за ключем назви)
+    var selectedKeys = {};
+    (data.serviceItems || []).forEach(function (s) { if (s && s.key) selectedKeys[s.key] = true; });
+
+    // ---- елементи правого кошика ----
     var elCheckin = root.querySelector("[data-pay-checkin]");
     var elCheckout = root.querySelector("[data-pay-checkout]");
     var elGuests = root.querySelector("[data-pay-guests]");
     var elLines = root.querySelector("[data-pay-lines]");
     var elTotal = root.querySelector("[data-pay-total]");
-
-    // Локація обраного будиночка (назва + посилання на карту)
     var elLocation = root.querySelector("[data-pay-location]");
+
     if (elLocation && data.locationLabelKey) {
         elLocation.setAttribute("data-i18n", data.locationLabelKey);
         elLocation.textContent = t(data.locationLabelKey, elLocation.textContent);
-        var loc = window.THG_LOCATIONS && window.THG_LOCATIONS[data.location];
         if (loc && loc.map) elLocation.setAttribute("href", loc.map);
     }
-
     if (elCheckin) elCheckin.textContent = fmtDate(data.checkin);
     if (elCheckout) elCheckout.textContent = fmtDate(data.checkout);
     if (elGuests) elGuests.textContent = String(data.guests || 1);
-    if (elTotal) elTotal.textContent = fmt(data.total);
 
     function addLine(parent, labelText, valueText, opts) {
         opts = opts || {};
         var row = document.createElement("div");
         row.className = "trash__block-info" + (opts.discount ? " trash__discount" : "");
         var l = document.createElement("p");
-        if (opts.i18nKey) l.setAttribute("data-i18n", opts.i18nKey); // оновиться при зміні мови
+        if (opts.i18nKey) l.setAttribute("data-i18n", opts.i18nKey);
         l.textContent = labelText;
         var v = document.createElement("p");
         v.textContent = valueText;
@@ -1845,78 +2042,83 @@ if (menuLinks.length > 0) {
         parent.appendChild(row);
     }
 
-    if (elLines) {
+    // Перелік обраних послуг у форматі кошика (з каталогу локації)
+    function selectedServiceItems() {
+        var arr = [];
+        catalog.forEach(function (s) {
+            if (!selectedKeys[s.nameKey]) return;
+            arr.push({
+                key: s.nameKey, name: t(s.nameKey, ""),
+                titleKey: s.titleKey, title: t(s.titleKey, ""),
+                textKey: s.textKey, text: t(s.textKey, ""),
+                price: s.price
+            });
+        });
+        return arr;
+    }
+
+    function renderCart() {
+        if (elTotal) elTotal.textContent = fmt(data.total);
+        if (!elLines) return;
         elLines.innerHTML = "";
         var nights = data.nights || 0;
-        if (nights > 0) {
-            addLine(elLines, nights + " × " + fmt(data.priceNight), fmt(data.accommodation));
-        }
-        if (data.guestExtra > 0) {
-            addLine(elLines, t("booking.summary_guest_extra", "Extra guest"), fmt(data.guestExtra), { i18nKey: "booking.summary_guest_extra" });
-        }
+        if (nights > 0) addLine(elLines, nights + " × " + fmt(data.priceNight), fmt(data.accommodation));
+        if (data.guestExtra > 0) addLine(elLines, t("booking.summary_guest_extra", "Extra guest"), fmt(data.guestExtra), { i18nKey: "booking.summary_guest_extra" });
         if (data.serviceItems && data.serviceItems.length) {
-            data.serviceItems.forEach(function (s) {
-                addLine(elLines, t(s.key, s.name), fmt(s.price), { i18nKey: s.key });
-            });
-        } else if (data.services > 0) {
-            addLine(elLines, t("booking.summary_services", "Additional services"), fmt(data.services), { i18nKey: "booking.summary_services" });
+            data.serviceItems.forEach(function (s) { addLine(elLines, t(s.key, s.name), fmt(s.price), { i18nKey: s.key }); });
         }
-        if (data.cleaning > 0) {
-            addLine(elLines, t("booking.summary_cleaning", "Cleaning fee"), fmt(data.cleaning), { i18nKey: "booking.summary_cleaning" });
-        }
+        if (data.cleaning > 0) addLine(elLines, t("booking.summary_cleaning", "Cleaning fee"), fmt(data.cleaning), { i18nKey: "booking.summary_cleaning" });
         if (data.discount > 0) {
             var label = t("booking.summary_discount", "Discount") + (data.coupon ? " (" + data.coupon + ")" : "");
             addLine(elLines, label, "-" + fmt(data.discount), { discount: true });
         }
     }
 
-    // ---- лівий блок: перелік обраних послуг ----
-    var elServices = document.querySelector("[data-pay-services]");
-    if (elServices) {
-        elServices.innerHTML = "";
-        var items = data.serviceItems || [];
-        if (!items.length) {
+    // Перерахунок після додавання/прибирання послуги + збереження
+    function recompute() {
+        var items = selectedServiceItems();
+        var servicesTotal = 0;
+        items.forEach(function (s) { servicesTotal += s.price; });
+        var subtotal = (data.accommodation || 0) + (data.guestExtra || 0) + servicesTotal + (data.cleaning || 0);
+        var coupon = COUPONS[data.coupon];
+        var discount = 0;
+        if (coupon) {
+            discount = coupon.type === "pct" ? subtotal * coupon.value / 100 : coupon.value;
+            discount = Math.min(discount, subtotal);
+        }
+        data.serviceItems = items;
+        data.services = servicesTotal;
+        data.discount = Math.round(discount);
+        data.total = Math.max(0, subtotal - discount);
+        try { localStorage.setItem("thg_booking", JSON.stringify(data)); } catch (e) { /* ignore */ }
+        renderCart();
+    }
+
+    // ---- лівий блок: акордеон каталогу послуг з додаванням/прибиранням ----
+    var servicesBox = document.querySelector("[data-pay-services]");
+    if (servicesBox) {
+        servicesBox.innerHTML = "";
+        if (window.THG && window.THG.buildServiceItem && catalog.length) {
+            catalog.forEach(function (s) {
+                servicesBox.appendChild(window.THG.buildServiceItem(s, {
+                    selected: !!selectedKeys[s.nameKey],
+                    onToggle: function (added, service) {
+                        if (added) selectedKeys[service.nameKey] = true;
+                        else delete selectedKeys[service.nameKey];
+                        recompute();
+                    }
+                }));
+            });
+        } else {
             var empty = document.createElement("p");
             empty.className = "payment-service__empty";
             empty.setAttribute("data-i18n", "payment.no_services");
             empty.textContent = t("payment.no_services", "No additional services selected.");
-            elServices.appendChild(empty);
-        } else {
-            items.forEach(function (s) {
-                var card = document.createElement("div");
-                card.className = "payment-service";
-
-                var head = document.createElement("div");
-                head.className = "payment-service__head";
-                var nm = document.createElement("span");
-                nm.className = "payment-service__name";
-                if (s.key) nm.setAttribute("data-i18n", s.key);
-                nm.textContent = t(s.key, s.name);
-                var pr = document.createElement("span");
-                pr.className = "payment-service__price";
-                pr.textContent = fmt(s.price);
-                head.appendChild(nm);
-                head.appendChild(pr);
-                card.appendChild(head);
-
-                if (s.title) {
-                    var ti = document.createElement("p");
-                    ti.className = "payment-service__title";
-                    if (s.titleKey) ti.setAttribute("data-i18n", s.titleKey);
-                    ti.textContent = t(s.titleKey, s.title);
-                    card.appendChild(ti);
-                }
-                if (s.text) {
-                    var tx = document.createElement("p");
-                    tx.className = "payment-service__text";
-                    if (s.textKey) tx.setAttribute("data-i18n", s.textKey);
-                    tx.textContent = t(s.textKey, s.text);
-                    card.appendChild(tx);
-                }
-                elServices.appendChild(card);
-            });
+            servicesBox.appendChild(empty);
         }
     }
+
+    renderCart();
 })();
 
 
@@ -1946,15 +2148,28 @@ if (menuLinks.length > 0) {
         elm.textContent = t(key, elm.textContent);
     }
 
+    // З map (пошук/пін) будуємо URL маршруту Google Maps до координат локації.
+    function directionsUrl(loc) {
+        var m = /query=([^&]+)/.exec(loc.map || "");
+        return m ? "https://www.google.com/maps/dir/?api=1&destination=" + m[1] : (loc.map || "#");
+    }
+    function setExternalLink(elm, href) {
+        if (!elm || !href) return;
+        elm.setAttribute("href", href);
+        elm.setAttribute("target", "_blank");
+        elm.setAttribute("rel", "noopener");
+    }
+
     function setLocation(id) {
         var loc = LOCS[id] || LOCS[LOCS.order[0]];
         setI18n(heroLabel, loc.labelKey);
+        setExternalLink(heroLabel, loc.map);          // клік по назві → карта з піном
         if (loc.area) {
             setI18n(titleEl, loc.area.titleKey);
             setI18n(subtitleEl, loc.area.subtitleKey);
             setI18n(textEl, loc.area.textKey);
         }
-        if (directions && loc.map) directions.setAttribute("href", loc.map);
+        setExternalLink(directions, directionsUrl(loc)); // «Прокласти маршрут» → режим маршруту
     }
 
     var params = new URLSearchParams(window.location.search);
@@ -2069,4 +2284,158 @@ if (menuLinks.length > 0) {
             });
         })(forms[i]);
     }
+})();
+
+
+// ------- Модальні вікна -------
+// Відкриває [data-modal-open="<name>"] → .modal[data-modal="<name>"].
+// Закриває клік по [data-modal-close]/оверлею, Esc; блокує прокрутку body,
+// повертає фокус на елемент-тригер. Анімація — через клас ._open (див. CSS).
+"use strict";
+(function () {
+    var opener = null; // елемент, що відкрив модалку — щоб повернути фокус
+
+    function getModal(name) {
+        return document.querySelector('.modal[data-modal="' + name + '"]');
+    }
+
+    function open(modal) {
+        if (!modal) return;
+        modal.hidden = false;
+        // наступний кадр — щоб спрацював transition
+        requestAnimationFrame(function () { modal.classList.add("_open"); });
+        document.body.classList.add("_modal-lock");
+        // Шукаємо фокусовний елемент саме в діалозі: оверлей теж має
+        // [data-modal-close], але це div без tabindex — його .focus() ніщо не робить.
+        var dialog = modal.querySelector('[role="dialog"]') || modal;
+        var focusable = dialog.querySelector("button, a[href], input, [tabindex]");
+        if (focusable && focusable.focus) focusable.focus();
+    }
+
+    function close(modal) {
+        if (!modal) return;
+        modal.classList.remove("_open");
+        document.body.classList.remove("_modal-lock");
+        var done = function () {
+            // Якщо модалку встигли знову відкрити під час анімації закриття,
+            // не ховаємо її (та сама умова, що й у запасному setTimeout нижче).
+            if (!modal.classList.contains("_open")) modal.hidden = true;
+            modal.removeEventListener("transitionend", done);
+        };
+        modal.addEventListener("transitionend", done);
+        // запасний варіант, якщо transitionend не спрацює
+        setTimeout(function () { if (!modal.classList.contains("_open")) modal.hidden = true; }, 400);
+        if (opener && opener.focus) opener.focus();
+        opener = null;
+    }
+
+    function closeAny() {
+        var openModal = document.querySelector(".modal._open");
+        if (openModal) close(openModal);
+    }
+
+    document.addEventListener("click", function (e) {
+        var trigger = e.target.closest("[data-modal-open]");
+        if (trigger) {
+            e.preventDefault();
+            opener = trigger;
+            open(getModal(trigger.getAttribute("data-modal-open")));
+            return;
+        }
+        if (e.target.closest("[data-modal-close]")) {
+            e.preventDefault();
+            closeAny();
+        }
+    });
+
+    document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" || e.key === "Esc") closeAny();
+    });
+})();
+
+
+// ------- Фасад відео (постер + кнопка "плей") -------
+// Клік по [data-video-embed] підвантажує відео. Пріоритет — зовнішній embed
+// (YouTube/Vimeo) з data-embed-src; якщо його не задано, грає локальний файл
+// data-video-fallback. Лінивий підхід: важкий iframe вантажиться лише по кліку.
+"use strict";
+(function () {
+    function activate(host) {
+        var src = (host.getAttribute("data-embed-src") || "").trim();
+        var frame = document.createElement("div");
+        frame.className = "video-embed__frame";
+        var media;
+        if (/^https?:\/\//i.test(src)) {
+            media = document.createElement("iframe");
+            media.src = src + (src.indexOf("?") === -1 ? "?" : "&") + "autoplay=1";
+            media.setAttribute("title", host.getAttribute("aria-label") || "Video");
+            media.setAttribute("frameborder", "0");
+            media.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+            media.setAttribute("allowfullscreen", "");
+        } else {
+            var fb = host.getAttribute("data-video-fallback");
+            media = document.createElement("video");
+            media.setAttribute("controls", "");
+            media.setAttribute("autoplay", "");
+            media.setAttribute("playsinline", "");
+            var poster = host.getAttribute("data-poster");
+            if (poster) media.setAttribute("poster", poster);
+            var source = document.createElement("source");
+            source.src = fb;
+            source.type = "video/mp4";
+            media.appendChild(source);
+        }
+        frame.appendChild(media);
+        host.parentNode.replaceChild(frame, host);
+        if (media.focus) try { media.focus(); } catch (e) { /* ignore */ }
+    }
+
+    function init() {
+        var nodes = document.querySelectorAll("[data-video-embed]");
+        for (var i = 0; i < nodes.length; i++) {
+            (function (host) {
+                host.addEventListener("click", function (e) { e.preventDefault(); activate(host); });
+            })(nodes[i]);
+        }
+    }
+
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+    else init();
+})();
+
+
+// ------- М'яка поява секцій при прокручуванні -------
+// Елементи з класом ._reveal плавно з'являються (fade + translateY), коли
+// потрапляють у в'юпорт. КЛЮЧОВЕ: CSS ховає ._reveal лише під html._reveal-init,
+// і цей клас додаємо тут — безпосередньо перед спостереженням. Тож без JS,
+// без IntersectionObserver, при prefers-reduced-motion або якщо бандл упав
+// раніше за цей модуль, контент просто лишається видимим.
+"use strict";
+(function () {
+    function init() {
+        var nodes = document.querySelectorAll("._reveal");
+        if (!nodes.length) return;
+
+        var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (reduce || !("IntersectionObserver" in window)) {
+            return; // клас-вмикач не додаємо — секції й так видимі
+        }
+
+        // Лише тепер, коли точно зможемо показати назад, дозволяємо CSS сховати:
+        document.documentElement.classList.add("_reveal-init");
+
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("_in");
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+
+        for (var i = 0; i < nodes.length; i++) io.observe(nodes[i]);
+    }
+
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+    else init();
 })();

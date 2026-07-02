@@ -28,6 +28,48 @@
     "de": "Eingebettet in einen alten Wald nahe dem Mariager Fjord ist der Wald der Grund, warum es The Glass Huts gibt. Treten Sie im Morgengrauen hinaus zu Vogelgesang und Nebel zwischen den Bäumen, folgen Sie stillen Pfaden bis ans Wasser und kehren Sie nach Einbruch der Dunkelheit unter einen der klarsten, sternenübersäten Himmel Dänemarks zurück. Hier verlangsamt sich das Tempo, das Telefon bleibt in der Tasche, und der einzige Zeitplan ist das Licht, das über die Kiefern wandert."
   },
   {
+    "key": "home.video_play",
+    "en": "Play the intro video",
+    "da": "Afspil introvideoen",
+    "uk": "Відтворити відео",
+    "de": "Intro-Video abspielen"
+  },
+  {
+    "key": "home.forest_modal_title",
+    "en": "The Forest",
+    "da": "Skoven",
+    "uk": "Ліс",
+    "de": "Der Wald"
+  },
+  {
+    "key": "home.forest_modal_p1",
+    "en": "The forest around The Glass Huts is ancient mixed woodland on the shoulders of the Mariager fjord — pine and beech, moss-soft floors and light that shifts hour by hour.",
+    "da": "Skoven omkring The Glass Huts er gammel blandet skov på skråningerne ved Mariager fjord — fyr og bøg, mosbløde skovbunde og lys, der skifter time for time.",
+    "uk": "Ліс навколо The Glass Huts — це прадавній мішаний гай на схилах Маріагер-фіорду: сосни й буки, м’який від моху ґрунт і світло, що змінюється щогодини.",
+    "de": "Der Wald rund um The Glass Huts ist uralter Mischwald an den Hängen des Mariager Fjords — Kiefer und Buche, moosweiche Böden und Licht, das sich Stunde um Stunde wandelt."
+  },
+  {
+    "key": "home.forest_modal_p2",
+    "en": "Marked trails lead from your door to the water's edge, hidden clearings and quiet viewpoints. Mornings bring birdsong and mist; after dark the canopy opens onto some of Denmark's clearest, least light-polluted skies.",
+    "da": "Afmærkede stier fører fra din dør til vandkanten, skjulte lysninger og stille udsigtspunkter. Morgener bringer fuglesang og tåge; efter mørkets frembrud åbner trækronerne sig mod nogle af Danmarks klareste og mindst lysforurenede himle.",
+    "uk": "Розмічені стежки ведуть від вашого порога до води, прихованих галявин і тихих оглядових точок. Ранки сповнені пташиного співу й туману; а після заходу сонця крони відкривають одне з найчистіших, найменш засвічених небес Данії.",
+    "de": "Markierte Pfade führen von Ihrer Tür bis ans Wasser, zu versteckten Lichtungen und stillen Aussichtspunkten. Morgens erklingen Vogelgesang und Nebel; nach Einbruch der Dunkelheit öffnet sich das Blätterdach auf einen der klarsten, am wenigsten lichtverschmutzten Himmel Dänemarks."
+  },
+  {
+    "key": "home.forest_modal_p3",
+    "en": "It is a protected habitat for deer, foxes and dozens of bird species, so we ask guests to tread lightly, keep to the paths and let the forest set the pace of the stay.",
+    "da": "Det er et beskyttet levested for rådyr, ræve og snesevis af fuglearter, så vi beder gæster om at træde varsomt, holde sig til stierne og lade skoven sætte tempoet for opholdet.",
+    "uk": "Це охоронюваний осередок для оленів, лисиць і десятків видів птахів, тож ми просимо гостей ступати обережно, триматися стежок і дозволити лісу задавати темп відпочинку.",
+    "de": "Es ist ein geschützter Lebensraum für Rehe, Füchse und Dutzende Vogelarten, daher bitten wir unsere Gäste, achtsam zu gehen, auf den Wegen zu bleiben und den Wald das Tempo des Aufenthalts bestimmen zu lassen."
+  },
+  {
+    "key": "home.forest_modal_cta",
+    "en": "Explore the area",
+    "da": "Udforsk området",
+    "uk": "Дослідити місцевість",
+    "de": "Die Umgebung entdecken"
+  },
+  {
     "key": "home.facilities_title",
     "en": "Facilities",
     "da": "Faciliteter",
@@ -686,6 +728,34 @@
     "de": "FAQ lesen"
   },
   {
+    "key": "booking.promo_list_title",
+    "en": "Active promo codes",
+    "da": "Aktive rabatkoder",
+    "uk": "Активні промокоди",
+    "de": "Aktive Promo-Codes"
+  },
+  {
+    "key": "booking.date_placeholder",
+    "en": "Select date",
+    "da": "Vælg dato",
+    "uk": "Оберіть дату",
+    "de": "Datum wählen"
+  },
+  {
+    "key": "booking.guest_increase",
+    "en": "Increase guests",
+    "da": "Flere gæster",
+    "uk": "Додати гостя",
+    "de": "Gäste erhöhen"
+  },
+  {
+    "key": "booking.guest_decrease",
+    "en": "Decrease guests",
+    "da": "Færre gæster",
+    "uk": "Прибрати гостя",
+    "de": "Gäste verringern"
+  },
+  {
     "key": "booking.cart_price_per_night",
     "en": "<span>3.200kr</span> / night",
     "da": "<span>3.200kr</span> / nat",
@@ -887,13 +957,6 @@
     "da": "Send",
     "uk": "Надіслати",
     "de": "Senden"
-  },
-  {
-    "key": "about.with_love_title",
-    "en": "From Denmark <br> With Love...",
-    "da": "Fra Danmark <br> med kærlighed...",
-    "uk": "З Данії <br> з любов'ю...",
-    "de": "Aus Dänemark <br> mit Liebe..."
   },
   {
     "key": "faq.q_prices_title",

@@ -1,0 +1,329 @@
+// ------- Спільні компоненти та інтерактивні поліпшення -------
+// Підключається ОСТАННІМ у style.scss, тож може доуточнювати попередні правила.
+$c-brand: #5b6460;
+$c-brand-hover: #79857f;
+$c-brand-light: #e9ece0;
+$c-ink: #333333;
+
+/*==================== Видимий фокус для клавіатури ====================*/
+// nullstyle прибирає всі outline; повертаємо ЛИШЕ для клавіатурного фокуса.
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+    outline: 2px solid $c-brand;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/*==================== Пропустити до вмісту (задача 21) ====================*/
+.skip-link {
+    position: absolute;
+    left: 12px;
+    top: -80px;
+    z-index: 2000;
+    padding: 10px 18px;
+    background-color: #fff;
+    color: $c-brand;
+    font-family: OpenSans-SemiBold, Arial, sans-serif;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: top 0.25s ease 0s;
+}
+.skip-link:focus {
+    top: 0;
+}
+// Ціль пропуску — контейнер, не інтерактивний елемент: не показуємо кільце фокуса
+#main:focus {
+    outline: none;
+}
+
+/*==================== Плавні ховери / переходи (задача 5) ====================*/
+.about__link,
+.forest__link,
+.contact__phone,
+.contact__mail,
+.footer__license-item-text > a,
+.subtitle-location__link,
+.trash__geo,
+.menu__sub-link {
+    transition: color 0.3s ease 0s;
+}
+
+.more-about-us__link,
+.link-social__item,
+.button__block,
+.menu__button-desktop,
+.menu__button-mobile,
+.choose-services__button,
+.trash__button,
+.trash__button-cuppon,
+.trash__button-input,
+.payment-form__button,
+.contact-form__button,
+.photo-background__button,
+.booking-location__select,
+.newsletter__input {
+    transition: background-color 0.3s ease 0s, color 0.3s ease 0s, transform 0.3s ease 0s, box-shadow 0.3s ease 0s, border-color 0.3s ease 0s;
+}
+
+// Кнопки, у яких раніше не було стану наведення
+.choose-services__button:hover,
+.trash__button:hover,
+.trash__button-cuppon:hover,
+.contact-form__button:hover {
+    background-color: $c-brand-hover;
+    color: #fff;
+}
+.booking-location__select:hover,
+.booking-location__select:focus-visible {
+    border-color: $c-brand-hover;
+}
+
+// М'який «підйом» головних CTA
+.button__block:hover,
+.menu__button-desktop:hover,
+.choose-services__button:hover,
+.trash__button:hover,
+.payment-form__button:hover,
+.contact-form__button:hover,
+.modal__cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+/*==================== Легкий зум фото у галереях (задача 23) ====================*/
+.photo-gallery__item,
+.about-us-gallery__item,
+.more-about-us__photo-gallery .photo-gallery__item {
+    overflow: hidden;
+}
+.item__photo-gallery,
+.about-us-gallery__img {
+    display: block;
+    transition: transform 0.5s ease 0s;
+}
+.photo-gallery__item:hover .item__photo-gallery,
+.about-us-gallery__item:hover .about-us-gallery__img {
+    transform: scale(1.04);
+}
+
+/*==================== Мікровзаємодія іконок зручностей (задача 23) ====================*/
+.icons__photo {
+    transition: transform 0.3s ease 0s;
+}
+.icons__photo img {
+    transition: transform 0.3s ease 0s;
+}
+.icons__photo:hover {
+    transform: translateY(-6px);
+}
+.icons__photo:hover img {
+    transform: scale(1.12);
+}
+
+/*==================== Поява секцій при прокручуванні (задача 23) ====================*/
+// Ховаємо секції ЛИШЕ під html._reveal-init — клас додає сам _reveal.js
+// безпосередньо перед спостереженням. Без JS, при помилці в бандлі раніше
+// за _reveal.js чи без IntersectionObserver клас не з'явиться — контент
+// лишиться видимим (прогресивне покращення, а не жорстка залежність від JS).
+html._reveal-init ._reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease 0s, transform 0.7s ease 0s;
+    will-change: opacity, transform;
+}
+html._reveal-init ._reveal._in {
+    opacity: 1;
+    transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+    ._reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none;
+    }
+}
+
+/*==================== Фасад відео на головній (задача 2) ====================*/
+.video-embed {
+    position: relative;
+    display: block;
+    width: 432px;
+    max-width: 100%;
+    aspect-ratio: 432 / 387;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: #1c2b26;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.video-embed::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease 0s;
+}
+.video-embed:hover::after {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.video-embed__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease 0s, background-color 0.3s ease 0s;
+}
+.video-embed__play::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-width: 12px 0 12px 20px;
+    border-color: transparent transparent transparent #5b6460;
+}
+.video-embed:hover .video-embed__play {
+    transform: translate(-50%, -50%) scale(1.08);
+    background-color: #fff;
+}
+.video-embed__frame {
+    position: relative;
+    width: 432px;
+    max-width: 100%;
+    aspect-ratio: 432 / 387;
+}
+.video-embed__frame iframe,
+.video-embed__frame video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: #000;
+    object-fit: cover;
+}
+@media (max-width: 767px) {
+    .video-embed,
+    .video-embed__frame {
+        width: 100%;
+    }
+}
+
+/*==================== Модальне вікно (задача 3) ====================*/
+body._modal-lock {
+    overflow: hidden;
+}
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
+}
+.modal[hidden] {
+    display: none;
+}
+.modal._open {
+    opacity: 1;
+    visibility: visible;
+}
+.modal__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(28, 43, 38, 0.55);
+    cursor: pointer;
+}
+.modal__dialog {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 560px;
+    max-height: 86vh;
+    overflow-y: auto;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 44px 40px 40px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+    transform: translateY(18px) scale(0.98);
+    transition: transform 0.3s ease 0s;
+}
+.modal._open .modal__dialog {
+    transform: none;
+}
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    width: 42px;
+    height: 42px;
+    background-color: unset;
+    border: 0;
+    font-size: 30px;
+    line-height: 1;
+    color: $c-brand;
+    cursor: pointer;
+    transition: color 0.3s ease 0s, transform 0.3s ease 0s;
+}
+.modal__close:hover {
+    color: #000;
+    transform: rotate(90deg);
+}
+.modal__title {
+    font-family: OpenSans-Regular;
+    font-size: 28px;
+    line-height: 1.2;
+    color: $c-brand;
+    margin-bottom: 20px;
+}
+.modal__body p {
+    font-family: OpenSans-Light;
+    font-size: 16px;
+    line-height: 26px;
+    color: $c-ink;
+    margin-bottom: 14px;
+}
+.modal__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    padding: 14px 30px;
+    background-color: $c-brand;
+    color: #fff;
+    font-family: OpenSans-Light;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    transition: background-color 0.3s ease 0s, transform 0.3s ease 0s, box-shadow 0.3s ease 0s;
+}
+.modal__cta:hover {
+    background-color: $c-brand-hover;
+}
+@media (max-width: 575px) {
+    .modal__dialog {
+        padding: 40px 22px 28px;
+    }
+    .modal__title {
+        font-size: 24px;
+    }
+}

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 3" width="5" height="3" role="img" aria-label="Germany">
-    <rect width="5" height="3" fill="#FFCE00"/>
-    <rect width="5" height="2" fill="#DD0000"/>
-    <rect width="5" height="1" fill="#000000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" width="60" height="40" role="img" aria-label="Germany">
+    <rect width="60" height="40" fill="#FFCE00"/>
+    <rect width="60" height="26.667" fill="#DD0000"/>
+    <rect width="60" height="13.333" fill="#000000"/>
 </svg>

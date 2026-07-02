@@ -47,11 +47,20 @@ const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
 const menuButton = document.querySelector('.menu__button-mobile');
 if (iconMenu) {
-    iconMenu.addEventListener('click', function (e) {
-        document.body.classList.toggle('_lock')
+    const toggleMenu = function () {
+        document.body.classList.toggle('_lock');
         iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
-        menuButton.classList.toggle('_active');
+        if (menuButton) menuButton.classList.toggle('_active');
+        iconMenu.setAttribute('aria-expanded', iconMenu.classList.contains('_active') ? 'true' : 'false');
+    };
+    iconMenu.addEventListener('click', toggleMenu);
+    // Клавіатурна доступність бургера (він — div[role=button])
+    iconMenu.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+            e.preventDefault();
+            toggleMenu();
+        }
     });
 }
 
@@ -73,8 +82,8 @@ if (menuLinks.length > 0) {
                 document.body.classList.remove('_lock')
                 iconMenu.classList.remove('_active');
                 menuBody.classList.remove('_active');
-                menuButton.classList.remove('_active');
-
+                if (menuButton) menuButton.classList.remove('_active');
+                iconMenu.setAttribute('aria-expanded', 'false');
             }
             //Для плавної прокрутки
             window.scrollTo({

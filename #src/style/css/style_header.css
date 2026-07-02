@@ -46,21 +46,35 @@ body._lock {
     margin: 0 10px;
 }
 
-.menu__list-link:hover :after {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 3px;
-    background-color: var(--header-menu-link-color);
-    margin-top: 4px;
-}
-
 .menu__link {
+    position: relative;
     font-size: 14px;
     text-align: center;
     line-height: 17px;
     text-transform: uppercase;
     color: var(--header-menu-link-color);
+}
+
+/* Підкреслення пунктів меню: постійна лінія, що плавно розкривається зліва
+   направо (transform:scaleX) замість появи ривком; абсолютне позиціювання не
+   ламає фіксовану висоту .menu__link і не виходить за неї (задача 5).
+   Не застосовуємо до перемикача мов (.lang__current). */
+.menu__link:not(.lang__current)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--header-menu-link-color);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.3s ease 0s;
+}
+
+.menu__list-link:hover .menu__link:not(.lang__current)::after,
+.menu__link:not(.lang__current):focus-visible::after {
+    transform: scaleX(1);
 }
 
 .menu__sub-list {
@@ -90,7 +104,7 @@ body._lock {
 }
 
 .menu__sub-link:hover {
-    text-decoration-line: overline;
+    text-decoration-line: none;
 }
 
 .menu__arrow {
@@ -124,7 +138,8 @@ body._lock {
     background-color: var(--header-menu-button-color-hover);
 }
 
-.menu__button-desktop:active, :focus {
+.menu__button-desktop:active,
+.menu__button-desktop:focus-visible {
     background-color: var(--header-menu-button-color-active);
 }
 
@@ -340,7 +355,8 @@ body._touch .menu__list > li._active .menu__arrow {
         background-color: var(--header-menu-button-color-hover);
     }
 
-    .menu__button-mobile._active:active, :focus {
+    .menu__button-mobile._active:active,
+    .menu__button-mobile._active:focus-visible {
         background-color: var(--header-menu-button-color-active);
     }
 }
@@ -369,8 +385,8 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .lang .lang__flag {
     display: block;
-    width: auto;
-    height: 15px;
+    width: 27px;
+    height: 18px;
     margin: 0;
     border-radius: 3px;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .12);
@@ -414,7 +430,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .lang .lang__option .lang__flag {
-    width: auto;
+    width: 27px;
     height: 18px;
 }
 
@@ -440,8 +456,8 @@ body._touch .menu__list > li._active .menu__arrow {
     }
 
     .lang .lang__flag {
-        width: auto;
-        height: 20px;
+        width: 33px;
+        height: 22px;
     }
 
     .lang .lang__list {
@@ -463,8 +479,8 @@ body._touch .menu__list > li._active .menu__arrow {
     }
 
     .lang .lang__option .lang__flag {
-        width: auto;
-        height: 26px;
+        width: 33px;
+        height: 22px;
     }
 
     .lang .lang__option:hover,

@@ -11,11 +11,7 @@
     if (!LOCS) return;
 
     var MIN_GUESTS = 1, MAX_GUESTS = 2;
-    var COUPONS = {
-        "GLASS10": { type: "pct", value: 10 },
-        "FOREST20": { type: "pct", value: 20 },
-        "WELCOME500": { type: "fixed", value: 500 }
-    };
+    var COUPONS = window.THG_COUPONS || {};
 
     // Елементи керування
     var locSelect = document.querySelector("[data-location-select]");
@@ -30,6 +26,7 @@
     var couponInput = root.querySelector("[data-coupon-input]");
     var couponApply = root.querySelector("[data-coupon-apply]");
     var couponMsg = root.querySelector("[data-coupon-msg]");
+    var couponList = root.querySelector("[data-coupon-list]");
     var out = {
         nights: root.querySelector("[data-sum-nights]"),
         guest: root.querySelector("[data-sum-guest]"),
@@ -65,62 +62,12 @@
     }
     function el(tag, cls) { var e = document.createElement(tag); if (cls) e.className = cls; return e; }
 
-    var CHEVRON = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>';
-
-    // ---- рендер послуг обраної локації ----
+    // ---- рендер послуг обраної локації (спільний конструктор у _service_ui.js) ----
     function renderServices(loc) {
-        if (!servicesBox) return;
+        if (!servicesBox || !window.THG || !window.THG.buildServiceItem) return;
         servicesBox.innerHTML = "";
         loc.services.forEach(function (s) {
-            var item = el("div", "choose-services__spoiler-item");
-
-            var btn = el("button", "choose-services__spoiler-title-button");
-            btn.type = "button";
-            btn.setAttribute("tabindex", "-1");
-            btn.setAttribute("data-spoller", "");
-            var icon = el("span", "choise-services__spoiler-icon-plus");
-            var titleText = el("div", "choose-services__spoiler-title-text");
-            var nameSpan = el("span");
-            nameSpan.setAttribute("data-i18n", s.nameKey);
-            nameSpan.textContent = t(s.nameKey, "");
-            var priceP = el("p");
-            priceP.textContent = s.price + "kr";
-            titleText.appendChild(nameSpan);
-            titleText.appendChild(priceP);
-            btn.appendChild(icon);
-            btn.appendChild(titleText);
-            btn.insertAdjacentHTML("beforeend", CHEVRON);
-
-            var content = el("div", "choose-services__spoiler-content");
-            content.hidden = true; // спойлер згорнутий; плагін розгортає по кліку
-            var info = el("div", "choose-services__spoiler-info");
-            var titleP = el("p", "choose-services__spoiler-title");
-            titleP.setAttribute("data-i18n", s.titleKey);
-            titleP.textContent = t(s.titleKey, "");
-            var textP = el("p", "choose-services__spoiler-text");
-            textP.setAttribute("data-i18n", s.textKey);
-            textP.textContent = t(s.textKey, "");
-            var label = el("label", "service-add");
-            var check = el("input", "service-add__check");
-            check.type = "checkbox";
-            check.setAttribute("data-service", "");
-            check.setAttribute("data-price", String(s.price));
-            var addSpan = el("span", "service-add__label");
-            addSpan.setAttribute("data-i18n", "booking.service_add");
-            addSpan.textContent = t("booking.service_add", "Add to booking");
-            var priceSpan = el("span", "service-add__price");
-            priceSpan.textContent = s.price + "kr";
-            label.appendChild(check);
-            label.appendChild(addSpan);
-            label.appendChild(priceSpan);
-            info.appendChild(titleP);
-            info.appendChild(textP);
-            info.appendChild(label);
-            content.appendChild(info);
-
-            item.appendChild(btn);
-            item.appendChild(content);
-            servicesBox.appendChild(item);
+            servicesBox.appendChild(window.THG.buildServiceItem(s, { selected: false, onToggle: recalc }));
         });
     }
 
@@ -197,6 +144,11 @@
         if (heroLabel) {
             heroLabel.setAttribute("data-i18n", current.labelKey);
             heroLabel.textContent = t(current.labelKey, "");
+            if (current.map) {
+                heroLabel.setAttribute("href", current.map);
+                heroLabel.setAttribute("target", "_blank");
+                heroLabel.setAttribute("rel", "noopener");
+            }
         }
         if (priceDisplay) priceDisplay.textContent = fmt(PRICE_NIGHT);
         renderServices(current);
@@ -272,6 +224,31 @@
     if (couponApply) couponApply.addEventListener("click", applyCoupon);
     if (couponInput) couponInput.addEventListener("keydown", function (e) { if (e.key === "Enter") applyCoupon(e); });
 
+    // ---- перелік активних промокодів (клік підставляє й застосовує код) ----
+    function renderCoupons() {
+        if (!couponList) return;
+        couponList.innerHTML = "";
+        Object.keys(COUPONS).forEach(function (code) {
+            var c = COUPONS[code];
+            var li = el("li", "trash__promo-item");
+            var codeBtn = el("button", "trash__promo-code");
+            codeBtn.type = "button";
+            codeBtn.textContent = code;
+            codeBtn.setAttribute("data-coupon-fill", code);
+            var val = el("span", "trash__promo-val");
+            val.textContent = c.type === "pct" ? "−" + c.value + "%" : "−" + fmt(c.value);
+            li.appendChild(codeBtn);
+            li.appendChild(val);
+            couponList.appendChild(li);
+        });
+    }
+    if (couponList) couponList.addEventListener("click", function (e) {
+        var b = e.target.closest("[data-coupon-fill]");
+        if (!b) return;
+        if (couponInput) couponInput.value = b.getAttribute("data-coupon-fill");
+        applyCoupon(e);
+    });
+
     // ---- ініціалізація ----
     var params = new URLSearchParams(window.location.search);
     var initLoc = params.get("loc");
@@ -281,5 +258,6 @@
     guests = MIN_GUESTS;
     if (guestCount) guestCount.textContent = String(guests);
     if (guestDec) guestDec.disabled = true;
+    renderCoupons();
     setLocation(initLoc);
 })();

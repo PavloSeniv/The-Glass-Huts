@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
     <meta name="author" content="Seniv Pavlo, https://github.com/PavloSeniv">
@@ -23,7 +23,7 @@
 
 @@include('html/_header.html')
 
-<main class="__container">
+<main class="__container" id="main" tabindex="-1">
 
     @@include('html/_slider_home.html')
 
@@ -36,14 +36,14 @@
                 keep the interior calm and grounded. Each hut is a private retreat for two, thoughtfully designed
                 so that nothing stands between you and the season unfolding beyond the glass.
             </p>
-            <a class="about__link" href="" data-i18n="common.read_more">Read More</a>
+            <a class="about__link" href="the-hut.html" data-i18n="common.read_more">Read More</a>
         </div>
         <div class="about__photo">
             <img class="photo__bad" src="img/index/about/photo_bad.png" alt="photo__bad">
         </div>
     </section>
 
-    <section class="about__photo-gallery">
+    <section class="about__photo-gallery _reveal">
         <div class="about__photo-item_1">
             <img class="about__item" src="img/index/about/about_item_1.png" alt="about__item-1">
         </div>
@@ -53,15 +53,25 @@
         </div>
 
         <div class="about__photo-item_3">
-            <video class="about__item" controls preload="metadata" poster="img/index/about/about_item_3.png">
-                <source src="video/about_video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-            </video>
+            <!-- Відео: embed-URL у data-embed-src (можна замінити на власний).
+                 YouTube → https://www.youtube.com/embed/ВАШ_ID
+                 Vimeo   → https://player.vimeo.com/video/ВАШ_ID
+                 Якщо data-embed-src порожній — по кліку грає локальний video/about_video.mp4. -->
+            <button class="about__item video-embed" type="button"
+                    data-video-embed
+                    data-embed-src="https://www.youtube.com/embed/RzVvThhjAKw"
+                    data-video-fallback="video/about_video.mp4"
+                    data-poster="img/index/about/about_item_3.png"
+                    style="background-image:url('img/index/about/about_item_3.png');"
+                    data-i18n-aria="home.video_play" aria-label="Play the intro video">
+                <span class="video-embed__play" aria-hidden="true"></span>
+            </button>
         </div>
     </section>
 
-    <section class="forest">
+    <section class="forest _reveal">
         <div class="forest__map">
-            <iframe class="map__google"
+            <iframe class="map__google" title="The Glass Huts — location on the map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7931.236668512817!2d10.21756605450385!3d56.09435310765334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c4100e889cca3%3A0x1c38363a89099a6d!2sImmobilien%20Invest%20ApS!5e0!3m2!1sru!2sua!4v1627919165670!5m2!1sru!2sua"
                     width="100%" height="100%" style="border:0;" allowfullscreen="allowfullscreen" loading="lazy">
             </iframe>
@@ -74,69 +84,69 @@
                 and return after dark to some of Denmark's clearest, star-filled skies. Here the pace slows, the
                 phone stays in your pocket, and the only schedule is the light moving across the pines.
             </p>
-            <a class="forest__link" href="#" data-i18n="common.read_more">Read More</a>
+            <a class="forest__link" href="#" data-modal-open="forest" aria-haspopup="dialog" data-i18n="common.read_more">Read More</a>
         </div>
     </section>
 
-    <section class="facilities ">
+    <section class="facilities _reveal">
         <div class="facilities__text">
             <h2 class="facilities__title" data-i18n="home.facilities_title">Facilities</h2>
         </div>
 
         <div class="facilities__icons">
             <div class="icons__photo">
-                <img src="img/index/facilities/icons_fridge.svg" alt="icons__fridge">
+                <img src="img/index/facilities/icons_fridge.svg" alt="">
                 <h3 class="icons__sub-title" data-i18n="home.facility_mini_fridge">Mini fridge</h3>
             </div>
             <div class="icons__photo">
-                <img src="img/index/facilities/icons_kitchen.svg" alt="icons__kitchen">
+                <img src="img/index/facilities/icons_kitchen.svg" alt="">
                 <h3 class="icons__sub-title" data-i18n="home.facility_kitchenette">Kitchenette</h3>
             </div>
             <div class="icons__photo">
-                <img src="img/index/facilities/icons_coffee.svg" alt="icons__coffee">
+                <img src="img/index/facilities/icons_coffee.svg" alt="">
                 <h3 class="icons__sub-title" data-i18n="home.facility_coffee_machine">Coffee machine</h3>
             </div>
             <div class="icons__photo">
-                <img src="img/index/facilities/icons_kettle.svg" alt="icons__kettle">
+                <img src="img/index/facilities/icons_kettle.svg" alt="">
                 <h3 class="icons__sub-title" data-i18n="home.facility_tea_kettle">Electric tea kettle</h3>
             </div>
             <div class="icons__photo">
-                <img src="img/index/facilities/icons_park.svg" alt="icons__park">
+                <img src="img/index/facilities/icons_park.svg" alt="">
                 <h3 class="icons__sub-title" data-i18n="home.facility_parking">Parking</h3>
             </div>
             <div class="icons__photo">
-                <img src="img/index/facilities/icons_trees.svg" alt="icons__trees">
+                <img src="img/index/facilities/icons_trees.svg" alt="">
                 <h3 class="icons__sub-title" data-i18n="home.facility_views">Breathtaking views</h3>
             </div>
             <div class="icons__photo">
-                <img src="img/index/facilities/icons_temperature.svg" alt="icons__temperature">
+                <img src="img/index/facilities/icons_temperature.svg" alt="">
                 <h3 class="icons__sub-title" data-i18n="home.facility_floor_heating">Floor heating</h3>
             </div>
             <div class="icons__photo">
-                <img src="img/index/facilities/icons_plug.svg" alt="icons__plug">
+                <img src="img/index/facilities/icons_plug.svg" alt="">
                 <h3 class="icons__sub-title">230V</h3>
             </div>
             <div class="icons__photo">
-                <img src="img/index/facilities/icons_wifi.svg" alt="icons__wifi">
+                <img src="img/index/facilities/icons_wifi.svg" alt="">
                 <h3 class="icons__sub-title">Wi-Fi</h3>
             </div>
             <div class="icons__photo">
-                <img src="img/index/facilities/icons_shower.svg" alt="icons__shower">
+                <img src="img/index/facilities/icons_shower.svg" alt="">
                 <h3 class="icons__sub-title" data-i18n="home.facility_shower">Shower</h3>
             </div>
             <div class="icons__photo">
-                <img src="img/index/facilities/icons_toilet.svg" alt="icons__toilet">
+                <img src="img/index/facilities/icons_toilet.svg" alt="">
                 <h3 class="icons__sub-title" data-i18n="home.facility_flushing_toilets">Flushing toilets</h3>
             </div>
             <div class="icons__photo">
-                <img src="img/index/facilities/icons_towels.svg" alt="icons__towels">
+                <img src="img/index/facilities/icons_towels.svg" alt="">
                 <h3 class="icons__sub-title" data-i18n="home.facility_bedding_towels">Bedding &amp; towels</h3>
             </div>
         </div>
     </section>
 
     <!--Атрибут alt виходить за лінію-->
-    <section class="more-about-us">
+    <section class="more-about-us _reveal">
         <div class="more-about-us__photo-gallery">
             <div class="photo-gallery__item">
                 <img class="item__photo-gallery" src="img/index/more_about_us/more_about_us_item_1.png" alt="more-about-us__item_1">
@@ -153,7 +163,7 @@
     </section>
 
     <!--Атрибут alt виходить за лінію-->
-    <section class="about-us-stay">
+    <section class="about-us-stay _reveal">
 
         <div class="about-us-stay__contact">
             <h2 class="contact__title" data-i18n="home.contact_title">Stay in touch with us</h2>
@@ -162,19 +172,18 @@
             <a class="contact__mail" href="mailto:info@theglasshuts.com">info@theglasshuts.com</a>
             <ul class="contact__link-social">
                 <li>
-                    <a class="link-social__item" href="https://www.instagram.com/" target="_blank">
-                        <img src="img/index/about_us_stay/social_item_insta.png" alt="social__item-insta">
+                    <a class="link-social__item" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <img src="img/index/about_us_stay/social_item_insta.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a class="link-social__item" href="https://uk-ua.facebook.com/" target="_blank">
-                        <!--Атрибут alt виходить за лінію-->
-                        <img src="img/index/about_us_stay/social_item_facebook.png" alt="social__item-facebook">
+                    <a class="link-social__item" href="https://uk-ua.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <img src="img/index/about_us_stay/social_item_facebook.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a class="link-social__item" href="https://twitter.com/?lang=uk" target="_blank">
-                        <img src="img/index/about_us_stay/social_item_twitter.png" alt="social__item-twitter">
+                    <a class="link-social__item" href="https://twitter.com/?lang=uk" target="_blank" rel="noopener" aria-label="Twitter">
+                        <img src="img/index/about_us_stay/social_item_twitter.png" alt="">
                     </a>
                 </li>
             </ul>
@@ -185,7 +194,7 @@
                 <img class="little-book-photo" src="img/index/about_us_stay/about_as_stay_home.png" alt="stayHome">
             </div>
             <div class="little-book__button">
-                <a class="button__block button__block-about-us-stay" href="#">
+                <a class="button__block button__block-about-us-stay" href="booking.html?loc=denmark">
                     <div class="block__book">
                         <h5 class="book__title" data-i18n="common.book_a_hut">Book A Hut</h5>
                     </div>
@@ -202,6 +211,25 @@
 
     </section>
 </main>
+
+<!-- Модалка «Ліс» (відкривається кнопкою «Докладніше» в секції forest) -->
+<div class="modal" data-modal="forest" hidden>
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="forest-modal-title">
+        <button class="modal__close" type="button" data-modal-close data-i18n-aria="common.close" aria-label="Close">&times;</button>
+        <h2 class="modal__title" id="forest-modal-title" data-i18n="home.forest_modal_title">The Forest</h2>
+        <div class="modal__body">
+            <p data-i18n="home.forest_modal_p1">The forest around The Glass Huts is ancient mixed woodland on the
+                shoulders of the Mariager fjord — pine and beech, moss-soft floors and light that shifts hour by hour.</p>
+            <p data-i18n="home.forest_modal_p2">Marked trails lead from your door to the water's edge, hidden clearings
+                and quiet viewpoints. Mornings bring birdsong and mist; after dark the canopy opens onto some of
+                Denmark's clearest, least light-polluted skies.</p>
+            <p data-i18n="home.forest_modal_p3">It is a protected habitat for deer, foxes and dozens of bird species,
+                so we ask guests to tread lightly, keep to the paths and let the forest set the pace of the stay.</p>
+        </div>
+        <a class="modal__cta" href="the-area.html" data-i18n="home.forest_modal_cta">Explore the area</a>
+    </div>
+</div>
 
 @@include('html/_footer.html')
 

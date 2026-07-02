@@ -2,6 +2,14 @@
 // Кожна локація має власні ціни та перелік послуг. Текстові поля зберігаються
 // як i18n-ключі (перекладаються через _i18n_translations.js). Ціни — у kr.
 "use strict";
+
+// Активні промокоди (спільні для booking і payment). pct — відсоток, fixed — kr.
+window.THG_COUPONS = {
+    "GLASS10": { type: "pct", value: 10 },
+    "FOREST20": { type: "pct", value: 20 },
+    "WELCOME500": { type: "fixed", value: 500 }
+};
+
 window.THG_LOCATIONS = {
     order: ["denmark", "norway", "iceland"],
 

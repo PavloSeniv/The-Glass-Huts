@@ -276,21 +276,36 @@ body._lock {
   margin: 0 10px;
 }
 
-.menu__list-link:hover :after {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 3px;
-  background-color: var(--header-menu-link-color);
-  margin-top: 4px;
-}
-
 .menu__link {
+  position: relative;
   font-size: 14px;
   text-align: center;
   line-height: 17px;
   text-transform: uppercase;
   color: var(--header-menu-link-color);
+}
+
+/* Підкреслення пунктів меню: постійна лінія, що плавно розкривається зліва
+   направо (transform:scaleX) замість появи ривком; абсолютне позиціювання не
+   ламає фіксовану висоту .menu__link і не виходить за неї (задача 5).
+   Не застосовуємо до перемикача мов (.lang__current). */
+
+.menu__link:not(.lang__current)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--header-menu-link-color);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.3s ease 0s;
+}
+
+.menu__list-link:hover .menu__link:not(.lang__current)::after,
+.menu__link:not(.lang__current):focus-visible::after {
+  transform: scaleX(1);
 }
 
 .menu__sub-list {
@@ -320,7 +335,7 @@ body._lock {
 }
 
 .menu__sub-link:hover {
-  text-decoration-line: overline;
+  text-decoration-line: none;
 }
 
 .menu__arrow {
@@ -355,7 +370,7 @@ body._lock {
 }
 
 .menu__button-desktop:active,
-:focus {
+.menu__button-desktop:focus-visible {
   background-color: var(--header-menu-button-color-active);
 }
 
@@ -422,8 +437,8 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .lang .lang__flag {
   display: block;
-  width: auto;
-  height: 15px;
+  width: 27px;
+  height: 18px;
   margin: 0;
   border-radius: 3px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
@@ -468,7 +483,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .lang .lang__option .lang__flag {
-  width: auto;
+  width: 27px;
   height: 18px;
 }
 
@@ -705,9 +720,12 @@ body._touch .menu__list > li._active .menu__arrow {
 
 /*-------- Facilities Start -------*/
 
+/* .facilities: плинні бокові відступи замість жорстких 20em (~320px), що душили
+   сітку іконок на ноутбуках 992–1400px до першого брейкпоінта (задача 22). */
+
 .facilities {
   background-color: var(--facilities-bg-color);
-  padding: 10em 20em;
+  padding: 10em clamp(1.5rem, 12vw, 20em);
 }
 
 .facilities__text {
@@ -721,10 +739,12 @@ body._touch .menu__list > li._active .menu__arrow {
   text-align: center;
 }
 
+/* 4 іконки в рядку за замовчуванням (auto-fill давав 5+), далі 3 → 2 */
+
 .facilities__icons {
   display: grid;
-  grid-gap: 100px;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 80px 60px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .icons__photo {
@@ -769,8 +789,15 @@ body._touch .menu__list > li._active .menu__arrow {
   width: 100%;
 }
 
+/* .more-about-us__button — поверх фотографій: ховер-зум надає фото transform,
+   а трансформовані елементи малюються над непозиціонованими сусідами — без
+   z-index кружечок «ховався» під фото і не ловив клік.
+   УВАГА: коментарі всередині правил валять gulp-webp-css — тримати їх зовні. */
+
 .more-about-us__button {
   grid-area: 2/3/4/5;
+  position: relative;
+  z-index: 2;
 }
 
 .more-about-us__link {
@@ -791,7 +818,6 @@ body._touch .menu__list > li._active .menu__arrow {
 .more-about-us__link:hover {
   background-color: #5b6460;
   color: #fff;
-  text-decoration-line: underline;
 }
 
 /*-------- More-About-Us End -------*/
@@ -801,7 +827,7 @@ body._touch .menu__list > li._active .menu__arrow {
 .about-us-stay {
   display: flex;
   flex-wrap: wrap;
-  padding: 8em 10em;
+  padding: 8em clamp(1.5rem, 8vw, 10em);
 }
 
 .about-us-stay__contact {
@@ -868,9 +894,16 @@ body._touch .menu__list > li._active .menu__arrow {
   align-items: center;
 }
 
+/* Раніше тут був color:#000 — марний, бо всередині лише <img> без тексту.
+   Даємо видимий фідбек: легкий підйом + трохи прозорості на іконці (задача 5). */
+
 .link-social__item:hover {
   background-color: var(--about-us-stay-color-hover);
-  color: #000000;
+  transform: translateY(-2px);
+}
+
+.link-social__item:hover img {
+  opacity: 0.85;
 }
 
 .link-social__item:nth-last-child(-n+1) {
@@ -959,7 +992,7 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .footer {
   background-color: var(--footer-bg-color);
-  padding: 8em 10em;
+  padding: 8em clamp(1.5rem, 8vw, 10em);
 }
 
 .footer__container {
@@ -1010,9 +1043,11 @@ body._touch .menu__list > li._active .menu__arrow {
   font-size: 16px;
 }
 
-.newsletter__input:focus,
-.newsletter__input:hover {
-  background-color: #808e88;
+/* Тільки :focus (не :hover) і без заливки фоном — раніше поле мигало сіро-зеленим
+   на наведення, а світлий текст на ньому втрачав контраст (задача 5). */
+
+.newsletter__input:focus {
+  border-bottom-color: #ffffff;
 }
 
 .newsletter__input::-moz-placeholder {
@@ -1029,10 +1064,26 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .newsletter__button {
   position: absolute;
-  display: inline-block;
-  right: 2px;
-  top: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  top: 34px;
+  width: 50px;
+  height: 40px;
+  padding: 8px;
   background-color: unset;
+  cursor: pointer;
+}
+
+/* Клік має спрацьовувати по всій кнопці, а не лише по силуету стрілки:
+   робимо вбудований <object> «прозорим» для подій миші. */
+
+.newsletter__arrow {
+  display: block;
+  width: 34px;
+  height: 18px;
+  pointer-events: none;
 }
 
 .newsletter-sub-text {
@@ -1121,19 +1172,8 @@ body._touch .menu__list > li._active .menu__arrow {
   flex-wrap: wrap;
 }
 
-.choose-services__button-plus {
-  background-color: #fff;
-  padding: 5px;
-  width: 34px;
-  height: 34px;
-  display: inline-block;
-  font-size: 20px;
-  border-radius: 50px;
-  text-align: center;
-  margin-left: 20px;
-}
-
 .choose-services__spoiler-item {
+  position: relative;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -1142,8 +1182,62 @@ body._touch .menu__list > li._active .menu__arrow {
   margin-bottom: 100px;
 }
 
+.service-toggle {
+  position: absolute;
+  left: 14px;
+  top: 13px;
+  z-index: 11;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #5b6460;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s, transform 0.3s ease 0s;
+}
+
+.service-toggle__icon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-toggle__icon::before {
+  content: "+";
+  font-family: OpenSans-Regular;
+  font-size: 24px;
+  line-height: 1;
+  color: #5b6460;
+}
+
+.service-toggle:hover {
+  transform: scale(1.06);
+  background-color: #e9ece0;
+}
+
+._added .service-toggle {
+  background-color: #5b6460;
+  border-color: #5b6460;
+}
+
+._added .service-toggle:hover {
+  background-color: #79857f;
+}
+
+._added .service-toggle__icon::before {
+  content: "✓";
+  font-size: 16px;
+  color: #fff;
+}
+
 .choose-services__spoiler-title-button {
-  padding: 13px 20px;
+  padding: 13px 20px 13px 66px;
   width: 100%;
   background-color: #e9ece0;
   font-family: OpenSans-SemiBold;
@@ -1155,10 +1249,12 @@ body._touch .menu__list > li._active .menu__arrow {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
 }
 
-.choose-services__spoiler-title-button .choose-services__spoiler-title-text {
-  margin-left: 40px;
+.choose-services__spoiler-title-button:hover {
+  background-color: #e2e7d8;
 }
 
 .choose-services__spoiler-title-button p {
@@ -1170,55 +1266,8 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .choose-services__spoiler-title-button .bi-chevron-down {
-  transition: transform 0.5s ease 0s;
-}
-
-.choose-services__spoiler-title-button > span::before {
-  content: "";
-  width: 15px;
-  height: 1px;
-  background-color: #000;
-  position: absolute;
-  right: 10px;
-  transform: rotate(90deg);
-  top: 18px;
+  flex: 0 0 auto;
   transition: transform 0.3s ease 0s;
-  z-index: 2;
-}
-
-.choose-services__spoiler-title-button > span._active::before {
-  transform: rotate(-45deg);
-}
-
-.choose-services__spoiler-title-button > span {
-  content: "";
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  position: absolute;
-  z-index: 10;
-}
-
-.choose-services__spoiler-title-button > span::after {
-  content: "";
-  width: 15px;
-  height: 1px;
-  background-color: #000;
-  position: absolute;
-  right: 10px;
-  top: 18px;
-  transition: transform 0.3s ease 0s;
-  transform: rotate(180deg);
-  z-index: 2;
-}
-
-.choose-services__spoiler-title-button > span::after._active {
-  transform: rotate(-45deg);
-}
-
-.choose-services__spoiler-title-button > span._active::before {
-  transform: rotate(-45deg);
 }
 
 .choose-services__spoiler-title-button._active .bi-chevron-down {
@@ -1262,17 +1311,24 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .choose-services__button {
-  display: flex;
-  width: 180px;
+  display: inline-flex;
+  width: auto;
+  min-width: 180px;
+  max-width: 100%;
   height: 55px;
+  padding: 0 32px;
   background-color: #5b6460;
   font-family: OpenSans-Light;
   font-size: 14px;
-  line-height: 28px;
+  line-height: 1.3;
   color: #fff;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
   float: right;
 }
 
@@ -1280,7 +1336,7 @@ body._touch .menu__list > li._active .menu__arrow {
   flex: 0 0 30%;
   position: sticky;
   top: 15%;
-  height: 61.5vh;
+  align-self: flex-start;
 }
 
 .trash {
@@ -1307,9 +1363,10 @@ body._touch .menu__list > li._active .menu__arrow {
 .trash__table {
   padding: 10px 14px;
   display: flex;
+  flex-wrap: wrap;
   border: 0.7px solid #5b6460;
   justify-content: space-between;
-  gap: 10px;
+  gap: 14px 10px;
   margin-bottom: 20px;
 }
 
@@ -1333,20 +1390,42 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .trash__guest-oper {
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex;
   align-items: center;
+  gap: 4px;
+  border: 0.7px solid #5b6460;
+  border-radius: 20px;
+  padding: 2px 4px;
+}
+
+.trash__guest-count {
+  min-width: 20px;
+  text-align: center;
+  font-family: OpenSans-SemiBold;
+  font-size: 14px;
+  color: #333333;
 }
 
 .trash__guest-btn {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: unset;
   border: none;
+  border-radius: 50%;
   cursor: pointer;
   font-family: OpenSans-SemiBold;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1;
-  color: #333333;
-  padding: 0 4px;
+  color: #5b6460;
+  transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+}
+
+.trash__guest-btn:hover:not(:disabled) {
+  background-color: #5b6460;
+  color: #fff;
 }
 
 .trash__guest-btn:disabled {
@@ -1412,12 +1491,18 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .trash__button-input {
+  flex: 1 1 auto;
+  min-width: 0;
   border: 0.7px solid #333333;
   padding: 15px 20px;
   background-color: unset;
   font-family: OpenSans-Regular;
   font-size: 16px;
   color: #333333;
+}
+
+.trash__button-input:focus-visible {
+  border-color: #5b6460;
 }
 
 .trash__button-cuppon {
@@ -1454,12 +1539,20 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .booking-location__label {
   display: block;
-  margin-bottom: 8px;
-  font-family: OpenSans-SemiBold;
-  font-size: 14px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: OpenSans-Regular;
+  font-size: 24px;
+  line-height: 27px;
   color: #5b6460;
+}
+
+.booking-location__label::after {
+  content: "";
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  background-color: #5b6460;
+  height: 0.7px;
 }
 
 .booking-location__select {
@@ -1480,72 +1573,71 @@ body._touch .menu__list > li._active .menu__arrow {
   margin-top: 10px;
 }
 
-.payment-service {
-  padding: 18px 0;
-  border-bottom: 0.7px solid #5b6460;
-}
-
-.payment-service:nth-last-child(1) {
-  border-bottom: unset;
-}
-
-.payment-service__head {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 12px;
-  font-family: OpenSans-SemiBold;
-  font-size: 18px;
-  line-height: 20px;
-  color: #333333;
-  margin-bottom: 8px;
-}
-
-.payment-service__title {
-  font-family: OpenSans-SemiBold;
-  font-size: 15px;
-  line-height: 20px;
-  color: #333333;
-  margin-bottom: 6px;
-}
-
-.payment-service__text {
-  font-family: OpenSans-Light;
-  font-size: 14px;
-  line-height: 20px;
-  color: #333333;
-}
-
 .payment-service__empty {
   font-family: OpenSans-Regular;
   font-size: 16px;
   color: #333333;
 }
 
-/*-------- Add-service selector (spoiler content) -------*/
+/*-------- Промокоди: перелік активних (booking) -------*/
 
-.service-add {
+.trash__promo {
+  margin-top: 18px;
+}
+
+.trash__promo-title {
+  font-family: OpenSans-SemiBold;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #5b6460;
+  margin-bottom: 8px;
+}
+
+.trash__promo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.trash__promo-item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
-  margin-top: 16px;
-  cursor: pointer;
   font-family: OpenSans-Regular;
-  font-size: 14px;
+  font-size: 13px;
   color: #333333;
 }
 
-.service-add__check {
-  width: 18px;
-  height: 18px;
-  flex: 0 0 auto;
+.trash__promo-code {
+  background-color: #e9ece0;
+  border: 0.7px dashed #5b6460;
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-family: OpenSans-SemiBold;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: #5b6460;
   cursor: pointer;
-  accent-color: #5b6460;
+  transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
 }
 
-.service-add__price {
-  margin-left: auto;
+.trash__promo-code:hover {
+  background-color: #5b6460;
+  color: #fff;
+}
+
+.trash__promo-val {
   font-family: OpenSans-SemiBold;
+  color: #41916d;
+}
+
+/*-------- Payment: заголовок блоку послуг -------*/
+
+.payment-services__title {
+  margin-top: 44px;
 }
 
 /*-------- Choose Services End -------*/
@@ -1589,6 +1681,8 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .trash__geo-info {
   display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
   justify-content: space-between;
 }
 
@@ -1602,6 +1696,12 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .trash__geo-info .trash__geo:hover {
   text-decoration: underline;
+}
+
+/* Кнопка підтвердження стоїть в aside під кошиком (сабмітить #payment-form) */
+
+.trash-block__confirm {
+  margin-top: 16px;
 }
 
 /*-------- Choose Services End -------*/
@@ -1681,23 +1781,24 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .photo-background__buttons {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .photo-background__button {
-  flex: 0 0 50%;
+  flex: 0 1 auto;
   font-family: DINPro-Light;
   font-size: 14px;
-  line-height: 28px;
+  line-height: 1.4;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 1px;
-  width: 180px;
-  margin: 0 5px;
-  padding: 15px 30px;
+  width: auto;
+  padding: 14px 26px;
+  white-space: nowrap;
   border: 1px solid #fff;
+  transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
 }
 
 .photo-background__button:hover {
@@ -1705,7 +1806,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .photo-background__button:active,
-.photo-background__button :focus {
+.photo-background__button:focus-visible {
   background-color: #79857f;
 }
 
@@ -2472,8 +2573,8 @@ select._invalid {
 /*-------- Payment form (payment.html) -------*/
 
 .payment-form {
-  margin-top: 40px;
-  max-width: 520px;
+  margin-top: 0;
+  width: 100%;
 }
 
 .payment-form__row {
@@ -2521,6 +2622,339 @@ select._invalid {
 }
 
 /*-------- Toasts + form validation End -------*/
+
+/*-------- Shared components: modal / video / reveal / hover polish -------*/
+
+/*==================== Видимий фокус для клавіатури ====================*/
+
+a:focus-visible,
+button:focus-visible,
+[role=button]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #5b6460;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/*==================== Пропустити до вмісту (задача 21) ====================*/
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -80px;
+  z-index: 2000;
+  padding: 10px 18px;
+  background-color: #fff;
+  color: #5b6460;
+  font-family: OpenSans-SemiBold, Arial, sans-serif;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: top 0.25s ease 0s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+#main:focus {
+  outline: none;
+}
+
+/*==================== Плавні ховери / переходи (задача 5) ====================*/
+
+.about__link,
+.forest__link,
+.contact__phone,
+.contact__mail,
+.footer__license-item-text > a,
+.subtitle-location__link,
+.trash__geo,
+.menu__sub-link {
+  transition: color 0.3s ease 0s;
+}
+
+.more-about-us__link,
+.link-social__item,
+.button__block,
+.menu__button-desktop,
+.menu__button-mobile,
+.choose-services__button,
+.trash__button,
+.trash__button-cuppon,
+.trash__button-input,
+.payment-form__button,
+.contact-form__button,
+.photo-background__button,
+.booking-location__select,
+.newsletter__input {
+  transition: background-color 0.3s ease 0s, color 0.3s ease 0s, transform 0.3s ease 0s, box-shadow 0.3s ease 0s, border-color 0.3s ease 0s;
+}
+
+.choose-services__button:hover,
+.trash__button:hover,
+.trash__button-cuppon:hover,
+.contact-form__button:hover {
+  background-color: #79857f;
+  color: #fff;
+}
+
+.booking-location__select:hover,
+.booking-location__select:focus-visible {
+  border-color: #79857f;
+}
+
+.button__block:hover,
+.menu__button-desktop:hover,
+.choose-services__button:hover,
+.trash__button:hover,
+.payment-form__button:hover,
+.contact-form__button:hover,
+.modal__cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+/*==================== Легкий зум фото у галереях (задача 23) ====================*/
+
+.photo-gallery__item,
+.about-us-gallery__item,
+.more-about-us__photo-gallery .photo-gallery__item {
+  overflow: hidden;
+}
+
+.item__photo-gallery,
+.about-us-gallery__img {
+  display: block;
+  transition: transform 0.5s ease 0s;
+}
+
+.photo-gallery__item:hover .item__photo-gallery,
+.about-us-gallery__item:hover .about-us-gallery__img {
+  transform: scale(1.04);
+}
+
+/*==================== Мікровзаємодія іконок зручностей (задача 23) ====================*/
+
+.icons__photo {
+  transition: transform 0.3s ease 0s;
+}
+
+.icons__photo img {
+  transition: transform 0.3s ease 0s;
+}
+
+.icons__photo:hover {
+  transform: translateY(-6px);
+}
+
+.icons__photo:hover img {
+  transform: scale(1.12);
+}
+
+/*==================== Поява секцій при прокручуванні (задача 23) ====================*/
+
+html._reveal-init ._reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease 0s, transform 0.7s ease 0s;
+  will-change: opacity, transform;
+}
+
+html._reveal-init ._reveal._in {
+  opacity: 1;
+  transform: none;
+}
+
+/*==================== Фасад відео на головній (задача 2) ====================*/
+
+.video-embed {
+  position: relative;
+  display: block;
+  width: 432px;
+  max-width: 100%;
+  aspect-ratio: 432/387;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: #1c2b26;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.video-embed::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease 0s;
+}
+
+.video-embed:hover::after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.video-embed__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease 0s, background-color 0.3s ease 0s;
+}
+
+.video-embed__play::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 12px 0 12px 20px;
+  border-color: transparent transparent transparent #5b6460;
+}
+
+.video-embed:hover .video-embed__play {
+  transform: translate(-50%, -50%) scale(1.08);
+  background-color: #fff;
+}
+
+.video-embed__frame {
+  position: relative;
+  width: 432px;
+  max-width: 100%;
+  aspect-ratio: 432/387;
+}
+
+.video-embed__frame iframe,
+.video-embed__frame video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: #000;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/*==================== Модальне вікно (задача 3) ====================*/
+
+body._modal-lock {
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
+}
+
+.modal[hidden] {
+  display: none;
+}
+
+.modal._open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(28, 43, 38, 0.55);
+  cursor: pointer;
+}
+
+.modal__dialog {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 560px;
+  max-height: 86vh;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 44px 40px 40px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+  transform: translateY(18px) scale(0.98);
+  transition: transform 0.3s ease 0s;
+}
+
+.modal._open .modal__dialog {
+  transform: none;
+}
+
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  width: 42px;
+  height: 42px;
+  background-color: unset;
+  border: 0;
+  font-size: 30px;
+  line-height: 1;
+  color: #5b6460;
+  cursor: pointer;
+  transition: color 0.3s ease 0s, transform 0.3s ease 0s;
+}
+
+.modal__close:hover {
+  color: #000;
+  transform: rotate(90deg);
+}
+
+.modal__title {
+  font-family: OpenSans-Regular;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #5b6460;
+  margin-bottom: 20px;
+}
+
+.modal__body p {
+  font-family: OpenSans-Light;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333333;
+  margin-bottom: 14px;
+}
+
+.modal__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  padding: 14px 30px;
+  background-color: #5b6460;
+  color: #fff;
+  font-family: OpenSans-Light;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transition: background-color 0.3s ease 0s, transform 0.3s ease 0s, box-shadow 0.3s ease 0s;
+}
+
+.modal__cta:hover {
+  background-color: #79857f;
+}
 
 @media (min-width: 576px) {
   .about__item {
@@ -2682,6 +3116,11 @@ select._invalid {
     line-height: 23px;
   }
 
+  .facilities__icons {
+    grid-gap: 60px 40px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .facilities {
     padding: 5em 5em;
   }
@@ -2743,6 +3182,11 @@ select._invalid {
 
   .trash-block {
     flex: 0 0 100%;
+    position: static;
+  }
+
+  .payment-content {
+    margin: 160px 0 100px 0;
   }
 
   .choose-services__additional {
@@ -3016,7 +3460,7 @@ select._invalid {
   }
 
   .menu__button-mobile._active:active,
-  :focus {
+  .menu__button-mobile._active:focus-visible {
     background-color: var(--header-menu-button-color-active);
   }
 
@@ -3026,8 +3470,8 @@ select._invalid {
   }
 
   .lang .lang__flag {
-    width: auto;
-    height: 20px;
+    width: 33px;
+    height: 22px;
   }
 
   .lang .lang__list {
@@ -3049,8 +3493,8 @@ select._invalid {
   }
 
   .lang .lang__option .lang__flag {
-    width: auto;
-    height: 26px;
+    width: 33px;
+    height: 22px;
   }
 
   .lang .lang__option:hover,
@@ -3083,22 +3527,38 @@ select._invalid {
     margin: 50px 0 0 0;
   }
 
+  /* Одна явна колонка на 100% ширини: без grid-template-columns авто-треки
+     розтягувались за внутрішньою шириною фото і галерея вилазила за екран */
+
   .about__photo-gallery {
     display: grid;
-    grid-template-areas: "my-about-photo-item-1 my-about-photo-item-1 my-about-photo-item-1" "my-about-photo-item-3 my-about-photo-item-3 my-about-photo-item-3" "my-about-photo-item-2 my-about-photo-item-2 my-about-photo-item-2";
-    margin: 100px 0;
+    grid-template-columns: 100%;
+    grid-template-areas: "my-about-photo-item-1" "my-about-photo-item-3" "my-about-photo-item-2";
+    gap: 24px;
+    margin: 60px 0;
   }
 
   .about__photo-item_1 {
     grid-area: my-about-photo-item-1;
+    min-width: 0;
   }
 
   .about__photo-item_2 {
     grid-area: my-about-photo-item-2;
+    min-width: 0;
   }
 
   .about__photo-item_3 {
     grid-area: my-about-photo-item-3;
+    min-width: 0;
+  }
+
+  /* Відступ дає gap сітки; прибираємо подвійний margin у стеку */
+
+  .about__photo-gallery .about__item {
+    margin-bottom: 0;
+    max-width: 100%;
+    height: auto;
   }
 
   .forest {
@@ -3227,9 +3687,19 @@ select._invalid {
     right: 16px;
     max-width: unset;
   }
+
+  .video-embed,
+  .video-embed__frame {
+    width: 100%;
+  }
 }
 
 @media (max-width: 575px) {
+  .facilities__icons {
+    grid-gap: 40px 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .forest {
     grid-template-areas: "my-forest-info my-forest-info" "my-map my-map";
   }
@@ -3266,6 +3736,16 @@ select._invalid {
     padding: 2em 2em;
   }
 
+  .choose-services__button {
+    float: none;
+    width: 100%;
+    white-space: normal;
+  }
+
+  .payment-content {
+    margin: 120px 0 80px 0;
+  }
+
   .photo-background__position_the-area {
     top: 30%;
     left: 25%;
@@ -3286,16 +3766,9 @@ select._invalid {
     left: 35%;
   }
 
-  .photo-background__buttons {
-    flex-wrap: wrap;
-  }
-
   .photo-background__button {
     flex: 0 0 100%;
-  }
-
-  .photo-background__button:nth-child(1) {
-    margin-bottom: 10px;
+    white-space: normal;
   }
 
   .__container-swiper-other-page {
@@ -3314,6 +3787,14 @@ select._invalid {
 
   .payment-form__row {
     flex-wrap: wrap;
+  }
+
+  .modal__dialog {
+    padding: 40px 22px 28px;
+  }
+
+  .modal__title {
+    font-size: 24px;
   }
 }
 
@@ -3342,6 +3823,14 @@ select._invalid {
   .about-us-gallery__title {
     font-size: 25px;
     line-height: 36px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ._reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none;
   }
 }
 @supports (-webkit-appearance:none){
@@ -3413,6 +3902,14 @@ select._invalid {
 }
 
  @media (min-width: 0) and (max-width: 575px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (prefers-reduced-motion: reduce){
 
 @supports (-webkit-appearance:none){
 

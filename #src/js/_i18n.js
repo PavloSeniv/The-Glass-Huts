@@ -46,6 +46,10 @@
             var v = translate(el.getAttribute("data-i18n-ph"), lang);
             if (v != null) el.setAttribute("placeholder", v);
         });
+        each("[data-i18n-aria]", function (el) {
+            var v = translate(el.getAttribute("data-i18n-aria"), lang);
+            if (v != null) el.setAttribute("aria-label", v);
+        });
 
         updateSwitcher(lang);
     }
@@ -56,6 +60,7 @@
         each("[data-lang-option]", function (el) {
             var isActive = el.getAttribute("data-lang-option") === lang;
             el.classList.toggle("_active", isActive);
+            el.setAttribute("aria-current", isActive ? "true" : "false");
             if (isActive) activeOption = el;
         });
 
@@ -101,6 +106,38 @@
         });
     }
 
+    // ARIA для випадаючого списку мов (стан розкриття по hover/focus)
+    function initLangA11y() {
+        var trigger = document.querySelector("[data-lang-current]");
+        if (!trigger) return;
+        var list = document.querySelector(".lang__list");
+        var langLi = trigger.closest(".lang");
+        trigger.setAttribute("aria-haspopup", "true");
+        trigger.setAttribute("aria-expanded", "false");
+        if (list) {
+            if (!list.id) list.id = "lang-menu";
+            trigger.setAttribute("aria-controls", list.id);
+        }
+        if (langLi) {
+            var setExpanded = function (v) { trigger.setAttribute("aria-expanded", v ? "true" : "false"); };
+            langLi.addEventListener("mouseenter", function () { setExpanded(true); });
+            langLi.addEventListener("mouseleave", function () { setExpanded(false); });
+            langLi.addEventListener("focusin", function () { setExpanded(true); });
+            langLi.addEventListener("focusout", function () { setExpanded(false); });
+
+            // У мобільному меню (і на touch-пристроях) ховера немає, а крихітна
+            // стрілка — заважка ціль. Тап по самій поточній мові відкриває/закриває
+            // список (клас ._active — той самий, що вмикає стрілка).
+            trigger.addEventListener("click", function (e) {
+                e.preventDefault(); // href="#" не мусить стрибати вгору сторінки
+                var mobileMenu = window.matchMedia && window.matchMedia("(max-width: 767px)").matches;
+                if (mobileMenu || document.body.classList.contains("_touch")) {
+                    setExpanded(langLi.classList.toggle("_active"));
+                }
+            });
+        }
+    }
+
     function init() {
         each("[data-lang-option]", function (el) {
             el.addEventListener("click", function (e) {
@@ -108,6 +145,7 @@
                 setLang(el.getAttribute("data-lang-option"));
             });
         });
+        initLangA11y();
         updateYear();
         applyLang(getSavedLang());
     }

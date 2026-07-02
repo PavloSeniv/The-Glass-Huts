@@ -51,5 +51,8 @@
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html": "^1.0.2",
     "sass": "^1.77.8"
+  },
+  "dependencies": {
+    "flatpickr": "^4.6.13"
   }
 }

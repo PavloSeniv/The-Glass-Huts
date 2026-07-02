@@ -51,8 +51,8 @@ select._invalid {
 
 /*-------- Payment form (payment.html) -------*/
 .payment-form {
-    margin-top: 40px;
-    max-width: 520px;
+    margin-top: 0; // форма тепер перший блок у лівій колонці (задача 19)
+    width: 100%; // на всю ширину колонки, як і блок послуг (задача 20)
 }
 .payment-form__row {
     display: flex;

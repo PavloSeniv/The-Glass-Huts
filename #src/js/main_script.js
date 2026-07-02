@@ -8,6 +8,8 @@
 
 @@include('_header_menu_burger.js')
 
+@@include('_service_ui.js')
+
 @@include('_booking_calc.js')
 
 @@include('_payment_summary.js')
@@ -15,3 +17,9 @@
 @@include('_area_locations.js')
 
 @@include('_forms.js')
+
+@@include('_modal.js')
+
+@@include('_video_embed.js')
+
+@@include('_reveal.js')

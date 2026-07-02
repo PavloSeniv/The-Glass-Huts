@@ -1,4 +1,5 @@
 <header class="header">
+    <a class="skip-link" href="#main" data-i18n="nav.skip_to_content">Skip to content</a>
     <div class="header__container">
         <a class="header__logo" href="index.html">
             <!--
@@ -14,11 +15,11 @@
             </picture>
         </a>
         <div class="header__menu menu">
-            <div class="menu__icon">
+            <div class="menu__icon" role="button" tabindex="0" aria-label="Menu" aria-expanded="false" aria-controls="primary-menu" data-i18n-aria="nav.menu">
                 <span></span>
             </div>
         </div>
-        <nav class="menu__body">
+        <nav class="menu__body" id="primary-menu" aria-label="Primary">
             <ul class="menu__list">
                 <li class="menu__list-link"><a class="menu__link" href="index.html" data-i18n="nav.home">Home</a></li>
                 <li class="menu__list-link"><a class="menu__link" href="the-hut.html" data-i18n="nav.hut">The Hut</a></li>
@@ -30,28 +31,28 @@
                         <img class="lang__flag" src="img/index/header/united_kingdom.svg" alt="English" data-lang-current-flag>
                         <span class="lang__code" data-lang-current-label>EN</span>
                     </a>
-                    <span class="menu__arrow"></span>
-                    <ul class="menu__sub-list lang__list">
+                    <span class="menu__arrow" aria-hidden="true"></span>
+                    <ul class="menu__sub-list lang__list" role="menu" aria-label="Select language" data-i18n-aria="nav.select_language">
                         <li class="lang__item">
-                            <a class="menu__sub-link lang__option" href="#" data-lang-option="en" data-lang-label="EN">
+                            <a class="menu__sub-link lang__option" role="menuitem" href="#" data-lang-option="en" data-lang-label="EN">
                                 <img class="lang__flag" src="img/index/header/united_kingdom.svg" alt="English">
                                 <span class="lang__name">English</span>
                             </a>
                         </li>
                         <li class="lang__item">
-                            <a class="menu__sub-link lang__option" href="#" data-lang-option="da" data-lang-label="DA">
+                            <a class="menu__sub-link lang__option" role="menuitem" href="#" data-lang-option="da" data-lang-label="DA">
                                 <img class="lang__flag" src="img/index/header/denmark.svg" alt="Dansk">
                                 <span class="lang__name">Dansk</span>
                             </a>
                         </li>
                         <li class="lang__item">
-                            <a class="menu__sub-link lang__option" href="#" data-lang-option="uk" data-lang-label="UK">
+                            <a class="menu__sub-link lang__option" role="menuitem" href="#" data-lang-option="uk" data-lang-label="UK">
                                 <img class="lang__flag" src="img/index/header/ukraine.svg" alt="Українська">
                                 <span class="lang__name">Українська</span>
                             </a>
                         </li>
                         <li class="lang__item">
-                            <a class="menu__sub-link lang__option" href="#" data-lang-option="de" data-lang-label="DE">
+                            <a class="menu__sub-link lang__option" role="menuitem" href="#" data-lang-option="de" data-lang-label="DE">
                                 <img class="lang__flag" src="img/index/header/germany.svg" alt="Deutsch">
                                 <span class="lang__name">Deutsch</span>
                             </a>

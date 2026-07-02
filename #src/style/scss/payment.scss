@@ -15,6 +15,12 @@ $color-bg-light-green: #e9ece0;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 250px 0 150px 0;
+    @media (max-width: 991px) {
+        margin: 160px 0 100px 0;
+    }
+    @media (max-width: 575px) {
+        margin: 120px 0 80px 0;
+    }
 }
 .choose-services__additional {
     flex: 0 0 60%;
@@ -43,6 +49,8 @@ $color-bg-light-green: #e9ece0;
 
 .trash__geo-info {
     display: flex;
+    flex-wrap: wrap;
+    gap: 4px 12px;
     justify-content: space-between;
     & .trash__geo {
         display: list-item;
@@ -55,6 +63,11 @@ $color-bg-light-green: #e9ece0;
             text-decoration: underline;
         }
     }
+}
+
+/* Кнопка підтвердження стоїть в aside під кошиком (сабмітить #payment-form) */
+.trash-block__confirm {
+    margin-top: 16px;
 }
 
 /*-------- Choose Services End -------*/

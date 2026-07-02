@@ -161,9 +161,11 @@
 /*-------- Forest End -------*/
 
 /*-------- Facilities Start -------*/
+/* .facilities: плинні бокові відступи замість жорстких 20em (~320px), що душили
+   сітку іконок на ноутбуках 992–1400px до першого брейкпоінта (задача 22). */
 .facilities {
   background-color: var(--facilities-bg-color);
-  padding: 10em 20em;
+  padding: 10em clamp(1.5rem, 12vw, 20em);
 }
 
 .facilities__text {
@@ -177,10 +179,25 @@
   text-align: center;
 }
 
+/* 4 іконки в рядку за замовчуванням (auto-fill давав 5+), далі 3 → 2 */
 .facilities__icons {
   display: grid;
-  grid-gap: 100px;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 80px 60px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 991px) {
+  .facilities__icons {
+    grid-gap: 60px 40px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .facilities__icons {
+    grid-gap: 40px 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .icons__photo {
@@ -224,8 +241,14 @@
   width: 100%;
 }
 
+/* .more-about-us__button — поверх фотографій: ховер-зум надає фото transform,
+   а трансформовані елементи малюються над непозиціонованими сусідами — без
+   z-index кружечок «ховався» під фото і не ловив клік.
+   УВАГА: коментарі всередині правил валять gulp-webp-css — тримати їх зовні. */
 .more-about-us__button {
   grid-area: 2 / 3 / 4 / 5;
+  position: relative;
+  z-index: 2;
 }
 
 .more-about-us__link {
@@ -246,7 +269,6 @@
 .more-about-us__link:hover {
   background-color: #5b6460;
   color: #fff;
-  text-decoration-line: underline;
 }
 
 /*-------- More-About-Us End -------*/
@@ -255,7 +277,7 @@
 .about-us-stay {
   display: flex;
   flex-wrap: wrap;
-  padding: 8em 10em;
+  padding: 8em clamp(1.5rem, 8vw, 10em);
 }
 
 .about-us-stay__contact {
@@ -322,9 +344,15 @@
   align-items: center;
 }
 
+/* Раніше тут був color:#000 — марний, бо всередині лише <img> без тексту.
+   Даємо видимий фідбек: легкий підйом + трохи прозорості на іконці (задача 5). */
 .link-social__item:hover {
   background-color: var(--about-us-stay-color-hover);
-  color: #000000;
+  transform: translateY(-2px);
+}
+
+.link-social__item:hover img {
+  opacity: 0.85;
 }
 
 .link-social__item:nth-last-child(-n + 1) {
@@ -462,25 +490,39 @@
     margin: 50px 0 0 0;
   }
 
+  /* Одна явна колонка на 100% ширини: без grid-template-columns авто-треки
+     розтягувались за внутрішньою шириною фото і галерея вилазила за екран */
   .about__photo-gallery {
     display: grid;
+    grid-template-columns: 100%;
     grid-template-areas:
-      "my-about-photo-item-1 my-about-photo-item-1 my-about-photo-item-1"
-      "my-about-photo-item-3 my-about-photo-item-3 my-about-photo-item-3"
-      "my-about-photo-item-2 my-about-photo-item-2 my-about-photo-item-2";
-    margin: 100px 0;
+      "my-about-photo-item-1"
+      "my-about-photo-item-3"
+      "my-about-photo-item-2";
+    gap: 24px;
+    margin: 60px 0;
   }
 
   .about__photo-item_1 {
     grid-area: my-about-photo-item-1;
+    min-width: 0;
   }
 
   .about__photo-item_2 {
     grid-area: my-about-photo-item-2;
+    min-width: 0;
   }
 
   .about__photo-item_3 {
     grid-area: my-about-photo-item-3;
+    min-width: 0;
+  }
+
+  /* Відступ дає gap сітки; прибираємо подвійний margin у стеку */
+  .about__photo-gallery .about__item {
+    margin-bottom: 0;
+    max-width: 100%;
+    height: auto;
   }
 
   .forest {

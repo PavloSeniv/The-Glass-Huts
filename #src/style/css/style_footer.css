@@ -2,7 +2,7 @@
 
 .footer {
     background-color: var(--footer-bg-color);
-    padding: 8em 10em;
+    padding: 8em clamp(1.5rem, 8vw, 10em);
 }
 
 .footer__container {
@@ -54,9 +54,10 @@
     font-size: 16px;
 }
 
-.newsletter__input:focus,
-.newsletter__input:hover {
-    background-color: #808e88;
+/* Тільки :focus (не :hover) і без заливки фоном — раніше поле мигало сіро-зеленим
+   на наведення, а світлий текст на ньому втрачав контраст (задача 5). */
+.newsletter__input:focus {
+    border-bottom-color: #ffffff;
 }
 
 .newsletter__input::placeholder {
@@ -67,10 +68,25 @@
 
 .newsletter__button {
     position: absolute;
-    display: inline-block;
-    right: 2px;
-    top: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 34px;
+    width: 50px;
+    height: 40px;
+    padding: 8px;
     background-color: unset;
+    cursor: pointer;
+}
+
+/* Клік має спрацьовувати по всій кнопці, а не лише по силуету стрілки:
+   робимо вбудований <object> «прозорим» для подій миші. */
+.newsletter__arrow {
+    display: block;
+    width: 34px;
+    height: 18px;
+    pointer-events: none;
 }
 
 .newsletter-sub-text {

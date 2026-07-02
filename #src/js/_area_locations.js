@@ -24,15 +24,28 @@
         elm.textContent = t(key, elm.textContent);
     }
 
+    // З map (пошук/пін) будуємо URL маршруту Google Maps до координат локації.
+    function directionsUrl(loc) {
+        var m = /query=([^&]+)/.exec(loc.map || "");
+        return m ? "https://www.google.com/maps/dir/?api=1&destination=" + m[1] : (loc.map || "#");
+    }
+    function setExternalLink(elm, href) {
+        if (!elm || !href) return;
+        elm.setAttribute("href", href);
+        elm.setAttribute("target", "_blank");
+        elm.setAttribute("rel", "noopener");
+    }
+
     function setLocation(id) {
         var loc = LOCS[id] || LOCS[LOCS.order[0]];
         setI18n(heroLabel, loc.labelKey);
+        setExternalLink(heroLabel, loc.map);          // клік по назві → карта з піном
         if (loc.area) {
             setI18n(titleEl, loc.area.titleKey);
             setI18n(subtitleEl, loc.area.subtitleKey);
             setI18n(textEl, loc.area.textKey);
         }
-        if (directions && loc.map) directions.setAttribute("href", loc.map);
+        setExternalLink(directions, directionsUrl(loc)); // «Прокласти маршрут» → режим маршруту
     }
 
     var params = new URLSearchParams(window.location.search);

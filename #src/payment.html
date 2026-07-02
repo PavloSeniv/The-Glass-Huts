@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
     <title>The Glass Huts</title>
@@ -18,36 +18,34 @@
 
     @@include('html/_header.html')
 
-    <main class="__container">
+    <main class="__container" id="main" tabindex="-1">
 
         <section class="payment-content">
 
             <div class="choose-services__additional">
 
-                <h2 class="choose-services__title" data-i18n="payment.additional_services_title">Selected Services</h2>
-
-                <div class="payment-services" data-pay-services></div>
-
-                <form class="payment-form" action="" method="post" data-validate data-success="payment.toast_thanks" data-redirect="index.html" novalidate>
+                <form class="payment-form" id="payment-form" action="" method="post" data-validate data-success="payment.toast_thanks" data-redirect="index.html" novalidate>
                     <h2 class="choose-services__title" data-i18n="payment.form_title">Your details</h2>
 
                     <div class="payment-form__row">
-                        <input class="payment-form__input" type="text" name="first-name" required placeholder="First name" data-i18n-ph="payment.form_first_name">
-                        <input class="payment-form__input" type="text" name="last-name" required placeholder="Last name" data-i18n-ph="payment.form_last_name">
+                        <input class="payment-form__input" type="text" name="first-name" required placeholder="First name" data-i18n-ph="payment.form_first_name" aria-label="First name" data-i18n-aria="payment.form_first_name">
+                        <input class="payment-form__input" type="text" name="last-name" required placeholder="Last name" data-i18n-ph="payment.form_last_name" aria-label="Last name" data-i18n-aria="payment.form_last_name">
                     </div>
 
-                    <input class="payment-form__input" type="email" name="email" required placeholder="Email" data-i18n-ph="payment.form_email">
-                    <input class="payment-form__input" type="tel" name="phone" required placeholder="Phone" data-i18n-ph="payment.form_phone">
+                    <input class="payment-form__input" type="email" name="email" required placeholder="Email" data-i18n-ph="payment.form_email" aria-label="Email" data-i18n-aria="payment.form_email">
+                    <input class="payment-form__input" type="tel" name="phone" required placeholder="Phone" data-i18n-ph="payment.form_phone" aria-label="Phone" data-i18n-aria="payment.form_phone">
 
-                    <select class="payment-form__input payment-form__select" name="method" required>
+                    <select class="payment-form__input payment-form__select" name="method" required aria-label="Payment method" data-i18n-aria="payment.select_placeholder">
                         <option value="" data-i18n="payment.select_placeholder">Choose a payment method</option>
                         <option value="card" data-i18n="payment.method_card">Credit / debit card</option>
                         <option value="paypal" data-i18n="payment.method_paypal">PayPal</option>
                         <option value="bank" data-i18n="payment.method_bank">Bank transfer</option>
                     </select>
-
-                    <button class="payment-form__button" type="submit" data-i18n="payment.confirm_button">Confirm booking</button>
                 </form>
+
+                <h2 class="choose-services__title payment-services__title" data-i18n="payment.additional_services_title">Selected Services</h2>
+
+                <div class="choose-services__spoiler payment-services" data-spollers data-one-spoller data-pay-services data-services-container></div>
 
             </div>
 
@@ -81,7 +79,7 @@
                         </div>
                     </div>
 
-                    <div class="trash__services-info" data-pay-lines>
+                    <div class="trash__services-info" data-pay-lines aria-live="polite">
                         <div class="trash__block-info">
                             <p data-i18n="payment.line_item_stay">3 nights in a glass hut</p>
                             <p>6340</p>
@@ -102,9 +100,12 @@
 
                     <div class="trash__total">
                         <h2 class="trash__title-total" data-i18n="payment.total_label">Total</h2>
-                        <h2 class="trash__title-total" data-pay-total>7.000kr</h2>
+                        <h2 class="trash__title-total" data-pay-total aria-live="polite">7.000kr</h2>
                     </div>
                 </div>
+
+                <!-- Сабмітить форму #payment-form через атрибут form (кнопка стоїть під кошиком) -->
+                <button class="payment-form__button trash-block__confirm" type="submit" form="payment-form" data-i18n="payment.confirm_button">Confirm booking</button>
 
             </aside>
 

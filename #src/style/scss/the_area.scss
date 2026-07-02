@@ -141,41 +141,37 @@ $color-font-gray-1: #333333;
 
 .photo-background__buttons {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  @media (max-width: 575px) {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .photo-background__button {
-  flex: 0 0 50%;
+  flex: 0 1 auto;          // ширина під вміст, а не жорсткі 50% + 180px
   font-family: DINPro-Light;
   font-size: 14px;
-  line-height: 28px;
+  line-height: 1.4;
   text-align: center;
   text-transform: uppercase;
   color: $color-font-white;
   letter-spacing: 1px;
-  width: 180px;
-  margin: 0 5px;
-  padding: 15px 30px;
+  width: auto;
+  padding: 14px 26px;
+  white-space: nowrap;     // довгий UKR-напис лишається одним рядком (задача 10)
   border: 1px solid $color-font-white;
+  transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
 
   &:hover {
     background-color: $color-bg;
   }
 
-  &:active, :focus {
+  &:active,
+  &:focus-visible {
     background-color: $color-bg-active;
   }
 
-
   @media (max-width: 575px) {
     flex: 0 0 100%;
-    &:nth-child(1) {
-      margin-bottom: 10px;
-    }
+    white-space: normal;
   }
 }
 

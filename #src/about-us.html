@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
     <meta name="author" content="Seniv Pavlo, https://github.com/PavloSeniv">
@@ -17,7 +17,7 @@
     
 @@include('html/_header.html')
 
-<main class="__container">
+<main class="__container" id="main" tabindex="-1">
     <!-- The Area BEM-->
     <section class="photo-background">
         <div class="photo-img">
@@ -38,7 +38,7 @@
         </div>
     </section>
 
-    <section class="about-us-content-1">
+    <section class="about-us-content-1 _reveal">
         <div class="about-us-content-content-1__photo">
             <img class="about-us-content-1__img" src="img/about_us/about_us_content_1/about_us_content_1_photo.png" alt="about_us_content_1_photo">
         </div>
@@ -57,7 +57,7 @@
         </div>
     </section>
 
-    <section class="about-us-gallery">
+    <section class="about-us-gallery _reveal">
         <h2 class="about-us-gallery__title" data-i18n-html="about.gallery_title">The people, the place, <br> and the quiet in between</h2>
         <div class="about-us-gallery__photo">
             <div class="about-us-gallery__photo_1">
@@ -82,7 +82,7 @@
         </div>
     </section>
 
-    <section class="about-us-contact-us contact-us">
+    <section class="about-us-contact-us contact-us _reveal">
         <h2 class="contact__title" data-i18n="about.contact_title">Stay in touch with us</h2>
 
         <div class="about-us-stay__contact">
@@ -91,19 +91,18 @@
             <a class="contact__mail" href="mailto:info@theglasshuts.com">info@theglasshuts.com</a>
             <ul class="contact__link-social">
                 <li>
-                    <a class="link-social__item" href="https://www.instagram.com/" target="_blank">
-                        <img src="img/index/about_us_stay/social_item_insta.png" alt="social__item-insta">
+                    <a class="link-social__item" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <img src="img/index/about_us_stay/social_item_insta.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a class="link-social__item" href="https://uk-ua.facebook.com/" target="_blank">
-                        <!--Атрибут alt виходить за лінію-->
-                        <img src="img/index/about_us_stay/social_item_facebook.png" alt="social__item-facebook">
+                    <a class="link-social__item" href="https://uk-ua.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <img src="img/index/about_us_stay/social_item_facebook.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a class="link-social__item" href="https://twitter.com/?lang=uk" target="_blank">
-                        <img src="img/index/about_us_stay/social_item_twitter.png" alt="social__item-twitter">
+                    <a class="link-social__item" href="https://twitter.com/?lang=uk" target="_blank" rel="noopener" aria-label="Twitter">
+                        <img src="img/index/about_us_stay/social_item_twitter.png" alt="">
                     </a>
                 </li>
             </ul>
@@ -114,34 +113,35 @@
         <form class="contacts-form__action" action="" method="post" data-validate data-success="about.toast_sent" novalidate>
 
             <div class="contacts-form__first-name" >
-                <input tabindex="1" type="text" name="first-name" required placeholder="First Name" data-i18n-ph="about.form_first_name">
+                <input type="text" name="first-name" required placeholder="First Name" data-i18n-ph="about.form_first_name" aria-label="First Name" data-i18n-aria="about.form_first_name">
             </div>
 
             <div class="contacts-form__last-name" >
-                <input tabindex="1" type="text" name="last-name" placeholder="Last Name" data-i18n-ph="about.form_last_name">
+                <input type="text" name="last-name" placeholder="Last Name" data-i18n-ph="about.form_last_name" aria-label="Last Name" data-i18n-aria="about.form_last_name">
             </div>
 
             <div class="contacts-form__mail" >
-                <input tabindex="1" type="email" name="mail" required placeholder="Email" data-i18n-ph="about.form_email">
+                <input type="email" name="mail" required placeholder="Email" data-i18n-ph="about.form_email" aria-label="Email" data-i18n-aria="about.form_email">
             </div>
 
             <div class="contacts-form__subject" >
-                <input tabindex="1" type="text" name="subject" placeholder="Subject" data-i18n-ph="about.form_subject">
+                <input type="text" name="subject" placeholder="Subject" data-i18n-ph="about.form_subject" aria-label="Subject" data-i18n-aria="about.form_subject">
             </div>
 
             <div class="contacts-form__message" >
-                <textarea tabindex="1" name="message" required placeholder="Message" cols="30"
-                    rows="10" data-i18n-ph="about.form_message"></textarea>
+                <textarea name="message" required placeholder="Message" cols="30"
+                    rows="10" data-i18n-ph="about.form_message" aria-label="Message" data-i18n-aria="about.form_message"></textarea>
             </div>
 
-            <button tabindex="1" type="submit" class="contact-form__button" data-i18n="about.form_send">Send</button>
+            <button type="submit" class="contact-form__button" data-i18n="about.form_send">Send</button>
         </form>
     </div>
     
     </section>
 
-    <section class="with-love">
-        <h2 class="with-love__title" data-i18n-html="about.with_love_title">From Denmark <br> With Love...</h2>
+    <section class="with-love _reveal">
+        <!-- Навмисно без data-i18n: цей підпис завжди англійською в усіх мовах. -->
+        <h2 class="with-love__title">From Denmark <br> With Love...</h2>
         <div class="with-love__subtitle">
             <picture>
                 <img src="img/about_us/with-love/with-love-photo.png" srcset="img/about_us/with-love/with-love-photo.webp, img/about_us/with-love/with-love-photo.svg" alt="with-love-photo">

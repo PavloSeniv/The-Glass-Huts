@@ -5,6 +5,9 @@
   { "key": "nav.booking", "en": "Booking", "da": "Booking", "uk": "Бронювання", "de": "Buchung" },
   { "key": "nav.about", "en": "About Us", "da": "Om os", "uk": "Про нас", "de": "Über uns" },
   { "key": "nav.faq", "en": "FAQ", "da": "FAQ", "uk": "Питання", "de": "FAQ" },
+  { "key": "nav.menu", "en": "Menu", "da": "Menu", "uk": "Меню", "de": "Menü" },
+  { "key": "nav.select_language", "en": "Select language", "da": "Vælg sprog", "uk": "Оберіть мову", "de": "Sprache wählen" },
+  { "key": "nav.skip_to_content", "en": "Skip to content", "da": "Gå til indhold", "uk": "Перейти до вмісту", "de": "Zum Inhalt springen" },
 
   { "key": "common.book_now", "en": "Book now", "da": "Book nu", "uk": "Забронювати", "de": "Jetzt buchen" },
   { "key": "common.book_a_hut", "en": "Book A Hut", "da": "Book en hytte", "uk": "Забронювати будиночок", "de": "Hütte buchen" },
@@ -12,8 +15,10 @@
   { "key": "common.from", "en": "from", "da": "fra", "uk": "від", "de": "ab" },
   { "key": "common.per_night", "en": "per night", "da": "pr. nat", "uk": "за ніч", "de": "pro Nacht" },
   { "key": "common.location", "en": "Vesterbord, Denmark", "da": "Vesterbord, Danmark", "uk": "Вестерборд, Данія", "de": "Vesterbord, Dänemark" },
+  { "key": "common.close", "en": "Close", "da": "Luk", "uk": "Закрити", "de": "Schließen" },
 
   { "key": "footer.newsletter", "en": "Newsletter", "da": "Nyhedsbrev", "uk": "Розсилка", "de": "Newsletter" },
+  { "key": "footer.subscribe", "en": "Subscribe", "da": "Tilmeld", "uk": "Підписатися", "de": "Abonnieren" },
   { "key": "footer.email_placeholder", "en": "Email Address", "da": "E-mailadresse", "uk": "Електронна адреса", "de": "E-Mail-Adresse" },
   { "key": "footer.newsletter_text", "en": "Sign up to our newsletter for special things and receive 10% off your next order.", "da": "Tilmeld dig vores nyhedsbrev for særlige tilbud og få 10 % rabat på din næste booking.", "uk": "Підпишіться на нашу розсилку, щоб першими отримувати особливі пропозиції та знижку 10% на наступне бронювання.", "de": "Abonnieren Sie unseren Newsletter für besondere Angebote und erhalten Sie 10 % Rabatt auf Ihre nächste Buchung." },
   { "key": "footer.terms", "en": "TERMS AND CONDITIONS", "da": "VILKÅR OG BETINGELSER", "uk": "УМОВИ ТА ПОЛОЖЕННЯ", "de": "ALLGEMEINE GESCHÄFTSBEDINGUNGEN" },
