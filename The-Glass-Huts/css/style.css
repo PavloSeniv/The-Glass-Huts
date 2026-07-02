@@ -3063,6 +3063,14 @@ body._modal-lock {
     font-size: 35px;
   }
 
+  .choose-services__additional {
+    flex: 0 0 56%;
+  }
+
+  .trash-block {
+    flex: 0 0 40%;
+  }
+
   .slider-info {
     padding: 0 40px;
   }
