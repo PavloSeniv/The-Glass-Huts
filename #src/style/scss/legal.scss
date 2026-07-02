@@ -19,7 +19,9 @@
 
 .legal__updated {
     font-size: 14px;
-    color: #7a8a83;
+    // Було #7a8a83 (~3.6:1 на білому) — не проходило WCAG AA; темніший
+    // відтінок дає ~4.8:1
+    color: #566860;
     margin-bottom: 24px;
 }
 

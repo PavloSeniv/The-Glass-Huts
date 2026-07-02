@@ -233,6 +233,10 @@ body._lock {
   overflow: hidden;
 }
 
+/* .header box-shadow: раніше рамка була білою (= фон) і зникала. Ледь помітна
+   тінь відділяє фіксований білий хедер від білого контенту на legal/faq, і
+   майже непомітна поверх фото на головній та підсторінках. */
+
 .header {
   position: fixed;
   top: 0;
@@ -241,7 +245,8 @@ body._lock {
   z-index: 10;
   background-color: var(--header-bg-color);
   font-family: var(--header-font-family);
-  border-bottom: 1px solid var(--header-bg-color);
+  border-bottom: none;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
 }
 
 .header__container {
@@ -294,9 +299,9 @@ body._lock {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -6px;
+  bottom: 0;
   width: 100%;
-  height: 3px;
+  height: 2px;
   background-color: var(--header-menu-link-color);
   transform: scaleX(0);
   transform-origin: left center;
@@ -304,8 +309,16 @@ body._lock {
 }
 
 .menu__list-link:hover .menu__link:not(.lang__current)::after,
-.menu__link:not(.lang__current):focus-visible::after {
+.menu__link:not(.lang__current):focus-visible::after,
+.menu__link_current:not(.lang__current)::after {
   transform: scaleX(1);
+}
+
+/* Поточна сторінка: постійне підкреслення + напівжирний, щоб пункт було видно
+   серед решти навігації */
+
+.menu__link_current {
+  font-family: OpenSans-SemiBold;
 }
 
 .menu__sub-list {
@@ -376,7 +389,11 @@ body._lock {
 
 /*----------------------------------*/
 
-body._pc .menu__list > li:hover .menu__sub-list {
+/* :focus-within — мовне підменю відкривається і з клавіатури (Tab),
+   а не лише наведенням миші */
+
+body._pc .menu__list > li:hover .menu__sub-list,
+body._pc .menu__list > li:focus-within .menu__sub-list {
   opacity: 1;
   visibility: visible;
   transform: translate(0, 0);
@@ -516,6 +533,21 @@ body._touch .menu__list > li._active .menu__arrow {
   max-width: 1408px;
 }
 
+/* Скрим поверх фото слайда: білий заголовок/підзаголовок героя гарантовано
+   читається на будь-якому кадрі (світле небо, скло) */
+
+.slider-home__img {
+  position: relative;
+}
+
+.slider-home__img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.15) 100%);
+  pointer-events: none;
+}
+
 .slider-home__button {
   position: absolute;
   z-index: 5;
@@ -531,6 +563,8 @@ body._touch .menu__list > li._active .menu__arrow {
   z-index: 10;
 }
 
+/* Тінь: білий текст не губиться на світлому небі фотографій слайдів */
+
 .slider-home__title {
   font-family: OpenSans-Light;
   font-size: 70px;
@@ -538,6 +572,7 @@ body._touch .menu__list > li._active .menu__arrow {
   text-align: right;
   color: #ffffff;
   margin-bottom: 34px;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 
 .slider-home__subtitle {
@@ -546,6 +581,7 @@ body._touch .menu__list > li._active .menu__arrow {
   line-height: 28px;
   text-align: right;
   color: #ffffff;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45), 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 /*-------- Slider-Home End -------*/
@@ -562,9 +598,16 @@ body._touch .menu__list > li._active .menu__arrow {
   color: #fff;
 }
 
+/* .__container overflow-x:clip — захист від горизонтального скролу: слайдери
+   (swiper) з overflow:visible і пагінація на left:85%+width:20% вилазили за
+   100% і давали бічний скрол на 320px. clip (а не hidden) не створює
+   scroll-container, тож position:sticky кошика бронювання й далі працює.
+   УВАГА: коментар лише поза блоком — інакше валить gulp-webp-css. */
+
 .__container {
   max-width: 1408px;
   margin: 0 auto;
+  overflow-x: clip;
 }
 
 ::-webkit-scrollbar {
@@ -615,7 +658,7 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .about__link {
   display: inline-block;
-  font-family: "Open Sans Semibold";
+  font-family: OpenSans-SemiBold;
   font-size: 16px;
   color: var(--about-link-text-color);
 }
@@ -651,6 +694,10 @@ body._touch .menu__list > li._active .menu__arrow {
   width: 100%;
 }
 
+/* Галерея «The Cabins»: раніше flex без розмірів елементів давав 1 колонку на
+   768, кривий 2+1 на 1024 і 3-в-ряд лише біля 1440 (фото самі диктували ширину).
+   Явна сітка 3×1 з рівними колонками прибирає стрибки між брейкпоінтами. */
+
 /*-------- About End -------*/
 
 /*-------- Forest Start -------*/
@@ -661,9 +708,14 @@ body._touch .menu__list > li._active .menu__arrow {
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* .forest__map: підложка, поки вантажиться iframe Google Maps (або якщо його
+   блокує трекінг-захист) — замість великої білої діри спокійний бежевий фон */
+
 .forest__map {
   grid-area: my-map;
   width: 100%;
+  background-color: #e9ece0;
+  min-height: 400px;
 }
 
 .forest__info {
@@ -995,11 +1047,14 @@ body._touch .menu__list > li._active .menu__arrow {
   padding: 8em clamp(1.5rem, 8vw, 10em);
 }
 
+/* grid-gap 48px 100px: 100px по вертикалі лишали порожні смуги на вужчих
+   екранах, де колонки стають рядками — розводимо вертикальний і горизонтальний */
+
 .footer__container {
   max-width: 1408px;
   margin: 0 auto;
   display: grid;
-  grid-gap: 100px;
+  grid-gap: 48px 100px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
@@ -1026,7 +1081,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .newsletter__title {
-  font-family: "Open Sans Semibold";
+  font-family: OpenSans-SemiBold;
   color: var(--footer-bg-newsletter-color);
   font-size: 16px;
   display: block;
@@ -1068,9 +1123,9 @@ body._touch .menu__list > li._active .menu__arrow {
   align-items: center;
   justify-content: center;
   right: 0;
-  top: 34px;
+  top: 30px;
   width: 50px;
-  height: 40px;
+  height: 44px;
   padding: 8px;
   background-color: unset;
   cursor: pointer;
@@ -1094,14 +1149,21 @@ body._touch .menu__list > li._active .menu__arrow {
   line-height: 20px;
 }
 
+/* Жорсткі 33.333%-колонки ламали фрази навпіл (TERMS AND / CONDITIONS) і
+   зсували їх у нечитабельні рядки на вузькому футері. Тепер посилання
+   переносяться цілими, кожне лишається однією фразою. */
+
 .footer__license-text {
   display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
 .footer__license-item-text {
   text-align: center;
-  flex: 0 0 33.333%;
+  flex: 0 0 auto;
 }
 
 .footer__license-item-text > a {
@@ -1110,6 +1172,7 @@ body._touch .menu__list > li._active .menu__arrow {
   font-size: 14px;
   text-transform: uppercase;
   line-height: 24px;
+  white-space: nowrap;
 }
 
 .footer__license-item-text > a:hover {
@@ -1301,9 +1364,9 @@ body._touch .menu__list > li._active .menu__arrow {
 .choose-services__subtitle {
   font-family: OpenSans-Regular;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.6;
   color: #333333;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .choose-services__subtitle:nth-last-child(1) {
@@ -1439,9 +1502,9 @@ body._touch .menu__list > li._active .menu__arrow {
   min-width: 0;
   border: 0.7px solid #5b6460;
   background-color: unset;
-  padding: 4px 6px;
+  padding: 6px;
   font-family: OpenSans-Regular;
-  font-size: 11px;
+  font-size: 13px;
   color: #333333;
 }
 
@@ -1474,7 +1537,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .trash__discount {
-  color: #41916d;
+  color: #2e7d5b;
 }
 
 .trash__total {
@@ -1524,7 +1587,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .trash__coupon-msg._ok {
-  color: #41916d;
+  color: #2e7d5b;
 }
 
 .trash__coupon-msg._err {
@@ -1631,7 +1694,7 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .trash__promo-val {
   font-family: OpenSans-SemiBold;
-  color: #41916d;
+  color: #2e7d5b;
 }
 
 /*-------- Payment: заголовок блоку послуг -------*/
@@ -1682,16 +1745,23 @@ body._touch .menu__list > li._active .menu__arrow {
 .trash__geo-info {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   gap: 4px 12px;
   justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.trash__geo-info .trash__sum-title {
+  font-family: OpenSans-SemiBold;
+  font-size: 20px;
 }
 
 .trash__geo-info .trash__geo {
   display: list-item;
   list-style: none;
   font-family: OpenSans-Regular;
-  font-size: 16px;
-  color: #333333;
+  font-size: 14px;
+  color: #5b6460;
 }
 
 .trash__geo-info .trash__geo:hover {
@@ -1717,8 +1787,21 @@ body._touch .menu__list > li._active .menu__arrow {
   position: relative;
 }
 
+.photo-img {
+  position: relative;
+}
+
+.photo-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.12) 45%, rgba(0, 0, 0, 0.32) 100%);
+  pointer-events: none;
+}
+
 .photo-img__back {
   width: 100%;
+  display: block;
 }
 
 .photo-background__info {
@@ -1751,6 +1834,10 @@ body._touch .menu__list > li._active .menu__arrow {
   top: 40%;
 }
 
+.photo-background__position_faq {
+  top: 40%;
+}
+
 .photo-background__title {
   font-family: OpenSans-Light;
   font-size: 70px;
@@ -1758,6 +1845,7 @@ body._touch .menu__list > li._active .menu__arrow {
   text-align: center;
   color: #fff;
   margin-bottom: 15px;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 
 .photo-background__subtitle-location {
@@ -1775,6 +1863,7 @@ body._touch .menu__list > li._active .menu__arrow {
   text-align: center;
   text-decoration-line: none;
   color: #fff;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
 }
 
 .subtitle-location__link:hover {
@@ -1924,7 +2013,7 @@ body._touch .menu__list > li._active .menu__arrow {
   line-height: 56px;
   color: #5b6460;
   margin-bottom: 50px;
-  padding: 0 10px;
+  padding: 0 100px;
 }
 
 .activities__slider_1 {
@@ -1935,18 +2024,31 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .text__subtitle-slider_menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
   margin-bottom: 30px;
 }
 
 .text__subtitle-slider_menu a {
-  font-family: OpenSans-Italic;
-  font-size: 18px;
+  font-family: OpenSans-Regular;
+  font-size: 14px;
   line-height: 30px;
-  color: #5b6460;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a938f;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease 0s, border-color 0.3s ease 0s;
 }
 
 .text__subtitle-slider_menu a:hover {
-  text-decoration-line: underline;
+  color: #5b6460;
+}
+
+.text__subtitle-slider_menu a._active {
+  color: #5b6460;
+  border-bottom-color: #5b6460;
 }
 
 .activities__slider_2 {
@@ -2129,21 +2231,21 @@ body._touch .menu__list > li._active .menu__arrow {
   background-color: #fff;
   height: 50px;
   padding: 20px;
-  font-family: Open OpenSans-Regular;
+  font-family: OpenSans-Regular;
   font-size: 16px;
   line-height: 18px;
   color: #333333;
 }
 
 .about-us-contact-us .contacts-form__first-name ::-moz-placeholder {
-  font-family: Open OpenSans-Regular;
+  font-family: OpenSans-Regular;
   font-size: 16px;
   line-height: 18px;
   color: #828282;
 }
 
 .about-us-contact-us .contacts-form__first-name ::placeholder {
-  font-family: Open OpenSans-Regular;
+  font-family: OpenSans-Regular;
   font-size: 16px;
   line-height: 18px;
   color: #828282;
@@ -2167,21 +2269,21 @@ body._touch .menu__list > li._active .menu__arrow {
   background-color: #fff;
   height: 50px;
   padding: 20px;
-  font-family: Open OpenSans-Regular;
+  font-family: OpenSans-Regular;
   font-size: 16px;
   line-height: 18px;
   color: #333333;
 }
 
 .about-us-contact-us .contacts-form__last-name ::-moz-placeholder {
-  font-family: Open OpenSans-Regular;
+  font-family: OpenSans-Regular;
   font-size: 16px;
   line-height: 18px;
   color: #828282;
 }
 
 .about-us-contact-us .contacts-form__last-name ::placeholder {
-  font-family: Open OpenSans-Regular;
+  font-family: OpenSans-Regular;
   font-size: 16px;
   line-height: 18px;
   color: #828282;
@@ -2203,21 +2305,21 @@ body._touch .menu__list > li._active .menu__arrow {
   background-color: #fff;
   height: 50px;
   padding: 20px;
-  font-family: Open OpenSans-Regular;
+  font-family: OpenSans-Regular;
   font-size: 16px;
   line-height: 18px;
   color: #333333;
 }
 
 .about-us-contact-us .contacts-form__mail ::-moz-placeholder {
-  font-family: Open OpenSans-Regular;
+  font-family: OpenSans-Regular;
   font-size: 16px;
   line-height: 18px;
   color: #828282;
 }
 
 .about-us-contact-us .contacts-form__mail ::placeholder {
-  font-family: Open OpenSans-Regular;
+  font-family: OpenSans-Regular;
   font-size: 16px;
   line-height: 18px;
   color: #828282;
@@ -2239,21 +2341,21 @@ body._touch .menu__list > li._active .menu__arrow {
   background-color: #fff;
   height: 50px;
   padding: 20px;
-  font-family: Open OpenSans-Regular;
+  font-family: OpenSans-Regular;
   font-size: 16px;
   line-height: 18px;
   color: #333333;
 }
 
 .about-us-contact-us .contacts-form__subject ::-moz-placeholder {
-  font-family: Open OpenSans-Regular;
+  font-family: OpenSans-Regular;
   font-size: 16px;
   line-height: 18px;
   color: #828282;
 }
 
 .about-us-contact-us .contacts-form__subject ::placeholder {
-  font-family: Open OpenSans-Regular;
+  font-family: OpenSans-Regular;
   font-size: 16px;
   line-height: 18px;
   color: #828282;
@@ -2278,21 +2380,21 @@ body._touch .menu__list > li._active .menu__arrow {
   background-color: #fff;
   height: 50px;
   padding: 20px;
-  font-family: Open OpenSans-Regular;
+  font-family: OpenSans-Regular;
   font-size: 16px;
   line-height: 18px;
   color: #333333;
 }
 
 .about-us-contact-us .contacts-form__message ::-moz-placeholder {
-  font-family: Open OpenSans-Regular;
+  font-family: OpenSans-Regular;
   font-size: 16px;
   line-height: 18px;
   color: #828282;
 }
 
 .about-us-contact-us .contacts-form__message ::placeholder {
-  font-family: Open OpenSans-Regular;
+  font-family: OpenSans-Regular;
   font-size: 16px;
   line-height: 18px;
   color: #828282;
@@ -2345,7 +2447,7 @@ body._touch .menu__list > li._active .menu__arrow {
 /*-------- Page FAQ Start -------*/
 
 .faq-spoiler {
-  margin: 200px 0 100px 0;
+  margin: 0 0 100px 0;
 }
 
 .spoiler-block {
@@ -2450,8 +2552,8 @@ body._touch .menu__list > li._active .menu__arrow {
   background-color: #e9ece0;
   font-family: OpenSans-Regular;
   font-size: 15px;
-  line-height: 18px;
-  text-align: justify;
+  line-height: 1.55;
+  text-align: left;
 }
 
 /*-------- Page FAQ End -------*/
@@ -2480,7 +2582,7 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .legal__updated {
   font-size: 14px;
-  color: #7a8a83;
+  color: #566860;
   margin-bottom: 24px;
 }
 
@@ -2968,6 +3070,14 @@ body._modal-lock {
   background-color: #79857f;
 }
 
+/*==================== Тач-зони стрілок слайдерів ====================*/
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 44px;
+  height: 44px;
+}
+
 @media (min-width: 576px) {
   .about__item {
     margin-bottom: 30px;
@@ -2991,6 +3101,28 @@ body._modal-lock {
 
   .menu__link {
     height: 20px;
+  }
+
+  .about__photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: start;
+    margin: 100px 20px;
+  }
+
+  .about__photo-gallery .about__item,
+  .about__photo-gallery .video-embed {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Єдина пропорція для всіх трьох плиток — рівний нижній край ряду */
+
+  .about__photo-gallery .about__item {
+    aspect-ratio: 432/387;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -3024,6 +3156,10 @@ body._modal-lock {
 
   .slider-info__text {
     padding-left: 50px;
+  }
+
+  .activities__title {
+    padding: 0 50px;
   }
 
   .activities__slider_1 {
@@ -3082,13 +3218,17 @@ body._modal-lock {
   .slider-info__text {
     flex: 0 0 100%;
     padding: 5px;
-    margin-top: 100px;
+    margin-top: 60px;
     align-items: center;
-    text-align: justify;
+    text-align: left;
   }
 
   .text__title-slider {
     text-align: center;
+  }
+
+  .activities__title {
+    padding: 0 40px;
   }
 
   .activities__slider_1 {
@@ -3153,14 +3293,17 @@ body._modal-lock {
     grid-template-areas: "my-forest-info my-forest-info" "my-map my-map";
   }
 
+  /* Рваний правий край замість justify: на вузькій колонці вирівнювання
+     по ширині лишало «річки» пробілів між словами */
+
   .forest__info {
     padding: 5em 3em;
-    text-align: justify;
+    text-align: left;
   }
 
   .map__google {
     width: 100%;
-    height: 600px;
+    height: 420px;
   }
 
   .about__text {
@@ -3203,6 +3346,11 @@ body._modal-lock {
   .trash-block {
     flex: 0 0 100%;
     position: static;
+  }
+
+  .choose-services .trash-block {
+    order: -1;
+    margin-bottom: 50px;
   }
 
   .payment-content {
@@ -3252,9 +3400,9 @@ body._modal-lock {
   .slider-info__text {
     flex: 0 0 100%;
     padding: 5px;
-    margin-top: 100px;
+    margin-top: 60px;
     align-items: center;
-    text-align: justify;
+    text-align: left;
   }
 
   .map-info__text {
@@ -3263,6 +3411,10 @@ body._modal-lock {
 
   .map-info__photo {
     flex: 0 0 100%;
+  }
+
+  .activities__title {
+    padding: 0 25px;
   }
 
   .activities__slider_1 {
@@ -3331,22 +3483,25 @@ body._modal-lock {
     margin-left: 0;
   }
 
+  /* Бокс 44x44 (мінімальна зручна зона дотику), самі лінії лишаються 30x18:
+     раніше палець мав влучити у смужки заввишки 18px */
+
   .menu__icon {
     z-index: 5;
     display: block;
     position: relative;
-    width: 30px;
-    height: 18px;
+    width: 44px;
+    height: 44px;
     cursor: pointer;
   }
 
   .menu__icon span,
   .menu__icon::before,
   .menu__icon::after {
-    left: 0;
+    left: 7px;
     position: absolute;
-    height: 10%;
-    width: 100%;
+    height: 2px;
+    width: 30px;
     transition: all 0.3s ease 0s;
     background-color: var(--header-bg-menu-icon-mobile);
   }
@@ -3357,7 +3512,7 @@ body._modal-lock {
   }
 
   .menu__icon::before {
-    top: 0;
+    top: 13px;
   }
 
   .menu__icon span {
@@ -3366,7 +3521,7 @@ body._modal-lock {
   }
 
   .menu__icon::after {
-    top: 100%;
+    top: 29px;
   }
 
   .menu__icon._active span {
@@ -3375,12 +3530,12 @@ body._modal-lock {
 
   .menu__icon._active::before {
     top: 50%;
-    transform: rotate(-45deg) translate(0px, -50%);
+    transform: rotate(-45deg) translate(0px, -1px);
   }
 
   .menu__icon._active::after {
     top: 50%;
-    transform: rotate(45deg) translate(0px, 50%);
+    transform: rotate(45deg) translate(0px, -1px);
   }
 
   .menu__body {
@@ -3433,7 +3588,8 @@ body._modal-lock {
 
   .menu__link {
     font-size: 28px;
-    height: 30px;
+    height: auto;
+    line-height: 1.2;
   }
 
   .menu__sub-list {
@@ -3586,17 +3742,18 @@ body._modal-lock {
     padding: 5em 5em;
   }
 
-  .text__subtitle {
-    text-align: justify;
-  }
-
   .about-us-stay {
     padding: 0 2em;
     margin: 50px 0;
   }
 
-  .more-about-us {
-    display: none;
+  /* Замість display:none — компактна версія: дві фотографії поруч і менший
+     кружечок-кнопка. Секція з CTA «More about us» знову є на мобілці. */
+
+  .more-about-us__link {
+    width: 110px;
+    height: 110px;
+    font-size: 14px;
   }
 
   .footer {
@@ -3617,6 +3774,10 @@ body._modal-lock {
 
   .photo-background__position_the-hut {
     top: 45%;
+  }
+
+  .photo-background__position_faq {
+    top: 42%;
   }
 
   .__container-swiper-other-page {
@@ -3674,7 +3835,7 @@ body._modal-lock {
   }
 
   .faq-spoiler {
-    margin: 150px 0 50px 0;
+    margin: 0 0 50px 0;
   }
 
   .legal {
@@ -3716,6 +3877,19 @@ body._modal-lock {
     padding: 3em 3em;
   }
 
+  /* На телефоні 40px заголовки секцій переважували 27px герой — вирівнюємо
+     масштаб, щоб H1 лишався головним */
+
+  .text__title,
+  .forest__title,
+  .facilities__title {
+    font-size: 28px;
+  }
+
+  .facilities__title {
+    margin-bottom: 50px;
+  }
+
   .text__title {
     text-align: center;
   }
@@ -3740,6 +3914,12 @@ body._modal-lock {
     padding: 20px 40px;
   }
 
+  .footer__license-text {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
   .footer {
     padding: 2em 2em;
   }
@@ -3751,7 +3931,7 @@ body._modal-lock {
   }
 
   .payment-content {
-    margin: 120px 0 80px 0;
+    margin: 140px 0 80px 0;
   }
 
   .photo-background__position_about-us {
@@ -3779,6 +3959,7 @@ body._modal-lock {
 
   .payment-form__row {
     flex-wrap: wrap;
+    gap: 0;
   }
 
   .modal__dialog {
@@ -3791,20 +3972,23 @@ body._modal-lock {
 }
 
 @media (min-width: 0) and (max-width: 575px) {
+  /* 20px/12px губились на фото: для першого екрана мобілки заголовок
+     має тримати ієрархію — 27px/14px досі вміщаються у 2 рядки на 320px */
+
   .slider-home__title {
-    font-size: 20px;
-    line-height: 22px;
-    margin-bottom: 4px;
+    font-size: 27px;
+    line-height: 31px;
+    margin-bottom: 8px;
   }
 
   .slider-home__subtitle {
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 19px;
   }
 
   .slider-home__text {
     width: 90%;
-    top: 7%;
+    top: 9%;
     left: 6%;
   }
 

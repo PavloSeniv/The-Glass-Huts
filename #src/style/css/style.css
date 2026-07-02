@@ -4,9 +4,15 @@
   color: #fff;
 }
 
+/* .__container overflow-x:clip — захист від горизонтального скролу: слайдери
+   (swiper) з overflow:visible і пагінація на left:85%+width:20% вилазили за
+   100% і давали бічний скрол на 320px. clip (а не hidden) не створює
+   scroll-container, тож position:sticky кошика бронювання й далі працює.
+   УВАГА: коментар лише поза блоком — інакше валить gulp-webp-css. */
 .__container {
   max-width: 1408px;
   margin: 0 auto;
+  overflow-x: clip;
 }
 
 ::-webkit-scrollbar {
@@ -56,7 +62,7 @@
 
 .about__link {
   display: inline-block;
-  font-family: "Open Sans Semibold";
+  font-family: OpenSans-SemiBold;
   font-size: 16px;
   color: var(--about-link-text-color);
 }
@@ -92,6 +98,31 @@
   width: 100%;
 }
 
+/* Галерея «The Cabins»: раніше flex без розмірів елементів давав 1 колонку на
+   768, кривий 2+1 на 1024 і 3-в-ряд лише біля 1440 (фото самі диктували ширину).
+   Явна сітка 3×1 з рівними колонками прибирає стрибки між брейкпоінтами. */
+@media (min-width: 768px) {
+  .about__photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: start;
+    margin: 100px 20px;
+  }
+
+  .about__photo-gallery .about__item,
+  .about__photo-gallery .video-embed {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Єдина пропорція для всіх трьох плиток — рівний нижній край ряду */
+  .about__photo-gallery .about__item {
+    aspect-ratio: 432 / 387;
+    object-fit: cover;
+  }
+}
+
 /*-------- About End -------*/
 
 /*-------- Forest Start -------*/
@@ -103,9 +134,13 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* .forest__map: підложка, поки вантажиться iframe Google Maps (або якщо його
+   блокує трекінг-захист) — замість великої білої діри спокійний бежевий фон */
 .forest__map {
   grid-area: my-map;
   width: 100%;
+  background-color: #e9ece0;
+  min-height: 400px;
 }
 
 .forest__info {
@@ -460,6 +495,18 @@
     padding: 3em 3em;
   }
 
+  /* На телефоні 40px заголовки секцій переважували 27px герой — вирівнюємо
+     масштаб, щоб H1 лишався головним */
+  .text__title,
+  .forest__title,
+  .facilities__title {
+    font-size: 28px;
+  }
+
+  .facilities__title {
+    margin-bottom: 50px;
+  }
+
   .text__title {
     text-align: center;
   }
@@ -540,17 +587,17 @@
     padding: 5em 5em;
   }
 
-  .text__subtitle {
-    text-align: justify;
-  }
-
   .about-us-stay {
     padding: 0 2em;
     margin: 50px 0;
   }
 
-  .more-about-us {
-    display: none;
+  /* Замість display:none — компактна версія: дві фотографії поруч і менший
+     кружечок-кнопка. Секція з CTA «More about us» знову є на мобілці. */
+  .more-about-us__link {
+    width: 110px;
+    height: 110px;
+    font-size: 14px;
   }
 }
 
@@ -569,14 +616,16 @@
       "my-map my-map";
   }
 
+  /* Рваний правий край замість justify: на вузькій колонці вирівнювання
+     по ширині лишало «річки» пробілів між словами */
   .forest__info {
     padding: 5em 3em;
-    text-align: justify;
+    text-align: left;
   }
 
   .map__google {
     width: 100%;
-    height: 600px;
+    height: 420px;
   }
 
   .about__text {

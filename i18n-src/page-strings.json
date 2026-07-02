@@ -959,6 +959,13 @@
     "de": "Senden"
   },
   {
+    "key": "faq.hero_title",
+    "en": "Frequently Asked Questions",
+    "da": "Ofte stillede spørgsmål",
+    "uk": "Часті запитання",
+    "de": "Häufig gestellte Fragen"
+  },
+  {
     "key": "faq.q_prices_title",
     "en": "Prices",
     "da": "Priser",

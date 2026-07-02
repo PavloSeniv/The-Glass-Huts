@@ -11,8 +11,23 @@ $color-font-gray-1: #333333;
 
 }
 
+.photo-img {
+  position: relative;
+}
+
+// Легкий скрим поверх фото хіро: білий заголовок і посилання-локація
+// читаються навіть на світлому небі/склі, незалежно від кадру
+.photo-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.12) 45%, rgba(0, 0, 0, 0.32) 100%);
+  pointer-events: none;
+}
+
 .photo-img__back {
   width: 100%;
+  display: block;
 }
 
 .photo-background__info {
@@ -71,6 +86,13 @@ $color-font-gray-1: #333333;
   }
 }
 
+.photo-background__position_faq {
+  top: 40%;
+  @media (max-width: 767px) {
+    top: 42%;
+  }
+}
+
 .photo-background__title {
   font-family: OpenSans-Light;
   font-size: 70px;
@@ -78,6 +100,8 @@ $color-font-gray-1: #333333;
   text-align: center;
   color: $color-font-white;
   margin-bottom: 15px;
+  // М'яка тінь: білий заголовок читається й на світлих ділянках фото (небо)
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.25);
 
   @media (max-width: 991px) {
     font-size: 35px;
@@ -105,6 +129,7 @@ $color-font-gray-1: #333333;
   text-align: center;
   text-decoration-line: none;
   color: $color-font-white;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
   @media (max-width: 991px) {
     font-size: 14px;
     line-height: 17px;
@@ -215,19 +240,21 @@ $color-font-gray-1: #333333;
   padding-left: 100px;
   flex-direction: column;
   justify-content: center;
+  // text-align: justify на вузькій колонці лишав «річки» пробілів між
+  // словами — рваний правий край читається краще
   @media (max-width: 991px) {
     flex: 0 0 100%;
     padding: 5px;
-    margin-top: 100px;
+    margin-top: 60px;
     align-items: center;
-    text-align: justify;
+    text-align: left;
   }
   @media (max-width: 1199px) {
     flex: 0 0 100%;
     padding: 5px;
-    margin-top: 100px;
+    margin-top: 60px;
     align-items: center;
-    text-align: justify;
+    text-align: left;
   }
   @media (max-width: 1399px) {
     padding-left: 50px;
@@ -330,7 +357,18 @@ $color-font-gray-1: #333333;
   line-height: 56px;
   color: $color-bg;
   margin-bottom: 50px;
-  padding: 0 10px;
+  // Ті самі бокові відступи, що й у .activities__slider_* — заголовок
+  // стоїть на одній вертикалі з контентом, а не притиснутий до краю екрана
+  padding: 0 100px;
+  @media (max-width: 1399px) {
+    padding: 0 50px;
+  }
+  @media (max-width: 1199px) {
+    padding: 0 40px;
+  }
+  @media (max-width: 991px) {
+    padding: 0 25px;
+  }
   @media (max-width: 767px) {
     text-align: center;
   }
@@ -354,18 +392,34 @@ $color-font-gray-1: #333333;
   }
 }
 
+// Перемикачі тексту біля слайдерів: раніше виглядали як суцільний курсивний
+// рядок («Hot tub EV charger») — без відступів і активного стану користувач
+// не бачив, що це вкладки. Тепер це явні таби з підкресленням активної.
 .text__subtitle-slider_menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
   margin-bottom: 30px;
 
   & a {
-    font-family: OpenSans-Italic;
-    font-size: 18px;
+    font-family: OpenSans-Regular;
+    font-size: 14px;
     line-height: 30px;
-    color: $color-bg;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #8a938f;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease 0s, border-color 0.3s ease 0s;
   }
 
   & a:hover {
-    text-decoration-line: underline;
+    color: $color-bg;
+  }
+
+  & a._active {
+    color: $color-bg;
+    border-bottom-color: $color-bg;
   }
 }
 

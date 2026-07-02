@@ -19,7 +19,8 @@ $color-bg-light-green: #e9ece0;
         margin: 160px 0 100px 0;
     }
     @media (max-width: 575px) {
-        margin: 120px 0 80px 0;
+        // 120px давали лише ~20px видимого відступу під фіксованим хедером (100px)
+        margin: 140px 0 80px 0;
     }
 }
 .choose-services__additional {
@@ -50,14 +51,24 @@ $color-bg-light-green: #e9ece0;
 .trash__geo-info {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
     gap: 4px 12px;
     justify-content: space-between;
+    margin-bottom: 20px;
+
+    // Назва хатини — головна у картці: більша й напівжирна, локація нижче/поруч
+    // як другорядне посилання
+    & .trash__sum-title {
+        font-family: OpenSans-SemiBold;
+        font-size: 20px;
+    }
+
     & .trash__geo {
         display: list-item;
         list-style: none;
         font-family: OpenSans-Regular;
-        font-size: 16px;
-        color: $color-font-gray-1;
+        font-size: 14px;
+        color: $color-bg;
 
         &:hover {
             text-decoration: underline;

@@ -94,3 +94,17 @@ if (menuLinks.length > 0) {
         }
     }
 }
+// Індикатор поточної сторінки в навігації: підсвічуємо пункт, що відповідає
+// відкритому файлу (index.html за замовчуванням для кореня сайту)
+(function () {
+    "use strict";
+    var path = location.pathname.split("/").pop() || "index.html";
+    var links = document.querySelectorAll(".menu__list .menu__link:not(.lang__current)");
+    links.forEach(function (link) {
+        var href = (link.getAttribute("href") || "").split("/").pop();
+        if (href && href === path) {
+            link.classList.add("menu__link_current");
+            link.setAttribute("aria-current", "page");
+        }
+    });
+}());

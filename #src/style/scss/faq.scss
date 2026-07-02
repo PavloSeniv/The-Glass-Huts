@@ -1,7 +1,9 @@
+// Хіро з фото (як на інших сторінках) тепер задає верхній відступ,
+// тож секції лишається тільки нижній
 .faq-spoiler {
-  margin: 200px 0 100px 0;
+  margin: 0 0 100px 0;
   @media (max-width: 767px) {
-    margin: 150px 0 50px 0;
+    margin: 0 0 50px 0;
   }
 }
 
@@ -109,6 +111,8 @@
   background-color: #e9ece0;
   font-family: OpenSans-Regular;
   font-size: 15px;
-  line-height: 18px;
-  text-align: justify;
+  // 18px на 15px шрифті — надто щільно для абзаців у 2-3 рядки
+  line-height: 1.55;
+  // Рваний правий край читається краще за «річки» пробілів justify
+  text-align: left;
 }

@@ -5,6 +5,20 @@
     max-width: 1408px;
 }
 
+/* Скрим поверх фото слайда: білий заголовок/підзаголовок героя гарантовано
+   читається на будь-якому кадрі (світле небо, скло) */
+.slider-home__img {
+    position: relative;
+}
+
+.slider-home__img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.15) 100%);
+    pointer-events: none;
+}
+
 .slider-home__button {
     position: absolute;
     z-index: 5;
@@ -20,6 +34,7 @@
     z-index: 10;
 }
 
+/* Тінь: білий текст не губиться на світлому небі фотографій слайдів */
 .slider-home__title {
     font-family: OpenSans-Light;
     font-size: 70px;
@@ -27,6 +42,7 @@
     text-align: right;
     color: #ffffff;
     margin-bottom: 34px;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 
 .slider-home__subtitle {
@@ -35,26 +51,29 @@
     line-height: 28px;
     text-align: right;
     color: #ffffff;
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45), 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 /*-------- Slider-Home End -------*/
 
 
 @media (min-width: 0) and (max-width: 575px) {
+    /* 20px/12px губились на фото: для першого екрана мобілки заголовок
+       має тримати ієрархію — 27px/14px досі вміщаються у 2 рядки на 320px */
     .slider-home__title {
-        font-size: 20px;
-        line-height: 22px;
-        margin-bottom: 4px;
+        font-size: 27px;
+        line-height: 31px;
+        margin-bottom: 8px;
     }
 
     .slider-home__subtitle {
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 19px;
     }
 
     .slider-home__text {
         width: 90%;
-        top: 7%;
+        top: 9%;
         left: 6%;
     }
 

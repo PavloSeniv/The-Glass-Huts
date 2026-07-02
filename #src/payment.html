@@ -61,46 +61,45 @@
 
                         <div class="trash__item-table">
                             <h3 data-i18n="payment.table_check_in">Check in</h3>
-                            <p data-pay-checkin>
-                                4/29/2021
-                            </p>
+                            <p data-pay-checkin>&mdash;</p>
                         </div>
 
                         <div class="trash__item-table">
                             <h3 data-i18n="payment.table_check_out">Check out</h3>
-                            <p data-pay-checkout>
-                                4/29/2021
-                            </p>
+                            <p data-pay-checkout>&mdash;</p>
                         </div>
 
                         <div class="trash__item-table">
                             <h3 data-i18n="payment.table_guests">Guests</h3>
-                            <p data-pay-guests>1</p>
+                            <p data-pay-guests>2</p>
                         </div>
                     </div>
 
+                    <!-- Дефолтний зразок кошика (видно лише при прямому заході без
+                         бронювання; при переході з booking JS перезаповнює реальними
+                         даними). Значення узгоджені: 9.600 + 400 + 600 − 1.000 = 9.600kr -->
                     <div class="trash__services-info" data-pay-lines aria-live="polite">
                         <div class="trash__block-info">
                             <p data-i18n="payment.line_item_stay">3 nights in a glass hut</p>
-                            <p>6340</p>
+                            <p>9.600kr</p>
                         </div>
                         <div class="trash__block-info">
                             <p data-i18n="payment.line_item_breakfast">Forest breakfast basket</p>
-                            <p>6340</p>
+                            <p>400kr</p>
                         </div>
                         <div class="trash__block-info">
                             <p data-i18n="payment.line_item_wellness">Wellness &amp; sauna access</p>
-                            <p>6340</p>
+                            <p>600kr</p>
                         </div>
                         <div class="trash__block-info trash__discount">
                             <p data-i18n="payment.line_item_discount">Early-bird discount</p>
-                            <p>6340</p>
+                            <p>&minus;1.000kr</p>
                         </div>
                     </div>
 
                     <div class="trash__total">
                         <h2 class="trash__title-total" data-i18n="payment.total_label">Total</h2>
-                        <h2 class="trash__title-total" data-pay-total aria-live="polite">7.000kr</h2>
+                        <h2 class="trash__title-total" data-pay-total aria-live="polite">9.600kr</h2>
                     </div>
                 </div>
 

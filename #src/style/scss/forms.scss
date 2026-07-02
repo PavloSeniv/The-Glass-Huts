@@ -59,6 +59,10 @@ select._invalid {
     gap: 16px;
     @media (max-width: 575px) {
         flex-wrap: wrap;
+        // Коли поля стають у стовпчик, вертикальний gap 16 + власний
+        // margin-bottom 16 у полів давали подвійний відступ. Обнуляємо gap —
+        // рівний ритм задає лише margin-bottom полів (як у решти форми).
+        gap: 0;
     }
 }
 .payment-form__input {

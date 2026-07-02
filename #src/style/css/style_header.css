@@ -3,6 +3,9 @@ body._lock {
     overflow: hidden;
 }
 
+/* .header box-shadow: раніше рамка була білою (= фон) і зникала. Ледь помітна
+   тінь відділяє фіксований білий хедер від білого контенту на legal/faq, і
+   майже непомітна поверх фото на головній та підсторінках. */
 .header {
     position: fixed;
     top: 0;
@@ -11,7 +14,8 @@ body._lock {
     z-index: 10;
     background-color: var(--header-bg-color);
     font-family: var(--header-font-family);
-    border-bottom: 1px solid var(--header-bg-color);
+    border-bottom: none;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
 }
 
 .header__container {
@@ -63,9 +67,9 @@ body._lock {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: 0;
     width: 100%;
-    height: 3px;
+    height: 2px;
     background-color: var(--header-menu-link-color);
     transform: scaleX(0);
     transform-origin: left center;
@@ -73,8 +77,15 @@ body._lock {
 }
 
 .menu__list-link:hover .menu__link:not(.lang__current)::after,
-.menu__link:not(.lang__current):focus-visible::after {
+.menu__link:not(.lang__current):focus-visible::after,
+.menu__link_current:not(.lang__current)::after {
     transform: scaleX(1);
+}
+
+/* Поточна сторінка: постійне підкреслення + напівжирний, щоб пункт було видно
+   серед решти навігації */
+.menu__link_current {
+    font-family: OpenSans-SemiBold;
 }
 
 .menu__sub-list {
@@ -144,7 +155,10 @@ body._lock {
 }
 
 /*----------------------------------*/
-body._pc .menu__list > li:hover .menu__sub-list {
+/* :focus-within — мовне підменю відкривається і з клавіатури (Tab),
+   а не лише наведенням миші */
+body._pc .menu__list > li:hover .menu__sub-list,
+body._pc .menu__list > li:focus-within .menu__sub-list {
     opacity: 1;
     visibility: visible;
     transform: translate(0, 0);
@@ -214,22 +228,24 @@ body._touch .menu__list > li._active .menu__arrow {
         margin-left: 0;
     }
 
+    /* Бокс 44x44 (мінімальна зручна зона дотику), самі лінії лишаються 30x18:
+       раніше палець мав влучити у смужки заввишки 18px */
     .menu__icon {
         z-index: 5;
         display: block;
         position: relative;
-        width: 30px;
-        height: 18px;
+        width: 44px;
+        height: 44px;
         cursor: pointer;
     }
 
     .menu__icon span,
     .menu__icon::before,
     .menu__icon::after {
-        left: 0;
+        left: 7px;
         position: absolute;
-        height: 10%;
-        width: 100%;
+        height: 2px;
+        width: 30px;
         transition: all 0.3s ease 0s;
         background-color: var(--header-bg-menu-icon-mobile);
     }
@@ -240,7 +256,7 @@ body._touch .menu__list > li._active .menu__arrow {
     }
 
     .menu__icon::before {
-        top: 0;
+        top: 13px;
     }
 
     .menu__icon span {
@@ -249,7 +265,7 @@ body._touch .menu__list > li._active .menu__arrow {
     }
 
     .menu__icon::after {
-        top: 100%;
+        top: 29px;
     }
 
     .menu__icon._active span {
@@ -258,12 +274,12 @@ body._touch .menu__list > li._active .menu__arrow {
 
     .menu__icon._active::before {
         top: 50%;
-        transform: rotate(-45deg) translate(0px, -50%);
+        transform: rotate(-45deg) translate(0px, -1px);
     }
 
     .menu__icon._active::after {
         top: 50%;
-        transform: rotate(45deg) translate(0px, 50%);
+        transform: rotate(45deg) translate(0px, -1px);
     }
 
     .menu__body {
@@ -316,8 +332,8 @@ body._touch .menu__list > li._active .menu__arrow {
 
     .menu__link {
         font-size: 28px;
-        height: 30px;
-
+        height: auto;
+        line-height: 1.2;
     }
 
     .menu__sub-list {

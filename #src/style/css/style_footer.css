@@ -5,11 +5,13 @@
     padding: 8em clamp(1.5rem, 8vw, 10em);
 }
 
+/* grid-gap 48px 100px: 100px по вертикалі лишали порожні смуги на вужчих
+   екранах, де колонки стають рядками — розводимо вертикальний і горизонтальний */
 .footer__container {
     max-width: 1408px;
     margin: 0 auto;
     display: grid;
-    grid-gap: 100px;
+    grid-gap: 48px 100px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
@@ -37,7 +39,7 @@
 }
 
 .newsletter__title {
-    font-family: "Open Sans Semibold";
+    font-family: OpenSans-SemiBold;
     color: var(--footer-bg-newsletter-color);
     font-size: 16px;
     display: block;
@@ -72,9 +74,9 @@
     align-items: center;
     justify-content: center;
     right: 0;
-    top: 34px;
+    top: 30px;
     width: 50px;
-    height: 40px;
+    height: 44px;
     padding: 8px;
     background-color: unset;
     cursor: pointer;
@@ -97,14 +99,20 @@
     line-height: 20px;
 }
 
+/* Жорсткі 33.333%-колонки ламали фрази навпіл (TERMS AND / CONDITIONS) і
+   зсували їх у нечитабельні рядки на вузькому футері. Тепер посилання
+   переносяться цілими, кожне лишається однією фразою. */
 .footer__license-text {
     display: flex;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
 .footer__license-item-text {
     text-align: center;
-    flex: 0 0 33.333%;
+    flex: 0 0 auto;
 }
 
 .footer__license-item-text > a {
@@ -113,6 +121,15 @@
     font-size: 14px;
     text-transform: uppercase;
     line-height: 24px;
+    white-space: nowrap;
+}
+
+@media (max-width: 575px) {
+    .footer__license-text {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
 }
 
 .footer__license-item-text > a:hover {

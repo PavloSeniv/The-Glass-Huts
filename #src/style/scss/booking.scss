@@ -169,9 +169,10 @@ $color-bg-light-green: #e9ece0;
 .choose-services__subtitle {
     font-family: OpenSans-Regular;
     font-size: 16px;
-    line-height: 18px;
+    // 18px (1.125) тиснуло багаторядкові абзаци; 1.6 дає повітря
+    line-height: 1.6;
     color: #333333;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     &:nth-last-child(1) {
         margin-bottom: 0;
     }
@@ -216,6 +217,17 @@ $color-bg-light-green: #e9ece0;
     @media (max-width: 991px) {
         flex: 0 0 100%;
         position: static;
+    }
+}
+
+// Лише на сторінці бронювання (.choose-services): у стовпчик кошик із датами
+// та кнопкою «Book» піднімається над правилами й описами послуг — інакше
+// головна дія сторінки опинялась у самому низу. На payment порядок
+// «форма → підсумок → підтвердження» правильний, там не чіпаємо.
+.choose-services .trash-block {
+    @media (max-width: 991px) {
+        order: -1;
+        margin-bottom: 50px;
     }
 }
 .trash {
@@ -307,9 +319,10 @@ $color-bg-light-green: #e9ece0;
     min-width: 0;
     border: 0.7px solid $color-bg;
     background-color: unset;
-    padding: 4px 6px;
+    padding: 6px;
     font-family: OpenSans-Regular;
-    font-size: 11px;
+    // 11px були нечитабельні; 13px досі вміщаються у 108px колонку
+    font-size: 13px;
     color: $color-font-gray-1;
 }
 .trash__button {
@@ -339,7 +352,8 @@ $color-bg-light-green: #e9ece0;
     margin-bottom: 30px;
 }
 .trash__discount {
-    color: #41916d;
+    // #41916d давав ~3.3:1 на білому (не проходив AA); #2e7d5b — 5:1
+    color: #2e7d5b;
 }
 .trash__total {
     display: flex;
@@ -381,7 +395,7 @@ $color-bg-light-green: #e9ece0;
     font-family: OpenSans-Regular;
     font-size: 14px;
     &._ok {
-        color: #41916d;
+        color: #2e7d5b;
     }
     &._err {
         color: #b23a3a;
@@ -477,7 +491,7 @@ $color-bg-light-green: #e9ece0;
 }
 .trash__promo-val {
     font-family: OpenSans-SemiBold;
-    color: #41916d;
+    color: #2e7d5b;
 }
 
 /*-------- Payment: заголовок блоку послуг -------*/

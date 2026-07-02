@@ -127,3 +127,25 @@
     }
 
 }());
+// Активний стан табів-перемикачів: перше посилання підсвічене одразу,
+// клік переносить підсвітку (клас _active стилізується в the_area.scss)
+(function () {
+    'use strict';
+
+    document.querySelectorAll('.text__subtitle-slider_menu').forEach(function (menu) {
+        var links = menu.querySelectorAll('a');
+        if (!links.length) return;
+
+        links[0].classList.add('_active');
+
+        links.forEach(function (link) {
+            link.addEventListener('click', function () {
+                links.forEach(function (l) {
+                    l.classList.remove('_active');
+                });
+                link.classList.add('_active');
+            });
+        });
+    });
+
+}());
