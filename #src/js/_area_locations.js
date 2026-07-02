@@ -14,6 +14,7 @@
     var titleEl = document.querySelector("[data-area-title]");
     var subtitleEl = document.querySelector("[data-area-subtitle]");
     var textEl = document.querySelector("[data-area-text]");
+    var areaSlider = document.querySelector("[data-area-slider]");
 
     function t(key, fallback) {
         return (window.THG && typeof window.THG.t === "function" && window.THG.t(key)) || fallback;
@@ -36,6 +37,24 @@
         elm.setAttribute("rel", "noopener");
     }
 
+    // Підміняє фото вступного слайдера на набір обраної локації:
+    // знищуємо поточний Swiper, перезаписуємо слайди, ініціалізуємо заново.
+    function setSlides(loc) {
+        if (!areaSlider || !loc.area || !loc.area.slides) return;
+        var wrapper = areaSlider.querySelector(".swiper-wrapper");
+        if (!wrapper) return;
+        if (areaSlider.swiper) areaSlider.swiper.destroy(true, true);
+        var html = "";
+        for (var i = 0; i < loc.area.slides.length; i++) {
+            var s = loc.area.slides[i];
+            html += '<div class="swiper-slide"><img width="100%" height="auto" src="' + s.src + '" alt="' + s.alt + '"></div>';
+        }
+        wrapper.innerHTML = html;
+        if (window.THG && typeof window.THG.initSlider === "function") {
+            window.THG.initSlider(areaSlider);
+        }
+    }
+
     function setLocation(id) {
         var loc = LOCS[id] || LOCS[LOCS.order[0]];
         setI18n(heroLabel, loc.labelKey);
@@ -45,6 +64,7 @@
             setI18n(subtitleEl, loc.area.subtitleKey);
             setI18n(textEl, loc.area.textKey);
         }
+        setSlides(loc);                                // фото слайдера — свої в кожній локації
         setExternalLink(directions, directionsUrl(loc)); // «Прокласти маршрут» → режим маршруту
     }
 

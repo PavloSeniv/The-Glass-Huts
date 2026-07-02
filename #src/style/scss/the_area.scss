@@ -180,13 +180,25 @@ $color-font-gray-1: #333333;
 
 .__container-swiper-other-page {
   max-width: 546px;
+  width: 100%;
   overflow: visible;
+  // Стала пропорція (~546x480, як у вихідних фото): слайди з фото інших
+  // форматів (широкі кадри з головної) не «стрибають» по висоті
+  aspect-ratio: 546 / 480;
   @media (max-width: 575px) {
     max-width: 350px;
   }
   @media (max-width: 767px) {
     max-width: 450px;
   }
+}
+
+// Фото заповнює слайд повністю незалежно від своїх пропорцій
+.__container-swiper-other-page .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .slider-info {

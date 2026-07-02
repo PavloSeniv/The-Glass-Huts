@@ -675,3 +675,20 @@ button.swiper-pagination-bullet {
         width: 20%;
     }
 }
+
+/* ===== До ініціалізації Swiper (клас swiper-container-initialized ще не доданий)
+   показуємо статично лише перший слайд — без «розсипаних» слайдів рядком і без
+   стрибка розкладки, поки вантажиться JS ===== */
+.swiper-container:not(.swiper-container-initialized) .swiper-wrapper {
+    display: block;
+}
+
+.swiper-container:not(.swiper-container-initialized) .swiper-slide + .swiper-slide {
+    display: none;
+}
+
+.swiper-container:not(.swiper-container-initialized) .swiper-button-prev,
+.swiper-container:not(.swiper-container-initialized) .swiper-button-next,
+.swiper-container:not(.swiper-container-initialized) .swiper-pagination {
+    opacity: 0;
+}
