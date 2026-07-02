@@ -19,78 +19,55 @@ $color-font-gray-1: #333333;
   position: absolute;
   z-index: 1;
   padding: 0 20px;
+  text-align: center;
   text-align-last: center;
+  // Справжнє горизонтальне центрування на будь-якій ширині екрана.
+  // Раніше лівий край підганявся вручну (left: 25–43% на брейкпоінтах),
+  // тож блок «їхав» від центру залежно від ширини вмісту.
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;      // не даємо shrink-to-fit звузити блок через left:50%
+  max-width: 94vw;         // а довгий вміст переносимо, не вилазячи за екран
 }
 
+// Для кожної сторінки — лише вертикальна позиція
 .photo-background__position_the-area {
   top: 18%;
-  left: 40%;
-  @media (max-width: 575px) {
-    top: 30%;
-    left: 25%;
+  @media (max-width: 991px) {
+    top: 25%;
   }
   @media (max-width: 767px) {
     top: 30%;
-    left: 35%;
-  }
-
-  @media (max-width: 991px) {
-    top: 25%;
-    left: 38%;
   }
 }
 
 .photo-background__position_about-us {
   top: 25%;
-  left: 35%;
-  @media (max-width: 575px) {
-    top: 20%;
-    left: 5%;
+  @media (max-width: 991px) {
+    top: 30%;
   }
   @media (max-width: 767px) {
     top: 35%;
-    left: 20%;
   }
-
-  @media (max-width: 991px) {
-    top: 30%;
-    left: 25%;
+  @media (max-width: 575px) {
+    top: 20%;
   }
 }
 
 .photo-background__position_booking {
   top: 30%;
-  left: 40%;
-  @media (max-width: 575px) {
-    top: 45%;
-    left: 35%;
+  @media (max-width: 991px) {
+    top: 40%;
   }
   @media (max-width: 767px) {
     top: 45%;
-    left: 40%;;
-  }
-
-  @media (max-width: 991px) {
-    top: 40%;
-    left: 43%;
   }
 }
 
 .photo-background__position_the-hut {
   top: 40%;
-  left: 40%;
-  @media (max-width: 575px) {
-    top: 45%;
-    left: 35%;
-  }
   @media (max-width: 767px) {
     top: 45%;
-    left: 40%;;
-  }
-
-  @media (max-width: 991px) {
-    top: 40%;
-    left: 43%;
   }
 }
 

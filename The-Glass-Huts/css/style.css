@@ -1186,7 +1186,7 @@ body._touch .menu__list > li._active .menu__arrow {
   position: absolute;
   left: 14px;
   top: 13px;
-  z-index: 11;
+  z-index: 2;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -1725,28 +1725,30 @@ body._touch .menu__list > li._active .menu__arrow {
   position: absolute;
   z-index: 1;
   padding: 0 20px;
+  text-align: center;
   -moz-text-align-last: center;
   text-align-last: center;
+  left: 50%;
+  transform: translateX(-50%);
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 94vw;
 }
 
 .photo-background__position_the-area {
   top: 18%;
-  left: 40%;
 }
 
 .photo-background__position_about-us {
   top: 25%;
-  left: 35%;
 }
 
 .photo-background__position_booking {
   top: 30%;
-  left: 40%;
 }
 
 .photo-background__position_the-hut {
   top: 40%;
-  left: 40%;
 }
 
 .photo-background__title {
@@ -3206,22 +3208,14 @@ body._modal-lock {
 
   .photo-background__position_the-area {
     top: 25%;
-    left: 38%;
   }
 
   .photo-background__position_about-us {
     top: 30%;
-    left: 25%;
   }
 
   .photo-background__position_booking {
     top: 40%;
-    left: 43%;
-  }
-
-  .photo-background__position_the-hut {
-    top: 40%;
-    left: 43%;
   }
 
   .photo-background__title {
@@ -3603,22 +3597,18 @@ body._modal-lock {
 
   .photo-background__position_the-area {
     top: 30%;
-    left: 35%;
   }
 
   .photo-background__position_about-us {
     top: 35%;
-    left: 20%;
   }
 
   .photo-background__position_booking {
     top: 45%;
-    left: 40%;
   }
 
   .photo-background__position_the-hut {
     top: 45%;
-    left: 40%;
   }
 
   .__container-swiper-other-page {
@@ -3756,24 +3746,8 @@ body._modal-lock {
     margin: 120px 0 80px 0;
   }
 
-  .photo-background__position_the-area {
-    top: 30%;
-    left: 25%;
-  }
-
   .photo-background__position_about-us {
     top: 20%;
-    left: 5%;
-  }
-
-  .photo-background__position_booking {
-    top: 45%;
-    left: 35%;
-  }
-
-  .photo-background__position_the-hut {
-    top: 45%;
-    left: 35%;
   }
 
   .photo-background__button {
