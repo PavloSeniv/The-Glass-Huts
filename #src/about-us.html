@@ -23,10 +23,11 @@
         <div class="photo-img">
             <!--Атрибут alt виходить за лінію-->
             <picture>
-                <source srcset="img/about_us/about_us_background/about_us_background_mobile.png, img/about_us/about_us_background/about_us_background_mobile.webp"
-                        media="(max-width:767px)">
+                <source media="(max-width:767px)" srcset="img/about_us/about_us_background/about_us_background_mobile.webp" type="image/webp">
+                <source media="(max-width:767px)" srcset="img/about_us/about_us_background/about_us_background_mobile.png" type="image/png">
+                <source srcset="img/about_us/about_us_background/about_us_background_desktop.webp" type="image/webp">
                 <img class="photo-img__back" src="img/about_us/about_us_background/about_us_background_desktop.png"
-                     srcset="img/about_us/about_us_background/about_us_background_desktop.webp" alt="about_us_background_desktop">
+                     alt="about_us_background_desktop">
             </picture>
         </div>
         <div class="photo-background__info photo-background__position_about-us">
@@ -144,7 +145,8 @@
         <h2 class="with-love__title">From Denmark <br> With Love...</h2>
         <div class="with-love__subtitle">
             <picture>
-                <img src="img/about_us/with-love/with-love-photo.png" srcset="img/about_us/with-love/with-love-photo.webp, img/about_us/with-love/with-love-photo.svg" alt="with-love-photo">
+                <source srcset="img/about_us/with-love/with-love-photo.webp" type="image/webp">
+                <img src="img/about_us/with-love/with-love-photo.png" alt="with-love-photo">
             </picture>
         </div>
     </section>

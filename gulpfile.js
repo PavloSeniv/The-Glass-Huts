@@ -57,7 +57,15 @@ let {src, dest} = require('gulp'),
     uglify = require("gulp-uglify-es").default, //Оптимізація js
     imagemin = require("gulp-imagemin"), //Оптимізація зображень
     webp = require("gulp-webp"), //Для перетворення зображень у формат webp
-    webphtml = require("gulp-webp-html"), //Інтеграція webp в html
+    // Інтеграція webp в html.
+    // gulp-webp-html (v1.0.2) давав некоректну розмітку: він дописував .webp
+    // як ЩЕ ОДИН кандидат у той самий srcset (браузер вважав png і webp
+    // рівноцінними варіантами однієї картинки, тож оптимізація не працювала),
+    // клеїв .svg у <source type="image/webp"> і склеював увесь html в один рядок.
+    // gulp-webp-html-nosvg генерує справжній фолбек —
+    // <picture><source srcset="….webp" type="image/webp"><img src="….png"></picture> —
+    // і не чіпає .svg/.gif.
+    webphtml = require("gulp-webp-html-nosvg"),
     webpcss2 = require("gulp-webp-css"),//Інтеграція webp в css(правильний варіант)
     svgSprite = require("gulp-svg-sprite"),//Створення svg спрайтів
     ttf2woff = require("gulp-ttf2woff"),//Конвертація шрифтів

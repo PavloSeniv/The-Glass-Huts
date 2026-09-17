@@ -1,1 +1,298 @@
-<!doctype html><html lang="en"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta http-equiv="X-UA-Compatible" content="ie=edge">    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>    <meta name="author" content="Seniv Pavlo, https://github.com/PavloSeniv">    <meta http-equiv="copyright" content="Seniv Pavlo">    <title>The Glass Huts</title>    <!------- Іконка ------->    <link rel="icon" type="image/svg+xml" href="img/index/favicon.svg">    <!------- Style ------->    <link rel="stylesheet" href="css/style.min.css"></head><body>    <header class="header">    <a class="skip-link" href="#main" data-i18n="nav.skip_to_content">Skip to content</a>    <div class="header__container">        <a class="header__logo" href="index.html">            <!--            Адаптивні картинки та заміна зображення відповідно медіа запиту(також можлива заміна відносно            моделі телефону(Android - header__logo 1x, iPhone - header__logo 2x - залежність від дисплею))            -->            <picture>                <source srcset="img/index/header/header_logo_mobile.png, img/index/header/header_logo_mobile.webp, img/index/header/header_logo_mobile.svg"                        media="(max-width:767px)">                <img src="img/index/header/header_logo_desktop.png"                     srcset="img/index/header/header_logo_desktop.webp, img/index/header/header_logo_desktop.svg"                     alt="header_logo_desktop">            </picture>        </a>        <div class="header__menu menu">            <div class="menu__icon" role="button" tabindex="0" aria-label="Menu" aria-expanded="false" aria-controls="primary-menu" data-i18n-aria="nav.menu">                <span></span>            </div>        </div>        <nav class="menu__body" id="primary-menu" aria-label="Primary">            <ul class="menu__list">                <li class="menu__list-link"><a class="menu__link" href="index.html" data-i18n="nav.home">Home</a></li>                <li class="menu__list-link"><a class="menu__link" href="the-hut.html" data-i18n="nav.hut">The Hut</a></li>                <li class="menu__list-link"><a class="menu__link" href="the-area.html" data-i18n="nav.area">The Area</a></li>                <li class="menu__list-link"><a class="menu__link" href="about-us.html" data-i18n="nav.about">About Us</a></li>                <li class="menu__list-link"><a class="menu__link" href="faq.html" data-i18n="nav.faq">Faq</a></li>                <li class="menu__lang lang">                    <a class="menu__link lang__current" href="#" data-lang-current aria-label="Language">                        <picture><source srcset="img/index/header/united_kingdom.svg" type="image/webp"><img class="lang__flag" src="img/index/header/united_kingdom.svg" alt="English" data-lang-current-flag></picture>                        <span class="lang__code" data-lang-current-label>EN</span>                    </a>                    <span class="menu__arrow" aria-hidden="true"></span>                    <ul class="menu__sub-list lang__list" role="menu" aria-label="Select language" data-i18n-aria="nav.select_language">                        <li class="lang__item">                            <a class="menu__sub-link lang__option" role="menuitem" href="#" data-lang-option="en" data-lang-label="EN">                                <picture><source srcset="img/index/header/united_kingdom.svg" type="image/webp"><img class="lang__flag" src="img/index/header/united_kingdom.svg" alt="English"></picture>                                <span class="lang__name">English</span>                            </a>                        </li>                        <li class="lang__item">                            <a class="menu__sub-link lang__option" role="menuitem" href="#" data-lang-option="da" data-lang-label="DA">                                <picture><source srcset="img/index/header/denmark.svg" type="image/webp"><img class="lang__flag" src="img/index/header/denmark.svg" alt="Dansk"></picture>                                <span class="lang__name">Dansk</span>                            </a>                        </li>                        <li class="lang__item">                            <a class="menu__sub-link lang__option" role="menuitem" href="#" data-lang-option="uk" data-lang-label="UK">                                <picture><source srcset="img/index/header/ukraine.svg" type="image/webp"><img class="lang__flag" src="img/index/header/ukraine.svg" alt="Українська"></picture>                                <span class="lang__name">Українська</span>                            </a>                        </li>                        <li class="lang__item">                            <a class="menu__sub-link lang__option" role="menuitem" href="#" data-lang-option="de" data-lang-label="DE">                                <picture><source srcset="img/index/header/germany.svg" type="image/webp"><img class="lang__flag" src="img/index/header/germany.svg" alt="Deutsch"></picture>                                <span class="lang__name">Deutsch</span>                            </a>                        </li>                    </ul>                </li>            </ul>            <a class="menu__button-mobile" href="booking.html" data-i18n="common.book_now">Book now</a>        </nav>        <a class="menu__button-desktop" href="booking.html" data-i18n="common.book_now">Book now</a>    </div></header><main class="__container" id="main" tabindex="-1">    <!-- The Area BEM-->    <section class="photo-background">        <div class="photo-img">            <!--Атрибут alt виходить за лінію-->            <picture>                <source srcset="img/about_us/about_us_background/about_us_background_mobile.png, img/about_us/about_us_background/about_us_background_mobile.webp"                        media="(max-width:767px)">                <img class="photo-img__back" src="img/about_us/about_us_background/about_us_background_desktop.png"                     srcset="img/about_us/about_us_background/about_us_background_desktop.webp" alt="about_us_background_desktop">            </picture>        </div>        <div class="photo-background__info photo-background__position_about-us">            <h1 class="photo-background__title" data-i18n="about.hero_title">About Us</h1>            <div class="photo-background__buttons">                <a data-goto=".contact-us" class="photo-background__button" href="#" data-i18n="about.hero_contact_us">Contact Us</a>                <a class="photo-background__button" href="faq.html" data-i18n="about.hero_read_faq">Read Faq</a>            </div>        </div>    </section>    <section class="about-us-content-1 _reveal">        <div class="about-us-content-content-1__photo">            <picture><source srcset="img/about_us/about_us_content_1/about_us_content_1_photo.webp" type="image/webp"><img class="about-us-content-1__img" src="img/about_us/about_us_content_1/about_us_content_1_photo.png" alt="about_us_content_1_photo"></picture>        </div>        <div class="about-us-content-1__info">            <h2 class="about-us-content-1__title" data-i18n="about.quote_title">&ldquo; We built The Glass Huts for the                moment you exhale. A place where the forest, the fjord and the night sky become the only things asking                for your attention.                &rdquo;            </h2>            <p class="about-us-content-1__subtitle" data-i18n="about.quote_text">It began with a simple wish: to stay                inside nature without ever stepping away from comfort. So we set a handful of glass cabins gently into                the woodland above the Mariager fjord, where the light shifts all day and the stars arrive uninterrupted                at night. Every hut is designed to disappear into its surroundings, leaving you with warmth, quiet and a                view that never repeats. This is our love letter to slow living, and to everyone who chooses to spend a                few honest days closer to the trees.</p>        </div>    </section>    <section class="about-us-gallery _reveal">        <h2 class="about-us-gallery__title" data-i18n-html="about.gallery_title">The people, the place, <br> and the quiet in between</h2>        <div class="about-us-gallery__photo">            <div class="about-us-gallery__photo_1">                <picture><source srcset="img/about_us/about_us_gallery/about_us_gallery_photo_1.webp" type="image/webp"><img class="about-us-gallery__img" src="img/about_us/about_us_gallery/about_us_gallery_photo_1.png" alt="about_us_gallery_photo-1"></picture>            </div>            <div class="about-us-gallery__photo_2">                <picture><source srcset="img/about_us/about_us_gallery/about_us_gallery_photo_2.webp" type="image/webp"><img class="about-us-gallery__img" src="img/about_us/about_us_gallery/about_us_gallery_photo_2.png" alt="about_us_gallery_photo-2"></picture>            </div>            <div class="about-us-gallery__photo_3">                <picture><source srcset="img/about_us/about_us_gallery/about_us_gallery_photo_3.webp" type="image/webp"><img class="about-us-gallery__img" src="img/about_us/about_us_gallery/about_us_gallery_photo_3.png" alt="about_us_gallery_photo-3"></picture>            </div>            <div class="about-us-gallery__photo-text">                <p class="photo-text__about-us" data-i18n="about.gallery_text">                    We are a small Danish team of designers, hosts and nature lovers who look after every hut by hand.                    From the morning fog over the fjord to the last lantern lit at dusk, we tend the details so your                    only task is to rest.                </p>            </div>            <div class="about-us-gallery__photo_4">                <picture><source srcset="img/about_us/about_us_gallery/about_us_gallery_photo_4.webp" type="image/webp"><img class="about-us-gallery__img" src="img/about_us/about_us_gallery/about_us_gallery_photo_4.png" alt="about_us_gallery_photo-4"></picture>            </div>        </div>    </section>    <section class="about-us-contact-us contact-us _reveal">        <h2 class="contact__title" data-i18n="about.contact_title">Stay in touch with us</h2>        <div class="about-us-stay__contact">            <h4 class="contact__sub-title" data-i18n="common.location">Vesterbord, Denmark</h4>            <a class="contact__phone" href="tel:+123 456 789 000">+123 456 789 000</a>            <a class="contact__mail" href="mailto:info@theglasshuts.com">info@theglasshuts.com</a>            <ul class="contact__link-social">                <li>                    <a class="link-social__item" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">                        <picture><source srcset="img/index/about_us_stay/social_item_insta.webp" type="image/webp"><img src="img/index/about_us_stay/social_item_insta.png" alt=""></picture>                    </a>                </li>                <li>                    <a class="link-social__item" href="https://uk-ua.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">                        <picture><source srcset="img/index/about_us_stay/social_item_facebook.webp" type="image/webp"><img src="img/index/about_us_stay/social_item_facebook.png" alt=""></picture>                    </a>                </li>                <li>                    <a class="link-social__item" href="https://twitter.com/?lang=uk" target="_blank" rel="noopener" aria-label="Twitter">                        <picture><source srcset="img/index/about_us_stay/social_item_twitter.webp" type="image/webp"><img src="img/index/about_us_stay/social_item_twitter.png" alt=""></picture>                    </a>                </li>            </ul>        </div>    <div class="contact-form">        <form class="contacts-form__action" action="" method="post" data-validate data-success="about.toast_sent" novalidate>            <div class="contacts-form__first-name" >                <input type="text" name="first-name" required placeholder="First Name" data-i18n-ph="about.form_first_name" aria-label="First Name" data-i18n-aria="about.form_first_name">            </div>            <div class="contacts-form__last-name" >                <input type="text" name="last-name" placeholder="Last Name" data-i18n-ph="about.form_last_name" aria-label="Last Name" data-i18n-aria="about.form_last_name">            </div>            <div class="contacts-form__mail" >                <input type="email" name="mail" required placeholder="Email" data-i18n-ph="about.form_email" aria-label="Email" data-i18n-aria="about.form_email">            </div>            <div class="contacts-form__subject" >                <input type="text" name="subject" placeholder="Subject" data-i18n-ph="about.form_subject" aria-label="Subject" data-i18n-aria="about.form_subject">            </div>            <div class="contacts-form__message" >                <textarea name="message" required placeholder="Message" cols="30"                    rows="10" data-i18n-ph="about.form_message" aria-label="Message" data-i18n-aria="about.form_message"></textarea>            </div>            <button type="submit" class="contact-form__button" data-i18n="about.form_send">Send</button>        </form>    </div>        </section>    <section class="with-love _reveal">        <!-- Навмисно без data-i18n: цей підпис завжди англійською в усіх мовах. -->        <h2 class="with-love__title">From Denmark <br> With Love...</h2>        <div class="with-love__subtitle">            <picture>                <img src="img/about_us/with-love/with-love-photo.png" srcset="img/about_us/with-love/with-love-photo.webp, img/about_us/with-love/with-love-photo.svg" alt="with-love-photo">            </picture>        </div>    </section></main><footer class="footer">    <div class="footer__container">        <div class="footer__newsletter">            <form class="newsletter__form" action="/newsletter-send" method="post" data-validate data-success="forms.toast_subscribed" novalidate>                <label class="newsletter__title" for="mail" data-i18n="footer.newsletter">Newsletter</label>                <input class="newsletter__input" type="email" id="mail" name="mail__add" required placeholder="Email Address" data-i18n-ph="footer.email_placeholder">                <button class="newsletter__button" type="submit" data-i18n-aria="footer.subscribe" aria-label="Subscribe">                    <object class="newsletter__arrow"                            type="image/svg+xml"                            data="img/index/footer/footer_line.svg">                        <picture><source srcset="img/index/footer/footer_line.webp" type="image/webp"><img src="img/index/footer/footer_line.png" alt=""></picture>                    </object>                </button>            </form>            <p class="newsletter-sub-text" data-i18n="footer.newsletter_text">Sign up to our newsletter for special things and receive 10% off your next                order.</p>        </div>        <div class="footer__license">            <ul class="footer__license-text">                <li class="footer__license-item-text"><a href="terms.html" data-i18n="footer.terms">TERMS AND CONDITIONS</a></li>                <li class="footer__license-item-text"><a href="cancellation-policy.html" data-i18n="footer.cancellation">CANCELLATION POLICY</a></li>                <li class="footer__license-item-text"><a href="privacy-policy.html" data-i18n="footer.privacy">PRIVACY POLICY</a></li>            </ul>            <ul class="footer__license-icon">                <li class="footer__license-item">                    <a href="https://www.paypal.com/ru/home" target="_blank">                        <object                                type="image/svg+xml"                                data="img/index/footer/item_comp_paypal.svg">                            <picture><source srcset="img/index/footer/item_comp_paypal.webp" type="image/webp"><img src="img/index/footer/item_comp_paypal.png" alt="item_comp_paypal"></picture>                        </object>                    </a>                </li>                <li class="footer__license-item">                    <a href="https://www.mastercard.ua/uk-ua.html" target="_blank">                        <object                                type="image/svg+xml"                                data="img/index/footer/item_comp_master_card.svg">                            <picture><source srcset="img/index/footer/item_comp_master_card.webp" type="image/webp"><img src="img/index/footer/item_comp_master_card.png" alt="item_comp_master_card"></picture>                        </object>                    </a>                </li>                <li class="footer__license-item">                    <a href="https://www.visa.com.ua/uk_UA" target="_blank">                        <object                                type="image/svg+xml"                                data="img/index/footer/item_comp_visa.svg">                            <picture><source srcset="img/index/footer/item_comp_visa.webp" type="image/webp"><img src="img/index/footer/item_comp_visa.png" alt="item_comp_visa"></picture>                        </object>                    </a>                </li>                <li class="footer__license-item">                    <a href="https://privatbank.ua/ru/sistemy-denegnih-perevodov" target="_blank">                        <object                                type="image/svg+xml"                                data="img/index/footer/item_comp_bank_transfer.svg">                            <picture><source srcset="img/index/footer/item_comp_bank_transfer.webp" type="image/webp"><img src="img/index/footer/item_comp_bank_transfer.png" alt="item_comp_bank_transfer"></picture>                        </object>                    </a>                </li>            </ul>        </div>        <div class="footer__security-police">            <p>&copy; <span data-year>2021</span> The Glass Huts</p>        </div>    </div></footer><!------- Main Script -------><script src="js/main_script.min.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+    <meta name="author" content="Seniv Pavlo, https://github.com/PavloSeniv">
+    <meta http-equiv="copyright" content="Seniv Pavlo">
+    <title>The Glass Huts</title>
+    <!------- Іконка ------->
+    <link rel="icon" type="image/svg+xml" href="img/index/favicon.svg">
+    <!------- Style ------->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    
+<header class="header">
+    <a class="skip-link" href="#main" data-i18n="nav.skip_to_content">Skip to content</a>
+    <div class="header__container">
+        <a class="header__logo" href="index.html">
+            <!--
+            Адаптивні картинки та заміна зображення відповідно медіа запиту(також можлива заміна відносно
+            моделі телефону(Android - header__logo 1x, iPhone - header__logo 2x - залежність від дисплею))
+            -->
+            <picture>
+                <source media="(max-width:767px)" srcset="img/index/header/header_logo_mobile.webp" type="image/webp">
+                <source media="(max-width:767px)" srcset="img/index/header/header_logo_mobile.png" type="image/png">
+                <source srcset="img/index/header/header_logo_desktop.webp" type="image/webp">
+                <img src="img/index/header/header_logo_desktop.png"
+                     alt="header_logo_desktop">
+            </picture>
+        </a>
+        <div class="header__menu menu">
+            <div class="menu__icon" role="button" tabindex="0" aria-label="Menu" aria-expanded="false" aria-controls="primary-menu" data-i18n-aria="nav.menu">
+                <span></span>
+            </div>
+        </div>
+        <nav class="menu__body" id="primary-menu" aria-label="Primary">
+            <ul class="menu__list">
+                <li class="menu__list-link"><a class="menu__link" href="index.html" data-i18n="nav.home">Home</a></li>
+                <li class="menu__list-link"><a class="menu__link" href="the-hut.html" data-i18n="nav.hut">The Hut</a></li>
+                <li class="menu__list-link"><a class="menu__link" href="the-area.html" data-i18n="nav.area">The Area</a></li>
+                <li class="menu__list-link"><a class="menu__link" href="about-us.html" data-i18n="nav.about">About Us</a></li>
+                <li class="menu__list-link"><a class="menu__link" href="faq.html" data-i18n="nav.faq">Faq</a></li>
+                <li class="menu__lang lang">
+                    <a class="menu__link lang__current" href="#" data-lang-current aria-label="Language">
+                        <img class="lang__flag" src="img/index/header/united_kingdom.svg" alt="English" data-lang-current-flag>
+                        <span class="lang__code" data-lang-current-label>EN</span>
+                    </a>
+                    <span class="menu__arrow" aria-hidden="true"></span>
+                    <ul class="menu__sub-list lang__list" role="menu" aria-label="Select language" data-i18n-aria="nav.select_language">
+                        <li class="lang__item">
+                            <a class="menu__sub-link lang__option" role="menuitem" href="#" data-lang-option="en" data-lang-label="EN">
+                                <img class="lang__flag" src="img/index/header/united_kingdom.svg" alt="English">
+                                <span class="lang__name">English</span>
+                            </a>
+                        </li>
+                        <li class="lang__item">
+                            <a class="menu__sub-link lang__option" role="menuitem" href="#" data-lang-option="da" data-lang-label="DA">
+                                <img class="lang__flag" src="img/index/header/denmark.svg" alt="Dansk">
+                                <span class="lang__name">Dansk</span>
+                            </a>
+                        </li>
+                        <li class="lang__item">
+                            <a class="menu__sub-link lang__option" role="menuitem" href="#" data-lang-option="uk" data-lang-label="UK">
+                                <img class="lang__flag" src="img/index/header/ukraine.svg" alt="Українська">
+                                <span class="lang__name">Українська</span>
+                            </a>
+                        </li>
+                        <li class="lang__item">
+                            <a class="menu__sub-link lang__option" role="menuitem" href="#" data-lang-option="de" data-lang-label="DE">
+                                <img class="lang__flag" src="img/index/header/germany.svg" alt="Deutsch">
+                                <span class="lang__name">Deutsch</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="menu__button-mobile" href="booking.html" data-i18n="common.book_now">Book now</a>
+        </nav>
+        <a class="menu__button-desktop" href="booking.html" data-i18n="common.book_now">Book now</a>
+    </div>
+</header>
+
+<main class="__container" id="main" tabindex="-1">
+    <!-- The Area BEM-->
+    <section class="photo-background">
+        <div class="photo-img">
+            <!--Атрибут alt виходить за лінію-->
+            <picture>
+                <source media="(max-width:767px)" srcset="img/about_us/about_us_background/about_us_background_mobile.webp" type="image/webp">
+                <source media="(max-width:767px)" srcset="img/about_us/about_us_background/about_us_background_mobile.png" type="image/png">
+                <source srcset="img/about_us/about_us_background/about_us_background_desktop.webp" type="image/webp">
+                <img class="photo-img__back" src="img/about_us/about_us_background/about_us_background_desktop.png"
+                     alt="about_us_background_desktop">
+            </picture>
+        </div>
+        <div class="photo-background__info photo-background__position_about-us">
+            <h1 class="photo-background__title" data-i18n="about.hero_title">About Us</h1>
+            <div class="photo-background__buttons">
+                <a data-goto=".contact-us" class="photo-background__button" href="#" data-i18n="about.hero_contact_us">Contact Us</a>
+                <a class="photo-background__button" href="faq.html" data-i18n="about.hero_read_faq">Read Faq</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us-content-1 _reveal">
+        <div class="about-us-content-content-1__photo">
+            <picture><source srcset="img/about_us/about_us_content_1/about_us_content_1_photo.webp" type="image/webp"><img class="about-us-content-1__img" src="img/about_us/about_us_content_1/about_us_content_1_photo.png" alt="about_us_content_1_photo"></picture>
+        </div>
+        <div class="about-us-content-1__info">
+            <h2 class="about-us-content-1__title" data-i18n="about.quote_title">&ldquo; We built The Glass Huts for the
+                moment you exhale. A place where the forest, the fjord and the night sky become the only things asking
+                for your attention.
+                &rdquo;
+            </h2>
+            <p class="about-us-content-1__subtitle" data-i18n="about.quote_text">It began with a simple wish: to stay
+                inside nature without ever stepping away from comfort. So we set a handful of glass cabins gently into
+                the woodland above the Mariager fjord, where the light shifts all day and the stars arrive uninterrupted
+                at night. Every hut is designed to disappear into its surroundings, leaving you with warmth, quiet and a
+                view that never repeats. This is our love letter to slow living, and to everyone who chooses to spend a
+                few honest days closer to the trees.</p>
+        </div>
+    </section>
+
+    <section class="about-us-gallery _reveal">
+        <h2 class="about-us-gallery__title" data-i18n-html="about.gallery_title">The people, the place, <br> and the quiet in between</h2>
+        <div class="about-us-gallery__photo">
+            <div class="about-us-gallery__photo_1">
+                <picture><source srcset="img/about_us/about_us_gallery/about_us_gallery_photo_1.webp" type="image/webp"><img class="about-us-gallery__img" src="img/about_us/about_us_gallery/about_us_gallery_photo_1.png" alt="about_us_gallery_photo-1"></picture>
+            </div>
+            <div class="about-us-gallery__photo_2">
+                <picture><source srcset="img/about_us/about_us_gallery/about_us_gallery_photo_2.webp" type="image/webp"><img class="about-us-gallery__img" src="img/about_us/about_us_gallery/about_us_gallery_photo_2.png" alt="about_us_gallery_photo-2"></picture>
+            </div>
+            <div class="about-us-gallery__photo_3">
+                <picture><source srcset="img/about_us/about_us_gallery/about_us_gallery_photo_3.webp" type="image/webp"><img class="about-us-gallery__img" src="img/about_us/about_us_gallery/about_us_gallery_photo_3.png" alt="about_us_gallery_photo-3"></picture>
+            </div>
+            <div class="about-us-gallery__photo-text">
+                <p class="photo-text__about-us" data-i18n="about.gallery_text">
+                    We are a small Danish team of designers, hosts and nature lovers who look after every hut by hand.
+                    From the morning fog over the fjord to the last lantern lit at dusk, we tend the details so your
+                    only task is to rest.
+                </p>
+            </div>
+            <div class="about-us-gallery__photo_4">
+                <picture><source srcset="img/about_us/about_us_gallery/about_us_gallery_photo_4.webp" type="image/webp"><img class="about-us-gallery__img" src="img/about_us/about_us_gallery/about_us_gallery_photo_4.png" alt="about_us_gallery_photo-4"></picture>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us-contact-us contact-us _reveal">
+        <h2 class="contact__title" data-i18n="about.contact_title">Stay in touch with us</h2>
+
+        <div class="about-us-stay__contact">
+            <h4 class="contact__sub-title" data-i18n="common.location">Vesterbord, Denmark</h4>
+            <a class="contact__phone" href="tel:+123 456 789 000">+123 456 789 000</a>
+            <a class="contact__mail" href="mailto:info@theglasshuts.com">info@theglasshuts.com</a>
+            <ul class="contact__link-social">
+                <li>
+                    <a class="link-social__item" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <picture><source srcset="img/index/about_us_stay/social_item_insta.webp" type="image/webp"><img src="img/index/about_us_stay/social_item_insta.png" alt=""></picture>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-social__item" href="https://uk-ua.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <picture><source srcset="img/index/about_us_stay/social_item_facebook.webp" type="image/webp"><img src="img/index/about_us_stay/social_item_facebook.png" alt=""></picture>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-social__item" href="https://twitter.com/?lang=uk" target="_blank" rel="noopener" aria-label="Twitter">
+                        <picture><source srcset="img/index/about_us_stay/social_item_twitter.webp" type="image/webp"><img src="img/index/about_us_stay/social_item_twitter.png" alt=""></picture>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+    <div class="contact-form">
+        <form class="contacts-form__action" action="" method="post" data-validate data-success="about.toast_sent" novalidate>
+
+            <div class="contacts-form__first-name" >
+                <input type="text" name="first-name" required placeholder="First Name" data-i18n-ph="about.form_first_name" aria-label="First Name" data-i18n-aria="about.form_first_name">
+            </div>
+
+            <div class="contacts-form__last-name" >
+                <input type="text" name="last-name" placeholder="Last Name" data-i18n-ph="about.form_last_name" aria-label="Last Name" data-i18n-aria="about.form_last_name">
+            </div>
+
+            <div class="contacts-form__mail" >
+                <input type="email" name="mail" required placeholder="Email" data-i18n-ph="about.form_email" aria-label="Email" data-i18n-aria="about.form_email">
+            </div>
+
+            <div class="contacts-form__subject" >
+                <input type="text" name="subject" placeholder="Subject" data-i18n-ph="about.form_subject" aria-label="Subject" data-i18n-aria="about.form_subject">
+            </div>
+
+            <div class="contacts-form__message" >
+                <textarea name="message" required placeholder="Message" cols="30"
+                    rows="10" data-i18n-ph="about.form_message" aria-label="Message" data-i18n-aria="about.form_message"></textarea>
+            </div>
+
+            <button type="submit" class="contact-form__button" data-i18n="about.form_send">Send</button>
+        </form>
+    </div>
+    
+    </section>
+
+    <section class="with-love _reveal">
+        <!-- Навмисно без data-i18n: цей підпис завжди англійською в усіх мовах. -->
+        <h2 class="with-love__title">From Denmark <br> With Love...</h2>
+        <div class="with-love__subtitle">
+            <picture>
+                <source srcset="img/about_us/with-love/with-love-photo.webp" type="image/webp">
+                <img src="img/about_us/with-love/with-love-photo.png" alt="with-love-photo">
+            </picture>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__newsletter">
+            <form class="newsletter__form" action="/newsletter-send" method="post" data-validate data-success="forms.toast_subscribed" novalidate>
+                <label class="newsletter__title" for="mail" data-i18n="footer.newsletter">Newsletter</label>
+
+                <input class="newsletter__input" type="email" id="mail" name="mail__add" required placeholder="Email Address" data-i18n-ph="footer.email_placeholder">
+                <button class="newsletter__button" type="submit" data-i18n-aria="footer.subscribe" aria-label="Subscribe">
+                    <object class="newsletter__arrow"
+                            type="image/svg+xml"
+                            data="img/index/footer/footer_line.svg">
+                        <picture><source srcset="img/index/footer/footer_line.webp" type="image/webp"><img src="img/index/footer/footer_line.png" alt=""></picture>
+                    </object>
+                </button>
+            </form>
+            <p class="newsletter-sub-text" data-i18n="footer.newsletter_text">Sign up to our newsletter for special things and receive 10% off your next
+                order.</p>
+        </div>
+
+        <div class="footer__license">
+            <ul class="footer__license-text">
+                <li class="footer__license-item-text"><a href="terms.html" data-i18n="footer.terms">TERMS AND CONDITIONS</a></li>
+                <li class="footer__license-item-text"><a href="cancellation-policy.html" data-i18n="footer.cancellation">CANCELLATION POLICY</a></li>
+                <li class="footer__license-item-text"><a href="privacy-policy.html" data-i18n="footer.privacy">PRIVACY POLICY</a></li>
+            </ul>
+
+            <ul class="footer__license-icon">
+                <li class="footer__license-item">
+                    <a href="https://www.paypal.com/ru/home" target="_blank">
+                        <object
+                                type="image/svg+xml"
+                                data="img/index/footer/item_comp_paypal.svg">
+                            <picture><source srcset="img/index/footer/item_comp_paypal.webp" type="image/webp"><img src="img/index/footer/item_comp_paypal.png" alt="item_comp_paypal"></picture>
+                        </object>
+                    </a>
+                </li>
+                <li class="footer__license-item">
+                    <a href="https://www.mastercard.ua/uk-ua.html" target="_blank">
+                        <object
+                                type="image/svg+xml"
+                                data="img/index/footer/item_comp_master_card.svg">
+                            <picture><source srcset="img/index/footer/item_comp_master_card.webp" type="image/webp"><img src="img/index/footer/item_comp_master_card.png" alt="item_comp_master_card"></picture>
+                        </object>
+                    </a>
+                </li>
+                <li class="footer__license-item">
+                    <a href="https://www.visa.com.ua/uk_UA" target="_blank">
+                        <object
+                                type="image/svg+xml"
+                                data="img/index/footer/item_comp_visa.svg">
+                            <picture><source srcset="img/index/footer/item_comp_visa.webp" type="image/webp"><img src="img/index/footer/item_comp_visa.png" alt="item_comp_visa"></picture>
+                        </object>
+                    </a>
+                </li>
+                <li class="footer__license-item">
+                    <a href="https://privatbank.ua/ru/sistemy-denegnih-perevodov" target="_blank">
+                        <object
+                                type="image/svg+xml"
+                                data="img/index/footer/item_comp_bank_transfer.svg">
+                            <picture><source srcset="img/index/footer/item_comp_bank_transfer.webp" type="image/webp"><img src="img/index/footer/item_comp_bank_transfer.png" alt="item_comp_bank_transfer"></picture>
+                        </object>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="footer__security-police">
+            <p>&copy; <span data-year>2021</span> The Glass Huts</p>
+        </div>
+
+    </div>
+</footer>
+
+<!------- Main Script ------->
+<script src="js/main_script.min.js"></script>
+</body>
+</html>

@@ -26,31 +26,17 @@
 
 ---
 
-## 2. «Malformed srcset» у `<picture>`
+## 2. «Malformed srcset» у `<picture>` — ВИРІШЕНО
 
-**Що:** патерн на всіх сторінках (приклад — `#src/the-hut.html:29`):
-```html
-<source srcset="...mobile.png, ...mobile.webp" media="(max-width:767px)">
-```
-Кома в `srcset` розділяє не fallback, а рівноцінних кандидатів одного зображення
-(з дескрипторами `1x`/`2x`/`w`). Тож браузер трактує `.png` і `.webp` як два
-варіанти 1x і бере будь-який — це не справжній «webp з відкатом на png».
+Кома в `srcset` розділяла не fallback, а рівноцінних кандидатів, тож `.png`
+і `.webp` були двома варіантами 1x і webp-оптимізація не працювала.
 
-**Стан:** працює (картинка завжди завантажується), але не оптимально.
-
-**Чому відкладено:** цей патерн **генерує сам build** (`gulp-webp-html`) — ручна
-правка в HTML повернеться після наступного `gulp`.
-
-**Ідея фікса:** перейти на коректну розмітку з окремими джерелами й типами:
-```html
-<picture>
-  <source type="image/webp" media="(max-width:767px)" srcset="...mobile.webp">
-  <source type="image/webp" srcset="...desktop.webp">
-  <img src="...desktop.png" alt="...">
-</picture>
-```
-Разом зі зміною/налаштуванням конвенції збірки (`gulp-webp-html` → інша
-стратегія або власний шаблон).
+Закрито двома змінами:
+1. рукописні `<picture>` у `#src` (хедер-лого, фото-герої, `with-love`)
+   переписані на `<source type="image/webp">` + `<img>` як фолбек;
+2. `gulp-webp-html` замінено на `gulp-webp-html-nosvg` — він генерує
+   `<picture><source srcset="….webp" type="image/webp"><img src="….png"></picture>`,
+   не підсовує `.svg`/`.gif` під `type="image/webp"` і не склеює html в один рядок.
 
 ---
 

@@ -27,11 +27,12 @@
             <div class="photo-img">
                 <!--Атрибут alt виходить за лінію-->
                 <picture>
-                    <source
-                        srcset="img/booking/booking_background/booking_background_mobile.png, img/booking/booking_background/booking_background_mobile.webp"
-                        media="(max-width:767px)">
+                    <source media="(max-width:767px)"
+                        srcset="img/booking/booking_background/booking_background_mobile.webp" type="image/webp">
+                    <source media="(max-width:767px)"
+                        srcset="img/booking/booking_background/booking_background_mobile.png" type="image/png">
+                    <source srcset="img/booking/booking_background/booking_background_desktop.webp" type="image/webp">
                     <img class="photo-img__back" src="img/booking/booking_background/booking_background_desktop.png"
-                        srcset="img/booking/booking_background/booking_background_desktop.png"
                         alt="booking_background_desktop">
                 </picture>
             </div>
