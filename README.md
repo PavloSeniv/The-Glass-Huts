@@ -1,6 +1,6 @@
 # The Glass Huts
 
-A multilingual static landing site for **The Glass Huts** — a boutique retreat of luxury glass cabins near the Mariager fjord in Vesterbord, Denmark.
+A multilingual static landing site for **The Glass Huts** — a boutique retreat of luxury glass cabins near the Mariager fjord in Vesterborg, Denmark.
 
 **Live demo:** https://pavloseniv.github.io/The-Glass-Huts/The-Glass-Huts/index.html
 

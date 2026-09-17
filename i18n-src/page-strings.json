@@ -302,10 +302,10 @@
   },
   {
     "key": "area.intro_title",
-    "en": "Vesterbord",
-    "da": "Vesterbord",
-    "uk": "Вестерборд",
-    "de": "Vesterbord"
+    "en": "Vesterborg",
+    "da": "Vesterborg",
+    "uk": "Вестерборг",
+    "de": "Vesterborg"
   },
   {
     "key": "area.intro_subtitle",
@@ -316,10 +316,10 @@
   },
   {
     "key": "area.intro_text",
-    "en": "Tucked into the quiet countryside near the Mariager fjord, Vesterbord is a place of soft light, still water and open sky. Ancient woodland gives way to reed-lined shores, and the days move to the slow rhythm of the tide. Here there are no crowds and no hurry, only birdsong at dawn, mist over the meadows and a horizon wide enough to breathe into. The Glass Huts sit at the heart of it all, close enough to wander out on foot and far enough to feel genuinely alone with nature.",
-    "da": "Gemt væk i det stille landskab nær Mariager fjord er Vesterbord et sted med blødt lys, roligt vand og åben himmel. Ældgammel skov glider over i sivklædte bredder, og dagene følger tidevandets langsomme rytme. Her er hverken menneskemængder eller hastværk, kun fuglesang ved daggry, tåge over engene og en horisont, der er vid nok til at ånde ind. The Glass Huts ligger midt i det hele, nær nok til at vandre ud til fods og fjernt nok til virkelig at føle sig alene med naturen.",
-    "uk": "Захований у тихій сільській місцевості біля фʼйорду Марʼягер, Вестерборд — це місце мʼякого світла, спокійної води й відкритого неба. Прадавній ліс переходить у порослі очеретом береги, а дні плинуть у повільному ритмі припливів. Тут немає ні натовпів, ні поспіху — лише пташиний спів на світанку, туман над луками й обрій, достатньо широкий, щоб дихати на повні груди. The Glass Huts стоять у самому серці цього краю: достатньо близько, щоб вирушити на прогулянку пішки, і достатньо далеко, щоб по-справжньому відчути себе наодинці з природою.",
-    "de": "Eingebettet in die stille Landschaft am Mariager Fjord ist Vesterbord ein Ort aus weichem Licht, ruhigem Wasser und weitem Himmel. Uralter Wald weicht schilfgesäumten Ufern, und die Tage folgen dem langsamen Rhythmus der Gezeiten. Hier gibt es weder Menschenmengen noch Hast, nur Vogelgesang bei Sonnenaufgang, Nebel über den Wiesen und einen Horizont, der weit genug ist, um tief durchzuatmen. Die Glass Huts liegen mittendrin, nah genug, um zu Fuß hinauszuwandern, und weit genug, um sich wahrhaft allein mit der Natur zu fühlen."
+    "en": "Tucked into the quiet countryside near the Mariager fjord, Vesterborg is a place of soft light, still water and open sky. Ancient woodland gives way to reed-lined shores, and the days move to the slow rhythm of the tide. Here there are no crowds and no hurry, only birdsong at dawn, mist over the meadows and a horizon wide enough to breathe into. The Glass Huts sit at the heart of it all, close enough to wander out on foot and far enough to feel genuinely alone with nature.",
+    "da": "Gemt væk i det stille landskab nær Mariager fjord er Vesterborg et sted med blødt lys, roligt vand og åben himmel. Ældgammel skov glider over i sivklædte bredder, og dagene følger tidevandets langsomme rytme. Her er hverken menneskemængder eller hastværk, kun fuglesang ved daggry, tåge over engene og en horisont, der er vid nok til at ånde ind. The Glass Huts ligger midt i det hele, nær nok til at vandre ud til fods og fjernt nok til virkelig at føle sig alene med naturen.",
+    "uk": "Захований у тихій сільській місцевості біля фʼйорду Марʼягер, Вестерборг — це місце мʼякого світла, спокійної води й відкритого неба. Прадавній ліс переходить у порослі очеретом береги, а дні плинуть у повільному ритмі припливів. Тут немає ні натовпів, ні поспіху — лише пташиний спів на світанку, туман над луками й обрій, достатньо широкий, щоб дихати на повні груди. The Glass Huts стоять у самому серці цього краю: достатньо близько, щоб вирушити на прогулянку пішки, і достатньо далеко, щоб по-справжньому відчути себе наодинці з природою.",
+    "de": "Eingebettet in die stille Landschaft am Mariager Fjord ist Vesterborg ein Ort aus weichem Licht, ruhigem Wasser und weitem Himmel. Uralter Wald weicht schilfgesäumten Ufern, und die Tage folgen dem langsamen Rhythmus der Gezeiten. Hier gibt es weder Menschenmengen noch Hast, nur Vogelgesang bei Sonnenaufgang, Nebel über den Wiesen und einen Horizont, der weit genug ist, um tief durchzuatmen. Die Glass Huts liegen mittendrin, nah genug, um zu Fuß hinauszuwandern, und weit genug, um sich wahrhaft allein mit der Natur zu fühlen."
   },
   {
     "key": "area.map_title",
@@ -1156,10 +1156,10 @@
   },
   {
     "key": "payment.summary_location",
-    "en": "Vesterbord, Denmark",
-    "da": "Vesterbord, Danmark",
-    "uk": "Вестерборд, Данія",
-    "de": "Vesterbord, Dänemark"
+    "en": "Vesterborg, Denmark",
+    "da": "Vesterborg, Danmark",
+    "uk": "Вестерборг, Данія",
+    "de": "Vesterborg, Dänemark"
   },
   {
     "key": "payment.table_check_in",

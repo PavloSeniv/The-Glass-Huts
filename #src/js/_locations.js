@@ -15,7 +15,7 @@ window.THG_LOCATIONS = {
 
     denmark: {
         id: "denmark",
-        labelKey: "common.location", // "Vesterbord, Denmark"
+        labelKey: "common.location", // "Vesterborg, Denmark"
         map: "https://www.google.com/maps/search/?api=1&query=56.6486,9.9982",
         priceNight: 3200,
         guestFee: 800,

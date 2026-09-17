@@ -14,7 +14,7 @@
   { "key": "common.read_more", "en": "Read More", "da": "Læs mere", "uk": "Докладніше", "de": "Mehr erfahren" },
   { "key": "common.from", "en": "from", "da": "fra", "uk": "від", "de": "ab" },
   { "key": "common.per_night", "en": "per night", "da": "pr. nat", "uk": "за ніч", "de": "pro Nacht" },
-  { "key": "common.location", "en": "Vesterbord, Denmark", "da": "Vesterbord, Danmark", "uk": "Вестерборд, Данія", "de": "Vesterbord, Dänemark" },
+  { "key": "common.location", "en": "Vesterborg, Denmark", "da": "Vesterborg, Danmark", "uk": "Вестерборг, Данія", "de": "Vesterborg, Dänemark" },
   { "key": "common.close", "en": "Close", "da": "Luk", "uk": "Закрити", "de": "Schließen" },
 
   { "key": "footer.newsletter", "en": "Newsletter", "da": "Nyhedsbrev", "uk": "Розсилка", "de": "Newsletter" },
